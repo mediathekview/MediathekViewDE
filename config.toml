@@ -1,6 +1,7 @@
 baseurl = "http://mediathekview.de"
 title = "MediathekView"
 languageCode = "de-de"
+theme = "hugo-identity-theme"
 
 
 [params]
