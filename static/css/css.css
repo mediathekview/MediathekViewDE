@@ -1,0 +1,14 @@
+.humhub {
+    background-image: url('../images/humhub.png');
+    background-size: 100%;
+}
+
+.bountysource {
+    background-image: url('../images/bountysource.png');
+    background-size: 100%;
+}
+
+#main .avatar img {
+    background: white;
+    border-radius: unset;
+}

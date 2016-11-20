@@ -1,0 +1,3 @@
+[submodule "themes/hugo-identity-theme"]
+	path = themes/hugo-identity-theme
+	url = https://github.com/aerohub/hugo-identity-theme

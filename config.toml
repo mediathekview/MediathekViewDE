@@ -1,0 +1,86 @@
+baseurl = "http://mediathekview.de"
+title = "MediathekView"
+languageCode = "de-de"
+theme = "hugo-identity-theme"
+
+
+[params]
+	
+	# Images settings
+	# Icons, backgrounds and avatars folders are placed in theme's static/images folder.
+	# You may place your images in corresponding folders and then set only filenames below to
+	# change page's appearance
+	
+	favicon = "favicon.ico"
+	appletouchicon = "apple-touch-icon-precomposed.png"
+	background = "bg1.jpg"
+	avatar = "MediathekView.png"
+
+  # Custom styling
+  # To customize the styling of this theme, uncomment and edit the following line to point 
+  # to your site's css in the assets/ directory. 
+
+  custom_css = ["/css/css.css"]
+	
+	# Personal settings
+	
+    name = "MediathekView"
+	position = "Das Original lebt weiter."
+	
+	# Extra stuff
+	# NOTE: There is little different extra stuff in original Identity theme by HTML5 UP.
+	# You can play with it downlading original theme right here:
+	# html5up.net/identity/download
+	#
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+	# - enable form by setting 'enable' to 'true'
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+	
+	email = "your@email.com"
+	
+	# Contact form settings
+		
+	[params.contact]
+		enable = false
+		formTitle = "Touch Me!"
+		namePlaceholder = "Name"
+		emailPlaceholder = "Email"
+		messagePlaceholder = "Message"
+		buttonText = "Send it"
+		
+	# Social settings
+	# You may change these with your social links or add others
+
+	[[params.social]]
+		title = "GitHub"
+		icon = "fa-github"
+		link = "https://github.com/mediathekview"
+
+	[[params.social]]
+		title = "HumHub"
+		icon = "humhub"
+		link = "https://hub.mediathekview.de/"
+
+	[[params.social]]
+		title = "Bountysource"
+		icon = "bountysource"
+        link = "https://www.bountysource.com/teams/mediathekview"
+
+	[[params.social]]
+		title = "Forum"
+		icon = "fa-comments"
+        link = "http://zdfmediathk.sourceforge.net/forum/"
+
+	# Footer settings
+	[params.footer]
+		copyright = "MediathekView Team"
+		
