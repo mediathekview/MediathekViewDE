@@ -1,86 +1,84 @@
-baseurl = "http://mediathekview.de"
+baseurl = "https://mediathekview.de"
 title = "MediathekView"
 languageCode = "de-de"
-theme = "hugo-identity-theme"
+DefaultContentLanguage = "de"
+theme = "mediathekview"
 
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+    code = "/:slug/"
+
+[taxonomies]
+    tag = "Tags"
+
+[author]
+    name = "Alexander Finkhäuser"
+    email = "alex@elaon.de"
 
 [params]
-	
-	# Images settings
-	# Icons, backgrounds and avatars folders are placed in theme's static/images folder.
-	# You may place your images in corresponding folders and then set only filenames below to
-	# change page's appearance
-	
-	favicon = "favicon.ico"
-	appletouchicon = "apple-touch-icon-precomposed.png"
-	background = "bg1.jpg"
-	avatar = "MediathekView.png"
+    BrandImage = "/images/MediathekView.png" #top header brand image.
+    brand = "Mediathekview" # brand image alt text.
+    topline = "Die offizelle MediathekView Homepage"
+    footline = "Erstellt mit <i class='fa fa-heart'></i>"
+    
+    copyright = "(c) 2016 Copyright by Mediathekview Team"
+    title = "MediathekView" # Site title
 
-  # Custom styling
-  # To customize the styling of this theme, uncomment and edit the following line to point 
-  # to your site's css in the assets/ directory. 
+    # Show a sidebar menu
+    showRightSidebar = true
 
-  custom_css = ["/css/css.css"]
-	
-	# Personal settings
-	
-    name = "MediathekView"
-	position = "Das Original lebt weiter."
-	
-	# Extra stuff
-	# NOTE: There is little different extra stuff in original Identity theme by HTML5 UP.
-	# You can play with it downlading original theme right here:
-	# html5up.net/identity/download
-	#
-	# Since this template is static, the contact form uses www.formspree.io as a
-	# proxy. The form makes a POST request to their servers to send the actual
-	# email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below
-	# - enable form by setting 'enable' to 'true'
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-	
-	email = "your@email.com"
-	
-	# Contact form settings
-		
-	[params.contact]
-		enable = false
-		formTitle = "Touch Me!"
-		namePlaceholder = "Name"
-		emailPlaceholder = "Email"
-		messagePlaceholder = "Message"
-		buttonText = "Send it"
-		
-	# Social settings
-	# You may change these with your social links or add others
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Home".
+    home = "home"
+    
+    startpage = "index"
 
-	[[params.social]]
-		title = "GitHub"
-		icon = "fa-github"
-		link = "https://github.com/mediathekview"
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "default"
 
-	[[params.social]]
-		title = "HumHub"
-		icon = "humhub"
-		link = "https://hub.mediathekview.de/"
+    # Sidebar social links.
+    github = "mediathekview" # Your Github profile ID
+    #bitbucket = "" # Your Bitbucket profile ID
+    #linkedin = "" # Your LinkedIn profile ID (from public URL)
+    #googleplus = "" # Your Google+ profile ID
+    #facebook = "" # Your Facebook profile ID
+    #twitter = "" # Your Twitter profile ID
+    #youtube = ""  # Your Youtube channel ID
+    flattr = "mediathekview"  # populate with your flattr uid
+    
+    
+    [[menu.main]]
+    name = "Neuigkeiten"
+    title = "Neuigkeiten"
+    pre = ""
+    weight = 1
+    url = "/news"
+    
+    [[menu.footer]] # add  links to the bottom right corner.
+    name = "Impressum"
+    pre = "<i>-</i>"
+    weight = 1
+    url = "/impressum/"
 
-	[[params.social]]
-		title = "Bountysource"
-		icon = "bountysource"
-        link = "https://www.bountysource.com/teams/mediathekview"
+    [[menu.footer]]
+    name = "Kontakt"
+    weight = 2
+    url = "/kontakt/"
 
-	[[params.social]]
-		title = "Forum"
-		icon = "fa-comments"
-        link = "http://zdfmediathk.sourceforge.net/forum/"
+[blackfriday]
+    hrefTargetBlank = true
+    latexDashes = true
+    plainIdAnchors = true
 
-	# Footer settings
-	[params.footer]
-		copyright = "MediathekView Team"
+    # Menus
+    # If you want active menu items highlighted for internal pages don't add them here, they need to be added in each files front matter.
+    # like this:
+    #[menu]
+    #     [menu.main]
+    #        name = "Showcase"
+    #        weight = 3
+    #        identifier = "showcase"
+
+  #custom_css = ["/css/css.css"]
 		
