@@ -45,6 +45,13 @@ theme = "mediathekview"
     weight = 1
     url = "/news"
     
+    [[menu.main]]
+    name = "Changelogs"
+    title = "Changelogs"
+    pre = ""
+    weight = 2
+    url = "/changelog"
+    
     [[menu.footer]] 
     name = "Impressum"
     pre = "<i>-</i>"
@@ -53,7 +60,7 @@ theme = "mediathekview"
 
     [[menu.footer]]
     name = "Kontakt"
-    weight = 2
+    weight = 1
     url = "/kontakt/"
 
 [blackfriday]
