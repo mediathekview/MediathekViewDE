@@ -60,8 +60,14 @@ theme = "mediathekview"
 
     [[menu.footer]]
     name = "Kontakt"
+    pre = "-"
     weight = 1
     url = "/kontakt/"
+    
+    [[menu.footer]]
+    name = "Lizenz"
+    weight = 1
+    url = "/lizenz/"
 
 [blackfriday]
     hrefTargetBlank = true

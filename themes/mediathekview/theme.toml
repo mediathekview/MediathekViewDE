@@ -8,3 +8,4 @@ license = "MIT"
 [original]
     name = "Göran Svensson"
     homepage = "http://appernetic.github.io"
+    repo = "https://github.com/appernetic/hugo-bootstrap-premium"
