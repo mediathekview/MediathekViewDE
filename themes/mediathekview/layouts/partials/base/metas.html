@@ -9,9 +9,6 @@
 <meta name="description" content="{{ .Site.Params.description }}" />
 {{ end }}
 <meta name="keywords" content="{{ if .Keywords }}{{ range .Keywords }}{{ . }}, {{ end }}{{else if isset .Params "tags" }}{{ range .Params.tags }}{{ . }}, {{ end }}{{end}}">
-{{ with .Site.Params.googleplus }}
-<link rel="author" href="http://plus.google.com/+{{ . }}">
-{{ end }}
 
 <meta property="og:title" content="{{ .Title }} {{ if ne .Title .Site.Title }} &middot; {{ .Site.Title }} {{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}"/>
@@ -35,31 +32,6 @@
 <meta property="og:article:tag" content="{{ . }}">
     {{ end }}
   {{ end }}
-
-  {{ if ne .Site.Params.twitter "" }}
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@{{ .Site.Params.twitter }}" />
-<meta name="twitter:creator" content="@{{ .Site.Params.twitter }}" />
-<meta name="twitter:title" content="{{ .Title }}" />
-<meta name="twitter:description" content="{{ .Description }}" />
-<meta name="twitter:url" content="{{ .Permalink }}" />
-<meta name="twitter:domain" content="{{ .Site.BaseURL }}">
-  {{ end }}
-
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "headline": "{{ .Title }}",
-    "author": {
-      "@type": "Person",
-      "name": "http://profiles.google.com/+{{ .Site.Params.googleplus }}?rel=author"
-    },
-    "datePublished": "{{ .Date.Format "2006-01-02" }}",
-    "description": "{{ .Description }}",
-    "wordCount": {{ .WordCount }}
-  }
-</script>
 {{ end }}
 
 {{ if .RSSLink }}

@@ -19,7 +19,7 @@ theme = "mediathekview"
     BrandImage = "/images/MediathekView.png" #top header brand image.
     brand = "Mediathekview" # brand image alt text.
     topline = "Die offizelle MediathekView Homepage"
-    footline = "Erstellt mit <i class='fa fa-heart'></i>"
+    footline = ""
     
     copyright = "(c) 2016 Copyright by Mediathekview Team"
     title = "MediathekView" # Site title
@@ -27,11 +27,6 @@ theme = "mediathekview"
     # Show a sidebar menu
     showRightSidebar = true
 
-    # Text for the top menu link, which goes the root URL for the site.
-    # Default (if omitted) is "Home".
-    home = "home"
-    
-    startpage = "index"
 
     # Select a syntax highight.
     # Check the static/css/highlight directory for options.
@@ -39,11 +34,6 @@ theme = "mediathekview"
 
     # Sidebar social links.
     github = "mediathekview" # Your Github profile ID
-    #bitbucket = "" # Your Bitbucket profile ID
-    #linkedin = "" # Your LinkedIn profile ID (from public URL)
-    #googleplus = "" # Your Google+ profile ID
-    #facebook = "" # Your Facebook profile ID
-    #twitter = "" # Your Twitter profile ID
     #youtube = ""  # Your Youtube channel ID
     flattr = "mediathekview"  # populate with your flattr uid
     
@@ -55,7 +45,7 @@ theme = "mediathekview"
     weight = 1
     url = "/news"
     
-    [[menu.footer]] # add  links to the bottom right corner.
+    [[menu.footer]] 
     name = "Impressum"
     pre = "<i>-</i>"
     weight = 1
@@ -70,15 +60,6 @@ theme = "mediathekview"
     hrefTargetBlank = true
     latexDashes = true
     plainIdAnchors = true
-
-    # Menus
-    # If you want active menu items highlighted for internal pages don't add them here, they need to be added in each files front matter.
-    # like this:
-    #[menu]
-    #     [menu.main]
-    #        name = "Showcase"
-    #        weight = 3
-    #        identifier = "showcase"
 
   #custom_css = ["/css/css.css"]
 		
