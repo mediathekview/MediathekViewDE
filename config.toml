@@ -12,8 +12,8 @@ theme = "mediathekview"
     tag = "Tags"
 
 [author]
-    name = "Alexander Finkhäuser"
-    email = "alex@elaon.de"
+    name = "Mediathekview"
+    email = "support@mediathekview.de"
 
 [params]
     BrandImage = "/images/MediathekView.png" #top header brand image.
