@@ -13,6 +13,7 @@ $(function () {
         mobile: true,
         bootstrap: true,
         bootstrapl18nNext: "Nächstes",
-        bootstrapl18nPrevious: "Vorheriges"
+        bootstrapl18nPrevious: "Vorheriges",
+        bootstrapl18nClose: "Schließen"
     }); 
 });

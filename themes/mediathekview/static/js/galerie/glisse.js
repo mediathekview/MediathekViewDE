@@ -25,6 +25,7 @@
                 bootstrap: false,
                 bootstrapl18nNext: 'Next',
                 bootstrapl18nPrevious: 'Previous',
+                bootstrapl18nClose: 'Close',
                 zindex: 2000,
                 parent: null // jQuery selector to find the container
             },
@@ -112,8 +113,6 @@
             plugin.els['overlay']       = $(document.createElement('div')).attr('id','glisse-overlay')
                                             .css(cssProp, cssVal).css('z-index', (plugin.settings.zindex + 10));
             plugin.els['spinner']       = $(document.createElement('div')).attr('id','glisse-spinner');
-            plugin.els['close']         = $(document.createElement('span')).attr('id','glisse-close')
-                                            .css(cssProp, cssVal).css('z-index', (plugin.settings.zindex + 10));
             plugin.els['content']       = $(document.createElement('div')).attr('id','glisse-overlay-content').css(cssProp, cssVal)
                                             .css(getPrefix('transform')+'transform', 'scale(0)')
                                             .css('z-index', (plugin.settings.zindex + 10));
@@ -136,12 +135,20 @@
 									            		.append($(document.createElement('span'))
 									            				.attr('class', 'sr-only').html(plugin.settings.bootstrapl18nPrevious)))
 									            .css('z-index', (plugin.settings.zindex + 20));
+            	plugin.els['close']         = $(document.createElement('span')).attr('id','glisse-close')
+            										.append($(document.createElement('span'))
+	                                            				.attr('class', 'glyphicon glyphicon-remove')
+	                                            				.attr('aria-hidden', 'true'))
+	                                            	.append($(document.createElement('span'))
+	                                            				.attr('class', 'sr-only').html(plugin.settings.bootstrapl18nClose))
+                									.css(cssProp, cssVal).css('z-index', (plugin.settings.zindex + 10));
         	} else {
         		plugin.els['controlNext']   = $(document.createElement('span')).attr('class','glisse-next')
         										.append( $(document.createElement('a')).html('&#62;').attr("href", "#"));
-        		
         		plugin.els['controlPrev']   = $(document.createElement('span')).attr('class','glisse-prev')
         										.append($(document.createElement('a')).html('&#60;').attr("href", "#"));
+        		plugin.els['close']         = $(document.createElement('span')).attr('id','glisse-close')
+                								.css(cssProp, cssVal).css('z-index', (plugin.settings.zindex + 10));
             }
             
             plugin.els['controlLegend'] = $(document.createElement('span')).attr('class','glisse-legend')
