@@ -124,6 +124,7 @@ iframe {
   display: block;
   position: fixed;
   top: 80px;
+  color: white;
 }
 
 .glisse-next a {
@@ -145,7 +146,6 @@ iframe {
   text-align: center;
   width: 60%;
   color: white;
-  margin: auto;
   font-size: 1.5em;
 }
 

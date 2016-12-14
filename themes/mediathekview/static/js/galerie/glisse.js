@@ -25,7 +25,7 @@
                 bootstrap: false,
                 bootstrapl18nNext: 'Next',
                 bootstrapl18nPrevious: 'Previous',
-                zindex: '2000',
+                zindex: 2000,
                 parent: null // jQuery selector to find the container
             },
             // Private var
@@ -144,7 +144,8 @@
         										.append($(document.createElement('a')).html('&#60;').attr("href", "#"));
             }
             
-            plugin.els['controlLegend'] = $(document.createElement('span')).attr('class','glisse-legend');
+            plugin.els['controlLegend'] = $(document.createElement('span')).attr('class','glisse-legend')
+            								.css('z-index', (plugin.settings.zindex + 20));
 
             // Add structure
             plugin.els['overlay'].append(plugin.els['spinner']);
