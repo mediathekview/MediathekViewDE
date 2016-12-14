@@ -4,7 +4,7 @@ date = "2016-12-06T12:45:09+01:00"
 title = "Lizenz"
 +++
 
-Das Programm wird als freier Software unter der Lizenz:<br />
+Das Programm **MediathekView** wird als freier Software unter der Lizenz:<br />
 **"GNU GENERAL PUBLIC LICENSE, GPLv3"**<br />
 zur Verfügung gestellt.
 

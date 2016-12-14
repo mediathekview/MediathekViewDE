@@ -27,11 +27,11 @@ body > .container {
 
 .navbar-brand {
 padding: 20px;
-vertical-align: baseline;;
+vertical-align: baseline;
 }
 
 .navbar-brand-img {
-padding: 0;
+    padding: 0;
 }
 @media screen and (max-width: 768px) {
     a.navbar-brand-img>img {
@@ -86,3 +86,66 @@ iframe {
 }
 #Email.fieldInvalid {
   border: 1px solid #ff0000;
+}
+
+.carousel-caption {
+	color: black;
+}
+
+#carousel-startseite {
+	margin-top: 50px;
+	padding-top: 10px;
+	background-color: #DDDDDD;
+}
+
+.galerie > p > img {
+    text-align: center;
+    margin: auto;
+}
+
+/* Glisse: Overlay */
+#glisse-overlay {
+  background: rgba(0,0,0.3);}
+
+#glisse-close {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  position: fixed;
+  top: 40px;
+  right: 0px;
+  background: red;
+}
+
+/* Prev/Next button */
+.glisse-next a, .glisse-prev a {
+  width: 15%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 80px;
+}
+
+.glisse-next a {
+  right: 0px;
+
+}
+
+.glisse-prev a {
+  left: 0px;
+
+}
+
+/* Legend */
+.glisse-legend {
+  position: fixed;
+  display: block;
+  bottom: 60px;
+  left: 20%;
+  text-align: center;
+  width: 60%;
+  color: white;
+  margin: auto;
+  font-size: 1.5em;
+}
+
