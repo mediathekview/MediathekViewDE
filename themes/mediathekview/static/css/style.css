@@ -10,14 +10,11 @@ body {
   margin-bottom: 70px;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  //margin-top: 3rem;
-  width: 100%;
-  text-align: left;
-  //margin-top: 20px;
-  padding-bottom: 1rem;
-//  padding-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    padding-top: 1rem;
 }
 
 
@@ -98,9 +95,23 @@ iframe {
 	background-color: #DDDDDD;
 }
 
-.galerie > p > img {
-    text-align: center;
-    margin: auto;
+.galerie > ul {
+    clear: both;
+    padding-left: 0;
+    margin-bottom: 20px;
+    
+}
+
+.galerie > ul > li {
+	width: 49%;
+	float: left;
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	
 }
 
 /* Glisse: Overlay */
