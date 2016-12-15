@@ -62,27 +62,9 @@ iframe {
   max-width: 100%;
 }
 
-/* Popover */
-.modal.ng-enter {
-  transition: opacity 1.5s ease-out;
-  opacity: 0;
-}
-.modal.ng-enter.ng-enter-active {
-  opacity: 1;
-}
-.modal.ng-leave {
-  transition: opacity 1.5s ease-out;
-  opacity: 1;
-}
-.modal.ng-leave.ng-leave-active {
-  opacity: 0;
-}
-
-#Email.fieldValid {
-  border: 1px solid #00ff00;
-}
-#Email.fieldInvalid {
-  border: 1px solid #ff0000;
+.taxonomies > .content > a > .btn {
+	padding: 3px 5px;
+	margin-right: 2px;
 }
 
 .carousel-caption {
@@ -110,7 +92,8 @@ iframe {
 	padding: 10px 15px;
 	margin-bottom: -1px;
 	background-color: #fff;
-	border: 1px solid #ddd;
+	border: 0px;
+	vertical-align: middle;
 	
 }
 

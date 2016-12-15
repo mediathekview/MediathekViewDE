@@ -26,9 +26,7 @@
         <header><div class="title"><b>{{ $key }}</b></div></header>
 
         <div class="content">
-          <ul>
-            {{ range first 10 $value.ByCount }}<li><a href="{{$.LanguagePrefix }}/{{ $key }}/{{ .Name | urlize }}">{{ .Name }}</a></li>{{ end }}
-          </ul>
+            {{ range first 10 $value.ByCount }}<a href="{{$.LanguagePrefix }}/{{ $key }}/{{ .Name | urlize }}"><button type="button" class="btn btn-default">{{ .Name }}</button></a>{{ end }}
         </div>
       </div>
       {{ end }}
