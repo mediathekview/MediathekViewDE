@@ -4,12 +4,6 @@ $(".galerie > ul > li > img").each(function() {
  $(this).attr("data-glisse-big", $(this).attr("src").replace(/_klein/g, ""));
  $(this).addClass("pics");
 });
-//$(".galerie > ul").each(function() {
-//	$(this).addClass("list-group");
-//});
-//$(".galerie > ul > li").each(function() {
-//	$(this).addClass("list-group-item");
-//});
 $(function () {
     $('.pics').glisse({
         changeSpeed: 550, 

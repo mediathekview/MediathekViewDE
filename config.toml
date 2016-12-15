@@ -28,15 +28,10 @@ theme = "mediathekview"
     # Show a sidebar menu
     showRightSidebar = true
 
-
-    # Select a syntax highight.
-    # Check the static/css/highlight directory for options.
-    highlight = "default"
-
     # Sidebar social links.
-    github = "mediathekview" # Your Github profile ID
-    #youtube = ""  # Your Youtube channel ID
-    #flattr = "mediathekview"  # populate with your flattr uid
+    github = "mediathekview"
+    #youtube = ""
+    #flattr = "mediathekview"
     
     
     [[menu.main]]
