@@ -4,6 +4,6 @@ type = "screenshots"
 galerie = true
 +++
 
-- ![Filme](../images/screenshots/screenshot1_klein.jpg)
-- ![Downloads](../images/screenshots/screenshot2_klein.jpg)
-- ![Abos](../images/screenshots/screenshot3_klein.jpg)
+- ![Filme Übersicht](../images/screenshots/screenshot1_klein.jpg "Filme Übersicht")
+- ![Downloads](../images/screenshots/screenshot2_klein.jpg "Downloads")
+- ![Aboseite](../images/screenshots/screenshot3_klein.jpg "Aboseite")
