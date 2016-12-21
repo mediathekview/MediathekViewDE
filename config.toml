@@ -64,14 +64,14 @@ theme = "mediathekview"
     url = "/impressum/"
 
     [[menu.footer]]
-    name = "Kontakt"
+    name = "Über uns"
     pre = "-"
-    weight = 1
-    url = "/kontakt/"
+    weight = 2
+    url = "/ueberuns/"
     
     [[menu.footer]]
     name = "Lizenz"
-    weight = 1
+    weight = 3
     url = "/lizenz/"
 
 [blackfriday]
