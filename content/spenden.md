@@ -21,11 +21,27 @@ BIC:       **BYLADEM1001** <br />
 
 <br />
 
+**Möglichkeit um direkt an den Erfinder ein Dankeschön zu spenden:**
+
+Empfänger: **MediathekView** <br />
+IBAN:      **DE03 7529 0000 0100 1720 30** <br />
+BIC:       **GENODEF1AMV** <br />
+
+<br />
+
 ### Paypal
 
 Paypal-Adresse: **[mv@mediathekview.de](https://www.paypal.me/MediathekView)**
 
 [![Paypal Spenden Button](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif "Paypal Spenden Button")](https://www.paypal.me/MediathekView)
+
+<br />
+
+**Möglichkeit um direkt an den Erfinder ein Dankeschön zu spenden:**
+
+Paypal-Adresse: **[mediathek@posteo.de](https://www.paypal.me/Mediathek)**
+
+[![Paypal Spenden Button](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif "Paypal Spenden Button")](https://www.paypal.me/Mediathek)
 
 <br />
 
