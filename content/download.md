@@ -1,14 +1,14 @@
 +++
 description = ""
 date = "2016-12-06T12:45:09+01:00"
-title = "Downloads"
+title = "Download"
 [menu]
     [menu.main]
-        name = "Downloads"
+        name = "Download"
         weight = 3
 +++
 
-# Downloads
+# Download
 
 ## MediathekView
 
