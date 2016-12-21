@@ -32,7 +32,7 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
 
 <br />
 
-**Möglichkeit um direkt an den Projektgründer ein Dankeschön zu spenden::**
+**Möglichkeit um direkt an den Projektgründer ein Dankeschön zu spenden:**
 
 <table class="table">
     <tr>
@@ -66,7 +66,7 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
 
 <br />
 
-**Möglichkeit um direkt an den Projektgründer ein Dankeschön zu spenden::**
+**Möglichkeit um direkt an den Projektgründer ein Dankeschön zu spenden:**
 
 <address>
   <strong>Paypal-Adresse</strong><br>
