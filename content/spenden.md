@@ -15,23 +15,48 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
 
 ### Überweisung
 
-Empfänger: **Mediathekview** <br />
-IBAN:      **DE38 1203 0000 1053 2664 80** <br />
-BIC:       **BYLADEM1001** <br />
+<table class="table">
+    <tr>
+        <td>Empfänger</td>
+        <td><b>Mediathekview</b></td>
+    <tr>
+    <tr>
+        <td>IBAN</td>
+        <td><b>DE38 1203 0000 1053 2664 80</b></td>
+    <tr>
+    <tr>
+        <td>BIC</td>
+        <td><b>BYLADEM1001</b></td>
+    <tr>
+</table>
 
 <br />
 
 **Möglichkeit um direkt an den Erfinder ein Dankeschön zu spenden:**
 
-Empfänger: **MediathekView** <br />
-IBAN:      **DE03 7529 0000 0100 1720 30** <br />
-BIC:       **GENODEF1AMV** <br />
+<table class="table">
+    <tr>
+        <td>Empfänger</td>
+        <td><b>Mediathekview</b></td>
+    <tr>
+    <tr>
+        <td>IBAN</td>
+        <td><b>DE03 7529 0000 0100 1720 30</b></td>
+    <tr>
+    <tr>
+        <td>BIC</td>
+        <td><b>GENODEF1AMV</b></td>
+    <tr>
+</table>
 
 <br />
 
 ### Paypal
 
-Paypal-Adresse: **[mv@mediathekview.de](https://www.paypal.me/MediathekView)**
+<address>
+  <strong>Paypal-Adresse</strong><br>
+  <a href="https://www.paypal.me/MediathekView">mv@mediathekview.de</a>
+</address>
 
 [![Paypal Spenden Button](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif "Paypal Spenden Button")](https://www.paypal.me/MediathekView)
 
@@ -39,7 +64,10 @@ Paypal-Adresse: **[mv@mediathekview.de](https://www.paypal.me/MediathekView)**
 
 **Möglichkeit um direkt an den Erfinder ein Dankeschön zu spenden:**
 
-Paypal-Adresse: **[mediathek@posteo.de](https://www.paypal.me/Mediathek)**
+<address>
+  <strong>Paypal-Adresse</strong><br>
+  <a href="https://www.paypal.me/Mediathek">mediathek@posteo.de</a>
+</address>
 
 [![Paypal Spenden Button](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif "Paypal Spenden Button")](https://www.paypal.me/Mediathek)
 
