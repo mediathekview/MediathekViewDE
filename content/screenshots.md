@@ -1,9 +1,8 @@
 +++
 title = "Screenshots von MediathekView"
 galerie = true
-
-# Screenshots als kleine Version verlinken. Größere Version ohne "_klein" im Namen mit in den static/images/screenshots Ordner packen.
 +++
+
 <div class="galerie">
     <ul>
         <li>
