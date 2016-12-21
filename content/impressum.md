@@ -7,16 +7,21 @@ toc = true
 
 # Angaben gemäß § 5 TMG:
 
-Alexander Finkhäuser <br />
-Mediathekview <br />
-Schirrmannweg 20 <br />
-42781 Haan <br />
+<address>
+  <strong>Alexander Finkhäuser</strong><br>
+  Mediathekview<br>
+  Schirrmannweg 20<br>
+  42781 Haan
+</address>
 
 <br />
 
 ## Kontakt:
-  
-E-Mail:     info@mediathekview.de
+
+<address>
+  <strong>E-Mail</strong><br>
+  <a href="mailto:#">info@mediathekview.de</a>
+</address>
 
 <br />
 
