@@ -95,7 +95,7 @@ MSearch ist die Bibliothek für MediathekView und MServer.
 
 ## MServer
 
-MServer erzeugt die Filmliste in dem er die Mediatheken der Öffentlich Rechtlichen durchsucht(crawlt) und diese Filmliste dann auf die Verteilerserver verteilt für MediathekView.
+MServer erzeugt die Filmliste in dem er die Mediatheken der Öffentlich-Rechtlichen durchsucht (crawlt) und diese Filmliste dann auf die Verteilerserver hochlädt für MediathekView.
 
 <div class="panel panel-default">
   <div class="panel-heading"><b>Aktuelle Version</b></div>
