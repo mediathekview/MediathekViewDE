@@ -73,7 +73,7 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
   <a href="https://www.paypal.me/Mediathek">mediathek@posteo.de</a>
 </address>
 
-<a href="https://www.paypal.me/Mediathek" >
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7PSSW427UETV6" >
   <button class="btn btn-link">
     <img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif">
   </button>
