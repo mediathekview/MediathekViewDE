@@ -1,11 +1,34 @@
 +++
 title = "Screenshots von MediathekView"
-type = "screenshots"
 galerie = true
 
 # Screenshots als kleine Version verlinken. Größere Version ohne "_klein" im Namen mit in den static/images/screenshots Ordner packen.
 +++
-
-- ![Filme Übersicht](../images/screenshots/screenshot1_klein.jpg "Filme Übersicht")
-- ![Downloads](../images/screenshots/screenshot2_klein.jpg "Downloads")
-- ![Aboseite](../images/screenshots/screenshot3_klein.jpg "Aboseite")
+<div class="galerie">
+    <ul>
+        <li>
+            <img src="../images/screenshots/screenshot1_klein.jpg" 
+            alt="Filme Übersicht" 
+            title="Filme Übersicht" 
+            rel="group1" 
+            data-glisse-big="../images/screenshots/screenshot1.jpg" 
+            class="pics">
+        </li>
+        <li>
+            <img src="../images/screenshots/screenshot2_klein.jpg" 
+            alt="Downloads" 
+            title="Downloads" 
+            rel="group1" 
+            data-glisse-big="../images/screenshots/screenshot2.jpg" 
+            class="pics">
+        </li>
+        <li>
+            <img src="../images/screenshots/screenshot3_klein.jpg" 
+            alt="Aboseite" 
+            title="Aboseite" 
+            rel="group1" 
+            data-glisse-big="../images/screenshots/screenshot3.jpg" 
+            class="pics">
+        </li>
+    </ul>
+</div>
