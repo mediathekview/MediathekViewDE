@@ -10,8 +10,6 @@ body {
   margin-bottom: 70px;
 }
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     text-align: left;
     padding-top: 1rem;
@@ -44,6 +42,23 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.sidebar {
+	margin-top: 10px;
+}
+
+.sidebar > a {
+	color: grey;
+}
+
+.sidebar > a:hover, a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar > a > i {
+    font-size: 3em;
 }
 
 .nopadding {

@@ -58,7 +58,11 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
   <a href="https://www.paypal.me/MediathekView">mv@mediathekview.de</a>
 </address>
 
-[![Paypal Spenden Button](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif "Paypal Spenden Button")](https://www.paypal.me/MediathekView)
+<a href="https://www.paypal.me/MediathekView" >
+  <button class="btn btn-link">
+    <img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif">
+  </button>
+</a>
 
 <br />
 
@@ -69,7 +73,11 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
   <a href="https://www.paypal.me/Mediathek">mediathek@posteo.de</a>
 </address>
 
-[![Paypal Spenden Button](https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif "Paypal Spenden Button")](https://www.paypal.me/Mediathek)
+<a href="https://www.paypal.me/Mediathek" >
+  <button class="btn btn-link">
+    <img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif">
+  </button>
+</a>
 
 <br />
 
@@ -77,7 +85,12 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
 
 Bountysource ist eine Möglichkeit für bestimmte Probleme(Issues) oder das Team zu spenden.
 
-**[Bountysource](https://www.bountysource.com/teams/mediathekview)**
+<a href="https://www.bountysource.com/teams/mediathekview" >
+  <button class="btn btn-link">
+    <img src="../images/IconBountysource.png" width="80px">
+  </button>
+</a>
+
 
 <br />
 

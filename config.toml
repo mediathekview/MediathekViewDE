@@ -1,5 +1,5 @@
-#baseurl = "https://mediathekview.de"
-baseurl = "/"
+baseurl = "https://mediathekview.de"
+#baseurl = "/"
 title = "MediathekView"
 languageCode = "de-de"
 DefaultContentLanguage = "de"
@@ -30,8 +30,6 @@ theme = "mediathekview"
 
     # Sidebar social links.
     github = "mediathekview"
-    #youtube = ""
-    #flattr = "mediathekview"
     
     
     [[menu.main]]
@@ -53,9 +51,13 @@ theme = "mediathekview"
     title = "Screenshots"
     pre = ""
     weight = 3
-    identifier = "screenshots"
-    ersterscreenshot = "ersterstart"
     url = "/screenshots"
+    
+    [[menu.main]]
+    name = "Forum"
+    title = "Forum"
+    weight = 8
+    url = "https://forum.mediathekview.de"
     
     [[menu.footer]] 
     name = "Impressum"
