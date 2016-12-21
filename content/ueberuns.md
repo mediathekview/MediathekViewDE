@@ -17,8 +17,10 @@ title = "Über uns"
 
 und viele weitere
 
-Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de.<br />
-Wir sind allesamt Vollblut Onliner und lieben das, was wir tun.<br />
-MediathekView bedeutet für uns nicht Arbeit, sondern Leidenschaft –<br /> und
-zusammen brennen wir darauf, MediathekView jeden Tag ein bisschen
-besser zu machen.
+<span style="font-size: 1.5em">
+    Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de. <br />
+    Wir sind allesamt Vollblut Onliner und lieben das, was wir tun.
+    MediathekView bedeutet für uns nicht Arbeit, sondern Leidenschaft – und
+    zusammen brennen wir darauf, MediathekView jeden Tag ein bisschen
+    besser zu machen.
+</span>
