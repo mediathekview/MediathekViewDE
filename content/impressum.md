@@ -54,4 +54,20 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 
 <br />
 
+## Datenschutzerklärung für die Nutzung von Piwik
+
+Zur Webanalyse wird der Dienst [analyse.elaon.de](https://analyse.elaon.de/index.php?module=CoreHome&action=index&idSite=4) von Alexander Finkhäuser verwendet.<br />
+
+Um es recht Transparent zu halten sind die Analysen zu mediathekview.de öffentlich [einsehbar](https://analyse.elaon.de/index.php?module=CoreHome&action=index&idSite=4).<br />
+
+Diese Website benutzt den Open Source Webanalysedienst Piwik. Piwik verwendet sog. "Cookies". Das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Dazu werden die durch den Cookie erzeugten Informationen über die Benutzung dieser Website auf unserem Server gespeichert. Die IP-Adresse wird vor der Speicherung anonymisiert.<br />
+
+Die durch den Cookie erzeugten Informationen über die Benutzung dieser Website werden nicht an Dritte weitergegeben. Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können.<br />
+
+Wenn Sie mit der Speicherung und Nutzung Ihrer Daten nicht einverstanden sind, können Sie die Speicherung und Nutzung hier deaktivieren. In diesem Fall wird in Ihrem Browser ein Opt-Out-Cookie hinterlegt der verhindert, dass Piwik Nutzungsdaten speichert. Wenn Sie Ihre Cookies löschen hat dies zur Folge, dass auch das Piwik Opt-Out-Cookie gelöscht wird. Das Opt-Out muss bei einem erneuten Besuch unserer Seite wieder aktiviert werden.<br />
+
+<br />
+
+<iframe style="border: 0; min-height: 200px; width: 100%;" src="https://analyse.elaon.de/index.php?module=CoreAdminHome&action=optOut&language=de"></iframe>
+
 Quelle: [eRecht24](https://www.e-recht24.de/)
