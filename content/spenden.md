@@ -91,6 +91,8 @@ Bountysource ist eine Möglichkeit für bestimmte Probleme(Issues) oder das Team
   </button>
 </a>
 
+<a href="https://www.bountysource.com/teams/mediathekview" ><i class="icon-iconink5"></i></a>
+
 
 <br />
 
