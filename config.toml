@@ -10,7 +10,7 @@ theme = "mediathekview"
     code = "/:slug/"
 
 [taxonomies]
-    tag = "Tags"
+    tag = "tags"
 
 [author]
     name = "Mediathekview"
