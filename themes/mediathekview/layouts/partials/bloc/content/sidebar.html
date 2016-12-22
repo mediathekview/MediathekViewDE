@@ -18,7 +18,7 @@
         </ul>
       </div>
     </div>
-
+    <hr />
     {{ range $key, $value := .Site.Taxonomies }}
       {{ $len := len $value }}
       {{ if (not ( eq $len 0 ) ) }}
@@ -31,9 +31,27 @@
       </div>
       {{ end }}
     {{ end }}
-    
+    <hr />
     <div class="sidebar">
-    <a href="https://github.com/mediathekview/MediathekView" target="_blank"><i class="icon-github-circled" aria-hidden="true"></i></a>
-    <a href="https://social.elaon.de/people/505f8420aa4301349ecb25f17997be37" target="_blank"><i class="icon-diaspora-asterisk" aria-hidden="true"></i></a>
+        <div class="row">
+            <a class="iconlink" href="https://github.com/mediathekview/MediathekView" target="_blank"><i class="icon-github-circled" aria-hidden="true"></i></a>
+            <a class="iconlink" href="https://social.elaon.de/people/505f8420aa4301349ecb25f17997be37" target="_blank"><i class="icon-diaspora-asterisk" aria-hidden="true"></i></a>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-xs-6">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7PSSW427UETV6" >
+			 <img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif">
+			</a>
+          </div>
+	      <div class="col-xs-6">
+			{{ partial "modules/flattr" . }}
+		  </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="{{ .Site.Params.baseurl }}/spenden/"><button class="center-block btn btn-info">Weitere Spendenmöglichkeiten</button></a>
+          </div>
+        </div>
     </div>
 </div>

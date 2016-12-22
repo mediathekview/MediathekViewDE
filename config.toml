@@ -30,6 +30,7 @@ theme = "mediathekview"
 
     # Sidebar social links.
     github = "mediathekview"
+    flattr = "mediathekview"
     
     
     [[menu.main]]

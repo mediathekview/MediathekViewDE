@@ -78,21 +78,35 @@ img {
   height: auto;
 }
 
-.sidebar {
-	margin-top: 10px;
+hr {
+	border: none;
+	border-top: 1px solid #AAAAAA;
+	height: 1px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
-.sidebar > a {
+.sidebar, .sidebar > .row {
+	margin-top: 10px;
+	text-align: left;
+}
+
+.sidebar > .row {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.iconlink {
 	color: grey;
 }
 
-.sidebar > a:hover, a:active {
+.iconlink:hover, .iconlink:active {
     color: black;
     text-decoration: none;
 }
 
-.sidebar > a > i {
-    font-size: 2.8em;
+.iconlink > i {
+    font-size: 2.5em;
 }
 
 .nopadding {
@@ -109,6 +123,10 @@ p {
 /* Responsive video? */
 iframe {
   max-width: 100%;
+}
+
+.taxonomies {
+	margin-bottom: 10px;
 }
 
 .taxonomies > .content > a > .btn {
