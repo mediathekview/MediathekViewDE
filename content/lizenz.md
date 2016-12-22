@@ -13,7 +13,7 @@ title = "Lizenz"
         GPL Version 3
     </a>
     <a class="btn btn-info btn-lg" href="http://www.gnu.de/documents/gpl-3.0.de.html" target="_blank" role="button">
-        Inoffizielle deutsche Übersetzung
+        deutsche Übersetzung
     </a>
   </p>
 </div>
