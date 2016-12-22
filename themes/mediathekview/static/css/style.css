@@ -148,7 +148,7 @@ iframe {
     clear: both;
     padding-left: 0;
     margin-bottom: 20px;
-    
+
 }
 
 .galerie > ul > li {
@@ -161,7 +161,7 @@ iframe {
 	background-color: #fff;
 	border: 0px;
 	vertical-align: middle;
-	
+
 }
 
 /* Glisse: Overlay */
@@ -210,4 +210,14 @@ iframe {
   color: white;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+.quellenangabe {
+  font-size: 0.9em;
+
+}
+
+address > .adresse {
+  font-size: 1.2em;
+
 }

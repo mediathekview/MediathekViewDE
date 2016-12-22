@@ -15,14 +15,14 @@ title = "Über uns"
     <li><a href="https://github.com/orgs/mediathekview/people/pidoubleyou" target="_blank">pidoubleyou</a></li>
     <li>Fabian Patzke (<a href="https://github.com/orgs/mediathekview/people/patzi" target="_blank">patzi</a>)</li>
     <li>styrol (Moderator im Forum)</li>
+    <li style="padding-top: 5px; list-style: none;">und viele weitere...</li>
   </ul>
-  <p>und viele weitere</p>
-  <p>
+  <p style="font-size: 1.3em;">
     Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de.
-    Wir sind allesamt Vollblut Onliner und lieben das, was wir tun.
+    Wir sind allesamt Vollblut-Onliner und lieben das, was wir tun.
     MediathekView bedeutet für uns nicht Arbeit, sondern Leidenschaft – und
     zusammen brennen wir darauf, MediathekView jeden Tag ein bisschen
     besser zu machen.
   </p>
-  
+
 </div>

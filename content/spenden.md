@@ -8,12 +8,14 @@ title = "Spendenmöglichkeiten"
 
 # Spenden
 
-Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen.
+Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen.
 
 
-## Folgende Möglichkeiten gibt es
+## Folgende Möglichkeiten gibt es:
 
 ### Überweisung
+
+**Allgemeines Spendenkonto:**
 
 <table class="table">
     <tr>
@@ -32,7 +34,7 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
 
 <br />
 
-**Möglichkeit um direkt an den Projektgründer ein Dankeschön zu spenden:**
+**Ein Dankeschön direkt an den Projektgründer:**
 
 <table class="table">
     <tr>
@@ -53,9 +55,11 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
 
 ### Paypal
 
+**Allgemeines Spendenkonto:**
+
 <address>
   <strong>Paypal-Adresse</strong><br>
-  <a href="https://www.paypal.me/MediathekView" target="_blank">mv@mediathekview.de</a>
+  <p class="adresse"><a href="https://www.paypal.me/MediathekView" target="_blank">mv@mediathekview.de</a></p>
 </address>
 
 <a href="https://www.paypal.me/MediathekView" target="_blank">
@@ -64,11 +68,11 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
 
 <br />
 
-**Möglichkeit um direkt an den Projektgründer ein Dankeschön zu spenden:**
+**Ein Dankeschön direkt an den Projektgründer:**
 
 <address>
   <strong>Paypal-Adresse</strong><br>
-  <a href="https://www.paypal.me/Mediathek" target="_blank">mediathek@posteo.de</a>
+  <p class="adresse"><a href="https://www.paypal.me/Mediathek" target="_blank">mediathek@posteo.de</a></p>
 </address>
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7PSSW427UETV6" target="_blank">
@@ -79,17 +83,29 @@ Um die Server Kosten decken zu können würden wir uns über Spenden sehr freuen
 
 ### Bountysource
 
-Bountysource ist eine Möglichkeit für bestimmte Probleme(Issues) oder das Team zu spenden.
+<div class="row">
+  <div class="col-sm-2" style="width: auto;">
+    <a href="https://www.bountysource.com/teams/mediathekview" target="_blank">
+      <img src="../images/IconBountysource.png" width="80px">
+    </a>
+  </div>
+  <div class="col-sm-10">
+    <a href="https://www.bountysource.com/teams/mediathekview"><b>Bountysource</b></a> ist eine Möglichkeit, eine Belohnung auszusetzen für die Lösung ausgewählter Probleme oder die Umsetzung bestimmter Funktionen (Issues auf Github), welche dir besonderes am Herzen liegen. Aber es ist auch möglich dort direkt an das Team zu spenden.
+  </div>
+</div>
 
-<a href="https://www.bountysource.com/teams/mediathekview" target="_blank">
-  <img src="../images/IconBountysource.png" width="80px">
-</a>
 
 <a href="https://www.bountysource.com/teams/mediathekview" target="_blank"><i class="icon-iconink5"></i></a>
 
-
 <br />
 
-### Flattr
+### Bitcoin
 
-[![Flattr Button](https://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?fid=o62zpq&url=https%3A%2F%2Fmediathekview.de)
+<address>
+  <strong>Bitcoin-Adresse</strong><br />
+  <p class="adresse">Adresse !fixme</p>
+</address>
+<p>
+  <a href="https://de.wikipedia.org/wiki/Bitcoin"><b>Bitcoin</b></a> (englisch sinngemäß für „digitale Münze“) ist ein weltweit verwendbares dezentrales Zahlungssystem und der Name einer digitalen Geld­einheit. Überweisungen werden von einem Zusammenschluss von Rechnern über das Internet mithilfe einer speziellen Peer-to-Peer-Anwendung abgewickelt, sodass anders als im herkömmlichen Bankverkehr keine zentrale Abwicklungsstelle benötigt wird. Eigentumsnachweise an Bitcoin können in einer persönlichen digitalen Brieftasche gespeichert werden. Der Umrechnungskurs von Bitcoin in andere Zahlungsmittel (Fiatgeld) bestimmt sich durch Angebot und Nachfrage. <br />
+  <p class="quellenangabe">(Quelle: Wikipedia)</p>
+</p>

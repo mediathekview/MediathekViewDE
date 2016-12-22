@@ -63,7 +63,7 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 
 Zur Webanalyse wird der Dienst [analyse.elaon.de](https://analyse.elaon.de/index.php?module=CoreHome&action=index&idSite=4) von Alexander Finkhäuser verwendet.<br />
 
-Um es recht Transparent zu halten sind die Analysen zu mediathekview.de öffentlich [einsehbar](https://analyse.elaon.de/index.php?module=CoreHome&action=index&idSite=4).<br />
+Um es recht transparent zu halten, sind die Analysen zu mediathekview.de öffentlich [einsehbar](https://analyse.elaon.de/index.php?module=CoreHome&action=index&idSite=4).<br />
 
 Diese Website benutzt den Open Source Webanalysedienst Piwik. Piwik verwendet sog. "Cookies". Das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Dazu werden die durch den Cookie erzeugten Informationen über die Benutzung dieser Website auf unserem Server gespeichert. Die IP-Adresse wird vor der Speicherung anonymisiert.<br />
 

@@ -21,7 +21,7 @@ theme = "mediathekview"
     brand = "Mediathekview" # brand image alt text.
     topline = "Die offizelle MediathekView Homepage"
     footline = ""
-    
+
     copyright = "(c) 2016 Copyright by Mediathekview Team"
     title = "MediathekView" # Site title
 
@@ -30,37 +30,36 @@ theme = "mediathekview"
 
     # Sidebar social links.
     github = "mediathekview"
-    flattr = "mediathekview"
-    
-    
+
+
     [[menu.main]]
     name = "Neuigkeiten"
     title = "Neuigkeiten"
     pre = ""
     weight = 1
     url = "/news"
-    
+
     [[menu.main]]
     name = "Changelogs"
     title = "Changelogs"
     pre = ""
     weight = 2
     url = "/changelog"
-    
+
     [[menu.main]]
     name = "Screenshots"
     title = "Screenshots"
     pre = ""
     weight = 3
     url = "/screenshots"
-    
+
     [[menu.main]]
     name = "Forum"
     title = "Forum"
     weight = 8
     url = "https://forum.mediathekview.de"
-    
-    [[menu.footer]] 
+
+    [[menu.footer]]
     name = "Impressum"
     pre = "<i>-</i>"
     weight = 1
@@ -71,7 +70,7 @@ theme = "mediathekview"
     pre = "-"
     weight = 2
     url = "/ueberuns/"
-    
+
     [[menu.footer]]
     name = "Lizenz"
     weight = 3
@@ -81,4 +80,3 @@ theme = "mediathekview"
     hrefTargetBlank = true
     latexDashes = true
     plainIdAnchors = true
-		
