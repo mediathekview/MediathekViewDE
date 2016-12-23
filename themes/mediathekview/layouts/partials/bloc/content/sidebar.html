@@ -1,0 +1,54 @@
+<div>
+  {{ if and .IsPage (eq .Params.toc true) }}
+    <div class="section">
+      <header><h3><b>Inhaltsverzeichnis</b></h3></header>
+      {{ .TableOfContents }}
+    </div>
+    {{ end }}
+
+    <div class="section">
+      <header><h3><b>{{ i18n "latestposts" }}</b></h3></header>
+      <div class="content">
+        <ul>
+        {{ range first 10 (where .Site.Pages "Type" "news") }}
+          <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+        </ul>
+      </div>
+    </div>
+    <hr />
+    {{ range $key, $value := .Site.Taxonomies }}
+      {{ $len := len $value }}
+      {{ if (not ( eq $len 0 ) ) }}
+      <div class="section taxonomies">
+        <header><h3><b>{{ i18n "tags" }}</b></h3></header>
+
+        <div class="content">
+            {{ range first 10 $value.ByCount }}<a href="{{$.LanguagePrefix }}/{{ $key }}/{{ .Name | urlize }}"><button type="button" class="btn btn-default">{{ .Name }}</button></a>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    {{ end }}
+    <hr />
+    <div class="sidebar">
+        <div class="row">
+            <a class="iconlink" href="https://github.com/mediathekview/MediathekView" target="_blank"><i class="icon-github-circled" aria-hidden="true"></i></a>
+            <a class="iconlink" href="https://social.elaon.de/people/505f8420aa4301349ecb25f17997be37" target="_blank"><i class="icon-diaspora-asterisk" aria-hidden="true"></i></a>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="https://www.paypal.me/MediathekView" target="_blank">
+			        <img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif">
+			     </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="{{ .Site.Params.baseurl }}/spenden/"><button class="center-block btn btn-info">Weitere Spendenmöglichkeiten</button></a>
+          </div>
+        </div>
+    </div>
+</div>

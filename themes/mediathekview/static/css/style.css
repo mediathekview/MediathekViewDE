@@ -1,0 +1,223 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  font-family: 'sans-serif';
+  font-size: 14px;
+  margin-bottom: 70px;
+}
+.footer {
+    width: 100%;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+
+body > .container {
+  padding: 75px 15px 0;
+}
+
+.navbar-brand {
+padding: 20px;
+vertical-align: baseline;
+}
+
+.navbar-brand-img {
+    padding: 0;
+}
+
+@media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+    .container {
+        width: auto;
+    }
+}
+
+a.navbar-brand-img>img {
+  vertical-align: bottom;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #AAAAAA;
+	height: 1px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.sidebar, .sidebar > .row {
+	margin-top: 10px;
+	text-align: left;
+}
+
+.sidebar > .row {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.iconlink {
+	color: grey;
+}
+
+.iconlink:hover, .iconlink:active {
+    color: black;
+    text-decoration: none;
+}
+
+.iconlink > i {
+    font-size: 2.5em;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.margin-10{margin-bottom:10px; margin-right:10px;}
+
+p {
+  text-align: justify;
+}
+
+/* Responsive video? */
+iframe {
+  max-width: 100%;
+}
+
+.taxonomies {
+	margin-bottom: 10px;
+}
+
+.taxonomies > .content > a > .btn {
+	padding: 3px 5px;
+	margin-right: 2px;
+}
+
+.carousel-caption {
+	color: black;
+}
+
+#carousel-startseite {
+	margin-top: 50px;
+	padding-top: 10px;
+	background-color: #DDDDDD;
+}
+
+.galerie > ul {
+    clear: both;
+    padding-left: 0;
+    margin-bottom: 20px;
+
+}
+
+.galerie > ul > li {
+	width: 49%;
+	float: left;
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border: 0px;
+	vertical-align: middle;
+
+}
+
+/* Glisse: Overlay */
+#glisse-overlay {
+  background: rgba(0,0,0.3);}
+
+#glisse-close {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  position: fixed;
+  top: 60px;
+  right: 16%;
+  color: #EEEEEE;
+  font-size: 2em;
+}
+
+/* Prev/Next button */
+.glisse-next a, .glisse-prev a {
+  width: 15%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 80px;
+  color: white;
+}
+
+.glisse-next a {
+  right: 0px;
+
+}
+
+.glisse-prev a {
+  left: 0px;
+
+}
+
+/* Legend */
+.glisse-legend {
+  position: fixed;
+  display: block;
+  bottom: 60px;
+  left: 20%;
+  text-align: center;
+  width: 60%;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.quellenangabe {
+  font-size: 0.9em;
+
+}
+
+address > .adresse {
+  font-size: 1em;
+
+}

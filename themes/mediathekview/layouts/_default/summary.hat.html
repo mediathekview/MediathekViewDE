@@ -1,0 +1,12 @@
+<h3>
+  <a href="{{ .Permalink }}">{{ if .IsPage }}{{ if .Draft }}{{ .Site.Data.Strings.draft }} :: {{ end }}{{ end }}{{ .Title }}</a>
+</h3>
+<div>
+  <div class="margin-10">
+    {{ partial "modules/page/date" . }}
+    {{ with .Params.author }}
+    &middot; {{ i18n "byauthor" }} {{ . }}
+    {{ end }}
+    {{ partial "modules/page/tags" . }}
+  </div>
+</div>

@@ -1,0 +1,11 @@
+name = "Mediathekview"
+license = "MIT"
+
+[author]
+    name = "Alexander Finkhäuser"
+    homepage = "http://mediathekview.de"
+    
+[original]
+    name = "Göran Svensson"
+    homepage = "http://appernetic.github.io"
+    repo = "https://github.com/appernetic/hugo-bootstrap-premium"
