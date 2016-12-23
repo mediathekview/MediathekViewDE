@@ -1,5 +1,4 @@
 baseurl = "https://mediathekview.de"
-#baseurl = "/"
 title = "MediathekView"
 languageCode = "de-de"
 DefaultContentLanguage = "de"
