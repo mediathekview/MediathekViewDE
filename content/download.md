@@ -19,6 +19,7 @@ title = "Download"
     <p>Die aktuell stabile Version für alle gängigen Betriebsysteme in gepackter Form.</p>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest.zip"><button type="button" class="btn btn-primary btn-sm">Zip Datei</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest.tar.gz"><button type="button" class="btn btn-primary btn-sm">Tar.gz Datei</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest.dmg"><button type="button" class="btn btn-primary btn-sm">Dmg Datei</button></a>
     <br />
     <p>Des Weiteren findet ihr MediathekView in unserem Maven Repository</p>
     <a href="https://repo.mediathekview.de/#browse/browse/components:maven-releases"><button type="button" class="btn btn-primary btn-sm">Maven Release Repository</button></a>
