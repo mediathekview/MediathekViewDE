@@ -31,6 +31,103 @@ Beim ersten Start von MediathekView werden bereits zwei Programmsets mit den dre
 
 ### Linux
 
+#### Erster Start
+
+Beim ersten Start von MediathekView werden bereits zwei Programmsets mit den drei Hilfsprogrammen VLC Media Player, flvstreamer und FFmpeg angelegt. Damit können alle Filme angesehen und aufgezeichnet werden.
+
+Wurde statt flvstreamer **rtmpdump** verwendet, muss dieses beim ersten Start statt flvstreamer ausgewählt werden (Pfad meist: "/usr/bin/rtmpdump"). Wurde statt ffmpeg **libav-tools** verwendet, muss beim ersten Start statt ffmpeg **avconv** ausgewählt werden (Pfad meist: "/usr/bin/avconv")
+
+#### Installation
+
+Die erste Anlaufstelle sollte die Paketverwaltung/Installationswerkzeuge der Distribution sein. Das ist der einfachste Weg und es werden alle benötigten Programme automatisch mitinstalliert. Wenn die aktuelle Version von MediathekView nicht in den Paketquellen enthalten ist, kann auch versucht werden diese über Backports zu beziehen. Auch möglich ist, das Programm manuell zu installieren (was sich im Wesentlichen auf das Entpacken eines Zip-Paketes beschränkt).
+
+_Backports_
+[help.ubuntu.com/community/UbuntuBackports](https://help.ubuntu.com/community/UbuntuBackports)
+[wiki.ubuntu.com/UbuntuBackports](https://wiki.ubuntu.com/UbuntuBackports)
+[backports.debian.org](http://backports.debian.org/)
+
+_Allgemeine Infos_
+[wiki.ubuntuusers.de/Paketquellen](http://wiki.ubuntuusers.de/Paketquellen)
+
+_Pinning für Debian, Ubuntu und alle anderen Debian basierten Distributionen_
+[Debian pinning](#debian-pinning)
+
+#### Debain Pinning
+Dies soll erläutern, wie man als Benutzer von Debian-basierten Distributionen neuere Versionen von MediathekView installieren kann, selbst wenn diese für die jeweilige Version nicht zur Verfügung stehen. Dies ist insbesondere für Debian Stable oder Ubuntus LTS-Versionen interessant. Allen anderen wird empfohlen das gesamte System auf die neuste Version zu aktualisieren.
+
+Wenn man stabile LTS-Versionen wie z.B. Ubuntu 14.04 schätzt, jedoch gerne immer die aktuellste MediathekView-Version haben möchte, geht man wie folgt vor:
+
+Im Folgenden wird als Beispiel immer Ubuntu 14.04 als Ausgangssystem verwendet. Bitte für die jeweilige stabile Version anpassen oder im Forum nachfragen.
+
+##### Den Standard festlegen
+
+Wichtig ist, dass man bei Upgrades das Installieren ungewollter Software vermeidet. Dazu editiert man die Datei /etc/apt/apt.conf und fügt folgende Zeile hinzu:
+```
+APT::Default-Release "trusty";
+```
+Der Codename ändert sich in Abhängigkeit von der jeweiligen stabilen Version. Für Debian Wheezy wäre es dann folgerichtig:
+```
+APT::Default-Release "wheezy";
+```
+
+##### Quellen freischalten
+
+Mit einem Editor die Datei /etc/apt/sources.list öffnen und bearbeiten. Dazu sind wieder Root-Rechte erforderlich.
+```
+sudo vim /etc/apt/sources.list
+```
+Hier muss die Quelle derjenigen Version eingetragen werden, von welcher die neue Ausgabe von MediathekView installiert werden soll, z.B.:
+```
+deb http://archive.ubuntu.com/ubuntu utopic main universe
+```
+oder für Debian:
+```
+deb http://ftp.de.debian.org/debian testing main
+```
+
+##### Installieren
+
+```
+apt-get install -t utopic mediathekview
+```
+oder für Debian:
+```
+apt-get install -t testing mediathekview
+```
+
+#### Installation über die Paketverwaltung
+
+Für die verschiedenen Linuxdistributionen gibt es in der Regel ein vorgefertigtes Paket von MediathekView. Es werden bei der Installation wie gewohnt automatisch alle erforderlichen Abhängigkeiten an den richtigen Ort installiert:
+
+**Debian, Ubuntu, Linux Mint (deb)**
+
+Bei auf Debian basierenden Distributionen (wie z.B. Ubuntu) kann man MediathekView so installieren:
+```
+apt-get install mediathekview
+```
+oder
+```
+aptitude install mediathekview
+```
+Auch eine grafische Installation mit Synaptic, dem Softwarecenter oder PackageKit ist möglich.
+
+Benutzern von Debians Stable- oder Ubuntus LTS-Version, die gerne die neuste Version von MediathekView auf ihrem System installieren möchten, sei der Artikel zum Thema Pinning oder die manuelle Installation empfohlen.
+
+**Red Hat, Fedora, OpenSuse (rpm)**
+
+Sofern ein Paket vorhanden ist, lässt es sich mit
+```
+yum install mediathekview
+```
+installieren. Bitte einen Fehlerbericht verfassen und auf das Debianpaket verweisen, falls es noch kein aktuelles Paket geben sollte.
+
+**Arch Linux**
+
+Für Arch Linux wird ein Paket im Arch User Repository (AUR) bereitgestellt:
+```
+https://aur.archlinux.org/packages/mediathek/
+```
+
 ### Mac
 Für OS X 10.7.3 (und neuer) gibt es eine separate Applikation "MediathekView.app":
 
@@ -232,11 +329,133 @@ _Pinsel_: "bereinigt" die Tabelle, es werden alle abgeschlossenen Downloads entf
 Bis auf wenige Ausnahmen (ältere Sendungen) liegen sämtliche heruntergeladenen Videos im MP4-Format vor. Wurde ein Film mit dem Status erfolgreich aufgezeichnet, wird er nach einem Neustart von MediathekView nicht mehr als Download angezeigt. Seine URL wird in die History-Liste, bei Abos zusätzlich in die Liste der Erledigten Abos eingetragen. Diese zwei Listen können in den Programmeinstellungen geladen und eingesehen werden. Eine URL kann dort auch wieder aus der Liste gelöscht werden und der Film wird dann erneut bei den Downloads angezeigt.
 
 ## Sendereihen und Serien abonnieren (Abos)
+### Erstellen eines Abos
+
+Abos sind für halbautomatisiertes Herunterladen von Sendereihen und Serien gedacht. In Abos werden Suchkriterien gespeichert, und zwar für Sendungen, die erst später in der Filmliste auftauchen werden.
+
+Abos können auf 2. Varianten angelegt werden:
+
+1. im Tab "Filme" per Rechtsklick (Kontextmenü) auf einen Eintrag in der Filmliste oder
+2. über das Menü "Abos", wobei man sich im Tab "Abos" befinden muss und sämtlichen Inhalt (Abokriterien) selbst festlegen muss.
+
+Bei Variante 1 stehen im Kontextmenü stehen drei Optionen offen:
+
+a. Abo mit Sender und Thema anlegen
+
+b. Abo mit Sender und Thema und Titel anlegen
+
+c. Abo aus Filter anlegen
+
+Die Abofelder beziehen sich auf die Spalten der Filmliste bzw. auf die aktuelle Filterauswahl:
+
+- Sender;
+- Thema sind Gruppenbezeichnungen, die von den Sendern selbst stammen;
+- Titel ist meistens variabel.
+
+Abofelder ohne Inhalt werden bei der Suche nicht berücksichtigt; der Inhalt dieser Spalten in der Filmliste kann beliebig sein. Die Option a ist die Standardvariante für Sendereihen bei z.B. ARD und ZDF. Wenn das Feld "Titel" auch einen Inhalt hätte, dann würde nur die Sendung, die dazu passt, gefunden werden. Wenn man das Feld "Sender" leer lässt, kann man senderübergreifend suchen, muss dann aber mit einer großen Trefferzahl rechnen. Dem könnte man aber begegnen mit einem [Regex](#verwenden-von-regex) im Feld "Titel".
+
+Bei Sendereihen-Folgen muss man bei ARTE und 3Sat meistens das Feld "Titel" in das Abo einbeziehen. Serienteile sind oft wie folgt durchnummeriert: (1/5), (2/5) ...
+Im Abofenster wird folglich das Feld"Titel" editiert: Wenn man bei nummerierten Folgen den Klammerausdruck entfernt, so dass nur der nackte Titel übrig bleibt, dann werden alle 5 Teile gefunden.
+
+### Abos anpassen oder ausschalten sowie Herunterladen von abonnierten Sendungen
+
+Nachdem ein Abo angelegt wurde, ist im Tab "Abos" ein Eintrag für das eben erstellte Abo ersichtlich. Von hier aus lässt sich ein Abo auch nachträglich editieren (z.B. anderer Zielordner, Suchkriterien anpassen), und zwar per Doppelklick auf den Eintrag in der Aboliste oder per Rechtsklick. (Ein anderer Zielordner wird aber nur benutzt, wenn im zugehörigen Set unter "Speicherziel" die Option "Unterordner mit Thema anlegen" (Checkbox) nicht deaktiviert wurde!)
+
+Nach dem Einrichten eines Abos werden alle neuen Sendungen, die von den Suchkriterien eines Abos erfasst werden, in die Download-Liste (Tab "Downloads") eingetragen. Von dort können die Downloads gestartet werden; es erfolgt also kein automatischer Download. In den Programmeinstellungen (Menü: "Datei -> Einstellungen" bzw. unter OS X MediathekView -> Einstellungen…) kann jedoch unter "Einstellungen -> Erweitert" festgelegt werden, dass beim Neuladen der Filmliste der Download der Abos automatisch gestartet wird.
+![MediathekView Abo Fenster](/images/anleitung/MV_Abo-Fenster.jpg)
+
+Abos können "ein-" und "ausgeschaltet" werden (erster und zweiter Button in der Toolbar) und auch gelöscht werden. "Ausgeschaltete Abos" werden beim Suchen nach anstehenden Downloads nicht berücksichtigt.
 
 ### Verwenden von Regex
+[Reguläre Ausdrücke (Regex oder RegExp)](http://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck) sind vorgesehen für den Einsatz in Abos; für eine einzelne Suche in der Filmliste wird man sie eher selten verwenden. Zur Anlage von Abos geht MediathekView davon aus, dass sich bereits eine der Sendungen, die abonniert werden sollen, in der Filmliste befindet. Ist dies nicht der Fall, kann man ein bestehendes Abo so modifizieren, dass eine künftig erstmals in der Filmliste erscheinende Sendung gefunden werden kann.
+
+In den Suchfeldern "Titel" und "Thema oder Titel" kann auch mit regulären Ausdrücken (Regex) gesucht werden. Dazu den regulären Ausdruck hinter ein #: schreiben. Der reguläre Ausdruck wird automatisch vorne und hinten geankert (d.h. er wird implizit mit ^ und $ eingefasst).
+Die Suche mit Klartext und mit Regex ist case-insensitive.
+
+#### Einschliessendes Regex
+`#:.*Rätsel.*`
+
+Damit werden alle Filme gefunden, die "Rätsel" im entsprechenden Feld enthalten.
+Für diese Suche ist in der Regel kein regex erforderlich. Eine Klartexteingabe im Suchfeld reicht aus. Oft genügt die Eingabe von Teilen des Suchbegriffs oder auch nur bestimmter Zeichenkombinationen, die im zu durchsuchenden Feld enthalten sein müssen.
+
+#### Ausschliessendes Regex mit oder-Verknüpfung
+Thema "Tatort" und Titel:
+
+`#:(?!.*(Vorschau|BRISANT)).*`
+
+Damit werden alle Filme mit Thema "Tatort", die im Titel nicht "Vorschau" oder "BRISANT" enthalten, gefunden.
+
+#### Kombiniertes Regex für Titel
+`#:Sendung mit der Maus vom (?!.*\(mit).*?`
+
+Damit werden alle Filme gefunden, die im Titel mit 'Sendung mit der Maus vom' beginnen, aber nicht '(mit' enthalten. Ganze Sendungen mit Gebärdensprache kann man auf diese Weise ausschliessen, denn die tauchen in der Liste z.B. so auf: "Sendung mit der Maus vom 17.02.2013 (mit ...", während die normale Sendung ohne den "(mit ..." Teil im Titel ist.
+
+Vorgehensweise:
+
+1. In der Filmliste den Sender und das Thema auswählen.
+2. Ein geeignetes Regex-Muster aus der Anleitung in das Feld "Titel" der Filmliste kopieren.
+3. Das Regex solange modifizieren, bis das Ergebnis in der Filmliste den Erwartungen entspricht. (rot = Syntax fehlerhaft, blau = Syntax OK)
+4. Rechtsklick auf einen Eintrag in der Filmliste, und den Kontextmenü-Befehl "Abo -> Abo aus Filter anlegen" auswählen.
+
+Fazit:
+Die Suche nach bestimmten Sendungen ist zwar kein Glücksspiel, aber keineswegs fehlerfrei. Manchmal werden in den Sendern Gruppen neu zusammengestellt, was heute im Thema "Sonntagsfilm" war, kann eine Woche später im Thema "Herzkino" sein. Bei ARTE z.B. kann man direkt erkennen, wann ein Sachbearbeiter in Urlaub war: Da laufen dann 2 Serienteile ohne Nummer, und beim 3. Teil ist dann die Nummer plötzlich wieder da. Auch Tippfehler, auf die ein Abo nicht reagieren kann, sind in den Sendern schon vorgekommen. Wenn man eine Sendung in der Filmliste vermisst, empfiehlt es sich, direkt in der Sendermediathek nachzusehen, ob es diese Sendung dort gibt, und dann exakt nach dem dort verwendeten Titel in der Filmliste zu suchen. Das hat schon öfter zum Erfolg geführt.
 
 ## Eigene Aufnahme- und Abspielsets einrichten (für fortgeschrittene Benutzer)
 
 ## Einstellungen
+Windows und Linux: Das Fenster mit den Einstellungen erreicht man im Menü unter "Datei -> Einstellungen" oder mit "F4".
+OS X: Menü "MediathekView -> Einstellungen…" oder durch Drücken von "cmd+," (Command-Taste+Komma).
+
+Im Folgenden wird nur eine Auswahl von Einstellungen beschrieben. Man beachte, dass zu vielen Einstellungen über den Hilfe-Button (HILFE oder Rettungsring-Symbol) direkt an der entsprechenden Stelle Erklärungen abgegeben werden.
+
+### Allgemein
+![MediathekView Einstellungen - Allgemein](/images/anleitung/MV_Einstellungen_Allgemein.jpg)
+
+**Echtzeitsuche im Filter**: Diese Option ermöglicht es, dass bei der Eingabe eines Zeichens in ein Filterfeld, die Suche sofort gestartet wird und nicht erst nach einem "Return". Wird die Filmliste zeitlich eingeschränkt (z.B. nur 10 Tage) reagiert die Suche flotter.
+
+**nur die Filme der letzten Tage laden: xx** Reduziert den Umfang der Filmliste auf die Zeitspanne von xx Tagen (z.B. 2 Tage), was auch Rechnern mit geringem Arbeitsspeicher ein flüssiges Arbeiten erlaubt. Natürlich können dann mit dieser Einstellung auch nur Sendungen der letzten xx Tage gefunden werden.
+
+**Programmupdate:** Damit kann das Programm überprüfen, ob es eine neue Version gibt. Dabei wird die Datei http://res.mediathekview.de/prog-info.xml heruntergeladen und die darin enthaltene Versionsnummer mit der des Programms verglichen. Unterscheiden sich diese Nummern, wird das mit der URL zum Download der neuen Version angezeigt. Es werden dabei keine Daten (Seriennummer oder ähnliches) übertragen. Das Programm wird auch nicht automatisch aktualisiert. Ist diese Funktion eingeschaltet, wird die Überprüfung einmal täglich beim ersten Start durchgeführt.
+
+### Erweitert
+![MediathekView Einstellungen - Erweitert](/images/anleitung/MV_Einstellungen_Erweitert.jpg)
+
+**User-Agent**: Diese Zeichenkette wird beim Download der Filme mitübertragen. Jeder Webbrowser schickt seinen Browsernamen mit, wenn er Webseiten lädt. Dieser Name kann hier verändert werden. Bestimmte Webseiten liefern keine Informationen, wenn der Name fehlt. In der "Auto-Einstellung" wird der Programmname und die Programmversion verwendet, es kann aber auch ein eigener Name angegeben werden oder leer bleiben.
+
+**Webbrowser zum Öffnen von URLs:**
+Wenn das Programm versucht, eine URL mit dem Webbrowser zu öffnen und die Standardanwendung nicht startet, kann man damit ein Programm (z.B. Firefox, InternetExplorer, Safari) auswählen, mit dem URLs geöffnet werden sollen.
+
+### Filmliste laden
+![MediathekView Einstellungen - Filmliste](/images/anleitung/MV_Einstellungen_Filmliste.jpg)
+
+**Filmliste nur manuell laden:** Die Filmliste wird nicht mehr automatisch beim Programmstart (default) geladen, sondern wird nur noch manuell über den Button "Neue Filmliste laden" geladen. Dabei wird ein Dialog angezeigt, welcher es ermöglicht, aus einer Auswahl eine URL (oder Datei) zum Laden der Filmliste anzugeben. Auf diese Art können auch vom Benutzer archivierte (alte) Filmlisten geladen werden.
+
+### Datei- und Pfadname
+![MediathekView Einstellungen - Ersetzungstabelle](/images/anleitung/MV_Einstellungen_Ersetzungstabelle.jpg)
+
+**Eigene Einstellungen**: Die Ersetzungstabelle erlaubt es, benutzerdefiniert spezifische Zeichen zu ersetzen, z.B. Leerschläge durch Unterstriche (" " -> "\_") oder typographische durch gerade Anführungszeichen („ -> "). Viele potenziell unerwünschte Zeichen können jedoch auch automatisch durch die Option "nur ASCII-Zeichen verwenden" ersetzt, z.B. Umlaute ("ö" -> "oe").
+Achtung: Unter OS X und Linux muss die Ersetzungstabelle eingeschaltet sein (d.h. es dürfen keine Leerzeichen erlaubt werden), damit das Hilfsprogramm FFmpeg (Avconv) keine fehlerhaften Downloads bei SRF- und gewissen WDR-Rockpalast-Sendungen ausgibt.
+
+### Download
+![MediathekView Einstellungen - Download](/images/anleitung/MV_Einstellungen_Download.jpg)
+
+**Benachrichtigung anzeigen:** Damit erfolgt eine Meldung, dass ein Download erfolgreich oder fehlerhaft abgeschlossen wurde.
+
+**Downloads gleichzeitig laden:** Damit kann festgelegt werden, wie viele Downloads gleichzeitig laufen können. Als festgelegte Obergrenze werden maximal zwei Downloads pro Server gestartet. Wird die maximale Anzahl auf einen Wert größer zwei gesetzt, werden die Downloads so gestartet, dass nie mehr als 2 Downloads pro Server laufen.
+
+**Downloadgeschwindigkeit begrenzen:** Diese Option ist unter Umständen hilfreich, wenn eine schnelle Verbindung (möglicherweise durch den Provider oder Website-Server (z.B. ARTE)) übermässig gedrosselt wird. Eine selbst auferlegte Begrenzung z.B. auf 500 kByte/s würde also potenziell verhindern, dass von anderswo stärker gedrosselt wird (z.B. auf unter 100 kByte/s). Der eingestellte Wert gilt pro Download, ist als keine Summenwert für alle Downloads zusammen. Der Default-Wert von MeditathekView für diese Einstellung ist "aus".
+
+### Set bearbeiten
+![MediathekView Einstellungen - Set bearbeiten](/images/anleitung/MV_Zielpfad-aendern.png)
+
+**Zielpfad:** Hier kann das Standard-Download-Verzeichnis geändert werden.
 
 ## Hilfe
+![MediathekView Hilfe - Logfile erstellen](/images/anleitung/MV_Logfile-erstellen.png)
+
+Im Menü 'Hilfe' kann ein Logfile erstellt werden. Das Logfile wird zur Fehlersuche benötigt. Ein aktuelles Logfile gehört obligatorisch als Anlage zu jeder Fehlermeldung, die im Forum gepostet wird.
+
+MediathekView zeichnet Systemmeldungen und Meldungen der Hilfsprogramme jeweils temporär auf. Wenn ein Logfile über das Menü "Hilfe" erzeugt wird, wird der aktuelle Stand der Meldungen und die Programmeinstellungen im Logfile festgehalten. Deshalb ist der Zeitpunkt zu beachten, wann man das Logfile erstellt:
+Zur Erstellung des Logfiles sollte man MediathekView neu starten, die Aktion, bei der der Fehler auftrat, wiederholen und dann das Logfile erstellen. Das Logfile wird dadurch übersichtlicher.
+Wer will, kann vor dem Hochladen des Logfiles seinen Benutzernamen im Logfile mit einem Texteditor durch XXX ersetzen. Das Kopieren des Inhalts des Fensters "Meldungen" ersetzt nicht das Logfile.
+Wer sein Programm überhaupt nicht zum Laufen bringt, kann kein Logfile erstellen. Für solche Fälle gibt es hier eine Lösung.
