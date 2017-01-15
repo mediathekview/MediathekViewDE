@@ -46,10 +46,17 @@ theme = "mediathekview"
     url = "/changelog"
 
     [[menu.main]]
+    name = "Anleitung"
+    title = "Anleitung"
+    pre = ""
+    weight = 3
+    url = "/anleitung"
+
+    [[menu.main]]
     name = "Screenshots"
     title = "Screenshots"
     pre = ""
-    weight = 3
+    weight = 4
     url = "/screenshots"
 
     [[menu.main]]
