@@ -4,6 +4,8 @@ languageCode = "de-de"
 DefaultContentLanguage = "de"
 theme = "mediathekview"
 
+enableRobotsTXT = true
+
 [permalinks]
     post = "/:year/:month/:day/:slug/"
     code = "/:slug/"
