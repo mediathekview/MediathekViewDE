@@ -141,7 +141,7 @@ Für Mac-OS-X-10.6-Benutzer sowie für fortgeschrittene Benutzer, die MediathekV
 
 1. die ZIP-Datei (ohne die Angabe "OSX" im Dateinamen, für Mac-OS-X-10.6-Benutzer zwingend "MediathekView_3.3.0.zip") [herunterladen](https://sourceforge.net/projects/zdfmediathk/files/Mediathek/) und doppelklicken
 2. den entpackten Ordner per Drag-and-drop ins Programme-Verzeichnis (empfohlen) oder bei fehlenden Rechten ins Home-Verzeichnis (Haus-Symbol) verschieben
-3. (optionaler Schritt: Verknüpfung im Dock ablegen) den eben verschobenen MediathekView-Ordner öffnen, die Datei "MediathekView__Mac_Start.command" ansteuern und ins Dock ziehen. Von dort aus kann MediathekView dann jeweils gestartet werden.
+3. (optionaler Schritt: Verknüpfung im Dock ablegen) den eben verschobenen MediathekView-Ordner öffnen, die Datei "MediathekView.command" ansteuern und ins Dock ziehen. Von dort aus kann MediathekView dann jeweils gestartet werden.
 4. die ZIP-Datei kann nach dem Entpacken gelöscht werden
 
 ### Windows
@@ -167,13 +167,13 @@ rm -R ~/.mediathek3
 ```
 
 ## Starten
-Für Windows (MediathekView.exe), Linux (MediathekView.sh) sind eigene Startdateien enthalten, mit welchen MediathekView direkt gestartet werden kann. Für OS X 10.7.3 und neuer besteht eine eigenständige Applikation (MediathekView.app); für OS X 10.6 liegt die Startdatei "MediathekView__Mac_Start.command" vor.
+Für Windows (MediathekView.exe), Linux (MediathekView.sh) sind eigene Startdateien enthalten, mit welchen MediathekView direkt gestartet werden kann. Für OS X 10.7.3 und neuer besteht eine eigenständige Applikation (MediathekView.app); für OS X 10.6 liegt die Startdatei "MediathekView.command" vor.
 
 Ansonsten kann man die Programmdatei auch so starten:
 
 - Windows: Doppelklick auf "MediathekView-ipv4.exe" oder "MediathekView.jar"
 - Linux (in der Konsole): `java -jar MediathekView.jar`
-- OS X: Doppelklick auf die separate Startdatei "MediathekView__Mac_Start.command" oder via Terminalbefehl: `java -jar MediathekView.jar` (beide Varianten stehen nur zur Verfügung, wenn man die ZIP-Datei ohne die Angabe "OSX" im Dateinamen heruntergeladen hat)
+- OS X: Doppelklick auf die separate Startdatei "MediathekView.command" oder via Terminalbefehl: `java -jar MediathekView.jar` (beide Varianten stehen nur zur Verfügung, wenn man die ZIP-Datei ohne die Angabe "OSX" im Dateinamen heruntergeladen hat)
 
 Startet das Programm nicht, gibt es Hilfe in der [FAQ](/FAQ).
 
