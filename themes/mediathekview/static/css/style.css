@@ -96,6 +96,10 @@ hr {
     text-align: left;
 }
 
+#TableOfContents ul {
+	padding-left: 1em;
+}
+
 .iconlink {
 	color: grey;
 }

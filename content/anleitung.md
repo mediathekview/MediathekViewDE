@@ -2,6 +2,7 @@
 description = ""
 date = "2017-01-15T15:00:00+01:00"
 title = "Anleitung"
+toc = true
 [menu]
     [menu.main]
         name = "Anleitung"
