@@ -1,4 +1,4 @@
-+++
+oin+++
 title = "Spendenmöglichkeiten"
 [menu]
     [menu.main]
@@ -63,7 +63,7 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 </address>
 
 <a href="https://www.paypal.me/MediathekView" target="_blank">
-  <img src="../images/paypal_spenden.gif">
+  <img src="../images/paypal_spenden.png">
 </a>
 
 <br />
@@ -76,7 +76,7 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 </address>
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7PSSW427UETV6" target="_blank">
-  <img src="../images/paypal_spenden.gif">
+  <img src="../images/paypal_spenden.png">
 </a>
 
 <br />
