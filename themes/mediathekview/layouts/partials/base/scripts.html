@@ -1,11 +1,31 @@
 <script src="{{ "js/jquery.min.js" | absURL }}"></script>
 <script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
 
-<script src="{{ "js/site.js" | absURL }}"></script>
+<script type="text/javascript">
+$(function(){
+    $("table").addClass("table table-condensed table-bordered table-striped");
+});
+</script>
 
 {{ if .Params.galerie }}
-  <script src="{{ "js/galerie/" | absURL }}glisse.js"></script>
-  <script src="{{ "js/galerie/" | absURL }}galerieladen.js"></script>
+<!-- Glisse Vollbildgallerie laden -->
+<script src="{{ "js/galerie/" | absURL }}glisse.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('.pics').glisse({
+        changeSpeed: 550, 
+        speed: 500,
+        effect: 'bounce',
+        fullscreen: true,
+        mobile: true,
+        bootstrap: true,
+        bootstrapl18nNext: "Nächstes",
+        bootstrapl18nPrevious: "Vorheriges",
+        bootstrapl18nClose: "Schließen"
+    }); 
+});
+</script>
+<!-- Ende Glisse Vollbildgallerie laden -->
 {{ end }}
 
 <!-- Piwik -->
@@ -25,4 +45,30 @@
 </script>
 <!-- End Piwik Code -->
 
+<!-- Zurück zum Anfang Icon ein und ausblenden -->
+<script type="text/javascript">
+function setdefaults()
+{
+  $("#return-to-top").css("opacity",0);
+}
+
+$(document).ready(function(){
+   setdefaults();
+
+  $(window).scroll(function() {
+
+      $scrolled = $(window).scrollTop();
+      $toScrollPercentage = 50;
+      $toScroll = $(window).height()*($toScrollPercentage/100);
+        if($scrolled < $toScroll)
+        {
+          $("#return-to-top").css("opacity",0);
+        } else
+        {
+          $("#return-to-top").css("opacity",0.5);
+        }
+    });
+});
+</script>
+<!-- Ende Zurück zum Anfang Icon ein und ausblenden -->
 
