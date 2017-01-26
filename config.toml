@@ -51,7 +51,7 @@ enableRobotsTXT = true
     name = "Screenshots"
     title = "Screenshots"
     pre = ""
-    weight = 4
+    weight = 7
     url = "/screenshots"
 
     [[menu.main]]
