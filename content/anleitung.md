@@ -60,6 +60,8 @@ Wenn man stabile LTS-Versionen wie z.B. Ubuntu 14.04 schätzt, jedoch gerne imme
 
 Im Folgenden wird als Beispiel immer Ubuntu 14.04 als Ausgangssystem verwendet. Bitte für die jeweilige stabile Version anpassen oder im Forum nachfragen.
 
+---
+
 ##### Den Standard festlegen
 
 Wichtig ist, dass man bei Upgrades das Installieren ungewollter Software vermeidet. Dazu editiert man die Datei /etc/apt/apt.conf und fügt folgende Zeile hinzu:
@@ -70,6 +72,8 @@ Der Codename ändert sich in Abhängigkeit von der jeweiligen stabilen Version. 
 ```
 APT::Default-Release "wheezy";
 ```
+
+---
 
 ##### Quellen freischalten
 
@@ -85,6 +89,8 @@ oder für Debian:
 ```
 deb http://ftp.de.debian.org/debian testing main
 ```
+
+---
 
 ##### Installieren
 
@@ -132,6 +138,9 @@ https://aur.archlinux.org/packages/mediathek/
 #### Manuelle Installation
 
 Da die Programmversion in der Paketverwaltung nicht immer aktuell ist, kommt man so zu der neuesten Version. Als erstes muss die Zip-Datei heruntergeladen und in einem beliebigen Ordner (z.B. "mv") im Home-Verzeichnis entpackt werden.
+
+---
+
 ##### Mint 17
 
 Es müssen noch folgende Pakete nachinstalliert werden: **flvstreamer** und **libav-tools**.
@@ -146,6 +155,8 @@ Einen Menüpunkt kann man sich so anlegen:
 - als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView__Linux.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
 
 Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zum Schreibtisch hinzufügen_ kann man auch einen Startbutton auf dem Desktop anlegen.
+
+---
 
 ##### Ubuntu 14.04\. 14.10\. 15.04
 
@@ -173,6 +184,8 @@ MimeType=video/mpeg;audio/mpeg;
 
 Mit einem Rechtsklick auf die Datei: "Eigenschaften -> Zugriffsrechte -> Ausführen" ausführbar machen. Man kann dann das Programm mit einem Doppelklick darauf starten. Die Startdatei kann man auch mit der Maus in den Starter ziehen. Damit hat man einen Starter angelegt.
 
+---
+
 ##### Kubuntu 14.04\. 14.10\. 15.04
 
 Damit die fehlenden Pakete installiert werden können, sollte zuerst das Programm **Muon Paketverwaltung** installiert werden. Damit werden dann die fehlenden Pakete nachinstalliert: **vlc**, **flvstreamer** und **libav-tools**.
@@ -187,6 +200,8 @@ Einen Menüpunkt kann man sich so anlegen:
 
 Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zur Arbeitsfläche hinzufügen_ oder einfach mit der Maus auf den Desktop ziehen, kann man auch einen Startbutton auf dem Desktop anlegen.
 
+---
+
 ##### Debian 7.6
 
 Folgende Pakete müssen nachinstalliert werden: **VLC**, **flvstreamer**, **libav-tools** und **Java7** / **openjdk-7-jre-7**.
@@ -196,6 +211,8 @@ Danach muss die aktuelle Javaversion eingestellt werden. In einem Terminal: `sud
 Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf **MediathekView__Linux.sh** gestartet werden.
 
 Zum Eintragen ins Startmenü, die Anwendung _Hauptmenü_ starten. Dann "neuer Eintrag" auswählen. Als "Befehl" die Datei "MediathekView__Linux.sh" im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
+
+---
 
 ##### Debian 8 (Gnome)
 
@@ -219,6 +236,8 @@ OnlyShowIn=GNOME;XFCE;
 MimeType=video/mpeg;audio/mpeg;
 ```
 
+---
+
 ##### OpenSuse 13.1\. 13.2 (KDE)
 
 Zuerst sollten die Codecs nachinstalliert werden (es fehlen sonst die benötigten Pakete!!): [opensuse-community.org](http://web.archive.org/web/20151210145748/http://opensuse-community.org/index.html)
@@ -234,6 +253,8 @@ Einen Menüpunkt kann man sich so anlegen:
 - als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView__Linux.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
 
 Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zur Arbeitsfläche hinzufügen_ kann man auch einen Startbutton auf dem Desktop anlegen.
+
+---
 
 ##### Raspbian (06.2015)
 
@@ -544,6 +565,222 @@ Fazit:
 Die Suche nach bestimmten Sendungen ist zwar kein Glücksspiel, aber keineswegs fehlerfrei. Manchmal werden in den Sendern Gruppen neu zusammengestellt, was heute im Thema "Sonntagsfilm" war, kann eine Woche später im Thema "Herzkino" sein. Bei ARTE z.B. kann man direkt erkennen, wann ein Sachbearbeiter in Urlaub war: Da laufen dann 2 Serienteile ohne Nummer, und beim 3. Teil ist dann die Nummer plötzlich wieder da. Auch Tippfehler, auf die ein Abo nicht reagieren kann, sind in den Sendern schon vorgekommen. Wenn man eine Sendung in der Filmliste vermisst, empfiehlt es sich, direkt in der Sendermediathek nachzusehen, ob es diese Sendung dort gibt, und dann exakt nach dem dort verwendeten Titel in der Filmliste zu suchen. Das hat schon öfter zum Erfolg geführt.
 
 ## Eigene Aufnahme- und Abspielsets einrichten (für fortgeschrittene Benutzer)
+
+### Programmset
+
+![MV Sets](/images/anleitung/Einstellungen-Videoplayer-Sets_1.jpg)
+
+Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Hier werden die Programme zum Abspielen und Aufzeichnen der Filme eingerichtet.
+
+Ein Programmset ist ein Set aus einem oder mehreren Programmaufrufen (zB. VLC und flvstreamer). Die im Set enthaltenen Programme sind im Tab "Programme" aufgeführt. Dort kann man für jedes dieser Programme festlegen, für welche Art von Film (zB. die URL beginnt mit "http" oder "rtmp", ...) das Programm zuständig ist.
+
+Ablauf beim Abspielen oder Aufzeichnen eines Films:
+
+Es wird das, zur Aktion (z.B. Abspielen) festgelegte Programmset gesucht und die URL des Films wird übergeben. Das für die URL zuständige Programm wird dann mit der URL gestartet.
+
+Diese Vorgehensweise ist notwendig, da es unterschiedliche Filmformate gibt und diese sich nur mit unterschiedlichen Programmen Aufzeichnen und Ansehen lassen.
+
+Ein Programmset kann für vier verschiedene Aufgaben zuständig sein:
+
+- **Film Abspielen** Es gibt genau ein Programmset, das für das Abspielen der Filme zuständig ist. Mit dem Button "Abspielen" kann ausgewählt werden, welches es sein soll. Dieses wird dann verwendet, wenn über die Toolbar ein Film abgespielt werden soll.
+
+- **Film Aufzeichnen** Die Sets die zum Aufzeichnen markiert sind, werden verwendet, wenn ein Film über die Toolbar gespeichert werden soll. Stehen mehrere zur Auswahl, wird in einem Dialog abgefragt, welches verwendet werden soll.
+
+- **Abo** Die Sets die mit Abo markiert sind, werden verwendet, wenn ein Film als Abo gespeichert werden soll. Stehen mehrere zur Auswahl, wird in einem Dialog beim Anlegen des Abos abgefragt, welches verwendet werden soll. Meist reicht ein Programmset zum Aufzeichnen und das kann für "Film Aufzeichnen" und für "Abo" verwendet werden.
+
+- **Button** Im Menü "Ansicht->weitere Videoplayer einblenden" kann ein Feld mit weiteren Button unter der Filmliste angezeigt werden. Programmsets die mit "Button" markiert sind, werden dann hier angezeigt. Beim Klick auf den Button wird dann das entsprechende Programmset mit der Film-URL gestartet. So lassen sich weiter Programmeinstellungen (zB. zum Konvertieren für best. Formate) hinterlegen und über die Button starten. Dafür ist auch die Einstellung einer Farbe (im Tab "Details") gedacht, die Button können eingefärbt werden.
+
+Die Button werden in 4 Spalten angeordnet und die Reihenfolge der Programmsets legt dadurch die Position der Button fest. Der Name eines Programmsets wird als Beschriftung des Buttons (oder des Labels) verwendet. Es werden 3 Fälle unterschieden:
+- Das Programmset hat keinen Namen: Es wird nichts angezeigt, ein leeres Feld.
+
+- Das Programmset hat nur einen Namen, es sind aber keine Programme zugeordnet: Es wird ein Label angezeigt.
+
+- Das Programmset hat einen Namen und es ist mind. ein Programm eingetragen: Es wird ein Button angezeigt. Beim Klick darauf wird das passende Programm dieses Programmsets gestartet.
+
+Mindestens ein Programmset zum Abspielen und eins zum Aufzeichnen muss angelegt sein.
+
+Export: Markierte Programmsets (auch mehrere) können damit in eine Datei exportiert werden. Mit "Programmset importieren" können diese dann wieder importiert werden.
+
+### Programmset anlegen
+
+![MV Sets](/images/anleitung/Einstellungen-Videoplayer-Sets_1.jpg)
+
+Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Ein neues Programmset kann mit "+" oder indem man ein bestehendes dupliziert, angelegt werden.
+
+![MV Set anlegen](/images/anleitung/Einstellungen-Videoplayer-Sets-Details_1.jpg)
+
+Im Tab "Details" können für das markierte Programmset Einstellungen vorgenommen werden. "Zielpfad" und "Zieldateiname" sind nur für Aufnahmen wichtig. Der Zieldateiname kann auch auf eine bestimmte Zeichenlänge beschränkt werden.
+
+Für den Zieldateinamen sind diese Parameter möglich:
+
+`%D` Sendedatum des Films oder "heute", wenn Sendedatum leer
+
+`%d` Sendezeit des Films oder "jetzt", wenn Sendezeit leer
+
+`%H` "heute", aktuelles Datum
+
+`%h` "jetzt", aktuelle Uhrzeit
+
+Datum in der Form: `JJJJMMTT` z.B. `20090815` (15.08.2009)
+Zeit in der Form: `SSMMss` z.B. `152059` (15:20:59)
+
+`%1` Tag,
+
+`%2` Monat,
+
+`%3` Jahr vom Sendedatum des Films oder aktuellem Datum, wenn Sendedatum leer
+
+
+`%4` Stunde,
+
+`%5` Minute,
+
+`%6` Sekunde von der Sendezeit des Films oder "jetzt", wenn Sendezeit leer
+
+
+`%s` Sender des Films
+
+`%T` Titel des Films
+
+`%t` Thema des Films
+
+`%N` Originaldateiname des Films (der kann sehr kryptisch und lang sein)
+
+`%S` Suffix des Originaldateinamens des Films (z.B. "mp4")
+
+`%i` Filmnummer (die ändert sich beim Neuladen der Filmliste!)
+
+`%q` Qualität des Films ("HD", "H", "L")
+
+Damit kann man einen Namen z.B. so aufbauen:
+`%H--%t-%T.mp4` -> _20131206--Doku-Titel_der_Doku.mp4_
+`%H--%t-%T.%S` -> _20131206--Doku-Titel_der_Doku.xxx_ (hier wird die Originaldateiendung
+verwendet)
+
+Für jede Programmgruppe kann man Dateien angeben, die nicht als Stream sondern direkt heruntergeladen werden (das sind die meisten Filme in der Liste).
+(Pfad und Dateiname werden dabei auch wie oben gebildet.)
+
+Mögliche Angaben sind:
+
+Präfix: http
+
+Suffix: mp4,mp3,m4v,flv
+
+
+Es werden so alle Filme deren URL mit "http" beginnt und mit "mp4", "mp3", "m4v" oder "flv" enden, direkt als Datei geladen und laufen nicht als Stream durch ein Programm. Das Präfix "http" ist dabei wichtig, da andere Protokolle nicht direkt geladen werden können.
+
+### Programme einrichten
+
+![MV Set Programme](/images/anleitung/Einstellungen-Videoplayer-Sets-Programme_1.jpg)
+
+Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Einem Programmset kann man mit "+" oder indem man ein bestehendes Programm dupliziert, ein Programm hinzufügen.
+
+Beim Suchen nach dem passenden Programm für einen Film (URL) wird von oben nach unten die Liste abgesucht. Das erste passende wird verwendet. Passt kein Programm, wird das letzte Programm in der Liste verwendet.
+
+Der Name dient nur der Information. Mit dem Zieldateinamen kann ein Dateiname vorgegeben werden. Der wird dann nur verwendet, wenn das entsprechende Programm verwendet wird. Ist der Zieldateiname leer, wird der, des Programmsets verwendet. (Das ist für Windows wichtig, dass die Dateiendungen zum Dateiformat passen). Programm ist die Programmdatei mit Pfad.
+Im Feld Schalter können Parameter angegeben werden, die beim Programmstart mit übergeben werden.
+
+Diese Parameter sind möglich:
+
+`%f` die URL des Films (Original-URL)
+
+`%F` die URL des Films für den flvstreamer vorbereitet
+
+`**` zwei Sterne werden durch den Zieldateinamen mit Pfad ersetzt
+
+Zur Wiedergabe reicht meist ein `%f` als Parameter. Wichtig ist, dass für das Aufzeichnen die zwei Sterne angegeben werden müssen (als Zieldatei für den Film). Wenn der Pfad zum Aufzeichnen Leerzeichen enthält, können die zwei Sterne in Anführungszeichen gesetzt werden (aber nur unter Windows!).
+
+Beispiel für den vlc zum Ansehen:
+
+Programm: `/usr/bin/vlc`
+
+Schalter: `%f`
+
+Präfix und Suffix geben an, für welche Protokolle und Dateiendungen das Programm zuständig ist.
+
+Mit der Checkbox "fehlgeschlagene Downloads wieder Starten" kann ein Download im Fehlerfall automatisch wieder gestartet werden. Das ist vor allem für den flvStreamer sinnvoll, der mit der Option _--resume_ fehlgeschlagene Downloads weiterführen kann. Damit es nicht zu endlosen Versuchen kommt, wird die Dateigröße kontrolliert. Wächst diese nicht, wird nicht wieder gestartet.
+
+### Beispiel "Abspielen"
+
+![MV Sets](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_6_1.jpg)
+
+Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Mit "Plus" ein neues Programmset anlegen und mit der Maus markieren. Mit dem Button "Abspielen" als das Programm zum "Abspielen" markieren.
+
+![MV Set Details](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_7_1.jpg)
+
+Im Tab "Details" den Namen ändern.
+
+![MV Set Programme](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_8_1.jpg)
+
+Mit "Plus" ein neues Programm anlegen und die mit einem roten Punkt markierten Felder ändern.
+
+Programm: `/usr/bin/vlc`
+
+Schalter: `%f`
+
+### Beispiel "speichern"
+
+![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_1_1.jpg)
+
+Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Mit "Plus" ein neues Programmset anlegen und mit der Maus markieren. Die Checkbox "Speichern" muss selektiert sein, damit das Programmset zum Speichern verwendet wird.
+
+![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_2_1.jpg)
+
+Im Tab "Details" den Namen ändern, im Feld: "Zielpfad" einen passenden Pfad eintragen (unter Windows: wenn er Leerzeichen enthält, in Anführungszeichen setzen) und einen Zieldateinamen angeben zB. `%t-%T-%N.mp4` (Thema-Titel-Originaldateiname.mp4). Bei Präfix: "http" und bei Suffix: "mp4,mp3,m4v,flv" eintragen.
+
+![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_3_1.jpg)
+
+![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_4_1.jpg)
+
+![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_5_1.jpg)
+
+Mit "+" drei Programme anlegen und die rot markierten Felder eintragen:
+
+**Programm 1**
+
+Zieldateiname: `%t-%T-%N.flv`
+
+Programm: `---Pfad zum flvstreamer---`
+
+Schalter: `%F --resume -o "**"`
+
+Präfix: `rtmp`
+
+"fehlgeschlagene Downloads .." anklicken
+
+
+**Programm 2**
+
+Zieldateiname: `%t-%T-%N.wmv`
+
+Programm: `C:\Program Files (x86)\VideoLAN\VLC\vlc.exe`
+
+Schalter: `%f :sout=#standard{access=file,mux=asf,dst="**"} -I "dummy" --play-and-exit`
+
+Präfix: `mms://ndr`
+
+Sufix: `wmv`
+
+
+**Programm 3**
+
+Zieldateiname: `%t-%T-%N.asf`
+
+Programm: `C:\Program Files (x86)\VideoLAN\VLC\vlc.exe`
+
+Schalter: `%f :sout=#standard{access=file,mux=asf,dst="**"} -I "dummy" --play-and-exit`
+
+### Programmset importieren
+
+![MV Programmset importieren](/images/anleitung/Einstellungen-Videoplayer-Import-Vorlagen_1.jpg)
+
+Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen.
+
+Mit dem Dialog "Setvorlagen" können Vorlagen für verschiedene Betriebssysteme importiert werden. Im Tab "Standardset" können die zwei Sets die beim ersten Programmstart angelegt wurden, ein weiteres mal angelegt werden. Im Tab "Set importieren" können beliebige Sets aus lokalen Dateien oder auch aus dem Internet importiert werden.
+
+Beim Import werden die neuen Sets hinzugefügt, die bestehenden werden dabei nicht verändert.
+
+Wenn jemand interessante Sets hat, die sich als Vorlagen eignen, kann er uns diese sehr gerne über das Forum teilen.
 
 ## Einstellungen
 Windows und Linux: Das Fenster mit den Einstellungen erreicht man im Menü unter "Datei -> Einstellungen" oder mit "F4".
