@@ -129,6 +129,148 @@ Für Arch Linux wird ein Paket im Arch User Repository (AUR) bereitgestellt:
 https://aur.archlinux.org/packages/mediathek/
 ```
 
+#### Manuelle Installation
+
+Da die Programmversion in der Paketverwaltung nicht immer aktuell ist, kommt man so zu der neuesten Version. Als erstes muss die Zip-Datei heruntergeladen und in einem beliebigen Ordner (z.B. "mv") im Home-Verzeichnis entpackt werden.
+##### Mint 17
+
+Es müssen noch folgende Pakete nachinstalliert werden: **flvstreamer** und **libav-tools**.
+
+Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf **MediathekView__Linux.sh** gestartet werden.
+
+Einen Menüpunkt kann man sich so anlegen:
+
+- rechte Maus auf Menü -> Einrichten
+- dann _Die Menübearbeitung öffnen_ klicken
+- z.B. das Menü _Multimedia_ auswählen und dann mit _new Item_ einen neuen Eintrag anlegen
+- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView__Linux.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
+
+Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zum Schreibtisch hinzufügen_ kann man auch einen Startbutton auf dem Desktop anlegen.
+
+##### Ubuntu 14.04\. 14.10\. 15.04
+
+Es müssen noch folgende Pakete nachinstalliert werden: **OpenJDK-Java-7-Laufzeitumgebung**, **vlc**, **flvstreamer** und **libav-tools**.
+
+Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf **MediathekView__Linux.sh** gestartet werden. (Dafür muss im Dateimanager zuerst eingestellt werden: Einstellungen -> Verhalten: "Ausführbare Textdateien: Jedes Mal nachfragen")
+
+Einen Menüpunkt kann man sich so anlegen:
+
+Mit gedit eine Datei mit folgendem Inhalt im Programmordner anlegen (z.B. mv.desktop):
+
+```
+[Desktop Entry]
+Name=MV
+GenericName=MediathekView
+Exec=/home/BENUTZERNAME/PROGRAMMORDNER/MediathekView__Linux.sh
+Icon=/home/BENUTZERNAME/PROGRAMMORDNER/info/MediathekView.png
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=AudioVideo;Player;
+OnlyShowIn=GNOME;XFCE;
+MimeType=video/mpeg;audio/mpeg;
+```
+
+Mit einem Rechtsklick auf die Datei: "Eigenschaften -> Zugriffsrechte -> Ausführen" ausführbar machen. Man kann dann das Programm mit einem Doppelklick darauf starten. Die Startdatei kann man auch mit der Maus in den Starter ziehen. Damit hat man einen Starter angelegt.
+
+##### Kubuntu 14.04\. 14.10\. 15.04
+
+Damit die fehlenden Pakete installiert werden können, sollte zuerst das Programm **Muon Paketverwaltung** installiert werden. Damit werden dann die fehlenden Pakete nachinstalliert: **vlc**, **flvstreamer** und **libav-tools**.
+
+Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Klick auf **MediathekView__Linux.sh** gestartet werden.
+
+Einen Menüpunkt kann man sich so anlegen:
+
+- rechte Maus aufs Menü -> "Menüeinträge bearbeiten" oder "Anwendungen bearbeiten"
+- z.B. das Memü _Multimedia_ auswählen und dann mit _neues Element_ einen neuen Eintrag anlegen
+- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView__Linux.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
+
+Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zur Arbeitsfläche hinzufügen_ oder einfach mit der Maus auf den Desktop ziehen, kann man auch einen Startbutton auf dem Desktop anlegen.
+
+##### Debian 7.6
+
+Folgende Pakete müssen nachinstalliert werden: **VLC**, **flvstreamer**, **libav-tools** und **Java7** / **openjdk-7-jre-7**.
+
+Danach muss die aktuelle Javaversion eingestellt werden. In einem Terminal: `sudo update-alternatives --config java` und dann java7 auswählen.
+
+Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf **MediathekView__Linux.sh** gestartet werden.
+
+Zum Eintragen ins Startmenü, die Anwendung _Hauptmenü_ starten. Dann "neuer Eintrag" auswählen. Als "Befehl" die Datei "MediathekView__Linux.sh" im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
+
+##### Debian 8 (Gnome)
+
+Folgende Pakete müssen nachinstalliert werden: **VLC**, **flvstreamer**, **libav-tools**.
+
+Beim ersten Programmstart muss für ffmpeg die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf _MediathekView__Linux.sh_ gestartet werden (dafür muss im Dateimanager zuerst eingestellt werden: Einstellungen -> Verhalten: "Ausführbare Textdateien: Jedes Mal nachfragen").
+
+Zum Anlegen eines Starters eine ".desktop" Datei (z.B. mv.desktop) im Ordner (im Benutzerverzeichnis): "~/.local/share/applications" anlegen und einmel Doppelklicken und vertrauenswürdig markieren. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im Programmordner -> Infos liegen Icons).
+
+```
+[Desktop Entry]
+Name=MV
+GenericName=MediathekView
+Exec=/home/BENUTZERNAME/PROGRAMMORDNER/MediathekView__Linux.sh
+Icon=/home/BENUTZERNAME/PROGRAMMORDNER/info/MediathekView.png
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=AudioVideo;Player;
+OnlyShowIn=GNOME;XFCE;
+MimeType=video/mpeg;audio/mpeg;
+```
+
+##### OpenSuse 13.1\. 13.2 (KDE)
+
+Zuerst sollten die Codecs nachinstalliert werden (es fehlen sonst die benötigten Pakete!!): [opensuse-community.org](http://web.archive.org/web/20151210145748/http://opensuse-community.org/index.html)
+
+Dann kann über die Paketverwaltung: **vlc**, **vlc-codec**, **rtmpdump** nachinstalliert werden. (bei 13.2 wird noch **ffmpeg** benötigt)
+
+Beim ersten Programmstart muss für **flvstreamer** die Datei `/usr/bin/rtmpdump` ausgewählt werden. MediathekView kann durch einen Klick auf **MediathekView__Linux.sh** gestartet werden.
+
+Einen Menüpunkt kann man sich so anlegen:
+
+- rechte Maus aufs Menü->Menüeinträge bearbeiten
+- z.B. das Memü _Multimedia_ auswählen und dann mit _neues Element_ einen neuen Eintrag anlegen
+- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView__Linux.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
+
+Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zur Arbeitsfläche hinzufügen_ kann man auch einen Startbutton auf dem Desktop anlegen.
+
+##### Raspbian (06.2015)
+
+Es müssen noch folgende Pakete nachinstalliert werden: **vlc**, **flvstreamer** und **ffmpeg**. (Zum Download des Programms von [http://sourceforge.net/projects/zdfmediathk](http://web.archive.org/web/20151210145748/http://sourceforge.net/projects/zdfmediathk) wird noch ein Browser z.B.: chromium benötigt.) Die Installation kann in der Konsole mit dem Befehl erfolgen:
+
+```
+sudo apt-get update
+sudo apt-get install vlc ffmpeg flvstreamer chromium
+```
+
+MediathekView kann durch einen Doppelklick auf **MediathekView__Linux.sh** (und dann "Ausführen" auswählen) gestartet werden.
+
+Einen Starter auf dem Desktop kann man sich so anlegen:
+
+- Rechte Maus auf dem Desktop-> Neu-> Leere Datei und als Namen dann z.B.: "mv.desktop" eingeben.
+- Dann die Datei mit der rechten Maus-> TextEditor öffnen und folgendes eingeben:
+
+  ```
+  [Desktop Entry]
+  Encoding=UTF-8
+  Type=Application
+  Name=Mediathek
+  Name[de_DE]=Mediathek
+  Icon=/home/pi/PFAD_ZUM_PROGRAMM/Info/MediathekView.svg
+  Exec=/home/pi/PFAD_ZUM_PROGRAMM/MediathekView__Linux.sh
+  Comment[de_DE]=MediathekView
+  StartupNotify=true
+  ```
+
+  (**PFAD_ZUM_PROGRAMM** mit dem eigenen Pfad abändern!)
+
+Man kann dann das Programm mit einem Doppelklick darauf starten.
+
+###### Deinstallation
+
+Wurde das Programm über die Paketverwaltung installiert, kann es auch darüber wieder deinstalliert werden. Das Programm selbst legt nur den Ordner ".mediathek3\. im Home-Verzeichnis an und speichert darin alle Einstellungen. (Standardmäßig sind unter Linux Ordner mit führendem Punkt unsichtbar, das kann aber in den Einstellungen des Dateimanagers geändert werden.) Es werden keine weiteren Änderungen am System vorgenommen. Wird dieser Einstellungsordner (und bei manueller Installation der Programmordner) gelöscht, ist das Programm wieder komplett entfernt.
+
 ### Mac
 Für OS X 10.7.3 (und neuer) gibt es eine separate Applikation "MediathekView.app":
 
