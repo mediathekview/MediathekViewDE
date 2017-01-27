@@ -27,7 +27,7 @@ enableRobotsTXT = true
     title = "MediathekView" # Site title
 
     # Show a sidebar menu
-    showRightSidebar = true
+    showrightsidebar = true
 
     # Sidebar social links.
     github = "mediathekview"

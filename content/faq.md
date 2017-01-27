@@ -44,7 +44,8 @@ Standardmässig wird der Ordner MediathekView im User-Verzeichnis (Home-Verzeich
 
 # MediathekView startet nicht
 
-- ZIP-Datei nicht entpackt (Windows): Die Programmdatei wurde direkt im ZIP-Archiv doppelgeklickt. Die ZIP-Datei muss erst [entpackt](/anleitung/#windows) werden, dazu sind alle Dateien aus dem ZIP-Archiv in ein beliebiges Verzeichnis zu kopieren. Dort kann dann die Programmdatei "MediathekView.exe" doppelgeklickt werden.
+- ZIP-Datei nicht entpackt (Windows): Die Programmdatei wurde direkt im ZIP-Archiv doppelgeklickt. Die ZIP-Datei muss erst [entpackt](/anleitung/#windows) werden, dazu sind alle Dateien aus dem ZIP-Archiv in ein beliebiges Verzeichnis zu kopieren. Dort kann dann die Programmdatei "MediathekView.exe" doppelgeklickt werden.e no sidebar
+
 - Zu wenig Arbeitsspeicher oder unbekanntes Problem (Windows): Einige User konnten MediatheView durch einen Doppelklick auf "MediathekView.jar" statt auf "MediathekView.exe" starten.
 - Kein Programm dem Dateityp ".jar" zugeordnet (Windows): Falls "MediathekView.jar" beim Doppelklicken nicht direkt von Java ausgeführt wird, dann hat ein Packprogramm (z.B. WinZip) sich den Dateityp ".jar" zugeordnet. Abhilfe:Bei gedrückter Shift-Taste mit der rechten Maustaste auf das JAR-File klicken und in dem Menü dann den Punkt "Öffnen mit" auswählen. Dort "Java(TM) Plattform SE binary" auswählen oder unter "Sonstiges" danach suchen. Wenn dann die Box unten angeklickt wird, wird der Filetyp "jar" wieder mit Java verbunden und Java-Programme starten wieder mit einem Doppelklick. Üblicherweise wird MediathekView über einen Doppelklick auf die Programmdatei "MediathekView.exe" gestartet.
 - Benötigte Dateien wurden aus dem Programm-Ordner gelöscht (Windows) Die benötigten Java-Bibliotheken (libs) oder die Hilfsprogramm (im Ordner "bin") fehlen, da Dateien aus dem MediathekView-Programmordner gelöscht oder verschoben wurden, zur [Neuinstallation](/anleitung/#windows).
