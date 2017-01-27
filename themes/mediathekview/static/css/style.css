@@ -115,6 +115,10 @@ hr {
     text-align: left;
 }
 
+#TableOfContents ul {
+	padding-left: 1em;
+}
+
 .iconlink {
 	color: grey;
 }
@@ -233,6 +237,36 @@ address > .adresse {
   font-size: 1em;
 
 }
+
+
+.yellowfont {
+  background-color: #FFFF99;
+}
+
+.greyfont {
+  background-color: #CCCCCC;
+}
+
+.bluefont {
+  color: blue;
+}
+
+.orangefont {
+  background-color: orange;
+}
+
+.redfont {
+  background-color: #FF6699;
+}
+
+.brownfont {
+  background-color: #CC9966;
+}
+
+.greenfont {
+  background-color: #99FF66;
+}
+
 
 /*
 * CUSTOM FONT

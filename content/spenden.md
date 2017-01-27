@@ -3,7 +3,7 @@ title = "Spendenmöglichkeiten"
 [menu]
     [menu.main]
         name = "Spenden"
-        weight = 3
+        weight = 6
 +++
 
 # Spenden

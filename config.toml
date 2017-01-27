@@ -4,6 +4,8 @@ languageCode = "de-de"
 DefaultContentLanguage = "de"
 theme = "mediathekview"
 
+enableRobotsTXT = true
+
 [permalinks]
     post = "/:year/:month/:day/:slug/"
     code = "/:slug/"
@@ -49,7 +51,7 @@ theme = "mediathekview"
     name = "Screenshots"
     title = "Screenshots"
     pre = ""
-    weight = 3
+    weight = 7
     url = "/screenshots"
 
     [[menu.main]]
