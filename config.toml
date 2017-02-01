@@ -19,7 +19,7 @@ theme = "mediathekview"
     BrandImage = "/images/MediathekView.png" #top header brand image.
     brand = "Mediathekview" # brand image alt text.
     topline = "Die offizelle MediathekView Homepage"
-    footline = "Homepage Version: 1.2.0"
+    footline = "Homepage Version: 1.2.1"
 
     copyright = "(c) 2016 Copyright by MediathekView Team"
     title = "MediathekView" # Site title
