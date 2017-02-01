@@ -11,7 +11,6 @@ title = "Über uns"
     <li>Nicklas Wiegandt (<a href="https://github.com/Nicklas2751" target="_blank">Nicklas2751</a>)</li>
     <li>Alexander Jank (<a href="https://github.com/jankal" target="_blank">jankal</a>)</li>
     <li>chπ (<a href="https://github.com/kaklakariada" target="_blank">kaklakariada</a>)</li>
-    <li><a href="https://github.com/lookshe" target="_blank">lookshe</a></li>
     <li><a href="https://github.com/pidoubleyou" target="_blank">pidoubleyou</a></li>
     <li>Fabian Patzke (<a href="https://github.com/patzi" target="_blank">patzi</a>)</li>
     <li>styrol (Moderator im Forum)</li>
