@@ -3,7 +3,7 @@ title = "Spendenmöglichkeiten"
 [menu]
     [menu.main]
         name = "Spenden"
-        weight = 3
+        weight = 6
 +++
 
 # Spenden
@@ -63,7 +63,7 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 </address>
 
 <a href="https://www.paypal.me/MediathekView" target="_blank">
-  <img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif">
+  <img src="../images/paypal_spenden.png">
 </a>
 
 <br />
@@ -76,7 +76,7 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 </address>
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7PSSW427UETV6" target="_blank">
-  <img src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_donateCC_LG.gif">
+  <img src="../images/paypal_spenden.png">
 </a>
 
 <br />

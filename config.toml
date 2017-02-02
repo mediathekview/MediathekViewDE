@@ -4,6 +4,8 @@ languageCode = "de-de"
 DefaultContentLanguage = "de"
 theme = "mediathekview"
 
+enableRobotsTXT = true
+
 [permalinks]
     post = "/:year/:month/:day/:slug/"
     code = "/:slug/"
@@ -19,13 +21,13 @@ theme = "mediathekview"
     BrandImage = "/images/MediathekView.png" #top header brand image.
     brand = "Mediathekview" # brand image alt text.
     topline = "Die offizelle MediathekView Homepage"
-    footline = "Homepage Version: 1.2.1"
+    footline = "Homepage Version: 1.3.0"
 
     copyright = "(c) 2016 Copyright by MediathekView Team"
     title = "MediathekView" # Site title
 
     # Show a sidebar menu
-    showRightSidebar = true
+    showrightsidebar = true
 
     # Sidebar social links.
     github = "mediathekview"
@@ -49,7 +51,7 @@ theme = "mediathekview"
     name = "Screenshots"
     title = "Screenshots"
     pre = ""
-    weight = 3
+    weight = 7
     url = "/screenshots"
 
     [[menu.main]]
