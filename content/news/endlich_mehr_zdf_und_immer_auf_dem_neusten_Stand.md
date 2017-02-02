@@ -1,4 +1,11 @@
-+++ type = "news" title = "Endlich mehr ZDF und immer auf dem neusten Stand" author = "Nicklas2751" date = "2016-12-06" keywords = ["zdf", "crawler", "nightly", "snapshot", "entwicklungsstand"] # HTML Schlüsselwörter tags = ["Allgemein"] +++
++++
+type = "news"
+title = "Endlich mehr ZDF und immer auf dem neusten Stand"
+author = "Nicklas2751"
+date = "2017-02-03"
+keywords = ["zdf", "crawler", "nightly", "snapshot", "entwicklungsstand"] # HTML Schlüsselwörter
+tags = ["Allgemein"]
++++
 
 Der Februar beginnt mit zwei guten neuen Nachrichten. Die erste gute Nachricht für alle testfreudigen Nutzer: Es gibt nun sog. Nightly-Builds, also tagesaktuelle Versionen von MediathekView mit dem jeweils aktuellen Entwicklungsstand. Die zweite Nachricht richtet sich an alle Nutzer, die in letzter Zeit Sendungen vom ZDF vermisst haben: Die Umbauarbeiten am ZDF-Crawler wurden erfolgreich abgeschlossen.
 
