@@ -1,0 +1,14 @@
+{{ partial "head" . }}
+<div class="container">
+    <div class="row">
+        <header>
+          {{ partial "bloc/content/h1-title" . }}
+        </header>
+    </div>
+    <div class="row">
+        <div class="jumbotron">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ partial "foot" . }}
