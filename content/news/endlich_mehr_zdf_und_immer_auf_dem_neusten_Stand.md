@@ -11,7 +11,7 @@ Der Februar beginnt mit zwei guten neuen Nachrichten. Die erste gute Nachricht f
 
 ## Nightly-Builds
 
-Mit den Nightly-Builds bietet das MetiathekView Team allen probierfreudigen Nutzern die Möglichkeit, MediathekView mit dem tagesaktuellen Entwicklungsstand auszuprobieren. Herunterladen kann man die Nightly-Builds unter [Downloads -> Nightly](https://download.mediathekview.de/unstabil/). Wir möchten an dieser Stelle nochmals darauf hinweisen, dass es sich hierbei um Versionen handelt, die sich zu diesem Zeitpunkt noch in der Entwicklung befinden. Das heißt, diese Versionen sind noch nicht getestet und die Wahrscheinlichkeit, dass Fehler auftreten, ist relativ hoch. Aus diesem Grund sollten diese Versionen mit Vorsicht genutzt werden und ihr solltet eure Einstellungen o.Ä. auf jeden Fall vorher sichern, damit diese bei einem schwerwiegenden Fehler nicht verloren gehen können.
+Mit den Nightly-Builds bietet das MediathekView-Team allen probierfreudigen Nutzern die Möglichkeit, MediathekView mit dem tagesaktuellen Entwicklungsstand auszuprobieren. Herunterladen kann man die Nightly-Builds unter [Downloads -> Nightly](https://download.mediathekview.de/unstabil/). Wir möchten an dieser Stelle nochmals darauf hinweisen, dass es sich hierbei um Versionen handelt, die sich zu diesem Zeitpunkt noch in der Entwicklung befinden. Das heißt, diese Versionen sind noch nicht getestet und die Wahrscheinlichkeit, dass Fehler auftreten, ist relativ hoch. Aus diesem Grund sollten diese Versionen mit Vorsicht genutzt werden und ihr solltet eure Einstellungen o.Ä. auf jeden Fall vorher sichern, damit diese bei einem schwerwiegenden Fehler nicht verloren gehen können.
 
 Wenn ihr Bugs findet, meldet diese bitte im [Forum unter "Fragen, Hilfe, Kritik" -> "Nightly"](https://forum.mediathekview.de/category/4/fragen-hilfe-kritik). Beachtet hierbei bitte die [Anleitung zum Fehlermelden](https://forum.mediathekview.de/topic/137/anleitung-fehler-melden) für die Nightlies.
 
@@ -25,7 +25,7 @@ Der ZDF-Crawler ist ein Teil des Servers, welcher die sog. Filmlisten erstellt. 
 
 Das ZDF hatte zum Ende des letzten Jahres seine Mediathek erneuert, was eine erste Anpassung des ZDF-Crawlers nötig machte. Die erste Anpassung musste schnell erfolgen und deckte vorerst nur den "wichtigsten" Teil ab. Mit dieser zweiten Änderung wird nun direkt die neue Schnittstelle der ZDF Mediathek verwendet und damit sollten alle Teile abgedeckt sein.
 
-Natürlich kann es immernoch vorkommen, dass mal eine Sendung fehlt. Hilfe erhaltet ihr hierzu im [Forum unter "Fragen, Hilfe, Kritik" -> "Fehlende Sendungen"](https://forum.mediathekview.de/category/7/fehlende-sendungen). Beachtet hierbei aber bitte die [Anleitung zum Melden fehlender Sendungen](https://forum.mediathekview.de/topic/99/fehlende-sendung-melden).
+Natürlich kann es immer noch vorkommen, dass mal eine Sendung fehlt. Hilfe erhaltet ihr hierzu im [Forum unter "Fragen, Hilfe, Kritik" -> "Fehlende Sendungen"](https://forum.mediathekview.de/category/7/fehlende-sendungen). Beachtet hierbei aber bitte die [Anleitung zum Melden fehlender Sendungen](https://forum.mediathekview.de/topic/99/fehlende-sendung-melden).
 
 _Besonderer Dank für diese Überarbeitung geht an [pidoubleyou](https://github.com/pidoubleyou) und [Nicklas2751](https://github.com/Nicklas2751), die sich der neuen ZDF-API angenommen und den Crawler entsprechend überarbeitet haben._
 
@@ -33,9 +33,9 @@ _Besonderer Dank für diese Überarbeitung geht an [pidoubleyou](https://github.
 
 ### Entwicklung
 
-Aktuell wird MediathekView hauptsächlich von vier Entwicklern weiter geführt, mit dabei ist auch Xaver.
+Aktuell wird MediathekView hauptsächlich von vier Entwicklern weitergeführt, mit dabei ist auch Xaver.
 
-Wer also Ahnung von Java hat und uns dabei unterstützen möchte, MediathekView weiter zu führen, kann sich in [GitHub](https://github.com/mediathekview) oder im [Forum](https://forum.mediathekview.de/category/5/entwicklerforum) bei uns melden.
+Wer also Ahnung von Java hat und uns dabei unterstützen möchte, MediathekView weiterzuführen, kann sich in [GitHub](https://github.com/mediathekview) oder im [Forum](https://forum.mediathekview.de/category/5/entwicklerforum) bei uns melden.
 
 Ein Guide für Entwickler kann [hier](https://github.com/mediathekview/MediathekView/wiki/Quickstart-Guide) gefunden werden.
 
