@@ -60,6 +60,12 @@ enableRobotsTXT = true
     weight = 8
     url = "https://forum.mediathekview.de"
 
+    [[menu.main]]
+    name = "Web Client"
+    title = "Web Client"
+    weight = 9
+    url = "https://mediathekviewweb.de"
+
     [[menu.footer]]
     name = "Impressum"
     pre = "<i>-</i>"
