@@ -6,8 +6,8 @@ date = "2017-02-05"
 keywords = ["ct", "c't", "heise", "mediathekviewweb", "Richtigstellung"] # HTML Schlüsselwörter
 tags = ["Allgemein"]
 +++
-## Änderung vom 11.02.2015
-MediathekViewWeb ist nun doch Teil von MediathekView siehe hierzu: [MediathekViewWeb gehört nun zu MediathekView](news/mediathekviewweb)
+## Änderung vom 11.02.2017
+MediathekViewWeb ist nun doch Teil von MediathekView, siehe hierzu: [MediathekViewWeb gehört nun zu MediathekView](/news/mediathekviewweb)
 
 ## Original Beitrag
 

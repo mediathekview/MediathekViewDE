@@ -7,7 +7,10 @@ keywords = ["mediathekviewweb", "web"] # HTML Schlüsselwörter
 tags = ["Allgemein"]
 +++
 
-Nach dem von uns ursprünglich richtig gestellten Artikel der C't über MediathekViewWeb haben in den letzten Tagen erneut Gespräche zwischen dem  [MediathekViewWeb](https://mediathekviewweb.de/) Entwickler [bagbag](https://github.com/bagbag) und dem MediathekView Team statt gefunden.
-Als Ergebnis dieser Gespräche dürfen wir verkünden, dass MediathekViewWeb nun Offiziell mit zu MediathekView gehört. Der Entwickler [bagbag](https://github.com/bagbag) ist dem Team beigetreten und hat die Software unter [GPL v3](https://github.com/mediathekview/mediathekviewweb/blob/master/LICENSE) Lizenziert. Der Source Code von MediathekViewWeb ist nun im [GitHub als Teil der MediathekView Organisation](https://github.com/mediathekview/mediathekviewweb) zu finden.
+![Screenshot von MediathekViewWeb](/images/news/mediathekviewweb.png)
+
+Nach dem von uns ursprünglich richtig gestellten [Artikel der c't](/news/ct_richtigstellung_mediathekviewweb/) über MediathekViewWeb haben in den letzten Tagen erneut Gespräche zwischen dem  [MediathekViewWeb](https://mediathekviewweb.de/)-Entwickler [bagbag](https://github.com/bagbag) und dem MediathekView-Team statt gefunden.
+
+Als Ergebnis dieser Gespräche dürfen wir verkünden, dass MediathekViewWeb nun offiziell mit zu MediathekView gehört. Der Entwickler [bagbag](https://github.com/bagbag) ist dem Team beigetreten und hat den [Quellcode](https://github.com/mediathekview/mediathekviewweb) unter der [GPLv3](https://github.com/mediathekview/mediathekviewweb/blob/master/LICENSE) lizensiert. Dieser ist nun in GitHub als Teil der MediathekView-Organisation zu finden.
 
 Wir freuen uns [bagbag](https://github.com/bagbag) und [MediathekViewWeb](https://mediathekviewweb.de/) als Teil des Teams begrüßen zu dürfen und wünschen eine gute Zusammenarbeit.
