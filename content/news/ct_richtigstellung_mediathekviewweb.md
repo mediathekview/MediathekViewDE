@@ -6,6 +6,10 @@ date = "2017-02-05"
 keywords = ["ct", "c't", "heise", "mediathekviewweb", "Richtigstellung"] # HTML Schlüsselwörter
 tags = ["Allgemein"]
 +++
+## Änderung vom 11.02.2017
+MediathekViewWeb ist nun doch Teil von MediathekView, siehe hierzu: [MediathekViewWeb gehört nun zu MediathekView](/news/mediathekviewweb)
+
+## Original Beitrag
 
 Die [c't](https://www.heise.de/ct/) hat in der aktuellen Ausgabe vom 04.02.2017 so wie auf deren [Webseite](https://www.heise.de/ct/ausgabe/2017-4-Fundstuecke-im-Web-Meta-Mediathek-Polit-Archive-Gif-Dance-Party-3608919.html) über [MediathekViewWeb](https://mediathekviewweb.de/) berichtet.
 
