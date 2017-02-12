@@ -15,6 +15,21 @@ body {
     padding-top: 1rem;
 }
 
+.logo {
+	background-image: url("/images/MediathekView.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.brandimage {
+	height: 100%;
+	width: 50px;
+}
+.brandimageIndex {
+    height: 150px;
+    width: 150px;
+}
+
 .toplink {
     right: 3px;
     bottom: 3px;
@@ -86,6 +101,18 @@ vertical-align: baseline;
     .container {
         width: auto;
     }
+}
+
+@media (max-width: 480px) {
+	.jumbotron p {
+	   font-size: 16px;
+	}
+	h1 {
+	   font-size: 30px;
+	   text-align: center;
+	   padding-top: 25px;
+	   clear: both;
+	}
 }
 
 a.navbar-brand-img>img {
@@ -219,7 +246,7 @@ p {
 .glisse-legend {
   position: fixed;
   display: block;
-  bottom: 60px;
+  bottom: 30px;
   left: 20%;
   text-align: center;
   width: 60%;

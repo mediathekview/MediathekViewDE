@@ -9,9 +9,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand nohover navbar-brand-img" href="{{ .Site.BaseURL | relLangURL}}">
-          {{ if ( ne .Site.Params.BrandImage "" ) }}
-          <img alt="{{ .Site.Params.brand }}" src="{{ .Site.Params.BrandImage }}" style="float: left;"> 
-          {{ end }}
+          <span class="logo pull-left brandimage"></span> 
           {{ if ( ne .Site.Title "" )}}<span style="float: left; margin: 15px 0px 0px 10px;">{{ .Site.Title }}</span>{{ end }}
           </a>
         </div>
