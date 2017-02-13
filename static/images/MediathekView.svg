@@ -14,7 +14,7 @@
    height="650"
    width="650"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="MediathekViewv2.svg">
+   sodipodi:docname="MediathekView.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -28,13 +28,13 @@
      inkscape:window-height="702"
      id="namedview83"
      showgrid="false"
-     inkscape:zoom="0.72615383"
-     inkscape:cx="204.60568"
-     inkscape:cy="368.00248"
+     inkscape:zoom="0.5134683"
+     inkscape:cx="282.8952"
+     inkscape:cy="312.32077"
      inkscape:window-x="57"
      inkscape:window-y="34"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:snap-global="true"
@@ -622,10 +622,10 @@
        id="text6709"
        y="671.94922"
        x="80.533836"
-       style="font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:76.86286163px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#d2e2f0;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.2810477;stroke-opacity:1;"
+       style="font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:76.86286163px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold Oblique';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f0f6fa;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.2810477;stroke-opacity:1;"
        xml:space="preserve"
        sodipodi:linespacing="125%"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:256.20956421px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold';fill:#d2e2f0;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.2810477;stroke-opacity:1;"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:256.20956421px;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans Bold';fill:#f0f6fa;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.2810477;stroke-opacity:1;"
          y="671.94922"
          x="80.533836"
          id="tspan6711">MV</tspan></text>
