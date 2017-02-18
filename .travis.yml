@@ -1,5 +1,6 @@
 install:
-  - sudo apt install linuxbrew-wrapper
+  - sudo apt-get update
+  - sudo apt-get install linuxbrew-wrapper
   - brew update && brew install hugo
 
 script:
