@@ -1,7 +1,6 @@
 install:
-  - sudo apt-get update
-  - sudo apt-get install linuxbrew-wrapper
-  - brew update && brew install hugo
+  - wget https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
+  - sudo dpkg -i hugo_0.18.1-64bit.deb
 
 script:
   - hugo -v
