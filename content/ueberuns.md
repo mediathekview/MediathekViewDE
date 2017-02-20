@@ -13,16 +13,23 @@ description = ""
     {{< profile name="chπ" title="Entwickler" github="kaklakariada" >}}   
     {{< profile name="pidoubleyou" title="Entwickler" github="pidoubleyou" >}}
 {{< /profiles >}}
-{{< ueberuns-box >}}
-{{< /ueberuns-box >}}
+<div class="ueberuns-box">
+
 und viele weitere...
 
 Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de. Wir sind allesamt Vollblut-Onliner und lieben das, was wir tun. MediathekView bedeutet für uns nicht Arbeit, sondern Leidenschaft – und zusammen brennen wir darauf, MediathekView jeden Tag ein bisschen besser zu machen.
 
+</div>
+<div class="ueberuns-box">
+
 ## Social Media
-- [Diaspora](https://social.elaon.de/people/505f8420aa4301349ecb25f17997be37)
+[Diaspora](https://social.elaon.de/people/505f8420aa4301349ecb25f17997be37)
+
   - Alexander Finkhäuser
   - Nicklas Wiegandt
-- [Facebook](https://fb.me/mediathekview)
+
+[Facebook](https://fb.me/mediathekview)
+
   - Nicklas Wiegandt
-  
+
+</div>
