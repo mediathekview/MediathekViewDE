@@ -320,3 +320,66 @@ address > .adresse {
  
 .icon-diaspora-asterisk:before { content: '\e800'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
+
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+
+.profile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+.profile .profilePic img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 6px solid #FFF;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+}
+
+
+.profile .profileName
+{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.profile .profileTitle
+{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.profile .profileDesc
+{
+    margin-top: 10px;
+}
+
+.profile .profileLinks
+{
+    margin-top: 10px;
+}
+
+.ueberuns-box
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}

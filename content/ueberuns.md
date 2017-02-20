@@ -4,14 +4,17 @@ description = ""
 +++
 
 ## Das Team
-- Alexander Finkhäuser ([alex1702](https://github.com/alex1702))
-- [Xaver W](https://github.com/xaverW) (Erfinder des Programmes)
-- Christian F. ([derreisende77](https://github.com/derreisende77))
-- Nicklas Wiegandt ([Nicklas2751](https://github.com/Nicklas2751))
-- Alexander Jank ([jankal](https://github.com/jankal))
-- chπ ([kaklakariada](https://github.com/kaklakariada))
-- [pidoubleyou](https://github.com/pidoubleyou)
-
+{{< profiles >}}
+    {{< profile name="Xaver" title="Ehem. Hauptentwickler" description="Xaver ist der Vater von MediathekView, ihm haben wir dieses Projekt zu verdanken. Er hat sich etwas zurückgezogen ist aber immer noch aktiv." github="xaverW" forum="xaver" >}}
+    {{< profile name="Alexander Finkhäuser (alex1702)" title="Entwickler | Administrator" description="Alex hat gemeinsam mit Nicklas das Projekt übernommen. Er kümmtert sich hauptsächlich um die Infrastruktur und überwacht die Aktivitäten im Git." github="alex1702" forum="alex1702" website="https://elaon.de" >}}
+    {{< profile name="Nicklas Wiegandt (Nicklas2751)" title="Enwickler | 2. Administrator" description="Nicklas hat gemeinsam mit Alex das Projekt übernommen. Er ist Java Entwickler mit Herzblut und nutzt MediathekView selbst seit einigen Jahren." website="https://nicklas.wiegandt.eu" github="Nicklas2751" forum="Nicklas2751" pic="https://www.gravatar.com/avatar/8665d18ab7949fcc3a0a4e06b6391b1e.jpg?s=100&r=X" >}}
+    {{< profile name="Christian F. (derreisende77)" title="Entwickler" github="derreisende77" >}}
+    {{< profile name="Alexander Jank (jankal)" title="Entwickler" github="jankal" >}}
+    {{< profile name="chπ" title="Entwickler" github="kaklakariada" >}}   
+    {{< profile name="pidoubleyou" title="Entwickler" github="pidoubleyou" >}}
+{{< /profiles >}}
+{{< ueberuns-box >}}
+{{< /ueberuns-box >}}
 und viele weitere...
 
 Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de. Wir sind allesamt Vollblut-Onliner und lieben das, was wir tun. MediathekView bedeutet für uns nicht Arbeit, sondern Leidenschaft – und zusammen brennen wir darauf, MediathekView jeden Tag ein bisschen besser zu machen.
@@ -22,3 +25,4 @@ Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de. Wir si
   - Nicklas Wiegandt
 - [Facebook](https://fb.me/mediathekview)
   - Nicklas Wiegandt
+  

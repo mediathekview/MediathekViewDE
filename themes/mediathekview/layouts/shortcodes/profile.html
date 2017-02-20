@@ -1,0 +1,21 @@
+<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 profile">
+    <div class="profilePic">
+        <img src="{{ with .Get "pic"}}{{.}}{{else}}/images/platzhalter_male.png{{end}}" alt="{{ .Get "name" }}">
+    </div>
+    <div class="profileName">{{ .Get "name" }}</div>
+    <div class="profileTitle">{{ .Get "title" }}</div>
+    {{ with .Get "description"}}
+        <div class="profileDesc">
+            {{.}}
+        </div>
+    {{end}}
+    
+    {{ if or (.Get "website") (.Get "github") (.Get "forum")}}
+    <div class="profileLinks">
+        {{ with .Get "website"}}<a class="btn btn-default btn-md btn-block" target="_blank" href="{{.}}">Webseite</a><br/>{{end}}
+        {{ with .Get "github"}}<a class="btn btn-default btn-md btn-block" target="_blank" href="https://github.com/{{.}}">GitHub Profil</a><br/>{{end}}
+        {{ with .Get "forum"}}<a class="btn btn-default btn-md btn-block" target="_blank" href="https://forum.mediathekview.de/user/{{.}}">Forum Profil</a><br/>{{end}}
+    </div>
+    {{end}}
+
+</div>
