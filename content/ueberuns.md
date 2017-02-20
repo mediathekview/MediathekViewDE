@@ -1,14 +1,13 @@
 +++
 title = "Über uns"
 description = ""
-toc = true
 +++
 
 ## Das Team
 - Alexander Finkhäuser ([alex1702](https://github.com/alex1702))
 - [Xaver W](https://github.com/xaverW) (Erfinder des Programmes)
 - [derreisende77](https://github.com/derreisende77)
-- Nicklas Wiegandt([Nicklas2751](https://github.com/Nicklas2751))
+- Nicklas Wiegandt ([Nicklas2751](https://github.com/Nicklas2751))
 - Alexander Jank ([jankal](https://github.com/jankal))
 - chπ ([kaklakariada](https://github.com/kaklakariada))
 - [pidoubleyou](https://github.com/pidoubleyou)
