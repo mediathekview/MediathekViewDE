@@ -39,6 +39,9 @@ body > .container {
   padding: 75px 15px 0;
 }
 
+/*
+* Navigation
+*/
 .navbar-brand {
 padding: 20px;
 vertical-align: baseline;
@@ -91,6 +94,10 @@ vertical-align: baseline;
 a.navbar-brand-img>img {
   vertical-align: bottom;
 }
+/*
+* Navigation ENDE
+*/
+
 img {
   display: block;
   max-width: 100%;
@@ -162,72 +169,6 @@ p {
 	background-color: #DDDDDD;
 }
 
-.galerie > ul {
-    clear: both;
-    padding-left: 0;
-    margin-bottom: 20px;
-
-}
-
-.galerie > ul > li {
-	width: 49%;
-	float: left;
-	position: relative;
-	display: block;
-	padding: 10px 15px;
-	margin-bottom: -1px;
-	background-color: #fff;
-	border: 0px;
-	vertical-align: middle;
-
-}
-
-/* Glisse: Overlay */
-#glisse-overlay {
-  background: rgba(0,0,0.3);}
-
-#glisse-close {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  position: fixed;
-  top: 60px;
-  right: 16%;
-  color: #EEEEEE;
-  font-size: 2em;
-}
-
-/* Prev/Next button */
-.glisse-next a, .glisse-prev a {
-  width: 15%;
-  height: 100%;
-  display: block;
-  position: fixed;
-  top: 80px;
-  color: white;
-}
-
-.glisse-next a {
-  right: 0px;
-}
-
-.glisse-prev a {
-  left: 0px;
-}
-
-/* Legend */
-.glisse-legend {
-  position: fixed;
-  display: block;
-  bottom: 60px;
-  left: 20%;
-  text-align: center;
-  width: 60%;
-  color: white;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 .quellenangabe {
   font-size: 0.9em;
 
@@ -237,7 +178,6 @@ address > .adresse {
   font-size: 1em;
 
 }
-
 
 .yellowfont {
   background-color: #FFFF99;
@@ -320,78 +260,13 @@ address > .adresse {
 
 .icon-diaspora-asterisk:before { content: '\e800'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
-
+/*
+* CUSTOM FONT ENDE
+*/
 
 /*
 * Über Uns Seite
 */
-/* .row-eq-height { Row with equal height columns */
-/*   display: -webkit-box; */
-/*   display: -webkit-flex; */
-/*   display: -ms-flexbox; */
-/*   display: flex; */
-/*   flex-wrap: wrap; */
-/*   flex-flow: row wrap; */
-/* } */
-
-/* .profile { */
-/*     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); */
-/*     margin-right: 4px; */
-/*     margin-left: 4px; */
-/*     margin-top: 10px; */
-/* } */
-
-/* .profile .profilePic img { */
-/*     display: block; */
-/*     margin-left: auto; */
-/*     margin-right: auto; */
-/*     border-radius: 50%; */
-/*     border: 6px solid #FFF; */
-/*     width: 100px; */
-/*     height: 100px; */
-/*     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.30); */
-/* } */
-
-
-/* .profile .profileName { */
-/*     text-align: center; */
-/*     margin-top: 10px; */
-/*     font-weight: bold; */
-/* } */
-
-/* .profile .profileTitle { */
-/*     text-align: center; */
-/*     text-decoration: underline; */
-/* } */
-
-/* .profile .profileDesc { */
-/*     margin-top: 10px; */
-/* } */
-
-/* .profile .profileLinks { */
-/*     margin-top: 10px; */
-/* } */
-
-/* .ueberuns-box { */
-/*     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); */
-/*     margin-top: 10px; */
-/*     padding: 5px; */
-/*     margin-left: -15px; */
-/* } */
-
-
-
-/* Test */
-
-/* .row-eq-height { Row with equal height columns */
-/*   display: -webkit-box; */
-/*   display: -webkit-flex; */
-/*   display: -ms-flexbox; */
-/*   display: flex; */
-/*   flex-wrap: wrap; */
-/*   flex-flow: row wrap; */
-/* } */
-
 .profile {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     margin-right: 4px;
@@ -410,7 +285,6 @@ address > .adresse {
     height: 100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
 }
-
 
 .profile .profileName {
     text-align: left;
@@ -438,17 +312,11 @@ address > .adresse {
 }
 
 @media (max-width: 768px) {
-	.profile .profileName {
+	.profile .profileName, .profile .profileTitle, .profile .profileDesc {
 	    text-align: center;
     }
-
-	.profile .profileTitle {
-	    text-align: center;
-	}
-	
 	.profile .profileDesc {
 	    margin-top: 10px;
-	    text-align: center;
 	}
 	.profile .profileLinks a {
 	   margin-top: 5px;
@@ -464,3 +332,78 @@ address > .adresse {
     padding: 5px;
     margin-left: -15px;
 }
+/*
+* Über Uns Seite ENDE
+*/
+
+/*
+* Screenshot Seite
+*/
+.galerie > ul {
+    clear: both;
+    padding-left: 0;
+    margin-bottom: 20px;
+
+}
+
+.galerie > ul > li {
+    width: 49%;
+    float: left;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 0px;
+    vertical-align: middle;
+
+}
+
+/* Glisse: Overlay */
+#glisse-overlay {
+  background: rgba(0,0,0.3);}
+
+#glisse-close {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  position: fixed;
+  top: 60px;
+  right: 16%;
+  color: #EEEEEE;
+  font-size: 2em;
+}
+
+/* Prev/Next button */
+.glisse-next a, .glisse-prev a {
+  width: 15%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 80px;
+  color: white;
+}
+
+.glisse-next a {
+  right: 0px;
+}
+
+.glisse-prev a {
+  left: 0px;
+}
+
+/* Legend */
+.glisse-legend {
+  position: fixed;
+  display: block;
+  bottom: 60px;
+  left: 20%;
+  text-align: center;
+  width: 60%;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/*
+* Screenshot Seite ENDE
+*/
