@@ -20,16 +20,10 @@ und viele weitere...
 Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de. Wir sind allesamt Vollblut-Onliner und lieben das, was wir tun. MediathekView bedeutet für uns nicht Arbeit, sondern Leidenschaft – und zusammen brennen wir darauf, MediathekView jeden Tag ein bisschen besser zu machen.
 
 </div>
-<div class="ueberuns-box">
 
 ## Social Media
-[Diaspora](https://social.elaon.de/people/505f8420aa4301349ecb25f17997be37)
+{{< socialmedias >}}
+    {{< socialmedia profilname="mediathekview@social.elaon.de" link="https://social.elaon.de/people/505f8420aa4301349ecb25f17997be37" verantwortlich="Alexander Finkhäuser & Nicklas Wiegandt" icon="icon-diaspora-asterisk" >}}
+    {{< socialmedia profilname="mediathekview" link="https://fb.me/mediathekview" verantwortlich="Nicklas Wiegandt" icon="icon-diaspora-asterisk" >}}
+{{< /socialmedias >}}
 
-  - Alexander Finkhäuser
-  - Nicklas Wiegandt
-
-[Facebook](https://fb.me/mediathekview)
-
-  - Nicklas Wiegandt
-
-</div>

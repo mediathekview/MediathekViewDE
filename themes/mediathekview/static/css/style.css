@@ -267,7 +267,7 @@ address > .adresse {
 /*
 * Über Uns Seite
 */
-.profile {
+.profile, .socialmedia {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     margin-right: 4px;
     margin-left: 4px;
@@ -286,7 +286,7 @@ address > .adresse {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
 }
 
-.profile .profileName {
+.profile .profileName, .socialmedia .socialMediaName {
     text-align: left;
     margin-top: 10px;
     font-weight: bold;
@@ -297,7 +297,7 @@ address > .adresse {
     text-decoration: underline;
 }
 
-.profile .profileDesc {
+.profile .profileDesc, .socialmedia .socialMediaVerantwortlich {
     margin-top: 10px;
     text-align: left;
 }
@@ -311,11 +311,16 @@ address > .adresse {
     width: auto;
 }
 
+.socialmediaIcon i {
+	font-size: 80px;
+}
+
 @media (max-width: 768px) {
-	.profile .profileName, .profile .profileTitle, .profile .profileDesc {
+	.profile .profileName, .profile .profileTitle, .profile .profileDesc,
+	.socialmedia .socialMediaName, .socialmedia .socialMediaVerantwortlich {
 	    text-align: center;
     }
-	.profile .profileDesc {
+	.profile .profileDesc, .socialmedia .socialMediaVerantwortlich {
 	    margin-top: 10px;
 	}
 	.profile .profileLinks a {
