@@ -10,8 +10,8 @@ description = ""
     {{< profile name="Nicklas Wiegandt (Nicklas2751)" title="Enwickler | 2. Administrator" description="Nicklas hat gemeinsam mit Alex das Projekt übernommen. Er ist Java Entwickler mit Herzblut und nutzt MediathekView selbst seit einigen Jahren." website="https://nicklas.wiegandt.eu" github="Nicklas2751" forum="Nicklas2751" pic="https://www.gravatar.com/avatar/8665d18ab7949fcc3a0a4e06b6391b1e.jpg?s=100&r=X" >}}
     {{< profile name="Christian F. (derreisende77)" title="Entwickler" description="Christian ist schon länger mit dabei und hat das Programm gemeinsam mit Xaver geprägt. Er kümmert sich Federführend um die OSX Version." github="derreisende77" forum="derreisende77" >}}
     {{< profile name="Alexander Jank (jankal)" title="Entwickler" description="Kümmert sich mit Alex um eine zukünftige RestAPI und hostet mit einen Filmlisten-Verteilerserver." website="http://me.alexanderjank.de/" github="jankal" pic="/images/team/jankal.png" >}}
-    {{< profile name="chπ" title="Entwickler" description="" github="kaklakariada" >}}   
-    {{< profile name="pidoubleyou" title="Entwickler" description="" github="pidoubleyou" forum="pidoubleyou" >}}
+    {{< profile name="chπ" title="Entwickler" description="" github="kaklakariada" >}}
+    {{< profile name="Peter W. (pidoubleyou)" title="Entwickler" description="Peter ist hauptberuflich Softwarearchitekt und Fan von OpenSource-Software. Er unterstützt bei der Entwicklung der Java-Komponenten." github="pidoubleyou" forum="pidoubleyou" pic="/images/team/pidoubleyou.png" >}}
     {{< profile name="Patrick Hein (bagbag)" title="Entwickler" description="Gründer und Entwickler von MediathekViewWeb" github="bagbag" forum="bagbag" >}}
 {{< /profiles >}}
 <div class="ueberuns-box">
