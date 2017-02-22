@@ -12,6 +12,7 @@ description = ""
     {{< profile name="Alexander Jank (jankal)" title="Entwickler" description="Kümmert sich mit Alex um eine zukünftige RestAPI und hostet mit einen Filmlisten-Verteilerserver." website="http://me.alexanderjank.de/" github="jankal" pic="/images/team/jankal.png" >}}
     {{< profile name="chπ" title="Entwickler" description="" github="kaklakariada" >}}   
     {{< profile name="pidoubleyou" title="Entwickler" description="" github="pidoubleyou" forum="pidoubleyou" >}}
+    {{< profile name="Patrick Hein (bagbag)" title="Entwickler" description="Gründer und Entwickler von MediathekViewWeb" github="bagbag" forum="bagbag" >}}
 {{< /profiles >}}
 <div class="ueberuns-box">
 
