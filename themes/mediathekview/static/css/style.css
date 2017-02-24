@@ -213,12 +213,12 @@ address > .adresse {
 */
 @font-face {
   font-family: 'mediathekview_custom_iconfont';
-  src: url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.eot?96696843');
-  src: url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.eot?96696843#iefix') format('embedded-opentype'),
-       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.woff2?96696843') format('woff2'),
-       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.woff?96696843') format('woff'),
-       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.ttf?96696843') format('truetype'),
-       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.svg?96696843#mediathekview_custom_iconfont') format('svg');
+  src: url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.eot?66514356');
+  src: url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.eot?66514356#iefix') format('embedded-opentype'),
+       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.woff2?66514356') format('woff2'),
+       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.woff?66514356') format('woff'),
+       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.ttf?66514356') format('truetype'),
+       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.svg?66514356#mediathekview_custom_iconfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -259,6 +259,7 @@ address > .adresse {
 }
 
 .icon-diaspora-asterisk:before { content: '\e800'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 /*
 * CUSTOM FONT ENDE
