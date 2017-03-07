@@ -15,6 +15,21 @@ body {
     padding-top: 1rem;
 }
 
+.logo {
+	background-image: url("/images/MediathekView.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.brandimage {
+	height: 100%;
+	width: 50px;
+}
+.brandimageIndex {
+    height: 150px;
+    width: 150px;
+}
+
 .toplink {
     right: 3px;
     bottom: 3px;
@@ -39,6 +54,9 @@ body > .container {
   padding: 75px 15px 0;
 }
 
+/*
+* Navigation
+*/
 .navbar-brand {
 padding: 20px;
 vertical-align: baseline;
@@ -88,9 +106,25 @@ vertical-align: baseline;
     }
 }
 
+@media (max-width: 480px) {
+	.jumbotron p {
+	   font-size: 16px;
+	}
+	h1 {
+	   font-size: 30px;
+	   text-align: center;
+	   padding-top: 25px;
+	   clear: both;
+	}
+}
+
 a.navbar-brand-img>img {
   vertical-align: bottom;
 }
+/*
+* Navigation ENDE
+*/
+
 img {
   display: block;
   max-width: 100%;
@@ -162,72 +196,6 @@ p {
 	background-color: #DDDDDD;
 }
 
-.galerie > ul {
-    clear: both;
-    padding-left: 0;
-    margin-bottom: 20px;
-
-}
-
-.galerie > ul > li {
-	width: 49%;
-	float: left;
-	position: relative;
-	display: block;
-	padding: 10px 15px;
-	margin-bottom: -1px;
-	background-color: #fff;
-	border: 0px;
-	vertical-align: middle;
-
-}
-
-/* Glisse: Overlay */
-#glisse-overlay {
-  background: rgba(0,0,0.3);}
-
-#glisse-close {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  position: fixed;
-  top: 60px;
-  right: 16%;
-  color: #EEEEEE;
-  font-size: 2em;
-}
-
-/* Prev/Next button */
-.glisse-next a, .glisse-prev a {
-  width: 15%;
-  height: 100%;
-  display: block;
-  position: fixed;
-  top: 80px;
-  color: white;
-}
-
-.glisse-next a {
-  right: 0px;
-}
-
-.glisse-prev a {
-  left: 0px;
-}
-
-/* Legend */
-.glisse-legend {
-  position: fixed;
-  display: block;
-  bottom: 60px;
-  left: 20%;
-  text-align: center;
-  width: 60%;
-  color: white;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 .quellenangabe {
   font-size: 0.9em;
 
@@ -237,7 +205,6 @@ address > .adresse {
   font-size: 1em;
 
 }
-
 
 .yellowfont {
   background-color: #FFFF99;
@@ -273,12 +240,12 @@ address > .adresse {
 */
 @font-face {
   font-family: 'mediathekview_custom_iconfont';
-  src: url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.eot?96696843');
-  src: url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.eot?96696843#iefix') format('embedded-opentype'),
-       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.woff2?96696843') format('woff2'),
-       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.woff?96696843') format('woff'),
-       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.ttf?96696843') format('truetype'),
-       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.svg?96696843#mediathekview_custom_iconfont') format('svg');
+  src: url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.eot?66514356');
+  src: url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.eot?66514356#iefix') format('embedded-opentype'),
+       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.woff2?66514356') format('woff2'),
+       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.woff?66514356') format('woff'),
+       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.ttf?66514356') format('truetype'),
+       url('../font/mediathekview_custom_iconfont/mediathekview_custom_iconfont.svg?66514356#mediathekview_custom_iconfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -319,4 +286,158 @@ address > .adresse {
 }
 
 .icon-diaspora-asterisk:before { content: '\e800'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
+/*
+* CUSTOM FONT ENDE
+*/
+
+/*
+* Über Uns Seite
+*/
+.profile, .socialmedia {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 50px;
+}
+
+.profile .profilePic img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 6px solid #FFF;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+}
+
+.profile .profileName, .socialmedia .socialMediaName {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.profile .profileTitle {
+    text-align: left;
+    text-decoration: underline;
+}
+
+.profile .profileDesc, .socialmedia .socialMediaVerantwortlich {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.profile .profileLinks {
+    margin: 10px 0px 10px 0px;
+    width: auto;
+}
+.profile .profileLinks a {
+    margin: 0px 5px 0px 5px;
+    width: auto;
+}
+
+.socialmediaIcon i {
+	font-size: 80px;
+}
+
+@media (max-width: 768px) {
+	.profile .profileName, .profile .profileTitle, .profile .profileDesc,
+	.socialmedia .socialMediaName, .socialmedia .socialMediaVerantwortlich {
+	    text-align: center;
+    }
+	.profile .profileDesc, .socialmedia .socialMediaVerantwortlich {
+	    margin-top: 10px;
+	}
+	.profile .profileLinks a {
+	   margin-top: 5px;
+	   width: 100%;
+	   margin-left: auto;
+	   margin-right: auto;
+	}
+}
+
+.ueberuns-box {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);*/
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: -15px;
+}
+/*
+* Über Uns Seite ENDE
+*/
+
+/*
+* Screenshot Seite
+*/
+.galerie > ul {
+    clear: both;
+    padding-left: 0;
+    margin-bottom: 20px;
+
+}
+
+.galerie > ul > li {
+    width: 49%;
+    float: left;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 0px;
+    vertical-align: middle;
+
+}
+
+/* Glisse: Overlay */
+#glisse-overlay {
+  background: rgba(0,0,0.3);
+}
+
+#glisse-close {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  position: fixed;
+  top: 60px;
+  right: 16%;
+  color: #EEEEEE;
+  font-size: 2em;
+}
+
+/* Prev/Next button */
+.glisse-next a, .glisse-prev a {
+  width: 15%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 80px;
+  color: white;
+}
+
+.glisse-next a {
+  right: 0px;
+}
+
+.glisse-prev a {
+  left: 0px;
+}
+
+/* Legend */
+.glisse-legend {
+  position: fixed;
+  display: block;
+  bottom: 30px;
+  left: 20%;
+  text-align: center;
+  width: 60%;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/*
+* Screenshot Seite ENDE
+*/

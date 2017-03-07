@@ -108,7 +108,7 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 <div class="col-xs-12 col-sm-3">
 <img src="../images/qrcode-bitcoin.png" style="width: 100%; max-width: 180px;" alt="QR-Code Bitcoin Adresse">
 </div>
-<div class="col-sm-9"
+<div class="col-sm-9">
 <p>
   <a href="https://de.wikipedia.org/wiki/Bitcoin"><b>Bitcoin</b></a> (englisch sinngemäß für „digitale Münze“) ist ein weltweit verwendbares dezentrales Zahlungssystem und der Name einer digitalen Geld­einheit. Überweisungen werden von einem Zusammenschluss von Rechnern über das Internet mithilfe einer speziellen Peer-to-Peer-Anwendung abgewickelt, sodass anders als im herkömmlichen Bankverkehr keine zentrale Abwicklungsstelle benötigt wird. Eigentumsnachweise an Bitcoin können in einer persönlichen digitalen Brieftasche gespeichert werden. Der Umrechnungskurs von Bitcoin in andere Zahlungsmittel (Fiatgeld) bestimmt sich durch Angebot und Nachfrage. <br />
   <p class="quellenangabe">(Quelle: Wikipedia)</p>
