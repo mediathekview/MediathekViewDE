@@ -173,7 +173,7 @@ Mit gedit eine Datei mit folgendem Inhalt im Programmordner anlegen (z.B. mv.des
 Name=MV
 GenericName=MediathekView
 Exec=/home/BENUTZERNAME/PROGRAMMORDNER/MediathekView.sh
-Icon=/home/BENUTZERNAME/PROGRAMMORDNER/info/MediathekView.png
+Icon=/home/BENUTZERNAME/PROGRAMMORDNER/Info/MediathekView.png
 Terminal=false
 Type=Application
 StartupNotify=false
@@ -227,7 +227,7 @@ Zum Anlegen eines Starters eine ".desktop" Datei (z.B. mv.desktop) im Ordner (im
 Name=MV
 GenericName=MediathekView
 Exec=/home/BENUTZERNAME/PROGRAMMORDNER/MediathekView.sh
-Icon=/home/BENUTZERNAME/PROGRAMMORDNER/info/MediathekView.png
+Icon=/home/BENUTZERNAME/PROGRAMMORDNER/Info/MediathekView.png
 Terminal=false
 Type=Application
 StartupNotify=false
