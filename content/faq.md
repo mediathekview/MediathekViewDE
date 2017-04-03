@@ -145,6 +145,41 @@ Dies weist auf [fehlerhafte Sets](#wenn-nichts-geht) oder eine Security-Suite hi
 
 ![Comodo-Sandboxing](/images/faq/MV_Comodo-Sandboxing.jpg)
 
+# Sendungen mit HTTPS URLs können nicht heruntergeladen werden
+
+Wenn Sendungen deren Download URL mit HTTPS beginnt nicht heruntergeladen werden können kann das am SSL liegen.
+
+## Problem erkennen
+Zuerst ist hier zu Prüfen ob tatsächlich das HTTPS das Problem ist hierzu kann man MediathekView in der Konsole mit `java -jar MediathekView.jar` starten. Wenn in der Konsole der folgende Fehler auftritt liegt es am SSL:
+```
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException:
+PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderExce
+ption: unable to find valid certification path to requested target
+        at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+        at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
+        at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+        at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+        at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
+        at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
+        at sun.security.ssl.Handshaker.processLoop(Unknown Source)
+        at sun.security.ssl.Handshaker.process_record(Unknown Source)
+        at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+        at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source
+)
+```
+
+## Problem beheben
+
+Es kann verschiedene Auslöser für das Problem geben, die häufigsten sind die folgenden:
+
+ 1. Veraltete Java Version
+   - Einige moderne SSL Varianten werden von älteren Java Versionen nicht unterstützt, es sollte deshalb überprüft werden ob die [aktuellste verfügbare Java JRE](/anleitung/#systemvoraussetzungen) eingesetzt wird.
+ 
+ 2. Virenscanner stört SSL Verbindung
+   - Einige aktuelle Virenscanner wie z.B. Kaspersky jubeln dem Benutzer eigene SSL Zertifikarte unter um die Verbindung überwachen zu können. Dieses "Feature" kann u.a. zu Problemen beim Download einer Sendung führen und sollte deshalb deaktivieret werden. Weitere Infos zu dem Thema: 
+     - https://www.heise.de/security/meldung/Sicherheitsforscher-an-AV-Hersteller-Finger-weg-von-HTTPS-3620159.html
+     - https://www.heise.de/security/meldung/Kaspersky-torpediert-SSL-Zertifikatspruefung-3587871.html
+
 # In der Mediathek des Senders XYZ ist die Sendung vorhanden, in der Filmliste jedoch nicht!
 
 Ja, das kann leider vorkommen (z.B. bei älteren Beiträgen). Wenn eine Sendung nur über die Such-Funktion in der Mediathek eines Senders gefunden werden kann, dann wird sie von MediathekView nicht gelistet werden, denn MediathekView sucht nur auf bestimmten Webseiten der Sender (z.B. Sendungen A–Z) und extrahiert die Video-URLs. Zudem können zeitlich nicht beliebig weit zurück Sendungen aufgelistet werden, da bei gewissen Sendern (z.B. beim BR, SWR) das Crawling nach den Video-URLs zu lange dauern würde. D.h., es kann also vorkommen, dass Sendungen im Archiv auf der Website eines Senders gefunden werden, die aber nicht in der Filmliste auftauchen.
