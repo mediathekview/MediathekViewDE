@@ -3,7 +3,7 @@ title = "Spendenmöglichkeiten"
 [menu]
     [menu.main]
         name = "Spenden"
-        weight = 6
+        parent = "unterstuetzen"
 +++
 
 # Spenden

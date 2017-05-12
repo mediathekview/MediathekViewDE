@@ -6,6 +6,7 @@ toc = true
 [menu]
     [menu.main]
         name = "Anleitung"
+        parent = "hilfe"
         weight = 3
 +++
 

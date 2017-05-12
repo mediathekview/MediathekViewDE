@@ -5,7 +5,7 @@ title = "Download"
 [menu]
     [menu.main]
         name = "Download"
-        weight = 5
+        weight = 3
 +++
 
 # Download
