@@ -36,32 +36,62 @@ enableRobotsTXT = true
     title = "Neuigkeiten"
     pre = ""
     weight = 1
+    identifier = "neuigkeiten"
+    
+    [[menu.main]]
+    name = "Neuigkeiten"
+    title = "Neuigkeiten"
+    pre = ""
+    weight = 1
+    parent = "neuigkeiten"
     url = "/news"
-
+    
     [[menu.main]]
     name = "Changelogs"
     title = "Changelogs"
     pre = ""
     weight = 2
+    parent = "neuigkeiten"
     url = "/changelog"
-
+    
+    [[menu.main]]
+    name = "Hilfe"
+    title = "Hilfe"
+    pre =""
+    weight = 4
+    identifier = "hilfe"
+    
     [[menu.main]]
     name = "Screenshots"
     title = "Screenshots"
     pre = ""
-    weight = 7
+    weight = 3
+    parent = "hilfe"
     url = "/screenshots"
-
+    
     [[menu.main]]
     name = "Forum"
     title = "Forum"
-    weight = 8
+    parent = "hilfe"
+    weight = 4
     url = "https://forum.mediathekview.de"
+    
+    [[menu.main]]
+    name = "Unterstützen"
+    title = "Unterstützen"
+    weight = 5
+    identifier = "unterstuetzen"
+    
+    [[menu.main]]
+    name = "Github"
+    title = "Github"
+    url = "https://github.com/mediathekview/mediathekview"
+    parent = "unterstuetzen"
 
     [[menu.main]]
     name = "Web Client"
     title = "Web Client"
-    weight = 9
+    weight = 16
     url = "https://mediathekviewweb.de"
 
     [[menu.footer]]

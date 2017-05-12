@@ -6,6 +6,7 @@ toc = true
 [menu]
     [menu.main]
         name = "FAQ"
+        parent = "hilfe"
         weight = 4
 +++
 
