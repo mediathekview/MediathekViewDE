@@ -51,17 +51,17 @@ title = "Download"
   </div>
 </div>
 
-## MSearch
+## MLib
 
-MSearch ist die Bibliothek für MediathekView und MServer.
+MLib ist die Bibliothek für MediathekView und MServer.
 
 <div class="panel panel-default">
   <div class="panel-heading"><b>Aktuelle Version</b></div>
   <div class="panel-body">
     <p>Die Releases findet ihr auf der Github Release Seite</p>
-    <a href="https://github.com/mediathekview/MSearch/releases"><button type="button" class="btn btn-primary btn-sm">Github Releases</button></a>
+    <a href="https://github.com/mediathekview/MLib/releases"><button type="button" class="btn btn-primary btn-sm">Github Releases</button></a>
     <br />
-    <p>Desweiteren findet ihr MSearch in unserem Maven Repository</p>
+    <p>Desweiteren findet ihr MLib in unserem Maven Repository</p>
     <a href="https://repo.mediathekview.de/#browse/browse/components:maven-releases"><button type="button" class="btn btn-primary btn-sm">Maven Release Repository</button></a>
     <a href="https://repo.mediathekview.de/#browse/browse/components:maven-snapshots"><button type="button" class="btn btn-primary btn-sm">Maven Snapshot Repository</button></a>
   </div>
@@ -71,7 +71,7 @@ MSearch ist die Bibliothek für MediathekView und MServer.
   <div class="panel-heading"><b>Sourcecode</b></div>
   <div class="panel-body">
     <p>Der Quellcode wird auf Github verwaltet.</p>
-    <a href="https://github.com/mediathekview/MSearch"><button type="button" class="btn btn-primary btn-sm">Sourcecode (Github)</button></a>
+    <a href="https://github.com/mediathekview/MLib"><button type="button" class="btn btn-primary btn-sm">Sourcecode (Github)</button></a>
   </div>
 </div>
 
