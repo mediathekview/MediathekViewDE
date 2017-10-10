@@ -24,4 +24,5 @@ Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de. Wir si
 {{< socialmedias >}}
     {{< socialmedia profilname="mediathekview@social.elaon.de" link="https://social.elaon.de/people/505f8420aa4301349ecb25f17997be37" verantwortlich="Alexander Finkhäuser & Nicklas Wiegandt" icon="icon-diaspora-asterisk" >}}
     {{< socialmedia profilname="mediathekview" link="https://fb.me/mediathekview" verantwortlich="Nicklas Wiegandt" icon="icon-facebook" >}}
+    {{< socialmedia profilname="@mediathekview@chirpi.de" link="https://chirpi.de/@mediathekview" verantwortlich="Alexander Finkhäuser" icon="icon-chirpi" >}}
 {{< /socialmedias >}}
