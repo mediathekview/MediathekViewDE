@@ -1,34 +1,74 @@
 <script src="{{ "js/jquery.min.js" | absURL }}"></script>
 <script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script> 
-<script src="/js/popover/angular-storage.min.js"></script>
 
-<script src="{{ "js/highlight.pack.js" | absURL }}"></script>
-<script src="{{ "js/site.js" | absURL }}"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-<script>
-var ENABLE_POPOVER = {{.Site.Params.popover.enablepopover}}; // enable or disable popover: true/false.
-var EXPIRE_COOKIE = {{.Site.Params.popover.expirecookie}}; // show it again after number of days to visitor that has not subscribed.
-var SHOW_MODAL_TIMEOUT = {{.Site.Params.popover.showmodaltimeout}}; // show popover modal after time interval in milliseconds.
-var MOUSE_LEAVE = {{.Site.Params.popover.mouseleave}}; //show popover when mouse leaves window: true/false.
-var MODAL_SIZE = {{.Site.Params.popover.modalsize}}; //lg or sm. Empty is md. If phone is detected lg is used.
-var POST_URL = {{.Site.Params.popover.posturl}}; // post url, for example zapier hooks.
-var SIGNUP_HEADER = {{.Site.Params.popover.signupheader}};
-var HEADER_IMAGE = {{.Site.Params.popover.headerimage}};
-var IMG_DESCRIPTION = {{.Site.Params.popover.imagedescription}};
-var SIGNUP_TEXT = {{.Site.Params.popover.signuptext}};
-var INPUT_PLACEHOLDER = {{.Site.Params.popover.inputplaceholder}};
-var SUBMIT_BUTTON = {{.Site.Params.popover.submitbutton}};
-var SUCCESS_MESSAGE = {{.Site.Params.popover.successmessage}};
-var ERROR_MESSAGE = {{.Site.Params.popover.errormessage}};
-var OPTIN = {{.Site.Params.popover.optin}};
-var COOKIE_NAME = {{.Site.Params.popover.cookiename}};
+<script type="text/javascript">
+$(function(){
+    $("table").addClass("table table-condensed table-bordered table-striped");
+});
 </script>
-<script src="/js/popover/angular-modal-service.min.js"></script>
-<script src="/js/angular-ismobile.min.js"></script>
-<script src="/js/popover/popover.min.js"></script>
+
 {{ if .Params.galerie }}
-  <script src="{{ "js/galerie/" | absURL }}glisse.js"></script>
-  <script src="{{ "js/galerie/" | absURL }}galerieladen.js"></script>
+<!-- Glisse Vollbildgallerie laden -->
+<script src="{{ "js/galerie/" | absURL }}glisse.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('.pics').glisse({
+        changeSpeed: 550, 
+        speed: 500,
+        effect: 'bounce',
+        fullscreen: true,
+        mobile: true,
+        bootstrap: true,
+        bootstrapl18nNext: "Nächstes",
+        bootstrapl18nPrevious: "Vorheriges",
+        bootstrapl18nClose: "Schließen"
+    }); 
+});
+</script>
+<!-- Ende Glisse Vollbildgallerie laden -->
 {{ end }}
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  // tracker methods like "setCustomDimension" should be called before "trackPageView"
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analyse.elaon.de/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '4']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+<!-- Zurück zum Anfang Icon ein und ausblenden -->
+<script type="text/javascript">
+function setdefaults()
+{
+  $("#return-to-top").css("opacity",0);
+}
+
+$(document).ready(function(){
+   setdefaults();
+
+  $(window).scroll(function() {
+
+      $scrolled = $(window).scrollTop();
+      $toScrollPercentage = 50;
+      $toScroll = $(window).height()*($toScrollPercentage/100);
+        if($scrolled < $toScroll)
+        {
+          $("#return-to-top").css("opacity",0);
+        } else
+        {
+          $("#return-to-top").css("opacity",0.5);
+        }
+    });
+});
+</script>
+<!-- Ende Zurück zum Anfang Icon ein und ausblenden -->
+

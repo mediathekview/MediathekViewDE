@@ -1,0 +1,25 @@
+<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 profile">
+    <div class="row">
+	    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 profilePic">
+	        <img src="{{ with .Get "pic"}}{{.}}{{else}}/images/platzhalter_male.png{{end}}" alt="{{ .Get "name" }}">
+	    </div>
+	    <div class="col-xs-12 col-sm-9">
+		    <div class="profileName">{{ .Get "name" }}</div>
+		    <div class="profileTitle">{{ .Get "title" }}</div>
+		    {{ with .Get "description"}}
+            <div class="profileDesc">
+                {{.}}
+            </div>
+        {{end}}
+	    </div>
+    </div>
+    {{ if or (.Get "website") (.Get "github") (.Get "forum")}}
+    <div class="row profileLinks">
+        <div class="col-sm-3 col-md-3 col-lg-3"></div>
+        {{ with .Get "website"}}<a class="col-xs-12 col-sm-3 col-md-3 col-lg-2 btn btn-default btn-md" target="_blank" href="{{.}}">Webseite</a>{{end}}
+        {{ with .Get "github"}}<a class="col-xs-12 col-sm-3 col-md-3 col-lg-2 btn btn-default btn-md" target="_blank" href="https://github.com/{{.}}">GitHub Profil</a>{{end}}
+        {{ with .Get "forum"}}<a class="col-xs-12 col-sm-3 col-md-3 col-lg-2 btn btn-default btn-md" target="_blank" href="https://forum.mediathekview.de/user/{{.}}">Forum Profil</a>{{end}}
+    </div>
+    {{end}}
+
+</div>

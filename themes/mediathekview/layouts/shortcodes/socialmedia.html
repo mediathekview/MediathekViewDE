@@ -1,0 +1,17 @@
+<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 socialmedia">
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 socialmediaIcon">
+            {{ if .Get "icon" }}
+            <i class="{{ .Get "icon" }}" aria-hidden="true"></i>
+            {{end}}
+<!--             <img src="{{ with .Get "logo"}}{{.}}{{else}}/images/platzhalter_male.png{{end}}" alt="{{ .Get "profilname" }}"> -->
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <div class="socialMediaName">Profilname: <a href="{{ .Get "link" }}">{{ .Get "profilname" }}</a></div>
+            {{ with .Get "verantwortlich"}}
+            <div class="socialMediaVerantwortlich">Verantwortlich: {{.}}</div>
+            {{end}}
+        </div>
+    </div>
+
+</div>

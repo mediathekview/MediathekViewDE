@@ -1,68 +1,49 @@
-#baseurl = "https://mediathekview.de"
-baseurl = "/"
+baseurl = "https://mediathekview.de"
 title = "MediathekView"
 languageCode = "de-de"
 DefaultContentLanguage = "de"
 theme = "mediathekview"
+
+enableRobotsTXT = true
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
     code = "/:slug/"
 
 [taxonomies]
-    tag = "Tags"
+    tag = "tags"
 
 [author]
     name = "Mediathekview"
     email = "support@mediathekview.de"
-    
-[params.popover]
-  # This is a highly configurable popover form.
-  enablepopover = true #enable or disable popover: true/false.
-  posturl = "https://zapier.com/hooks/..."
-  headerimage = "//placehold.it/1000x600"
-  expirecookie = 5 #show it again after number of days to visitor that has not subscribed.
-  cookiename = "mycookie1" #give the cookie a unique name variable (avoid spaces and strange characters).
-  signupheader = "Join Our Newsletter"
-  showmodaltimeout = 10000 #show popover modal after time interval in milliseconds.
-  mouseleave = true #show popover when mouse leaves window: true/false.
-  modalsize = "" #lg or sm. Empty is md. If phone is detected lg is used.
-  imagedescription = "Placeholder image for this popover modal optin form"
-  signuptext = "Signup today for free and be the first to get notified on new updates."
-  inputplaceholder = "Enter your email"
-  submitbutton = "Subscribe"
-  successmessage = "Thanks for your subscription!"
-  errormessage = "Submitting form failed!"
-  optin = true #opt-in: true/false
 
 [params]
-    BrandImage = "/images/MediathekView.png" #top header brand image.
-    brand = "Mediathekview" # brand image alt text.
     topline = "Die offizelle MediathekView Homepage"
-    footline = ""
-    
-    copyright = "(c) 2016 Copyright by Mediathekview Team"
+    footline = "Homepage Version: 1.6.4"
+
+    copyright = "(c) 2016-2017 Copyright by MediathekView Team"
     title = "MediathekView" # Site title
 
     # Show a sidebar menu
-    showRightSidebar = true
-
-
-    # Select a syntax highight.
-    # Check the static/css/highlight directory for options.
-    highlight = "default"
+    showrightsidebar = true
 
     # Sidebar social links.
-    github = "mediathekview" # Your Github profile ID
-    #youtube = ""  # Your Youtube channel ID
-    flattr = "mediathekview"  # populate with your flattr uid
-    
+    github = "mediathekview"
+
+
+    [[menu.main]]
+    name = "Neuigkeiten"
+    title = "Neuigkeiten"
+    pre = ""
+    weight = 1
+    identifier = "neuigkeiten"
     
     [[menu.main]]
     name = "Neuigkeiten"
     title = "Neuigkeiten"
     pre = ""
     weight = 1
+    parent = "neuigkeiten"
     url = "/news"
     
     [[menu.main]]
@@ -70,36 +51,67 @@ theme = "mediathekview"
     title = "Changelogs"
     pre = ""
     weight = 2
+    parent = "neuigkeiten"
     url = "/changelog"
+    
+    [[menu.main]]
+    name = "Hilfe"
+    title = "Hilfe"
+    pre =""
+    weight = 4
+    identifier = "hilfe"
     
     [[menu.main]]
     name = "Screenshots"
     title = "Screenshots"
     pre = ""
     weight = 3
-    identifier = "screenshots"
-    ersterscreenshot = "ersterstart"
+    parent = "hilfe"
     url = "/screenshots"
     
-    [[menu.footer]] 
+    [[menu.main]]
+    name = "Forum"
+    title = "Forum"
+    parent = "hilfe"
+    weight = 4
+    url = "https://forum.mediathekview.de"
+    
+    [[menu.main]]
+    name = "Unterstützen"
+    title = "Unterstützen"
+    weight = 5
+    identifier = "unterstuetzen"
+    
+    [[menu.main]]
+    name = "Github"
+    title = "Github"
+    url = "https://github.com/mediathekview/mediathekview"
+    parent = "unterstuetzen"
+
+    [[menu.main]]
+    name = "Web Client"
+    title = "Web Client"
+    weight = 16
+    url = "https://mediathekviewweb.de"
+
+    [[menu.footer]]
     name = "Impressum"
     pre = "<i>-</i>"
     weight = 1
     url = "/impressum/"
 
     [[menu.footer]]
-    name = "Kontakt"
+    name = "Über uns"
     pre = "-"
-    weight = 1
-    url = "/kontakt/"
-    
+    weight = 2
+    url = "/ueberuns/"
+
     [[menu.footer]]
     name = "Lizenz"
-    weight = 1
+    weight = 3
     url = "/lizenz/"
 
 [blackfriday]
     hrefTargetBlank = true
     latexDashes = true
     plainIdAnchors = true
-		

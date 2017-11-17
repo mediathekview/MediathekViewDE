@@ -14,4 +14,6 @@
   translation: "{{ .WordCount }} Wörter"
 - id: latestposts
   translation: "Letzte Beiträge"
+- id: tags
+  translation: "Tags"
   

@@ -1,13 +1,13 @@
 <div>
   {{ if and .IsPage (eq .Params.toc true) }}
     <div class="section">
-      <header><div class="title">TableOfContents</div></header>
-      <div class="list-default">{{ .TableOfContents }}</div>
+      <header><h3><b>Inhaltsverzeichnis</b></h3></header>
+      {{ .TableOfContents }}
     </div>
     {{ end }}
 
     <div class="section">
-      <header><div class="title"><b>{{ i18n "latestposts" }}</b></div></header>
+      <header><h3><b>{{ i18n "latestposts" }}</b></h3></header>
       <div class="content">
         <ul>
         {{ range first 10 (where .Site.Pages "Type" "news") }}
@@ -18,24 +18,39 @@
         </ul>
       </div>
     </div>
-
+    <hr />
     {{ range $key, $value := .Site.Taxonomies }}
       {{ $len := len $value }}
       {{ if (not ( eq $len 0 ) ) }}
       <div class="section taxonomies">
-        <header><div class="title"><b>{{ $key }}</b></div></header>
+        <header><h3><b>{{ i18n "tags" }}</b></h3></header>
 
         <div class="content">
-          <ul>
-            {{ range first 10 $value.ByCount }}<li><a href="{{$.LanguagePrefix }}/{{ $key }}/{{ .Name | urlize }}">{{ .Name }}</a></li>{{ end }}
-          </ul>
+            {{ range first 10 $value.ByCount }}<a href="{{$.LanguagePrefix }}/{{ $key }}/{{ .Name | urlize }}"><button type="button" class="btn btn-default">{{ .Name }}</button></a>{{ end }}
         </div>
       </div>
       {{ end }}
     {{ end }}
-    
-    {{ partial "modules/site/link/social" . }}
-    {{ partial "modules/flattr" . }}
-    {{ partial "modules/github-ribbon" . }}
-
+    <hr />
+    <div class="sidebar">
+        <div class="row">
+            <a class="iconlink" href="https://github.com/mediathekview/MediathekView" target="_blank"><i class="icon-github-circled" aria-hidden="true"></i></a>
+            <a class="iconlink" href="https://social.elaon.de/people/505f8420aa4301349ecb25f17997be37" target="_blank"><i class="icon-diaspora-asterisk" aria-hidden="true"></i></a>
+            <a class="iconlink" href="https://fb.me/mediathekview" target="_blank"><i class="icon-facebook" aria-hidden="true"></i></a>
+            <a class="iconlink" href="https://chirpi.de/@mediathekview" target="_blank"><i class="icon-chirpi" aria-hidden="true"></i></a>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="https://www.paypal.me/MediathekView" target="_blank">
+			        <img src="{{ .Site.Params.baseurl }}/images/paypal_spenden.png">
+			     </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a href="{{ .Site.Params.baseurl }}/spenden/"><button class="center-block btn btn-info">Weitere Spendenmöglichkeiten</button></a>
+          </div>
+        </div>
+    </div>
 </div>

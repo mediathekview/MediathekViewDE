@@ -9,9 +9,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand nohover navbar-brand-img" href="{{ .Site.BaseURL | relLangURL}}">
-          {{ if ( ne .Site.Params.BrandImage "" ) }}
-          <img alt="{{ .Site.Params.brand }}" src="{{ .Site.Params.BrandImage }}" style="float: left;"> 
-          {{ end }}
+          <span class="logo pull-left brandimage"></span> 
           {{ if ( ne .Site.Title "" )}}<span style="float: left; margin: 15px 0px 0px 10px;">{{ .Site.Title }}</span>{{ end }}
           </a>
         </div>
@@ -19,9 +17,28 @@
           <ul class="nav navbar-nav navbar-right">
             {{ $currentNode := . }}
             {{ range .Site.Menus.main }}
-            <li class="{{if $currentNode.IsMenuCurrent "main" . }}active{{end}}">
-              <a href="{{ .URL | absLangURL }}" {{ if and ( isset . "Name" ) ( ne .Name "" ) }} title="{{ .Name }}"{{ end }}>{{ .Pre }}{{ .Name }}</a>
-            </li>
+              {{ if .HasChildren }}
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expandet="false">
+                  {{ .Name }}
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  {{ range .Children }}
+                  <li class="nav-item">
+                    <a class="dropdown-item" href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
+                      {{ .Pre }}
+                      <span>{{ .Name }}</span>
+                    </a>
+                  </li>
+                  {{end}}
+                </ul>
+              </li>
+              {{ else }}
+              <li class="{{if $currentNode.IsMenuCurrent "main" . }}active{{end}}">
+                <a href="{{ .URL | absLangURL }}" {{ if ( ne .Name "" ) }} title="{{ .Name }}"{{ end }}>{{ .Name }}</a>
+              </li>
+             {{ end }}
             {{ end }}
           </ul>
         </div>
