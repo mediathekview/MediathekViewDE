@@ -1,7 +1,13 @@
+dist: trusty
 install:
-  - wget https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
-  - sudo dpkg -i hugo_0.18.1-64bit.deb
+  - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  - brew install hugo
+#  - wget https://github.com/spf13/hugo/releases/download/v0.18.1/hugo_0.18.1-64bit.deb
+#  - sudo dpkg -i hugo_0.18.1-64bit.deb
 
 script:
+  - which hugo
+  - hugo version
+  - hugo check
   - hugo -v
 
