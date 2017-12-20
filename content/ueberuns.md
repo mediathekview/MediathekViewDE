@@ -11,6 +11,7 @@ description = ""
     {{< profile name="Christian F. (derreisende77)" title="Entwickler" description="Christian ist schon länger mit dabei und hat das Programm gemeinsam mit Xaver geprägt. Er kümmert sich Federführend um die OSX Version." github="derreisende77" forum="derreisende77" >}}
     {{< profile name="Peter W. (pidoubleyou)" title="Entwickler" description="Peter ist hauptberuflich Softwarearchitekt und Fan von OpenSource-Software. Er unterstützt bei der Entwicklung der Java-Komponenten." github="pidoubleyou" forum="pidoubleyou" pic="/images/team/pidoubleyou.png" >}}
     {{< profile name="Patrick Hein (bagbag)" title="Entwickler" description="Entwickler von MediathekViewWeb" github="bagbag" forum="bagbag" >}}
+    {{< profile name="Sascha Wiegandt (TheSasch)" title="Entwickler" description="Sascha ist seit über 20 Jahren Softwareentwickler und unterstützt das Team seit 09/2017 bei der Entwicklung der Java-Komponenten." github="thesasch" forum="thesasch" pic="https://avatars3.githubusercontent.com/u/30903584?s=460&v=4" >}}
 {{< /profiles >}}
 <div class="ueberuns-box">
 
@@ -26,3 +27,8 @@ Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de. Wir si
     {{< socialmedia profilname="mediathekview" link="https://fb.me/mediathekview" verantwortlich="Nicklas Wiegandt" icon="icon-facebook" >}}
     {{< socialmedia profilname="@mediathekview@chirpi.de" link="https://chirpi.de/@mediathekview" verantwortlich="Alexander Finkhäuser" icon="icon-chirpi" >}}
 {{< /socialmedias >}}
+
+## Weiterer Dank geht an
+* [Servercow](https://servercow.de/) für die Unterstützung beim Hosting.
+* EJ Technologies für die Bereitstellung ihrer Produkte Install4j [Multi-Platform Java Installer Builder - install4j](https://www.ej-technologies.com/products/install4j/overview.html)  und [Java Profiler - JProfiler](https://www.ej-technologies.com/products/jprofiler/overview.html).
+* JetBrains für die Bereitstellung ihrer Produkte wie z.B. [IntelliJ](https://www.jetbrains.com/idea/).
