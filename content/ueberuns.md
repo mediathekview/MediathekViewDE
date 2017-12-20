@@ -30,5 +30,5 @@ Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de. Wir si
 
 ## Weiterer Dank geht an
 * [Servercow](https://servercow.de/) für die Unterstützung beim Hosting.
-* EJ Technologies für die Bereitstellung ihrer Produkte Install4j [Multi-Platform Java Installer Builder - install4j](https://www.ej-technologies.com/products/install4j/overview.html)  und [Java Profiler - JProfiler](https://www.ej-technologies.com/products/jprofiler/overview.html).
-* JetBrains für die Bereitstellung ihrer Produkte wie z.B. [IntelliJ](https://www.jetbrains.com/idea/).
+* [EJ Technologies](https://www.ej-technologies.com/) für die Bereitstellung ihrer Produkte Install4j [Multi-Platform Java Installer Builder - install4j](https://www.ej-technologies.com/products/install4j/overview.html)  und [Java Profiler - JProfiler](https://www.ej-technologies.com/products/jprofiler/overview.html).
+* [JetBrains](https://www.jetbrains.com/) für die Bereitstellung ihrer Produkte wie z.B. [IntelliJ](https://www.jetbrains.com/idea/).
