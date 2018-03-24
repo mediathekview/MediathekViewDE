@@ -5,7 +5,7 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  font-family: 'sans-serif';
+  font-family: sans-serif;
   font-size: 14px;
   margin-bottom: 70px;
 }
@@ -24,6 +24,7 @@ body {
 .brandimage {
   height: 100%;
   width: 50px;
+  background-size: 95% 95%;
 }
 .brandimageIndex {
   height: 150px;
