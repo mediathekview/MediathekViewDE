@@ -21,7 +21,7 @@ enableRobotsTXT = true
     topline = "Die offizelle MediathekView Homepage"
     footline = "Homepage Version: 1.8.0"
 
-    copyright = "(c) 2016-2017 Copyright by MediathekView Team"
+    copyright = "(c) 2016-2018 Copyright by MediathekView Team"
     title = "MediathekView" # Site title
 
     # Show a sidebar menu
