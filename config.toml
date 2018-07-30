@@ -19,7 +19,7 @@ enableRobotsTXT = true
 
 [params]
     topline = "Die offizelle MediathekView Homepage"
-    footline = "Homepage Version: 1.8.1"
+    footline = "Homepage Version: 1.8.2"
 
     copyright = "(c) 2016-2018 Copyright by MediathekView Team"
     title = "MediathekView" # Site title
