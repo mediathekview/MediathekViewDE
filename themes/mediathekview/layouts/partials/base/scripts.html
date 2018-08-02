@@ -1,5 +1,11 @@
-<script src="{{ "js/jquery.min.js" | absURL }}"></script>
-<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+<!--<script src="{{ "js/jquery.min.js" | absURL }}"></script>
+<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>-->
+
+{{ .Scratch.Add "js" (slice (resources.Get "js/jquery.min.js"))}}
+{{ .Scratch.Add "js" (slice (resources.Get "js/bootstrap.min.js"))}}
+
+{{ $js := .Scratch.Get "js" | resources.Concat "js/bundle.js" | resources.Minify| resources.Fingerprint "sha512" }}
+<script src="{{$js.Permalink}}" integrity="{{ $js.Data.Integrity }}"></script>
 
 <script type="text/javascript">
 $(function(){
@@ -9,11 +15,13 @@ $(function(){
 
 {{ if .Params.galerie }}
 <!-- Glisse Vollbildgallerie laden -->
-<script src="{{ "js/galerie/" | absURL }}glisse.js"></script>
+<!--<script src="{{ "js/galerie/" | absURL }}glisse.js"></script>-->
+{{ $jsglisse :=  resources.Get "js/galerie/glisse.js" | resources.Minify| resources.Fingerprint "sha512" }}
+<script src="{{ $jsglisse.Permalink }}" integrity="{{ $jsglisse.Data.Integrity }}"></script>
 <script type="text/javascript">
 $(function () {
     $('.pics').glisse({
-        changeSpeed: 550, 
+        changeSpeed: 550,
         speed: 500,
         effect: 'bounce',
         fullscreen: false,
@@ -22,7 +30,7 @@ $(function () {
         bootstrapl18nNext: "Nächstes",
         bootstrapl18nPrevious: "Vorheriges",
         bootstrapl18nClose: "Schließen"
-    }); 
+    });
 });
 </script>
 <!-- Ende Glisse Vollbildgallerie laden -->
@@ -71,4 +79,3 @@ $(document).ready(function(){
 });
 </script>
 <!-- Ende Zurück zum Anfang Icon ein und ausblenden -->
-
