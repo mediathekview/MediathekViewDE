@@ -1,3 +1,6 @@
+{{ if .Params.changelogmap }}
+  {{ partial "changelogs.html" . }}
+{{ else }}
 {{ partial "head" . }}
 <div class="container">
   <div class="row">
@@ -14,3 +17,4 @@
   </div>
 </div>
 {{ partial "foot" . }}
+{{ end }}
