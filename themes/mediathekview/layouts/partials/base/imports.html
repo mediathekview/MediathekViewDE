@@ -3,15 +3,17 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 {{ "<![endif]-->" | safeHTML }}
 
-<!-- selection of themed bootstrap css to load-->
-{{ if isset .Site.Params "theme" }}
-    <link rel="stylesheet" href="{{ "css/bootswatch/" | absURL }}{{ .Site.Params.theme.name }}{{ "/bootstrap.min.css" }}">
-{{ else}}
-    <link rel="stylesheet" href="{{ "css/bootswatch/default/bootstrap.min.css" | absURL }}">
+{{ .Scratch.Add "css" (slice (resources.Get "css/bootswatch/default/bootstrap.min.css"))}}
+{{ .Scratch.Add "css" (slice (resources.Get "css/style.css"))}}
+
+{{ range .Site.Params.customCSS }}
+    {{ $.Scratch.Add "css" (slice (resources.Get .)) }}
 {{ end }}
 
-<link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+{{ $css := .Scratch.Get "css" | resources.Concat "css/bundle.css" | resources.Minify| resources.Fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
 
-{{ if .Params.galerie }}
-  <link rel="stylesheet" href="{{ "css/galerie/" | absURL }}glisse.css" />
+{{ if eq .Params.galerie true }}
+  {{ $glisse := resources.Get "css/galerie/glisse.css" | resources.Minify| resources.Fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $glisse.Permalink }}" integrity="{{ $glisse.Data.Integrity }}">
 {{ end }}
