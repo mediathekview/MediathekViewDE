@@ -19,7 +19,7 @@ enableRobotsTXT = true
 
 [params]
     topline = "Die offizelle MediathekView Homepage"
-    footline = "Homepage Version: 1.8.2"
+    footline = "Homepage Version: 1.9.0"
 
     copyright = "(c) 2016-2018 Copyright by MediathekView Team"
     title = "MediathekView" # Site title
@@ -37,7 +37,7 @@ enableRobotsTXT = true
     pre = ""
     weight = 1
     identifier = "neuigkeiten"
-    
+
     [[menu.main]]
     name = "Neuigkeiten"
     title = "Neuigkeiten"
@@ -45,7 +45,7 @@ enableRobotsTXT = true
     weight = 1
     parent = "neuigkeiten"
     url = "/news"
-    
+
     [[menu.main]]
     name = "Changelogs"
     title = "Changelogs"
@@ -53,14 +53,14 @@ enableRobotsTXT = true
     weight = 2
     parent = "neuigkeiten"
     url = "/changelog"
-    
+
     [[menu.main]]
     name = "Hilfe"
     title = "Hilfe"
     pre =""
     weight = 4
     identifier = "hilfe"
-    
+
     [[menu.main]]
     name = "Screenshots"
     title = "Screenshots"
@@ -68,20 +68,20 @@ enableRobotsTXT = true
     weight = 3
     parent = "hilfe"
     url = "/screenshots"
-    
+
     [[menu.main]]
     name = "Forum"
     title = "Forum"
     parent = "hilfe"
     weight = 4
     url = "https://forum.mediathekview.de"
-    
+
     [[menu.main]]
     name = "Unterstützen"
     title = "Unterstützen"
     weight = 5
     identifier = "unterstuetzen"
-    
+
     [[menu.main]]
     name = "Github"
     title = "Github"
