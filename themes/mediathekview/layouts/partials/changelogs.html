@@ -118,7 +118,7 @@
 </head>
 <body>
 {{ range where .Site.Pages "Section" "changelog" }}
-  <h2>[<a href="{{ .Permalink }}">{{ .Title }}</a>]</h2>
+  <h2>[{{ .Title }}]</h2>
   {{ .Content }}
 {{ end }}
 </body>
