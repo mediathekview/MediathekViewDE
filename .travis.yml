@@ -6,11 +6,8 @@ go:
   - master
 
 install:
-  - go get github.com/magefile/mage
-  - go get -d github.com/gohugoio/hugo
-  - cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo
-  - mage vendor
-  - HUGO_BUILD_TAGS=extended mage install
+  - wget $(curl --silent "https://api.github.com/repos/gohugoio/hugo/releases/latest"| grep "url"| grep "Linux-64bit.deb"|cut -d'"' -f4) -O hugo.deb
+  - sudo dpkg -i hugo.deb
 # - go get github.com/spf13/hugo
 #  - sudo apt-get --yes install snapd
 #  - sudo snap install hugo
