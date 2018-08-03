@@ -7,6 +7,7 @@ go:
 
 install:
   - echo URL zum Download $(curl --silent "https://api.github.com/repos/gohugoio/hugo/releases/latest"| grep "url"| grep "Linux-64bit.deb"|cut -d'"' -f4)
+  - curl -v "https://api.github.com/repos/gohugoio/hugo/releases/latest"
   - wget $(curl --silent "https://api.github.com/repos/gohugoio/hugo/releases/latest"| grep "url"| grep "Linux-64bit.deb"|cut -d'"' -f4) -O hugo.deb
   - sudo dpkg -i hugo.deb
 # - go get github.com/spf13/hugo
