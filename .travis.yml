@@ -6,7 +6,12 @@ go:
   - master
 
 install:
- - go get github.com/spf13/hugo
+  - go get github.com/magefile/mage
+  - go get -d github.com/gohugoio/hugo
+  - cd ${GOPATH:-$HOME/go}/src/github.com/gohugoio/hugo
+  - mage vendor
+  - HUGO_BUILD_TAGS=extended mage install
+# - go get github.com/spf13/hugo
 #  - sudo apt-get --yes install snapd
 #  - sudo snap install hugo
 #  - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
