@@ -1,0 +1,12 @@
+
+Sitemap: http://mediathekview.de/sitemap.xml
+
+# ===================================
+# Folgende Seiten sollen nicht indexiert werden:
+# ===================================
+
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Disallow: /fonts/
