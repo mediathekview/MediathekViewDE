@@ -6,7 +6,7 @@ go:
   - master
 
 install:
- - go get github.com/spf13/hugo
+  - go get github.com/spf13/hugo
 #  - sudo apt-get --yes install snapd
 #  - sudo snap install hugo
 #  - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
