@@ -6,7 +6,3 @@ Sitemap: http://mediathekview.de/sitemap.xml
 # ===================================
 
 User-agent: *
-Disallow: /css/
-Disallow: /js/
-Disallow: /images/
-Disallow: /fonts/
