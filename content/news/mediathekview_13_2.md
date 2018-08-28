@@ -7,7 +7,7 @@ keywords = ["mediathekview", "release", "13.2"] # HTML Schlüsselwörter
 tags = ["Allgemein"]
 +++
 
-[MediathekView 13.2](https://mediathekview.de/download/) ist da und bringt neben der Portablen Version und einer neuen "Irgendwo-Suche" noch weitere 
+**[MediathekView 13.2](https://mediathekview.de/download/)** ist da und bringt neben der Portablen Version und einer neuen "Irgendwo-Suche" noch weitere 
 [Neuerungen](https://mediathekview.de/changelog/13-2-0/) mit sich.
 ![Gif aktivierung der Irgendwo-Suche](/images/news/mediathekview-13_2-irgendwo.gif)
 <em>Die Aktivierung der neuen Irgendwo Suche.</em>
