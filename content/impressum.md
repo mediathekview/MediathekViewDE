@@ -10,7 +10,7 @@ toc = true
 <address>
   <strong>Alexander Finkhäuser</strong><br>
   Mediathekview<br>
-  Schirrmannweg 20<br>
+  Prälat-Marschall-Straße 41<br>
   42781 Haan
 </address>
 
@@ -61,9 +61,9 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 
 ## Datenschutzerklärung für die Nutzung von Piwik
 
-Zur Webanalyse wird der Dienst [analyse.elaon.de](https://analyse.elaon.de/index.php?module=CoreHome&action=index&idSite=4) von Alexander Finkhäuser verwendet.<br />
+Zur Webanalyse wird der Dienst [analyse.elaon.de](https://analyse.elaon.de/index.php?module=CoreHome&action=index&idSite=4&period=day&date=yesterday&updated=1) von Alexander Finkhäuser verwendet.<br />
 
-Um es recht transparent zu halten, sind die Analysen zu mediathekview.de öffentlich [einsehbar](https://analyse.elaon.de/index.php?module=CoreHome&action=index&idSite=4).<br />
+Um es recht transparent zu halten, sind die Analysen zu mediathekview.de öffentlich [einsehbar](https://analyse.elaon.de/index.php?module=CoreHome&action=index&idSite=4&period=day&date=yesterday&updated=1).<br />
 
 Diese Website benutzt den Open Source Webanalysedienst Piwik. Piwik verwendet sog. "Cookies". Das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Dazu werden die durch den Cookie erzeugten Informationen über die Benutzung dieser Website auf unserem Server gespeichert. Die IP-Adresse wird vor der Speicherung anonymisiert.<br />
 
