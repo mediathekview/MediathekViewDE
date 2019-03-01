@@ -20,7 +20,7 @@ toc = true
 
 <address>
   <strong>E-Mail</strong><br>
-  <a href="mailto:#">info@mediathekview.de</a>
+  <a href="mailto:info@mediathekview.de">info@mediathekview.de</a>
 </address>
 
 <br />
