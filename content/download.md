@@ -61,6 +61,29 @@ MediathekView für Kodi ist ein Addon welches ihr direkt im offizielen Addon-Rep
 </div>
 
 <div class="panel panel-default">
+  <div class="panel-heading"><b>Alpha und Beta Repositorys</b></div>
+  <div class="panel-body">
+    <p>Da nicht jede Test-Version des Plugins in das offizielle Kodi Addon Repository überführt wird, stehen diese beiden Repositories all jenen zur Verfügung die Interesse an den neusten Entwicklungen des Plugins haben.</p>
+
+    <p>Das <b>Beta-Repository</b> enthält Test-Versionen die bereits von mehreren Personen des MediathekView Teams getestet wurden und mögliche Kandidaten für eine Einreichung ins offizielle Kodi Addon Repository sind. Die Benutzung der dort angebotentn Versionen ist in der Regel problemlos.</p>
+
+    <p>Das <b>Alfa-Repository</b> enthält sehr neue Test-Versionen die möglicherweise problematisch sein könnten. Dieses Repository sollte nur von Experten genutzt werden, da die dort angebotene Software schwere Fehler enthalten kann.</p>
+
+    <p><u>Die Installation der Repositories in Kodi ist recht einfach:</u></p>
+
+    <p>Zu allererst benötigt man die entsprechende ZIP-Datei des Repositories (Links weiter unten).</p>
+
+    <p>Danach überträgt man – falls nötig – die ZIP-Datei auf das Kodi Abspielgerät. Dies kann über das Netzwerk oder klassisch per USB-Stick erfolgen.</p>
+
+    <p>Im Bereich "Addons" wählt man den Menüpunkt "Aus ZIP-Datei installieren" aus. Aus dem darauf erscheinenden Dateibrowser kann man dann die ZIP-Datei des Repositories auswählen.</p>
+
+    <p>Nach der Installation kann die neuste Version des Plugins aus dem Repository installiert werden. Selbstverständlich kommen auch Updates aus dem Repository mit der jeweils neusten Version.</p>
+    <a href="https://kodirepo.mediathekview.de/repo-beta/repository.mediathekviewbeta/repository.mediathekviewbeta-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Beta Repository</button></a>
+    <a href="https://kodirepo.mediathekview.de/repo-alfa/repository.mediathekviewalfa/repository.mediathekviewalfa-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Alfa Repository</button></a>
+  </div>
+</div>
+
+<div class="panel panel-default">
   <div class="panel-heading"><b>Sourcecode</b></div>
   <div class="panel-body">
     <p>Der Quellcode wird auf Github verwaltet.</p>
