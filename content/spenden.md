@@ -82,37 +82,3 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
   </p>
 </div>
 </div>
-
-<br /><br />
-
-<h3>Ein Dankeschön direkt an den ehemaligen Projektgründer</h3>
-
-<b>Überweisung</b>
-
-<table class="table">
-    <tr>
-        <td>Empfänger</td>
-        <td><b>Mediathekview</b></td>
-    <tr>
-    <tr>
-        <td>IBAN</td>
-        <td><b>DE03 7529 0000 0100 1720 30</b></td>
-    <tr>
-    <tr>
-        <td>BIC</td>
-        <td><b>GENODEF1AMV</b></td>
-    <tr>
-</table>
-
-<br />
-
-<address>
-  <strong>Paypal-Adresse</strong><br>
-  <p class="adresse"><a href="https://www.paypal.me/Mediathek" target="_blank">mediathek@posteo.de</a></p>
-</address>
-
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7PSSW427UETV6" target="_blank">
-  <img src="../images/paypal_spenden.png">
-</a>
-
-

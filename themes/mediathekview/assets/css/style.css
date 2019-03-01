@@ -370,6 +370,12 @@ address > .adresse {
   padding: 5px;
   margin-left: -15px;
 }
+
+.ehemaliger-box {
+    margin-top: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
 /*
 * Über Uns Seite ENDE
 */
