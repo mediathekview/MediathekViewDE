@@ -14,6 +14,7 @@ description = ""
     {{< profile name="Leo Moll (tuxpoldo)" title="Entwickler" description="Entwickler des Kodi Add-Ons." github="tuxpoldo" forum="tuxpoldo" website="http://www.yeasoft.com/" pic="https://avatars3.githubusercontent.com/u/1818987?s=460&v=4" >}}
     {{< profile name="Dominik Schlösser (domschl)" title="Entwickler" description="Mitentwickler des Kodi Add-Ons." github="domschl" website="http://www.dosc.net/" pic="https://avatars1.githubusercontent.com/u/5649667?s=460&v=4" >}}
 {{< /profiles >}}
+
 <div class="ueberuns-box">
 
 und viele weitere...
@@ -22,11 +23,66 @@ Das sind die kreativen und unermüdlichen Köpfe hinter MediathekView.de. Wir si
 
 </div>
 
-## Ehemalige Entwickler
+## Ehemaliger Entwickler
 
-{{< profiles >}}
-    {{< profile name="Xaver" title="Ehem. Hauptentwickler" description="Xaver ist der Vater von MediathekView, ihm haben wir dieses Projekt zu verdanken. Er hat sich etwas zurückgezogen ist aber immer noch aktiv." github="xaverW" forum="xaver" >}}
-{{< /profiles >}}
+<div clas="row" class="ehemaliger-box">
+<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 profile">
+<div class="row">
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 profilePic">
+<img src="/images/platzhalter_male.png" alt="Xaver">
+</div>
+<div class="col-xs-12 col-sm-9">
+<div class="profileName">Xaver</div>
+<div class="profileTitle">Ehem. Hauptentwickler</div>
+<div class="profileDesc">
+Xaver ist der Vater von MediathekView, ihm haben wir dieses Projekt zu verdanken. Er hat sich etwas zurückgezogen ist aber immer noch aktiv.
+</div>
+</div>
+</div>
+<div class="row profileLinks">
+<div class="col-sm-3 col-md-3 col-lg-3"></div>
+<a class="col-xs-12 col-sm-3 col-md-3 col-lg-2 btn btn-default btn-md" target="_blank" href="http://www.p2tools.de/">Webseite</a>
+<a class="col-xs-12 col-sm-3 col-md-3 col-lg-2 btn btn-default btn-md" target="_blank" href="https://github.com/xaverW">GitHub Profil</a>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-12">
+<p>Wer dem ehemaligen Hauptentwickler ein kleines Trinkgeld geben möchte, findet hier die Möglichkeiten:</p>
+<b>Überweisung</b>
+
+<table class="table">
+<tr>
+<td>Empfänger</td>
+<td><b>Mediathekview</b></td>
+<tr>
+<tr>
+<td>IBAN</td>
+<td><b>DE03 7529 0000 0100 1720 30</b></td>
+<tr>
+<tr>
+<td>BIC</td>
+<td><b>GENODEF1AMV</b></td>
+<tr>
+</table>
+<div class="row">
+<div class="col-sm-3">
+<address>
+  <strong>Paypal-Adresse</strong><br>
+  <p class="adresse"><a href="https://www.paypal.me/Mediathek" target="_blank">mediathek@posteo.de</a></p>
+</address>
+</div>
+<div class="col-sm-2">
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7PSSW427UETV6" target="_blank">
+  <img src="../images/paypal_spenden.png">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div style="clear: both;"></div>
 
 ## Social Media
 {{< socialmedias >}}

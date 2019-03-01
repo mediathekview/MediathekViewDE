@@ -4,7 +4,7 @@
     <header>
       {{ partial "bloc/content/h1-title" . }}
     </header>
-    {{ range $index, .Paginator.Pages }}
+    {{ range .Paginator.Pages }}
       {{ .Render "summary" }}
     {{ end }}
     {{ partial "bloc/content/pagination" . }}
