@@ -14,7 +14,7 @@ Die Entwicklerin [cemrich](https://github.com/cemrich/) hat sich entschlossen si
 
 Zapp ist eine Android App mit der die aktuellen Livestreams der öffentlich-rechtlichen geschaut und einzelne Sendungen heruntergeladen werden können. Zapp nutzt hierbei unter anderem die MediathekView Datenbasis.
 Wie für die MediathekView Familie üblich ist die App kostenlos, werbefrei und Open Source.
-Der Quelltext ist auf [GitHub](https://github.com/mediathekview/zapp) zu finden und die App kann aus dem [F-Droid Store](https://f-droid.org/de/packages/de.christinecoenen.code.zapp/) heruntergeladen werden. Zapp schließt unsere Lücke hinsichtlich mobile Geräte und ist eine willkommene Bereicherung für MediathekView und seine Nutzer.
+Der Quelltext ist auf [GitHub](https://github.com/mediathekview/zapp) zu finden und die App kann aus dem [F-Droid Store](https://f-droid.org/de/packages/de.christinecoenen.code.zapp/) heruntergeladen werden. Zapp ist eine willkommene Bereicherung für MediathekView und seine Nutzer.
 
 Wir freuen uns [cemrich](https://github.com/cemrich) und [Zapp](https://f-droid.org/de/packages/de.christinecoenen.code.zapp/) als Teil des Teams begrüßen zu dürfen und wünschen eine gute Zusammenarbeit.
 
