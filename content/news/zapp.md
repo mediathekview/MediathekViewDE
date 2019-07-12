@@ -10,11 +10,11 @@ tags = ["Allgemein"]
 ![Screenshot vom Zapp Film abspielen](/images/news/Screenshot_FilmAbgespielt_Zapp_20190711.png)
 
 Die Android App [Zapp](https://f-droid.org/de/packages/de.christinecoenen.code.zapp/) ist nun Teil der MediathekView Familie.
-Die Entwicklerin [cemrich](https://github.com/cemrich/) hat sich entschlossen sich dem MediathekView Team anzuschließen und ihre Andorid App [Zapp](https://f-droid.org/de/packages/de.christinecoenen.code.zapp/) der MediathekView Familie zuzuführen.
+Die Entwicklerin [cemrich](https://github.com/cemrich/) hat sich entschlossen, sich dem MediathekView Team anzuschließen und ihre Andorid App [Zapp](https://f-droid.org/de/packages/de.christinecoenen.code.zapp/) der MediathekView Familie zuzuführen.
 
-Zapp ist eine Android App mit der die aktuellen Livestreams der öffentlich-rechtlichen geschaut und einzelne Sendungen heruntergeladen werden können. Zapp nutzt hierbei unter anderem die MediathekView Datenbasis.
+Zapp ist eine Android-App, mit der die aktuellen Livestreams der Öffentlich-Rechtlichen geschaut und einzelne Sendungen heruntergeladen werden können. Zapp nutzt hierbei unter anderem die Datenbasis von MediathekView.
 Wie für die MediathekView Familie üblich ist die App kostenlos, werbefrei und Open Source.
-Der Quelltext ist auf [GitHub](https://github.com/mediathekview/zapp) zu finden und die App kann aus dem [F-Droid Store](https://f-droid.org/de/packages/de.christinecoenen.code.zapp/) heruntergeladen werden.
+Der Quelltext ist auf [GitHub](https://github.com/mediathekview/zapp) zu finden und die App kann aus dem [F-Droid Store](https://f-droid.org/de/packages/de.christinecoenen.code.zapp/) heruntergeladen werden. Zapp ist eine willkommene Bereicherung für MediathekView und seine Nutzer.
 
 Wir freuen uns [cemrich](https://github.com/cemrich) und [Zapp](https://f-droid.org/de/packages/de.christinecoenen.code.zapp/) als Teil des Teams begrüßen zu dürfen und wünschen eine gute Zusammenarbeit.
 
