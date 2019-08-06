@@ -59,8 +59,8 @@ Das ohne Installation auskommende Programm [Path Editor](http://patheditor2.code
 
 ![Patheditor-Settings](/images/faq/patheditor_settings.jpg)
 
-Alternativ kann in der Windows-Systemsteuerung die PATH-Variable von Java angepasst werden: "Systemsteuerung -> System und Sicherheit -> System -> Erweiterte Systemeigenschaften -> Umgebungsvariablen -> PATH
-Dann "Bearbeiten" wählen und hinter den letzten Eintrag ein ";" und ohne folgenden Leerschlag den Java-Pfad setzen, z.B.:
+Alternativ kann in der Windows-Systemsteuerung die PATH-Variable von Java angepasst werden: `Systemsteuerung -> System und Sicherheit -> System -> Erweiterte Systemeigenschaften -> Umgebungsvariablen -> PATH`
+Dann "Bearbeiten" wählen und hinter den letzten Eintrag ein ";" und ohne folgenden Leerzeichen den Java-Pfad setzen, z.B.:
 ```
 ;C:\Program Files\Java\jre8\bin
 ```
@@ -90,11 +90,10 @@ fi
 cd $OLDPWD
 ```
 
-Unter OS X 10.6 ist [MediathekView 3.2.1](https://sourceforge.net/projects/zdfmediathk/files/Mediathek/Mediathek%203.2.1/) die letzte ausführbare App-Version, da Java 7 (oder neuer) auf dieser Plattform nicht installiert werden kann.
 
 # Filmliste wird nicht vollständig geladen
 
-Eine Lösung besteht im Löschen der Filmliste, d.h. der Datei "filme.json". Diese befindet sich bei Windows und Linux im Home-Verzeichnis und zwar im Ordner ".mediathek3".
+Eine Lösung besteht im Löschen der Filmliste, d.h. der Datei **filme.json**. Diese befindet sich bei Windows und Linux im Home-Verzeichnis und zwar im Ordner `.mediathek3`.
 Unter OS X ist diese Datei unsichtbar und an einem anderen Ort; sie kann jedoch durch Eingabe (Kopieren) des folgenden Befehls im Programm Terminal (Programme/Dienstprogramme/Terminal) und Bestätigung mit der Eingabe-Taste gelöscht werden:
 ```
 rm ~/Library/Caches/MediathekView/filme.json
@@ -151,7 +150,7 @@ Dies weist auf [fehlerhafte Sets](#wenn-nichts-geht) oder eine Security-Suite hi
 Wenn Sendungen deren Download URL mit HTTPS beginnt nicht heruntergeladen werden können kann das am SSL liegen.
 
 ## Problem erkennen
-Zuerst ist hier zu Prüfen ob tatsächlich das HTTPS das Problem ist hierzu kann man MediathekView in der Konsole mit `java -jar MediathekView.jar` starten. Wenn in der Konsole der folgende Fehler auftritt liegt es am SSL:
+Zuerst ist hier zu Prüfen ob tatsächlich das HTTPS das Problem ist hierzu kann man MediathekView in der Konsole mit `java -Xmx1G -jar MediathekView.jar` starten. Wenn in der Konsole der folgende Fehler auftritt liegt es am SSL:
 ```
 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException:
 PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderExce
@@ -175,9 +174,9 @@ Es kann verschiedene Auslöser für das Problem geben, die häufigsten sind die 
 
  1. Veraltete Java Version
    - Einige moderne SSL Varianten werden von älteren Java Versionen nicht unterstützt, es sollte deshalb überprüft werden ob die [aktuellste verfügbare Java JRE](/anleitung/#systemvoraussetzungen) eingesetzt wird.
- 
+
  2. Virenscanner stört SSL Verbindung
-   - Einige aktuelle Virenscanner wie z.B. Kaspersky jubeln dem Benutzer eigene SSL Zertifikarte unter um die Verbindung überwachen zu können. Dieses "Feature" kann u.a. zu Problemen beim Download einer Sendung führen und sollte deshalb deaktivieret werden. Weitere Infos zu dem Thema: 
+   - Einige aktuelle Virenscanner wie z.B. Kaspersky jubeln dem Benutzer eigene SSL Zertifikarte unter um die Verbindung überwachen zu können. Dieses "Feature" kann u.a. zu Problemen beim Download einer Sendung führen und sollte deshalb deaktivieret werden. Weitere Infos zu dem Thema:
      - https://www.heise.de/security/meldung/Sicherheitsforscher-an-AV-Hersteller-Finger-weg-von-HTTPS-3620159.html
      - https://www.heise.de/security/meldung/Kaspersky-torpediert-SSL-Zertifikatspruefung-3587871.html
 
