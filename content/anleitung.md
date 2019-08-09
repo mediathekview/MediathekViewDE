@@ -18,9 +18,8 @@ Das Programm MediathekView (abgekürzt: MV) ist eine Art Suchmaschine für Filme
 ## Installation
 
 ### Systemvoraussetzungen
-Unterstützt wird Windows (XP, Vista, 7, 8, 10), Linux sowie Mac OS X (ab Version 10.7.3 (1)). MediathekView benötigt unter Windows und Linux eine aktuelle [Java-VM](http://java.com/de/) ab Version: 1.8 (= Java 8). Für Linux-Benutzer wird [OpenJDK8](http://download.java.net/openjdk/jdk8/) empfohlen, außerdem benötigen Linux Benutzer die aktuelle Version von JavaFX (OpenJFX). Mac-OS-X-Benutzer brauchen kein Java zu installieren, da Java in die Applikation MediathekView (ab Version 4) integriert wurde.
+Unterstützt wird Windows (7, 8, 10), Linux sowie Mac OS X (ab Version 10.10). MediathekView benötigt unter Windows und Linux eine aktuelle [Java-VM](https://www.oracle.com/technetwork/java/javase/downloads/index.html) ab Version: 11. Für Linux-Benutzer wird [OpenJDK11](https://openjdk.java.net/install/index.html) empfohlen. Mac-OS-X-Benutzer brauchen kein Java zu installieren, da Java in die Applikation MediathekView (ab Version 4) integriert wurde.
 
-(1) Benutzer von OS X 10.6 benötigen Java 6 (von Apple vorinstalliert) sowie die Version 3.3.0 von MediathekView, und zwar die [ZIP-Datei](https://sourceforge.net/projects/zdfmediathk/files/Mediathek/Mediathek%203.3.0/) ohne die Angabe "OSX" im Dateinamen (mehr dazu unter [Anleitung/Mac](#mac)).
 
 ### Hilfsprogramme zum Abspielen und Aufzeichnen von Sendungen
 Zum Ansehen und Aufzeichnen werden geeignete Zusatzprogramme benötigt. MediathekView ist konfiguriert für die Verwendung von **VLC Media Player** (zum Abspielen und Aufzeichnen von Sendungen) sowie **flvstreamer** und **FFmpeg** zum Aufzeichnen von Sendungen.

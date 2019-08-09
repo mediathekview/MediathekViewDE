@@ -17,9 +17,9 @@ title = "Download"
   <div class="panel-heading"><b>Aktuell stabile Version</b></div>
   <div class="panel-body">
     <p>Die aktuell stabile Version für alle gängigen Betriebsysteme in gepackter Form.</p>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest.zip"><button type="button" class="btn btn-primary btn-sm">Windows (zip)</button></a>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest.tar.gz"><button type="button" class="btn btn-primary btn-sm">Linux (tar.gz)</button></a>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest.dmg"><button type="button" class="btn btn-primary btn-sm">OS X (dmg)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win.zip"><button type="button" class="btn btn-primary btn-sm">Windows (zip)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.tar.gz"><button type="button" class="btn btn-primary btn-sm">Linux (tar.gz)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac.dmg"><button type="button" class="btn btn-primary btn-sm">OS X (dmg)</button></a>
   </div>
 </div>
 
