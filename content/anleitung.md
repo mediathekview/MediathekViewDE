@@ -1,6 +1,6 @@
 +++
 description = ""
-date = "2017-01-15T15:00:00+01:00"
+date = "2019-08-13T20:00:00+01:00"
 title = "Anleitung"
 toc = true
 [menu]
@@ -13,131 +13,45 @@ toc = true
 # Anleitung
 
 ## Kurzbeschrieb von MediathekView
-Das Programm MediathekView (abgekürzt: MV) ist eine Art Suchmaschine für Filme der Mediatheken verschiedener öffentlich-rechtlicher Sender (3sat, ARD, arte.de, arte.fr, BR, hr, KiKA, mdr, NDR, ORF, phönix, rbb, SR, SRF, SWR, WDR, ZDF, ZDFtivi). MediathekView erlaubt es, sowohl Beiträge aus den Mediatheken direkt (mit VLC Media Player oder mit einem Programm eigener Wahl) abzuspielen oder herunterzuladen als auch Sendereihen/Serien zu abonnieren. MediathekView kann nur Sendungen herunterladen, die in den Mediatheken der Sender selbst noch als Videos angeboten werden.
+Das Programm MediathekView (abgekürzt: MV) ist eine Art Suchmaschine für Filme der Mediatheken verschiedener öffentlich-rechtlicher Sender. MediathekView erlaubt es, sowohl Beiträge aus den Mediatheken direkt (mit VLC Media Player oder mit einem Programm eigener Wahl) abzuspielen oder herunterzuladen als auch Sendereihen/Serien zu abonnieren. MediathekView kann nur Sendungen herunterladen, die in den Mediatheken der Sender selbst noch als Videos angeboten werden.
 
 ## Installation
 
 ### Systemvoraussetzungen
-Unterstützt wird Windows (7, 8, 10), Linux sowie Mac OS X (ab Version 10.10). MediathekView benötigt unter Windows und Linux eine aktuelle [Java-VM](https://www.oracle.com/technetwork/java/javase/downloads/index.html) ab Version: 11. Für Linux-Benutzer wird [OpenJDK11](https://openjdk.java.net/install/index.html) empfohlen. Mac-OS-X-Benutzer brauchen kein Java zu installieren, da Java in die Applikation MediathekView (ab Version 4) integriert wurde.
+Unterstützt wird Windows x64 (7, 8, 10), Linux x64 sowie Mac OS X (ab Version 10.10). Es werden keine 32 Bit Betribssysteme unterstützt da OpenJFX in der eingesetzten Version nicht für 32 Bit zur Verfügung steht. MediathekView benötigt keine Java Installation mehr da diese für alle Betriebssysteme mitgeliefert wird.
 
 
 ### Hilfsprogramme zum Abspielen und Aufzeichnen von Sendungen
-Zum Ansehen und Aufzeichnen werden geeignete Zusatzprogramme benötigt. MediathekView ist konfiguriert für die Verwendung von **VLC Media Player** (zum Abspielen und Aufzeichnen von Sendungen) sowie **flvstreamer** und **FFmpeg** zum Aufzeichnen von Sendungen.
+Zum Ansehen und Aufzeichnen werden geeignete Zusatzprogramme benötigt. MediathekView ist konfiguriert für die Verwendung von **VLC Media Player** (zum Abspielen und Aufzeichnen von Sendungen) sowie **FFmpeg** zum Aufzeichnen von Sendungen.
 
-Für Windows und OS X ist der flvstreamer und FFmpeg bereits im Programmpaket von MediathekView enthalten (im Ordner "bin"), es muss nur der VLC Media Player installiert sein. Sinnvollerweise wird vor dem ersten Start von MediathekView zuerst der [VLC Media Player](http://www.videolan.org/) installiert.
+Für Windows und OS X ist FFmpeg bereits im Programmpaket von MediathekView enthalten (im Ordner "bin"), es muss nur der VLC Media Player installiert sein. Sinnvollerweise wird vor dem ersten Start von MediathekView zuerst der [VLC Media Player](http://www.videolan.org/) installiert.
 
-Für Linux müssen der VLC Media Player, der [flvstreamer](http://savannah.nongnu.org/projects/flvstreamer) und [FFmpeg](http://www.ffmpeg.org/) durch die Paketverwaltung installiert werden. Statt des flvstreamer kann auch [**rtmpdump**](http://rtmpdump.mplayerhq.hu/) verwendet werden, analog kann **avconv** (Bestandteil des [libav](http://libav.org/)-Projekts) statt FFmpeg verwendet werden. Bei OpenSuse müssen zusätzlich zum VLC Media Player auch die **vlc-codecs** installiert werden.
+Für Linux müssen der VLC Media Player und [FFmpeg](http://www.ffmpeg.org/) durch die Paketverwaltung installiert werden. Statt FFmpeg kann auch **avconv** (Bestandteil des [libav](http://libav.org/)-Projekts) verwendet werden. Bei OpenSuse müssen zusätzlich zum VLC Media Player auch die **vlc-codecs** installiert werden.
 
-Beim ersten Start von MediathekView werden bereits zwei Programmsets mit den drei Hilfsprogrammen VLC Media Player, flvstreamer und FFmpeg angelegt. Damit können alle Filme angesehen und aufgezeichnet werden.
+Beim ersten Start von MediathekView werden bereits zwei Programmsets mit den zwei Hilfsprogrammen VLC Media Player und FFmpeg angelegt. Damit können alle Filme angesehen und aufgezeichnet werden.
 
 ### Linux
 
 #### Erster Start
 
-Beim ersten Start von MediathekView werden bereits zwei Programmsets mit den drei Hilfsprogrammen VLC Media Player, flvstreamer und FFmpeg angelegt. Damit können alle Filme angesehen und aufgezeichnet werden.
+Beim ersten Start von MediathekView werden bereits zwei Programmsets mit den zwei Hilfsprogrammen VLC Media Player und FFmpeg angelegt. Damit können alle Filme angesehen und aufgezeichnet werden.
 
-Wurde statt flvstreamer **rtmpdump** verwendet, muss dieses beim ersten Start statt flvstreamer ausgewählt werden (Pfad meist: "/usr/bin/rtmpdump"). Wurde statt ffmpeg **libav-tools** verwendet, muss beim ersten Start statt ffmpeg **avconv** ausgewählt werden (Pfad meist: "/usr/bin/avconv")
+Wurde statt ffmpeg **libav-tools** verwendet, muss beim ersten Start statt ffmpeg **avconv** ausgewählt werden (Pfad meist: "/usr/bin/avconv")
 
 #### Installation
 
-Die erste Anlaufstelle sollte die Paketverwaltung/Installationswerkzeuge der Distribution sein. Das ist der einfachste Weg und es werden alle benötigten Programme automatisch mitinstalliert. Wenn die aktuelle Version von MediathekView nicht in den Paketquellen enthalten ist, kann auch versucht werden diese über Backports zu beziehen. Auch möglich ist, das Programm manuell zu installieren (was sich im Wesentlichen auf das Entpacken eines Zip-Paketes beschränkt).
+Auf der Webseite finden sich unter Downloads folgende Pakete:
+- Windows Installation (Exe)
+- Windows ohne Installation (Zip)
+- Linux Installation (Deb,RPM,Sh)
+- Linux ohne Installation (tar.gz)
+- OS X Installation (Dmg)
 
-_Backports_
-[help.ubuntu.com/community/UbuntuBackports](https://help.ubuntu.com/community/UbuntuBackports)
-[wiki.ubuntu.com/UbuntuBackports](https://wiki.ubuntu.com/UbuntuBackports)
-[backports.debian.org](http://backports.debian.org/)
+Da wir aktuell kein eigenes Repository betreiben können wir von der Installation aus anderen Quellen als von der Webseite nur abraten.
 
-_Allgemeine Infos_
-[wiki.ubuntuusers.de/Paketquellen](http://wiki.ubuntuusers.de/Paketquellen)
+Zur Installation das passende Paket herunterladen und ausführen. Ein Dialog führt durch die Installation.
 
-_Pinning für Debian, Ubuntu und alle anderen Debian basierten Distributionen_
-[Debian pinning](#debian-pinning)
-
-#### Debain Pinning
-Dies soll erläutern, wie man als Benutzer von Debian-basierten Distributionen neuere Versionen von MediathekView installieren kann, selbst wenn diese für die jeweilige Version nicht zur Verfügung stehen. Dies ist insbesondere für Debian Stable oder Ubuntus LTS-Versionen interessant. Allen anderen wird empfohlen das gesamte System auf die neuste Version zu aktualisieren.
-
-Wenn man stabile LTS-Versionen wie z.B. Ubuntu 14.04 schätzt, jedoch gerne immer die aktuellste MediathekView-Version haben möchte, geht man wie folgt vor:
-
-Im Folgenden wird als Beispiel immer Ubuntu 14.04 als Ausgangssystem verwendet. Bitte für die jeweilige stabile Version anpassen oder im Forum nachfragen.
-
----
-
-##### Den Standard festlegen
-
-Wichtig ist, dass man bei Upgrades das Installieren ungewollter Software vermeidet. Dazu editiert man die Datei /etc/apt/apt.conf und fügt folgende Zeile hinzu:
-```
-APT::Default-Release "trusty";
-```
-Der Codename ändert sich in Abhängigkeit von der jeweiligen stabilen Version. Für Debian Wheezy wäre es dann folgerichtig:
-```
-APT::Default-Release "wheezy";
-```
-
----
-
-##### Quellen freischalten
-
-Mit einem Editor die Datei /etc/apt/sources.list öffnen und bearbeiten. Dazu sind wieder Root-Rechte erforderlich.
-```
-sudo vim /etc/apt/sources.list
-```
-Hier muss die Quelle derjenigen Version eingetragen werden, von welcher die neue Ausgabe von MediathekView installiert werden soll, z.B.:
-```
-deb http://archive.ubuntu.com/ubuntu utopic main universe
-```
-oder für Debian:
-```
-deb http://ftp.de.debian.org/debian testing main
-```
-
----
-
-##### Installieren
-
-```
-apt-get install -t utopic mediathekview
-```
-oder für Debian:
-```
-apt-get install -t testing mediathekview
-```
-
-#### Installation über die Paketverwaltung
-
-Für die verschiedenen Linuxdistributionen gibt es in der Regel ein vorgefertigtes Paket von MediathekView. Es werden bei der Installation wie gewohnt automatisch alle erforderlichen Abhängigkeiten an den richtigen Ort installiert:
-
-**Debian, Ubuntu, Linux Mint (deb)**
-
-Bei auf Debian basierenden Distributionen (wie z.B. Ubuntu) kann man MediathekView so installieren:
-```
-apt-get install mediathekview
-```
-oder
-```
-aptitude install mediathekview
-```
-Auch eine grafische Installation mit Synaptic, dem Softwarecenter oder PackageKit ist möglich.
-
-Benutzern von Debians Stable- oder Ubuntus LTS-Version, die gerne die neuste Version von MediathekView auf ihrem System installieren möchten, sei der Artikel zum Thema Pinning oder die manuelle Installation empfohlen.
-
-**Red Hat, Fedora, OpenSuse (rpm)**
-
-Sofern ein Paket vorhanden ist, lässt es sich mit
-```
-yum install mediathekview
-```
-installieren. Bitte einen Fehlerbericht verfassen und auf das Debianpaket verweisen, falls es noch kein aktuelles Paket geben sollte.
-
-**Arch Linux**
-
-Für Arch Linux wird ein Paket im Arch User Repository (AUR) bereitgestellt:
-```
-https://aur.archlinux.org/packages/mediathek/
-```
-
-#### Manuelle Installation
-
-Da die Programmversion in der Paketverwaltung nicht immer aktuell ist, kommt man so zu der neuesten Version. Als erstes muss die Zip-Datei heruntergeladen und in einem beliebigen Ordner (z.B. "mv") im Home-Verzeichnis entpackt werden.
+#### Hinweise zur Installation für bestimmte Betribssysteme
 
 ---
 
