@@ -17,6 +17,16 @@ Das Programm MediathekView (abgekürzt: MV) ist eine Art Suchmaschine für Filme
 
 ## Installation
 
+Auf der Webseite finden sich unter [Downloads](/download) folgende Pakete:
+- Windows Installation (Exe)
+- Windows ohne Installation (Zip)
+- Linux Installation (Deb, RPM, Sh)
+- Linux ohne Installation (tar.gz)
+- OS X Installation (Dmg)
+
+Zur Installation das passende Paket herunterladen und ausführen. Ein Dialog führt durch die Installation.
+Das Programm besteht aus dem Programm Ordner und dem Ordner ".mediathek3" in dem die Einstellungen gespeichert werden. Der Einstellungs Ordner wird standard mäßig im Benutzerverzeichnis abgelegt. Der Programm Ordner wird im Installationsdialog ausgewählt bzw. kann beim Entpacken des Archivs gewählt werden. Das Debain und das RPM Paket werden nach `/opt/MediathekView` installiert.
+
 ### Systemvoraussetzungen
 Unterstützt wird Windows x64 (7, 8, 10), Linux x64 sowie Mac OS X (ab Version 10.10). Es werden keine 32 Bit Betribssysteme unterstützt da OpenJFX in der eingesetzten Version nicht für 32 Bit zur Verfügung steht. MediathekView benötigt keine Java Installation mehr da diese für alle Betriebssysteme mitgeliefert wird.
 
@@ -40,171 +50,8 @@ Wurde statt ffmpeg **libav-tools** verwendet, muss beim ersten Start statt ffmpe
 
 #### Installation
 
-Auf der Webseite finden sich unter Downloads folgende Pakete:
-- Windows Installation (Exe)
-- Windows ohne Installation (Zip)
-- Linux Installation (Deb,RPM,Sh)
-- Linux ohne Installation (tar.gz)
-- OS X Installation (Dmg)
-
 Da wir aktuell kein eigenes Repository betreiben können wir von der Installation aus anderen Quellen als von der Webseite nur abraten.
-
-Zur Installation das passende Paket herunterladen und ausführen. Ein Dialog führt durch die Installation.
-
-#### Hinweise zur Installation für bestimmte Betribssysteme
-
----
-
-##### Mint 17
-
-Es müssen noch folgende Pakete nachinstalliert werden: **flvstreamer** und **libav-tools**.
-
-Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf **MediathekView.sh** gestartet werden.
-
-Einen Menüpunkt kann man sich so anlegen:
-
-- rechte Maus auf Menü -> Einrichten
-- dann _Die Menübearbeitung öffnen_ klicken
-- z.B. das Menü _Multimedia_ auswählen und dann mit _new Item_ einen neuen Eintrag anlegen
-- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
-
-Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zum Schreibtisch hinzufügen_ kann man auch einen Startbutton auf dem Desktop anlegen.
-
----
-
-##### Ubuntu 14.04\. 14.10\. 15.04
-
-Es müssen noch folgende Pakete nachinstalliert werden: **OpenJDK-Java-8-Laufzeitumgebung**, **vlc**, **flvstreamer** und **libav-tools**.
-
-Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf **MediathekView.sh** gestartet werden. (Dafür muss im Dateimanager zuerst eingestellt werden: Einstellungen -> Verhalten: "Ausführbare Textdateien: Jedes Mal nachfragen")
-
-Einen Menüpunkt kann man sich so anlegen:
-
-Mit gedit eine Datei mit folgendem Inhalt im Programmordner anlegen (z.B. mv.desktop):
-
-```
-[Desktop Entry]
-Name=MV
-GenericName=MediathekView
-Exec=/home/BENUTZERNAME/PROGRAMMORDNER/MediathekView.sh
-Icon=/home/BENUTZERNAME/PROGRAMMORDNER/Info/MediathekView.png
-Terminal=false
-Type=Application
-StartupNotify=false
-Categories=AudioVideo;Player;
-OnlyShowIn=GNOME;XFCE;
-MimeType=video/mpeg;audio/mpeg;
-```
-
-Mit einem Rechtsklick auf die Datei: "Eigenschaften -> Zugriffsrechte -> Ausführen" ausführbar machen. Man kann dann das Programm mit einem Doppelklick darauf starten. Die Startdatei kann man auch mit der Maus in den Starter ziehen. Damit hat man einen Starter angelegt.
-
----
-
-##### Kubuntu 14.04\. 14.10\. 15.04
-
-Damit die fehlenden Pakete installiert werden können, sollte zuerst das Programm **Muon Paketverwaltung** installiert werden. Damit werden dann die fehlenden Pakete nachinstalliert: **vlc**, **flvstreamer** und **libav-tools**.
-
-Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Klick auf **MediathekView.sh** gestartet werden.
-
-Einen Menüpunkt kann man sich so anlegen:
-
-- rechte Maus aufs Menü -> "Menüeinträge bearbeiten" oder "Anwendungen bearbeiten"
-- z.B. das Memü _Multimedia_ auswählen und dann mit _neues Element_ einen neuen Eintrag anlegen
-- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
-
-Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zur Arbeitsfläche hinzufügen_ oder einfach mit der Maus auf den Desktop ziehen, kann man auch einen Startbutton auf dem Desktop anlegen.
-
----
-
-##### Debian 7.6
-
-Folgende Pakete müssen nachinstalliert werden: **VLC**, **flvstreamer**, **libav-tools** und **Java8** / **openjdk-8-jre-8**.
-
-Danach muss die aktuelle Javaversion eingestellt werden. In einem Terminal: `sudo update-alternatives --config java` und dann java7 auswählen.
-
-Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf **MediathekView.sh** gestartet werden.
-
-Zum Eintragen ins Startmenü, die Anwendung _Hauptmenü_ starten. Dann "neuer Eintrag" auswählen. Als "Befehl" die Datei "MediathekView.sh" im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
-
----
-
-##### Debian 8 (Gnome)
-
-Folgende Pakete müssen nachinstalliert werden: **VLC**, **flvstreamer**, **libav-tools**.
-
-Beim ersten Programmstart muss für ffmpeg die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf _MediathekView.sh_ gestartet werden (dafür muss im Dateimanager zuerst eingestellt werden: Einstellungen -> Verhalten: "Ausführbare Textdateien: Jedes Mal nachfragen").
-
-Zum Anlegen eines Starters eine ".desktop" Datei (z.B. mv.desktop) im Ordner (im Benutzerverzeichnis): "~/.local/share/applications" anlegen und einmel Doppelklicken und vertrauenswürdig markieren. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im Programmordner -> Infos liegen Icons).
-
-```
-[Desktop Entry]
-Name=MV
-GenericName=MediathekView
-Exec=/home/BENUTZERNAME/PROGRAMMORDNER/MediathekView.sh
-Icon=/home/BENUTZERNAME/PROGRAMMORDNER/Info/MediathekView.png
-Terminal=false
-Type=Application
-StartupNotify=false
-Categories=AudioVideo;Player;
-OnlyShowIn=GNOME;XFCE;
-MimeType=video/mpeg;audio/mpeg;
-```
-
----
-
-##### OpenSuse 13.1\. 13.2 (KDE)
-
-Zuerst sollten die Codecs nachinstalliert werden (es fehlen sonst die benötigten Pakete!!): [opensuse-community.org](http://web.archive.org/web/20151210145748/http://opensuse-community.org/index.html)
-
-Dann kann über die Paketverwaltung: **vlc**, **vlc-codec**, **rtmpdump** nachinstalliert werden. (bei 13.2 wird noch **ffmpeg** benötigt)
-
-Beim ersten Programmstart muss für **flvstreamer** die Datei `/usr/bin/rtmpdump` ausgewählt werden. MediathekView kann durch einen Klick auf **MediathekView.sh** gestartet werden.
-
-Einen Menüpunkt kann man sich so anlegen:
-
-- rechte Maus aufs Menü->Menüeinträge bearbeiten
-- z.B. das Memü _Multimedia_ auswählen und dann mit _neues Element_ einen neuen Eintrag anlegen
-- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
-
-Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zur Arbeitsfläche hinzufügen_ kann man auch einen Startbutton auf dem Desktop anlegen.
-
----
-
-##### Raspbian (06.2015)
-
-Es müssen noch folgende Pakete nachinstalliert werden: **vlc**, **flvstreamer** und **ffmpeg**. (Zum Download des Programms von https://mediathekview.de/download wird noch ein Browser z.B.: chromium benötigt.) Die Installation kann in der Konsole mit dem Befehl erfolgen:
-
-```
-sudo apt-get update
-sudo apt-get install vlc ffmpeg flvstreamer chromium
-```
-
-MediathekView kann durch einen Doppelklick auf **MediathekView.sh** (und dann "Ausführen" auswählen) gestartet werden.
-
-Einen Starter auf dem Desktop kann man sich so anlegen:
-
-- Rechte Maus auf dem Desktop-> Neu-> Leere Datei und als Namen dann z.B.: "mv.desktop" eingeben.
-- Dann die Datei mit der rechten Maus-> TextEditor öffnen und folgendes eingeben:
-
-  ```
-  [Desktop Entry]
-  Encoding=UTF-8
-  Type=Application
-  Name=Mediathek
-  Name[de_DE]=Mediathek
-  Icon=/home/pi/PFAD_ZUM_PROGRAMM/Info/MediathekView.svg
-  Exec=/home/pi/PFAD_ZUM_PROGRAMM/MediathekView.sh
-  Comment[de_DE]=MediathekView
-  StartupNotify=true
-  ```
-
-  (**PFAD_ZUM_PROGRAMM** mit dem eigenen Pfad abändern!)
-
-Man kann dann das Programm mit einem Doppelklick darauf starten.
-
-###### Deinstallation
-
-Wurde das Programm über die Paketverwaltung installiert, kann es auch darüber wieder deinstalliert werden. Das Programm selbst legt nur den Ordner ".mediathek3\. im Home-Verzeichnis an und speichert darin alle Einstellungen. (Standardmäßig sind unter Linux Ordner mit führendem Punkt unsichtbar, das kann aber in den Einstellungen des Dateimanagers geändert werden.) Es werden keine weiteren Änderungen am System vorgenommen. Wird dieser Einstellungsordner (und bei manueller Installation der Programmordner) gelöscht, ist das Programm wieder komplett entfernt.
+MediathekView kann entweder über das Deb, RPM, Sh Paket installiert werden oder durch entpacken des tar.gz Archivs.
 
 ### Mac
 Für OS X 10.7.3 (und neuer) gibt es eine separate Applikation "MediathekView.app":
@@ -222,7 +69,9 @@ Für Mac-OS-X-10.6-Benutzer sowie für fortgeschrittene Benutzer, die MediathekV
 4. die ZIP-Datei kann nach dem Entpacken gelöscht werden
 
 ### Windows
-MediathekView wird nicht installiert; das Entpacken der [heruntergeladenen ZIP-Datei](/download) ist quasi die Installation:
+MediathekView kann entweder über die Exe installiert werden oder das Zip entpackt werden.
+Bei Verwendung der Exe führt ein Dialog durch die Installation und anschließend finden sich Einträge für MediathekView im Menü.
+Das entpacken des Zip Archivs erfolgt so:
 ![MediathekView extrahieren Schritt 1](/images/anleitung/MV_Entzippen_1.jpg)
 ![MediathekView extrahieren Schritt 2](/images/anleitung/MV_Entzippen_2.png)
 
@@ -232,67 +81,55 @@ MediathekView wird nicht installiert; das Entpacken der [heruntergeladenen ZIP-D
 4. die ZIP-Datei kann nach dem Entpacken gelöscht werden
 
 ### Update
-**Windows**: Das Update von MediathekView geschieht dadurch, dass man die heruntergeladene ZIP-Datei der neuen Version in das selbe Verzeichnis entpackt, in dem sich die alte Version befindet. Anschließend kann man von der Startdatei im neuen Programmordner (z.B. "MediathekView_9") eine Desktopverknüpfung erstellen (vgl. Abschnitt oben). Bevor man den alten Programmordner (z.B. "MediathekView_3.3.0") löscht, sollte man allfällige selbst installierte Hilfsprogramme und Skripte transferieren. Die Einstellungen der vorhergehenden Programmversion werden von der neuen Version verwendet; es gibt also keinen neuen Einrichtungsdialog.
+
+Die Installations Pakete können auch zum Updaten von MediathekView verwendet werden, auch hier führt wieder ein Dialog durch das Update.
 
 **Mac**: Das Update erfolgt dadurch, dass man die neue Version von MediathekView in den Programmordner zieht, wodurch die alte ersetzt wird.
 
+#### Manuelles update
+
+Das manuelle Update von MediathekView geschieht dadurch, dass man das heruntergeladene Archiv (ZIP bzw. tar.gz) der neuen Version in das selbe Verzeichnis entpackt, in dem sich die alte Version befindet. Anschließend kann man von der Startdatei im neuen Programmordner (z.B. "MediathekView_13_2") eine Desktopverknüpfung erstellen (vgl. Abschnitt oben). Bevor man den alten Programmordner (z.B. "MediathekView_13_3") löscht, sollte man allfällige selbst installierte Hilfsprogramme und Skripte transferieren. Die Einstellungen der vorhergehenden Programmversion werden von der neuen Version verwendet; es gibt also keinen neuen Einrichtungsdialog.
+
 ### Deinstallation
-Das Programm legt nur den Ordner ".mediathek3" in den "Eigenen Dateien" respektive im Home-Verzeichnis an und speichert darin alle Einstellungen. Es werden keine weiteren Änderungen am System vorgenommen. Wird dieser Einstellungsordner und der Programmordner (z.B. "MediathekView_9" im Falle von Windows bzw. MediathekView.app im Falle von OS X) gelöscht, ist das Programm wieder komplett entfernt.
-Unter OS X ist der Ordner ".mediathek3" unsichtbar, er kann jedoch durch Eingabe (Kopieren) des folgenden Befehls im Programm Terminal (Programme/Dienstprogramme/Terminal) gelöscht werden:
+Den Installations Paketen liegt auch eine Ausführbare Datei zur Deinstallations. Bei einer manuellen Installation reicht es, den Programm Ordner zu entfernen. Sollen auch die Einstellungen entfernt werden muss das entsprechende Verzeichnis gelöscht werden. Dies gilt für alle Pakete, der Deinstaller löscht die Einstellungen nicht. Der Einstellungs Ordner ".mediathek3" findet sich in den "Eigenen Dateien" respektive im Home-Verzeichnis. 
+Unter OS X und anderen Unix-Systemen ist der Ordner ".mediathek3" unsichtbar, er kann jedoch durch Eingabe (Kopieren) des folgenden Befehls im Programm Terminal (Programme/Dienstprogramme/Terminal) gelöscht werden:
 ```
 rm -R ~/.mediathek3
 ```
 
 ## Starten
-Für Windows (MediathekView.exe), Linux (MediathekView.sh) sind eigene Startdateien enthalten, mit welchen MediathekView direkt gestartet werden kann. Für OS X 10.7.3 und neuer besteht eine eigenständige Applikation (MediathekView.app); für OS X 10.6 liegt die Startdatei "MediathekView.command" vor.
+Bei Verwendung der Installations Pakete finden Sich Einträge für MediathekView im App-Menü. Wurde das Archiv entpackt oder wird der Programm Ordner direkt angesteuert finden sich in diesem Ausführbare Datein für das jeweilige Betriebssystem.  Für Windows (MediathekView.exe), Linux (MediathekView.sh) mit welchen MediathekView direkt gestartet werden kann. Für OS X 10.7.3 und neuer besteht eine eigenständige Applikation (MediathekView.app); für OS X 10.6 liegt die Startdatei "MediathekView.command" vor.
 
 Ansonsten kann man die Programmdatei auch so starten:
 
 - Windows: Doppelklick auf "MediathekView-ipv4.exe" oder "MediathekView.jar"
-- Linux (in der Konsole): `java -jar MediathekView.jar`
-- OS X: Doppelklick auf die separate Startdatei "MediathekView.command" oder via Terminalbefehl: `java -jar MediathekView.jar` (beide Varianten stehen nur zur Verfügung, wenn man die ZIP-Datei ohne die Angabe "OSX" im Dateinamen heruntergeladen hat)
+- Linux (in der Konsole): `java -Xmx1G -jar MediathekView.jar`
 
 Startet das Programm nicht, gibt es Hilfe in der [FAQ](/FAQ).
 
 ### Starten im portablen Modus (MediathekView Portable)
-Für den portablen Einsatz z.B. auf einem USB-Stick stehen im Ordner "Portable" entsprechende Startdateien zur Verfügung (z.B. "MediathekView__Portable.exe" für Windows). Diese Startdateien dürfen nicht aus dem Ordner "Portable" verschoben werden. Beim portablen Start wird der Ordner "Einstellungen" im MediathekView-Programmordner angelegt. Da hinein können, falls gewünscht, die bisherigen Einstellungen, also der Ordner ".mediathek3" aus dem Benutzerverzeichnis kopiert werden.
+Für den portablen Einsatz z.B. auf einem USB-Stick stehen im Ordner entsprechende Startdateien zur Verfügung (z.B. "MediathekView__Portable.exe" für Windows). Diese Startdateien dürfen nicht aus dem Ordner verschoben werden. Beim portablen Start wird der Ordner "Einstellungen" im MediathekView-Programmordner angelegt. Da hinein können, falls gewünscht, die bisherigen Einstellungen, also der Ordner ".mediathek3" aus dem Benutzerverzeichnis kopiert werden.
 
-Unter OS X ist ein portabler Start nur möglich, wenn man die ZIP-Datei ohne die Angabe "OSX" im Dateinamen [heruntergeladen](/download) hat. Detailliertere Information zum portablen Modus von MediathekView kann man der Datei "Portable.txt" im Ordner "Portable" des MediathekView-Programmordners entnehmen. Interessierte können den Code für die Startdateien für OS X und Linux direkt den Startdateien selbst entnehmen. Die portable Startdatei für Windows enthält im Kern folgende Zeilen Code:
-```
-C:\Windows\SysWOW64\java -jar MediathekView.jar Einstellungen/.mediathek3
-```
-bzw.:
-```
-C:\WINDOWS\system32\java -jar MediathekView.jar Einstellungen/.mediathek3
-```
+Unter OS X ist ein portabler Start nur möglich, wenn man die ZIP-Datei ohne die Angabe "OSX" im Dateinamen [heruntergeladen](/download) hat. Interessierte können den Code für die Startdateien für OS X und Linux direkt den Startdateien selbst entnehmen.
 
 ### Starten mit zusätzlichen Parametern
 ```
-java -jar MediathekView.jar [Pfad] [Parameter]
-java -jar MediathekView.jar c:\temp -M
+java -Xmx1G -jar MediathekView.jar [Pfad] [Parameter]
+java -Xmx1G -jar MediathekView.jar c:\temp -M
 ```
 Nach dem obigen Schema kann das Programm auch mit zusätzlichen Parametern gestartet werden.
 ```
-java -jar MediathekView.jar Einstellungen/.mediathek3
+java -Xmx1G -jar MediathekView.jar Einstellungen/.mediathek3
 ```
 Das Programm verwendet – durch einen relativen Pfad – das Verzeichnis "Einstellungen" im MediathekView-Verzeichnis auf dem USB-Stick (der Ordner "Einstellungen" muss zuerst erstellt werden). Hinweis: Die Programmeinstellungen (Filmliste, Einstellungen, gesehene Filme) werden standardmässig im Home-Verzeichnis (Benutzer-Verzeichnis) in einem Ordner ".mediathek3" gespeichert.
 ```
-java -jar MediathekView.jar -M
+java -Xmx1G -jar MediathekView.jar -M
 ```
 Das Programm startet mit einem maximierten Fenster:
 ```
 java -jar MediathekView.jar -v
 ```
 Das Programm gibt nur die Versionsnummer aus.
-
-### Auto
-```
-java -jar MediathekView.jar [Pfad] -auto
-java -jar MediathekView.jar -auto
-java -jar MediathekView.jar -fastauto
-```
-Das Programm startet im Auto-Modus. Es wird die Filmliste aktualisiert und dann alle neuen Abos geladen. Das Programm beendet sich dann selbst wieder. Diese Funktion eignet sich dazu, alles automatisch aktuell zu halten. Im Fastauto-Modus werden zusätzlich keine Filmbeschreibungen mitgeladen, was Speicher spart und die Programmausführungsgeschwindigkeit auf leistungsschwacher Hardware beschleunigt.
-Das Programm (Abos, Downloadpfade, "nur Filme der letzten x Tage laden") muss zuerst im "normalen" Modus (GUI) eingerichtet werden. Der Auto- bzw. Fastauto-Modus startet ohne grafische Oberfläche und kann so auch auf Rechnern ohne grafische Oberfläche (ohne X) laufen.
 
 ### Parameter, die die Einstellungen der JavaVM ändern
 ```
@@ -303,10 +140,6 @@ Es wird ein Proxyserver verwendet.
 java -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -jar MediathekView.jar
 ```
 Es wird ein anderes LookAndFeel verwendet. Dazu darf aber in den Programmeinstellungen der MediathekView keines ausgewählt sein, diese Angabe wird sonst überschrieben.
-```
-java -Djava.awt.headless=true -jar MediathekView.jar -auto
-```
-Wird das Programm ohne GUI auf einem Rechner mit grafischer Oberfläche gestartet (-auto), kann man damit den Splashscreen unterdrücken
 ```
 java -Djava.net.preferIPv4Stack=true -Xms128M -Xmx1G -jar MediathekView.jar
 java -Djava.net.preferIPv6Addresses=true -jar MediathekView.jar
