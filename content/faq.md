@@ -1,6 +1,6 @@
 +++
 description = ""
-date = "2017-01-17T17:00:00+01:00"
+date = "2019-09-25T21:30:00+01:00"
 title = "FAQ"
 toc = true
 [menu]
@@ -45,51 +45,23 @@ Standardmässig wird der Ordner MediathekView im User-Verzeichnis (Home-Verzeich
 
 # MediathekView startet nicht
 
+- Es wurde die ZIP-Datei verwendet und die MediathekView.jar direkt via doppelklick ausgeführt
+
 - ZIP-Datei nicht entpackt (Windows): Die Programmdatei wurde direkt im ZIP-Archiv doppelgeklickt. Die ZIP-Datei muss erst [entpackt](/anleitung/#windows) werden, dazu sind alle Dateien aus dem ZIP-Archiv in ein beliebiges Verzeichnis zu kopieren. Dort kann dann die Programmdatei "MediathekView.exe" doppelgeklickt werden.e no sidebar
 
 - Zu wenig Arbeitsspeicher oder unbekanntes Problem (Windows): Einige User konnten MediatheView durch einen Doppelklick auf "MediathekView.jar" statt auf "MediathekView.exe" starten.
 - Kein Programm dem Dateityp ".jar" zugeordnet (Windows): Falls "MediathekView.jar" beim Doppelklicken nicht direkt von Java ausgeführt wird, dann hat ein Packprogramm (z.B. WinZip) sich den Dateityp ".jar" zugeordnet. Abhilfe:Bei gedrückter Shift-Taste mit der rechten Maustaste auf das JAR-File klicken und in dem Menü dann den Punkt "Öffnen mit" auswählen. Dort "Java(TM) Plattform SE binary" auswählen oder unter "Sonstiges" danach suchen. Wenn dann die Box unten angeklickt wird, wird der Filetyp "jar" wieder mit Java verbunden und Java-Programme starten wieder mit einem Doppelklick. Üblicherweise wird MediathekView über einen Doppelklick auf die Programmdatei "MediathekView.exe" gestartet.
 - Benötigte Dateien wurden aus dem Programm-Ordner gelöscht (Windows) Die benötigten Java-Bibliotheken (libs) oder die Hilfsprogramm (im Ordner "bin") fehlen, da Dateien aus dem MediathekView-Programmordner gelöscht oder verschoben wurden, zur [Neuinstallation](/anleitung/#windows).
-- Java ist nicht oder nicht in der richtigen Version installiert: MediathekView benötigt [Java 8](/anleitung/#systemvoraussetzungen) oder neuer. Falls trotz Installation von Java 8 (oder neuer) MediathekView nicht startet, ist das Programm nicht mit der richtigen Java-Version verknüpft. Wer nicht bewusst mehrere Java-Versionen auf seinem System haben will, sollte zuerst die alte Version (z.B. Java 7) deinstallieren und dann die neue Version (z.B. Java 8) installieren. Wer mehrere Java-Versionen (z.B. JDKs) nebeneinander installiert haben muss, kann gemäss dem nächsten Kapitel verfahren.
 
-# Mit der richtigen Java-Version verknüpfen
+## Falsche Java Version installiert
 
-## Windows:
-Das ohne Installation auskommende Programm [Path Editor](http://patheditor2.codeplex.com/) erlaubt auf einfache Weise, Java-Programme (wie MediathekView) systemweit mit einer anderen Java-Version zu verknüpfen. Einfach auf "Add" klicken und den Java-Pfad (z.B.: _"C:\Program Files\Java\jre8\bin"_ oder _"C:\Program Files\Java\jdk1.8.0_5\bin"_) eintragen und speichern. Evtl. ist ein Abmelden und Neuanmelden am System nötig. Welche Versionen (JRE, JDK) installiert sind, zeigt ein Blick ins Verzeichnis _"C:\Program Files\Java"_.
+MediathekView meldet sich beim start, dass die aktuelle Java Version zu alt ist.
 
-![Patheditor-Settings](/images/faq/patheditor_settings.jpg)
+**Version 13.3**
+Ab Version 13.3 wird mindestens Java 11 benötigt. Dies wird nicht mehr von Oracle für Standard Desktopbenutzer zur Verfügung gestellt. Die von uns empfohlene alternative ist AdoptOpenJDK.
 
-Alternativ kann in der Windows-Systemsteuerung die PATH-Variable von Java angepasst werden: `Systemsteuerung -> System und Sicherheit -> System -> Erweiterte Systemeigenschaften -> Umgebungsvariablen -> PATH`
-Dann "Bearbeiten" wählen und hinter den letzten Eintrag ein ";" und ohne folgenden Leerzeichen den Java-Pfad setzen, z.B.:
-```
-;C:\Program Files\Java\jre8\bin
-```
-
-![Windows_Java-Path](/images/faq/Windows_Java-Path.png)
-
-Mehr Info zur [Java-PATH-Variablen](http://docs.oracle.com/javase/tutorial/essential/environment/paths.html)
-
-## Linux:
-Folgender Befehl erlaubt einen Wechsel zwischen verschiedenen Java-Versionen (JDKs):
-```
-sudo update-alternatives --config java
-```
-
-## Mac:
-Startet bei Mac-Usern, die mit einer Nicht-App-Version (z.B. Entwicklerversion) von MediathekView arbeiten, MediathekView trotz Installation von Java 8 (JRE 8) nicht, dann zeigt der Pfad von Java noch auf Java 6. Abhilfe schafft die Installation des [Java Development Kits (JDK 8)](http://www.oracle.com/technetwork/java/javase/downloads/index.html). Das Tool [Java Version Changer](http://www.guigarage.com/2013/02/change-java-version-on-mac-os) erlaubt auf einfache Weise einen Wechsel zwischen verschiedenen Java-Verison (JDKs). Wer das JDK nicht installieren möchte, bekommt MediathekView auch nur mit der JRE zum Laufen, indem der Pfad zum Java-Binary explizit angegeben wird (Achtung: nichts für unerfahrene Benutzer!). Dazu kann man in der Startdatei "MediathekView_Mac_Start.command" mit einer zusätzlichen Zeile die Variable JAVA_HOME auf "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home" setzen:
-```
-\#!/bin/sh
-dir=`dirname "$0"`
-cd "$dir"
-JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
-if [ -n "$JAVA_HOME" ]; then
-        "$JAVA_HOME"/bin/java -Xdock:name="MediathekView" -Xms128M -Xmx1G -jar ./MediathekView.jar $*
-else
-    java -Xdock:name="MediathekView" -Xms128M -Xmx1G -jar ./MediathekView.jar
-fi
-cd $OLDPWD
-```
-
+**13.5 und neuer**
+Ab Version 13.5. (und der zwischen Version 13.4) liefert MediathekView die passende Java version direkt mit. Sollte dieser Fehler trotzdem auftreten wurde versucht die Jar Datei mit einer falschen Java Version auszuführen. Um den Fehler zu beheben muss also nur einer der Starter verwendet werden oder in der Konsole auf die mitgelieferte Java version verwiesen werden: `jre/bin/java -Xmx1g -jar MediathekView.jar`
 
 # Filmliste wird nicht vollständig geladen
 
@@ -99,18 +71,22 @@ Unter OS X ist diese Datei unsichtbar und an einem anderen Ort; sie kann jedoch 
 rm ~/Library/Caches/MediathekView/filme.json
 ```
 
+# MediathekView startet aber lässt sich nicht bedienen
+
+Vermutlich wurde die AdoptOpenJDK JRE und nicht die JDK verwendet. Um das Problem zu lösen muss die JRE deinstalliert und die JDK installiert werden oder auf 13.5 updaten und das dort mitgelieferte Java verwenden.
+
 # Das Laden der Filmliste hat nicht geklappt
 
 Eventuell wird der verwendete Network-Stack (IPv4 vs. IPv6) von Java nicht richtig erkannt, wodurch keine Verbindung zum Internet möglich ist. In diesem Fall können Windows-User versuchen, mit einem Doppelklick auf die Datei "MediathekView-ipv4.exe" das Programm zu starten. Diese alternative Startdatei befindet sich im gleichen Ordner wie "MediathekView.exe" und kann bei Bedarf auch umbenannt werden.
 Für OS X und Linux kann man das Programm mit folgendem Aufruf starten und bestimmte Einstellungen der Java VM erzwingen:
 ```
-java -Djava.net.preferIPv4Stack=true -jar MediathekView.jar
-java -Djava.net.preferIPv6Addresses=true -jar MediathekView.jar
+jre/bin/java -Xmx1g -Djava.net.preferIPv4Stack=true -jar MediathekView.jar
+jre/bin/java -Xmx1g -Djava.net.preferIPv6Addresses=true -jar MediathekView.jar
 ```
 
 Es kann auch versucht werden, über den Button "neue Filmliste laden" im Programmfenster bzw. über ein Umschalten auf "nur manuelles Laden" der Filmliste via Einstellungen zum Ziel zu kommen (evtl. hilft es auch, davor die Filmliste manuell gemäss dem Kapitel zuvor zu löschen):
 
-![MV_Einstellungen_Filmliste](/images/faq/MV_Einstellungen_Filmliste.jpg)
+![MV_Einstellungen_Filmliste](/images/faq/MV_Einstellungen_Filmliste.png)
 
 Häufig ist dieses Problem allerdings auf eine Security-Suite bzw. eine Personal Firewall oder ein Antivirenprogramm zurückzuführen. Bei Avira Antivirus soll die Deaktivierung der Option "IPv6 Untersstützung einschalten", welche man in den Einstellungen unter Internetschutz+Suche findet, helfen. Eine temporäre Deaktivierung der Firewall (ZoneAlarm, Comodo) zeigt, ob die Firewall verantwortlich ist. Einigen Usern hat es geholfen, die AV-Software (z.B. Kaspersky Anti-Virus) komplett zu beenden (nicht bloss den Schutz ausschalten) oder die Firewall zu deaktivieren, dann die Filmliste zu laden und anschliessend die AV-Software wieder zu starten bzw. die Firewall wieder zu aktivieren.
 
@@ -150,7 +126,7 @@ Dies weist auf [fehlerhafte Sets](#wenn-nichts-geht) oder eine Security-Suite hi
 Wenn Sendungen deren Download URL mit HTTPS beginnt nicht heruntergeladen werden können kann das am SSL liegen.
 
 ## Problem erkennen
-Zuerst ist hier zu Prüfen ob tatsächlich das HTTPS das Problem ist hierzu kann man MediathekView in der Konsole mit `java -Xmx1G -jar MediathekView.jar` starten. Wenn in der Konsole der folgende Fehler auftritt liegt es am SSL:
+Zuerst ist hier zu Prüfen ob tatsächlich das HTTPS das Problem ist hierzu kann man MediathekView in der Konsole mit `jre/bin/java -Xmx1g -jar MediathekView.jar` starten. Wenn in der Konsole der folgende Fehler auftritt liegt es am SSL:
 ```
 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException:
 PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderExce
@@ -170,12 +146,9 @@ ption: unable to find valid certification path to requested target
 
 ## Problem beheben
 
-Es kann verschiedene Auslöser für das Problem geben, die häufigsten sind die folgenden:
+Es kann verschiedene Auslöser für das Problem geben, der häufigste ist der folgenden:
 
- 1. Veraltete Java Version
-   - Einige moderne SSL Varianten werden von älteren Java Versionen nicht unterstützt, es sollte deshalb überprüft werden ob die [aktuellste verfügbare Java JRE](/anleitung/#systemvoraussetzungen) eingesetzt wird.
-
- 2. Virenscanner stört SSL Verbindung
+ - Virenscanner stört SSL Verbindung
    - Einige aktuelle Virenscanner wie z.B. Kaspersky jubeln dem Benutzer eigene SSL Zertifikarte unter um die Verbindung überwachen zu können. Dieses "Feature" kann u.a. zu Problemen beim Download einer Sendung führen und sollte deshalb deaktivieret werden. Weitere Infos zu dem Thema:
      - https://www.heise.de/security/meldung/Sicherheitsforscher-an-AV-Hersteller-Finger-weg-von-HTTPS-3620159.html
      - https://www.heise.de/security/meldung/Kaspersky-torpediert-SSL-Zertifikatspruefung-3587871.html
@@ -183,11 +156,11 @@ Es kann verschiedene Auslöser für das Problem geben, die häufigsten sind die 
 # In der Mediathek des Senders XYZ ist die Sendung vorhanden, in der Filmliste jedoch nicht!
 
 Ja, das kann leider vorkommen (z.B. bei älteren Beiträgen). Wenn eine Sendung nur über die Such-Funktion in der Mediathek eines Senders gefunden werden kann, dann wird sie von MediathekView nicht gelistet werden, denn MediathekView sucht nur auf bestimmten Webseiten der Sender (z.B. Sendungen A–Z) und extrahiert die Video-URLs. Zudem können zeitlich nicht beliebig weit zurück Sendungen aufgelistet werden, da bei gewissen Sendern (z.B. beim BR, SWR) das Crawling nach den Video-URLs zu lange dauern würde. D.h., es kann also vorkommen, dass Sendungen im Archiv auf der Website eines Senders gefunden werden, die aber nicht in der Filmliste auftauchen.
-Die erste Filmliste wird jeweils um 1:00 Uhr erstellt, ab dann wird die Liste im Rhythmus von 3 Stunden (Vormittag) und ab 14:00 stündlich erweitert und ist somit immer ziemlich aktuell.
+Die erste Filmliste wird mehrfach über den Tag verteilt erstellt und ist somit recht aktuell.
 Da sich jedoch gewisse Sender (gerade am Wochenende) viel Zeit lassen, bis Sendungen in ihren Mediatheken erscheinen, kann es im Einzelfall durchaus einen Tag dauern, bis eine Sendung in der Filmliste auftaucht.
-Falls **aktuelle** Filme fehlen, hinterlasst bitte eine Nachricht im [Forum](https://forum.mediathekview.de/topic/99/fehlende-sendung-melden), beschreibt euer Problem so genau wie möglich und gebt v.a. die URL an, mit welcher die betreffende Sendung auf der Website des Senders gefunden werden kann. Meistens liegt es an den Mediatheken der Sender, welche Sendungen teilweise falsch einsortiert haben oder irgendwo gelistet haben, wo MediathekView nicht sucht.
+Falls **aktuelle** Filme fehlen wartet erst mal ein paar Stunden (in Ausnhamen bis zu 24 Stunden). Wenn nach einiger Zeit der jeweilige Film immer noch nicht auftaucht hinterlasst bitte eine Nachricht im [Forum](https://forum.mediathekview.de/topic/99/fehlende-sendung-melden), beschreibt euer Problem so genau wie möglich und gebt v.a. die URL an, mit welcher die betreffende Sendung auf der Website des Senders gefunden werden kann. Meistens liegt es an den Mediatheken der Sender, welche Sendungen teilweise falsch einsortiert haben oder irgendwo gelistet haben, wo MediathekView nicht sucht.
 
-Es gibt auch mehrere Möglichkeiten, ohne MediathekView an Videos von Sendungen zu kommen.
+Es gibt auch mehrere Möglichkeiten, ohne MediathekView an Videos von Sendungen zu kommen wie z.B. mit dem jDownloader 2 oder dem Firefox Plugin VideoDownloadHelper.
 
 # Wird das Programm um die Mediathek des Senders XYZ erweitert?
 
@@ -195,6 +168,7 @@ Das hängt vom Aufbau der Mediathek ab, ob sich die URL der Filme auslesen läß
 
 - Wird das Programm um die Mediatheken der privaten Sender erweitert? Nein.
 - Kann man eigene Sender/Filme in die Liste eintragen? Nein.
+- Erweitert ihr die Filmliste händisch um einzelne Einträge? Nein.
 
 # Downloadgeschwindigkeit ist im Keller!
 
@@ -204,7 +178,7 @@ In einem anderen Fall betrifft dieses Problem möglicherweise einzelne Benutzer,
 Tritt dieses Problem auf, kann es helfen, 1–3 Tage zu warten und es dann erneut versuchen. Eventuell hilft es auch, einmal eine Sendung direkt auf der Website des Senders abspielen zu lassen und dann es in MediathekView nochmals zu versuchen.
 Bei wiederholten Problemen, ist es einen Versuch wert, die Downloadgeschwindigkeit zu begrenzen (Einstellungen -> Download): Eine selbst auferlegte Begrenzung z.B. auf 500 kByte/s würde also potenziell verhindern, dass von anderswo stärker gedrosselt wird (z.B. auf unter 100 kByte/s).
 
-![Einstellungen_Download](/images/faq/MV_Einstellungen_Download.jpg)
+![Einstellungen_Download](/images/faq/MV_Einstellungen_Download.png)
 
 # Kann man die Downloadbandbreite begrenzen?
 
@@ -232,7 +206,6 @@ Wenn keine Tastaturangaben oder Mausbewegungen erfolgen, geht der Computer abhä
 # Kann man MediathekView von einem USB-Stick starten (MediathekView Portable)?
 
 Ja, im Ordner "Portable" des MediathekView-Programmordners befinden sich entsprechende Startdateien (z.B. "MediathekView_Portable.exe" für Windows). Mehr Information findet sich in der [Anleitung](/anleitung/#starten-im-portablen-modus-mediathekview-portable).
-Für OS X ist für den portablen Gebrauch die Nicht-App-Version (also die ZIP-Version) [herunterzuladen](/download/).
 
 # FLV-Videos ohne Recodierung ins MP4-Format umwandeln
 
@@ -269,10 +242,6 @@ dort das "Betriebssystem" wählen und auf den Button "Vorlage von der Website la
 
 Diese Meldung kann bei der Verwendung von MediathekView 3.2.1 unter gewissen Linux-Desktop-Umgebungen (z.B. KDE) auftreten, wenn eine Funktion (Browser-Start) unter der betreffenden Desktop-Umgebung nicht unterstützt wird.
 Die [aktuelle Version](/download/) von MediathekView schafft Abhilfe.
-
-# Performance-Probleme unter Linux (ARM)
-
-Auf ARM-Prozessoren können allenfalls Performance-Probleme auftreten (träge GUI, langsamer Download von Sendungen bei einer CPU-Last von 100%). Abhilfe bringt [JDK 8 für ARM-Systeme](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-arm-downloads-2187472.html) von Oracle.
 
 # Verwendung der Filmliste in einem eigenen Projekt?
 
