@@ -176,11 +176,6 @@ Das Programm startet mit einem maximierten Fenster.
 
 ### Parameter, die die Einstellungen der JavaVM ändern
 ```
-jre/bin/java -Xmx1g -jar -Dhttp.proxyHost=proxyserver -Dhttp.proxyPort=8080 MediathekView.jar
-```
-Es wird ein Proxyserver verwendet.
-
-```
 jre/bin/java -Xmx1g -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -jar MediathekView.jar
 ```
 Es wird ein anderes LookAndFeel verwendet. Dazu darf aber in den Programmeinstellungen der MediathekView keines ausgewählt sein, diese Angabe wird sonst überschrieben.
