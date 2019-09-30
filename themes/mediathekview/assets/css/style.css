@@ -1,3 +1,4 @@
+
 /*
 Custom style
 */
@@ -222,8 +223,9 @@ address > .adresse {
   color: blue;
 }
 
-.orangefont {
-  background-color: orange;
+.bluemarked {
+  background-color: blue;
+  color: white;
 }
 
 .redfont {

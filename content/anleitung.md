@@ -1,6 +1,6 @@
 +++
 description = ""
-date = "2017-01-15T15:00:00+01:00"
+date = "2019-09-25T20:00:00+01:00"
 title = "Anleitung"
 toc = true
 [menu]
@@ -18,185 +18,74 @@ Das Programm MediathekView (abgekürzt: MV) ist eine Art Suchmaschine für Filme
 ## Installation
 
 ### Systemvoraussetzungen
-Unterstützt wird Windows (7, 8, 10), Linux sowie Mac OS X (ab Version 10.10). MediathekView benötigt unter Windows und Linux eine aktuelle [Java-VM](https://www.oracle.com/technetwork/java/javase/downloads/index.html) ab Version: 11. Für Linux-Benutzer wird [OpenJDK11](https://openjdk.java.net/install/index.html) empfohlen. Mac-OS-X-Benutzer brauchen kein Java zu installieren, da Java in die Applikation MediathekView (ab Version 4) integriert wurde.
+Unterstützt wird Windows (7, 8, 10), Linux sowie Mac OS X (ab Version 10.10). MediathekView benötigt mindestens Java 11 welches aber für Mac, Windows und Linux bereits Teil der Pakete ist (Mac ab Version 4, Windows und Linux ab 13.5).
 
 
 ### Hilfsprogramme zum Abspielen und Aufzeichnen von Sendungen
-Zum Ansehen und Aufzeichnen werden geeignete Zusatzprogramme benötigt. MediathekView ist konfiguriert für die Verwendung von **VLC Media Player** (zum Abspielen und Aufzeichnen von Sendungen) sowie **flvstreamer** und **FFmpeg** zum Aufzeichnen von Sendungen.
+Zum Ansehen und Aufzeichnen werden geeignete Zusatzprogramme benötigt. MediathekView ist konfiguriert für die Verwendung von **VLC Media Player** (zum Abspielen und Aufzeichnen von Sendungen) sowie **FFmpeg** zum Aufzeichnen mancher Sendungen.
 
-Für Windows und OS X ist der flvstreamer und FFmpeg bereits im Programmpaket von MediathekView enthalten (im Ordner "bin"), es muss nur der VLC Media Player installiert sein. Sinnvollerweise wird vor dem ersten Start von MediathekView zuerst der [VLC Media Player](http://www.videolan.org/) installiert.
+Für Windows und OS X ist FFmpeg bereits im Programmpaket von MediathekView enthalten (im Ordner "bin"), es muss nur der VLC Media Player installiert sein. Sinnvollerweise wird vor dem ersten Start von MediathekView zuerst der [VLC Media Player](http://www.videolan.org/) installiert.
 
-Für Linux müssen der VLC Media Player, der [flvstreamer](http://savannah.nongnu.org/projects/flvstreamer) und [FFmpeg](http://www.ffmpeg.org/) durch die Paketverwaltung installiert werden. Statt des flvstreamer kann auch [**rtmpdump**](http://rtmpdump.mplayerhq.hu/) verwendet werden, analog kann **avconv** (Bestandteil des [libav](http://libav.org/)-Projekts) statt FFmpeg verwendet werden. Bei OpenSuse müssen zusätzlich zum VLC Media Player auch die **vlc-codecs** installiert werden.
+Für Linux müssen der VLC Media Player und [FFmpeg](http://www.ffmpeg.org/) durch die Paketverwaltung installiert werden. Statt des FFmpeg kann **avconv** (Bestandteil des [libav](http://libav.org/)-Projekts) verwendet werden.
 
-Beim ersten Start von MediathekView werden bereits zwei Programmsets mit den drei Hilfsprogrammen VLC Media Player, flvstreamer und FFmpeg angelegt. Damit können alle Filme angesehen und aufgezeichnet werden.
+Beim ersten Start von MediathekView werden bereits zwei Programmsets mit den zwei Hilfsprogrammen VLC Media Player und FFmpeg angelegt. Damit können alle Filme angesehen und aufgezeichnet werden.
 
 ### Linux
 
 #### Erster Start
 
-Beim ersten Start von MediathekView werden bereits zwei Programmsets mit den drei Hilfsprogrammen VLC Media Player, flvstreamer und FFmpeg angelegt. Damit können alle Filme angesehen und aufgezeichnet werden.
+Beim ersten Start von MediathekView werden bereits zwei Programmsets mit den zwei Hilfsprogrammen VLC Media Player, und FFmpeg angelegt. Damit können alle Filme angesehen und aufgezeichnet werden.
 
-Wurde statt flvstreamer **rtmpdump** verwendet, muss dieses beim ersten Start statt flvstreamer ausgewählt werden (Pfad meist: "/usr/bin/rtmpdump"). Wurde statt ffmpeg **libav-tools** verwendet, muss beim ersten Start statt ffmpeg **avconv** ausgewählt werden (Pfad meist: "/usr/bin/avconv")
+Wurde statt ffmpeg **libav-tools** verwendet, muss beim ersten Start statt ffmpeg **avconv** ausgewählt werden (Pfad meist: "/usr/bin/avconv")
 
 #### Installation
 
-Die erste Anlaufstelle sollte die Paketverwaltung/Installationswerkzeuge der Distribution sein. Das ist der einfachste Weg und es werden alle benötigten Programme automatisch mitinstalliert. Wenn die aktuelle Version von MediathekView nicht in den Paketquellen enthalten ist, kann auch versucht werden diese über Backports zu beziehen. Auch möglich ist, das Programm manuell zu installieren (was sich im Wesentlichen auf das Entpacken eines Zip-Paketes beschränkt).
+Die einfachste Möglichkeit MediathekView zu installieren ist es den jeweiligen Installer zu nutzen. Bei Linux ist dies Deb, Rpm oder Sh. Alternativ steht auch ein AppImage zur Verfügung.
 
-_Backports_
-[help.ubuntu.com/community/UbuntuBackports](https://help.ubuntu.com/community/UbuntuBackports)
-[wiki.ubuntu.com/UbuntuBackports](https://wiki.ubuntu.com/UbuntuBackports)
-[backports.debian.org](http://backports.debian.org/)
+#### Nutzung ohne Installation
 
-_Allgemeine Infos_
-[wiki.ubuntuusers.de/Paketquellen](http://wiki.ubuntuusers.de/Paketquellen)
+Soll MediathekView nicht installiert werden um es z.B. portable zu nutzen gibt es in tar.gz Archiv. Auch dies enthält bereits die benötigte Java version. Hierbei muss das Archiv nur an einen beliebigen Ort entpackt werden und dann kann MediathekView durch eines der enthaltenewn Start-Skripte gestartet werden.
 
-_Pinning für Debian, Ubuntu und alle anderen Debian basierten Distributionen_
-[Debian pinning](#debian-pinning)
+#### Desktop-Icon & Menü Eintrag
 
-#### Debain Pinning
-Dies soll erläutern, wie man als Benutzer von Debian-basierten Distributionen neuere Versionen von MediathekView installieren kann, selbst wenn diese für die jeweilige Version nicht zur Verfügung stehen. Dies ist insbesondere für Debian Stable oder Ubuntus LTS-Versionen interessant. Allen anderen wird empfohlen das gesamte System auf die neuste Version zu aktualisieren.
+Bei der Verwendung eines der Installer werden Menü Einträge und Desktop Icons bereits angelegt.
 
-Wenn man stabile LTS-Versionen wie z.B. Ubuntu 14.04 schätzt, jedoch gerne immer die aktuellste MediathekView-Version haben möchte, geht man wie folgt vor:
-
-Im Folgenden wird als Beispiel immer Ubuntu 14.04 als Ausgangssystem verwendet. Bitte für die jeweilige stabile Version anpassen oder im Forum nachfragen.
-
----
-
-##### Den Standard festlegen
-
-Wichtig ist, dass man bei Upgrades das Installieren ungewollter Software vermeidet. Dazu editiert man die Datei /etc/apt/apt.conf und fügt folgende Zeile hinzu:
-```
-APT::Default-Release "trusty";
-```
-Der Codename ändert sich in Abhängigkeit von der jeweiligen stabilen Version. Für Debian Wheezy wäre es dann folgerichtig:
-```
-APT::Default-Release "wheezy";
-```
-
----
-
-##### Quellen freischalten
-
-Mit einem Editor die Datei /etc/apt/sources.list öffnen und bearbeiten. Dazu sind wieder Root-Rechte erforderlich.
-```
-sudo vim /etc/apt/sources.list
-```
-Hier muss die Quelle derjenigen Version eingetragen werden, von welcher die neue Ausgabe von MediathekView installiert werden soll, z.B.:
-```
-deb http://archive.ubuntu.com/ubuntu utopic main universe
-```
-oder für Debian:
-```
-deb http://ftp.de.debian.org/debian testing main
-```
-
----
-
-##### Installieren
+Wird MediathekView über das tar.gz verwendet muss man dies selbst machen, hierfür kann z.B. die folgende Desktop Datei verwendet werden:
 
 ```
-apt-get install -t utopic mediathekview
+[Desktop Entry]
+Name=MediathekView
+GenericName=MediathekView
+Exec=/home/BENUTZERNAME/PROGRAMMORDNER/MediathekView
+Icon=/home/BENUTZERNAME/PROGRAMMORDNER/MediathekView.svg
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=AudioVideo;Player;
 ```
-oder für Debian:
-```
-apt-get install -t testing mediathekview
-```
-
-#### Installation über die Paketverwaltung
-
-Für die verschiedenen Linuxdistributionen gibt es in der Regel ein vorgefertigtes Paket von MediathekView. Es werden bei der Installation wie gewohnt automatisch alle erforderlichen Abhängigkeiten an den richtigen Ort installiert:
-
-**Debian, Ubuntu, Linux Mint (deb)**
-
-Bei auf Debian basierenden Distributionen (wie z.B. Ubuntu) kann man MediathekView so installieren:
-```
-apt-get install mediathekview
-```
-oder
-```
-aptitude install mediathekview
-```
-Auch eine grafische Installation mit Synaptic, dem Softwarecenter oder PackageKit ist möglich.
-
-Benutzern von Debians Stable- oder Ubuntus LTS-Version, die gerne die neuste Version von MediathekView auf ihrem System installieren möchten, sei der Artikel zum Thema Pinning oder die manuelle Installation empfohlen.
-
-**Red Hat, Fedora, OpenSuse (rpm)**
-
-Sofern ein Paket vorhanden ist, lässt es sich mit
-```
-yum install mediathekview
-```
-installieren. Bitte einen Fehlerbericht verfassen und auf das Debianpaket verweisen, falls es noch kein aktuelles Paket geben sollte.
-
-**Arch Linux**
-
-Für Arch Linux wird ein Paket im Arch User Repository (AUR) bereitgestellt:
-```
-https://aur.archlinux.org/packages/mediathek/
-```
-
-#### Manuelle Installation
-
-Da die Programmversion in der Paketverwaltung nicht immer aktuell ist, kommt man so zu der neuesten Version. Als erstes muss die Zip-Datei heruntergeladen und in einem beliebigen Ordner (z.B. "mv") im Home-Verzeichnis entpackt werden.
 
 ---
 
 ##### Mint 17
-
-Es müssen noch folgende Pakete nachinstalliert werden: **flvstreamer** und **libav-tools**.
-
-Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf **MediathekView.sh** gestartet werden.
 
 Einen Menüpunkt kann man sich so anlegen:
 
 - rechte Maus auf Menü -> Einrichten
 - dann _Die Menübearbeitung öffnen_ klicken
 - z.B. das Menü _Multimedia_ auswählen und dann mit _new Item_ einen neuen Eintrag anlegen
-- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
+- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
 
 Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zum Schreibtisch hinzufügen_ kann man auch einen Startbutton auf dem Desktop anlegen.
 
 ---
 
-##### Ubuntu 14.04\. 14.10\. 15.04
-
-Es müssen noch folgende Pakete nachinstalliert werden: **OpenJDK-Java-8-Laufzeitumgebung**, **vlc**, **flvstreamer** und **libav-tools**.
-
-Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf **MediathekView.sh** gestartet werden. (Dafür muss im Dateimanager zuerst eingestellt werden: Einstellungen -> Verhalten: "Ausführbare Textdateien: Jedes Mal nachfragen")
-
-Einen Menüpunkt kann man sich so anlegen:
-
-Mit gedit eine Datei mit folgendem Inhalt im Programmordner anlegen (z.B. mv.desktop):
-
-```
-[Desktop Entry]
-Name=MV
-GenericName=MediathekView
-Exec=/home/BENUTZERNAME/PROGRAMMORDNER/MediathekView.sh
-Icon=/home/BENUTZERNAME/PROGRAMMORDNER/Info/MediathekView.png
-Terminal=false
-Type=Application
-StartupNotify=false
-Categories=AudioVideo;Player;
-OnlyShowIn=GNOME;XFCE;
-MimeType=video/mpeg;audio/mpeg;
-```
-
-Mit einem Rechtsklick auf die Datei: "Eigenschaften -> Zugriffsrechte -> Ausführen" ausführbar machen. Man kann dann das Programm mit einem Doppelklick darauf starten. Die Startdatei kann man auch mit der Maus in den Starter ziehen. Damit hat man einen Starter angelegt.
-
----
-
-##### Kubuntu 14.04\. 14.10\. 15.04
-
-Damit die fehlenden Pakete installiert werden können, sollte zuerst das Programm **Muon Paketverwaltung** installiert werden. Damit werden dann die fehlenden Pakete nachinstalliert: **vlc**, **flvstreamer** und **libav-tools**.
-
-Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Klick auf **MediathekView.sh** gestartet werden.
+##### KDE
 
 Einen Menüpunkt kann man sich so anlegen:
 
 - rechte Maus aufs Menü -> "Menüeinträge bearbeiten" oder "Anwendungen bearbeiten"
 - z.B. das Memü _Multimedia_ auswählen und dann mit _neues Element_ einen neuen Eintrag anlegen
-- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
+- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
 
 Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zur Arbeitsfläche hinzufügen_ oder einfach mit der Maus auf den Desktop ziehen, kann man auch einen Startbutton auf dem Desktop anlegen.
 
@@ -204,93 +93,7 @@ Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zur Arbeitsf
 
 ##### Debian 7.6
 
-Folgende Pakete müssen nachinstalliert werden: **VLC**, **flvstreamer**, **libav-tools** und **Java8** / **openjdk-8-jre-8**.
-
-Danach muss die aktuelle Javaversion eingestellt werden. In einem Terminal: `sudo update-alternatives --config java` und dann java7 auswählen.
-
-Beim ersten Programmstart muss für **ffmpeg** die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf **MediathekView.sh** gestartet werden.
-
-Zum Eintragen ins Startmenü, die Anwendung _Hauptmenü_ starten. Dann "neuer Eintrag" auswählen. Als "Befehl" die Datei "MediathekView.sh" im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
-
----
-
-##### Debian 8 (Gnome)
-
-Folgende Pakete müssen nachinstalliert werden: **VLC**, **flvstreamer**, **libav-tools**.
-
-Beim ersten Programmstart muss für ffmpeg die Datei `/usr/bin/avconv` ausgewählt werden. MediathekView kann durch einen Doppelklick auf _MediathekView.sh_ gestartet werden (dafür muss im Dateimanager zuerst eingestellt werden: Einstellungen -> Verhalten: "Ausführbare Textdateien: Jedes Mal nachfragen").
-
-Zum Anlegen eines Starters eine ".desktop" Datei (z.B. mv.desktop) im Ordner (im Benutzerverzeichnis): "~/.local/share/applications" anlegen und einmel Doppelklicken und vertrauenswürdig markieren. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im Programmordner -> Infos liegen Icons).
-
-```
-[Desktop Entry]
-Name=MV
-GenericName=MediathekView
-Exec=/home/BENUTZERNAME/PROGRAMMORDNER/MediathekView.sh
-Icon=/home/BENUTZERNAME/PROGRAMMORDNER/Info/MediathekView.png
-Terminal=false
-Type=Application
-StartupNotify=false
-Categories=AudioVideo;Player;
-OnlyShowIn=GNOME;XFCE;
-MimeType=video/mpeg;audio/mpeg;
-```
-
----
-
-##### OpenSuse 13.1\. 13.2 (KDE)
-
-Zuerst sollten die Codecs nachinstalliert werden (es fehlen sonst die benötigten Pakete!!): [opensuse-community.org](http://web.archive.org/web/20151210145748/http://opensuse-community.org/index.html)
-
-Dann kann über die Paketverwaltung: **vlc**, **vlc-codec**, **rtmpdump** nachinstalliert werden. (bei 13.2 wird noch **ffmpeg** benötigt)
-
-Beim ersten Programmstart muss für **flvstreamer** die Datei `/usr/bin/rtmpdump` ausgewählt werden. MediathekView kann durch einen Klick auf **MediathekView.sh** gestartet werden.
-
-Einen Menüpunkt kann man sich so anlegen:
-
-- rechte Maus aufs Menü->Menüeinträge bearbeiten
-- z.B. das Memü _Multimedia_ auswählen und dann mit _neues Element_ einen neuen Eintrag anlegen
-- als "Name" z.B. _MediathekView_ und als _Command_ die Startdatei _MediathekView.sh_ im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
-
-Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zur Arbeitsfläche hinzufügen_ kann man auch einen Startbutton auf dem Desktop anlegen.
-
----
-
-##### Raspbian (06.2015)
-
-Es müssen noch folgende Pakete nachinstalliert werden: **vlc**, **flvstreamer** und **ffmpeg**. (Zum Download des Programms von https://mediathekview.de/download wird noch ein Browser z.B.: chromium benötigt.) Die Installation kann in der Konsole mit dem Befehl erfolgen:
-
-```
-sudo apt-get update
-sudo apt-get install vlc ffmpeg flvstreamer chromium
-```
-
-MediathekView kann durch einen Doppelklick auf **MediathekView.sh** (und dann "Ausführen" auswählen) gestartet werden.
-
-Einen Starter auf dem Desktop kann man sich so anlegen:
-
-- Rechte Maus auf dem Desktop-> Neu-> Leere Datei und als Namen dann z.B.: "mv.desktop" eingeben.
-- Dann die Datei mit der rechten Maus-> TextEditor öffnen und folgendes eingeben:
-
-  ```
-  [Desktop Entry]
-  Encoding=UTF-8
-  Type=Application
-  Name=Mediathek
-  Name[de_DE]=Mediathek
-  Icon=/home/pi/PFAD_ZUM_PROGRAMM/Info/MediathekView.svg
-  Exec=/home/pi/PFAD_ZUM_PROGRAMM/MediathekView.sh
-  Comment[de_DE]=MediathekView
-  StartupNotify=true
-  ```
-
-  (**PFAD_ZUM_PROGRAMM** mit dem eigenen Pfad abändern!)
-
-Man kann dann das Programm mit einem Doppelklick darauf starten.
-
-###### Deinstallation
-
-Wurde das Programm über die Paketverwaltung installiert, kann es auch darüber wieder deinstalliert werden. Das Programm selbst legt nur den Ordner ".mediathek3\. im Home-Verzeichnis an und speichert darin alle Einstellungen. (Standardmäßig sind unter Linux Ordner mit führendem Punkt unsichtbar, das kann aber in den Einstellungen des Dateimanagers geändert werden.) Es werden keine weiteren Änderungen am System vorgenommen. Wird dieser Einstellungsordner (und bei manueller Installation der Programmordner) gelöscht, ist das Programm wieder komplett entfernt.
+Zum Eintragen ins Startmenü, die Anwendung _Hauptmenü_ starten. Dann "neuer Eintrag" auswählen. Als "Befehl" die Datei "MediathekView" im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
 
 ### Mac
 Für OS X 10.7.3 (und neuer) gibt es eine separate Applikation "MediathekView.app":
@@ -308,94 +111,78 @@ Für Mac-OS-X-10.6-Benutzer sowie für fortgeschrittene Benutzer, die MediathekV
 4. die ZIP-Datei kann nach dem Entpacken gelöscht werden
 
 ### Windows
-MediathekView wird nicht installiert; das Entpacken der [heruntergeladenen ZIP-Datei](/download) ist quasi die Installation:
-![MediathekView extrahieren Schritt 1](/images/anleitung/MV_Entzippen_1.jpg)
-![MediathekView extrahieren Schritt 2](/images/anleitung/MV_Entzippen_2.png)
+MediathekView wird optimaler weise durch den Installer (Exe) installiert. Dabei werden direkt passende Einträge im Startmenü angelegt. 
 
-1. die heruntergeladene ZIP-Datei in einen Ordner entpacken
-2. den entpackten Ordner ins Benutzerverzeichnis verschieben
-3. den eben verschobenen MediathekView-Ordner öffnen, die Datei "MediathekView.exe" ansteuern und per Rechtsklick in "Senden an" eine Verknüpfung auf den Desktop legen. Von dort aus kann MediathekView dann jeweils gestartet werden.
-4. die ZIP-Datei kann nach dem Entpacken gelöscht werden
+![Der Windows Installer](/images/news/mediathekview-13_5-win-installer.png)
+<em>Der Installer für Windows.</em>
+
+Wird das Zip Archiv verwendet um MediathekView zum Beispiel portable nutzen zu können muss das Zip Archiv lediglich in einen Ordner der Wahl entpackt werden. Exe Datein zum starten von MediathekView finden sich direkt im Programmordner.
 
 ### Update
-**Windows**: Das Update von MediathekView geschieht dadurch, dass man die heruntergeladene ZIP-Datei der neuen Version in das selbe Verzeichnis entpackt, in dem sich die alte Version befindet. Anschließend kann man von der Startdatei im neuen Programmordner (z.B. "MediathekView_9") eine Desktopverknüpfung erstellen (vgl. Abschnitt oben). Bevor man den alten Programmordner (z.B. "MediathekView_3.3.0") löscht, sollte man allfällige selbst installierte Hilfsprogramme und Skripte transferieren. Die Einstellungen der vorhergehenden Programmversion werden von der neuen Version verwendet; es gibt also keinen neuen Einrichtungsdialog.
+**Windows**: Das Update von MediathekView geschieht dadurch, dass der neuste Installer ausgeführt wird. Dieser erkennt eine, bereits durch einen Installer erzeugte, MediathekView installation und updated diese. 
+
+Wurde das Zip Archiv verwendet kann man nun einen die alte Installation löschen und anschließend einen der Installer verwenden oder an den selben ordner das neu heruntergeladene Zip Archiv entpacken. 
+
+Die Einstellungen der vorhergehenden Programmversion werden von der neuen Version verwendet; es gibt also keinen neuen Einrichtungsdialog.
 
 **Mac**: Das Update erfolgt dadurch, dass man die neue Version von MediathekView in den Programmordner zieht, wodurch die alte ersetzt wird.
 
 ### Deinstallation
-Das Programm legt nur den Ordner ".mediathek3" in den "Eigenen Dateien" respektive im Home-Verzeichnis an und speichert darin alle Einstellungen. Es werden keine weiteren Änderungen am System vorgenommen. Wird dieser Einstellungsordner und der Programmordner (z.B. "MediathekView_9" im Falle von Windows bzw. MediathekView.app im Falle von OS X) gelöscht, ist das Programm wieder komplett entfernt.
-Unter OS X ist der Ordner ".mediathek3" unsichtbar, er kann jedoch durch Eingabe (Kopieren) des folgenden Befehls im Programm Terminal (Programme/Dienstprogramme/Terminal) gelöscht werden:
+Wurde das Programm über die Installer installiert, kann es auch darüber wieder deinstalliert werden. 
+
+Das Programm selbst legt nur den Ordner ".mediathek3\. im Home-Verzeichnis an und speichert darin alle Einstellungen. (Standardmäßig sind unter Linux und Max Ordner mit führendem Punkt unsichtbar, das kann aber in den Einstellungen des Dateimanagers geändert werden.) Es werden keine weiteren Änderungen am System vorgenommen. Wird dieser Einstellungsordner (und bei manueller Installation der Programmordner) gelöscht, ist das Programm wieder komplett entfernt.
+Der unter Mac und Linux unsichtbare Ordner ".mediathek3" kann auch durch Eingabe (Kopieren) des folgenden Befehls im Terminal (Programme/Dienstprogramme/Terminal) gelöscht werden:
 ```
 rm -R ~/.mediathek3
 ```
-
 ## Starten
-Für Windows (MediathekView.exe), Linux (MediathekView.sh) sind eigene Startdateien enthalten, mit welchen MediathekView direkt gestartet werden kann. Für OS X 10.7.3 und neuer besteht eine eigenständige Applikation (MediathekView.app); für OS X 10.6 liegt die Startdatei "MediathekView.command" vor.
+Für Windows (MediathekView.exe), Linux (MediathekView) sind eigene Startdateien enthalten, mit welchen MediathekView direkt gestartet werden kann. Für OS X 10.7.3 und neuer besteht eine eigenständige Applikation (MediathekView.app); für OS X 10.6 liegt die Startdatei "MediathekView.command" vor.
 
 Ansonsten kann man die Programmdatei auch so starten:
 
-- Windows: Doppelklick auf "MediathekView-ipv4.exe" oder "MediathekView.jar"
-- Linux (in der Konsole): `java -jar MediathekView.jar`
-- OS X: Doppelklick auf die separate Startdatei "MediathekView.command" oder via Terminalbefehl: `java -jar MediathekView.jar` (beide Varianten stehen nur zur Verfügung, wenn man die ZIP-Datei ohne die Angabe "OSX" im Dateinamen heruntergeladen hat)
+- Windows: Doppelklick auf "MediathekView_ipv4.exe" oder "MediathekView_Portable.exe"
+- Windows Konsole: `jre\bin\java -Xmx1g -jar MediathekView.jar`
+- Linux: Doppelklick auf MediathekView_ipv4 oder MediathekView_Portable
+- Linux Konsole runner: `./MediathekView_ipv4` oder `./MediathekView_Portable`
+- Linux Konsole Java: `jre/bin/java -Xmx1g -jar MediathekView.jar`
 
 Startet das Programm nicht, gibt es Hilfe in der [FAQ](/FAQ).
 
 ### Starten im portablen Modus (MediathekView Portable)
-Für den portablen Einsatz z.B. auf einem USB-Stick stehen im Ordner "Portable" entsprechende Startdateien zur Verfügung (z.B. "MediathekView__Portable.exe" für Windows). Diese Startdateien dürfen nicht aus dem Ordner "Portable" verschoben werden. Beim portablen Start wird der Ordner "Einstellungen" im MediathekView-Programmordner angelegt. Da hinein können, falls gewünscht, die bisherigen Einstellungen, also der Ordner ".mediathek3" aus dem Benutzerverzeichnis kopiert werden.
+Für den portablen Einsatz z.B. auf einem USB-Stick stehen im Ordner "Portable" entsprechende Startdateien zur Verfügung (z.B. "MediathekView_Portable.exe" für Windows). Diese Startdateien dürfen nicht aus dem Ordner verschoben werden. Beim portablen Start wird der Ordner "Einstellungen" im MediathekView-Programmordner angelegt. Da hinein können, falls gewünscht, die bisherigen Einstellungen, also der Ordner ".mediathek3" aus dem Benutzerverzeichnis kopiert werden.
 
-Unter OS X ist ein portabler Start nur möglich, wenn man die ZIP-Datei ohne die Angabe "OSX" im Dateinamen [heruntergeladen](/download) hat. Detailliertere Information zum portablen Modus von MediathekView kann man der Datei "Portable.txt" im Ordner "Portable" des MediathekView-Programmordners entnehmen. Interessierte können den Code für die Startdateien für OS X und Linux direkt den Startdateien selbst entnehmen. Die portable Startdatei für Windows enthält im Kern folgende Zeilen Code:
+Unter OS X ist ein portabler Start nicht möglich. 
+
+Interessierte können den Code für die Startdateien für direkt den Startdateien selbst entnehmen. Die portable Startdatei für Windows enthält im Kern folgende Zeilen Code:
 ```
-C:\Windows\SysWOW64\java -jar MediathekView.jar Einstellungen/.mediathek3
-```
-bzw.:
-```
-C:\WINDOWS\system32\java -jar MediathekView.jar Einstellungen/.mediathek3
+jre/bin/java -Xmx1g -jar MediathekView.jar Einstellungen/.mediathek3
 ```
 
 ### Starten mit zusätzlichen Parametern
 ```
-java -jar MediathekView.jar [Pfad] [Parameter]
-java -jar MediathekView.jar c:\temp -M
+jre/bin/java -Xmx1g -jar MediathekView.jar MediathekView [-hm] [<Pfad zum Verzeichnis>]
+jre\bin\java -Xmx1g -jar MediathekView.jar -m c:\temp
 ```
 Nach dem obigen Schema kann das Programm auch mit zusätzlichen Parametern gestartet werden.
 ```
-java -jar MediathekView.jar Einstellungen/.mediathek3
+jre/bin/java -Xmx1g -jar MediathekView.jar Einstellungen/.mediathek3
 ```
 Das Programm verwendet – durch einen relativen Pfad – das Verzeichnis "Einstellungen" im MediathekView-Verzeichnis auf dem USB-Stick (der Ordner "Einstellungen" muss zuerst erstellt werden). Hinweis: Die Programmeinstellungen (Filmliste, Einstellungen, gesehene Filme) werden standardmässig im Home-Verzeichnis (Benutzer-Verzeichnis) in einem Ordner ".mediathek3" gespeichert.
-```
-java -jar MediathekView.jar -M
-```
-Das Programm startet mit einem maximierten Fenster:
-```
-java -jar MediathekView.jar -v
-```
-Das Programm gibt nur die Versionsnummer aus.
 
-### Auto
 ```
-java -jar MediathekView.jar [Pfad] -auto
-java -jar MediathekView.jar -auto
-java -jar MediathekView.jar -fastauto
+jre/bin/java -Xmx1g -jar MediathekView.jar -m
 ```
-Das Programm startet im Auto-Modus. Es wird die Filmliste aktualisiert und dann alle neuen Abos geladen. Das Programm beendet sich dann selbst wieder. Diese Funktion eignet sich dazu, alles automatisch aktuell zu halten. Im Fastauto-Modus werden zusätzlich keine Filmbeschreibungen mitgeladen, was Speicher spart und die Programmausführungsgeschwindigkeit auf leistungsschwacher Hardware beschleunigt.
-Das Programm (Abos, Downloadpfade, "nur Filme der letzten x Tage laden") muss zuerst im "normalen" Modus (GUI) eingerichtet werden. Der Auto- bzw. Fastauto-Modus startet ohne grafische Oberfläche und kann so auch auf Rechnern ohne grafische Oberfläche (ohne X) laufen.
+Das Programm startet mit einem maximierten Fenster.
 
 ### Parameter, die die Einstellungen der JavaVM ändern
 ```
-java -jar -Dhttp.proxyHost=proxyserver -Dhttp.proxyPort=8080 MediathekView.jar
-```
-Es wird ein Proxyserver verwendet.
-```
-java -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -jar MediathekView.jar
+jre/bin/java -Xmx1g -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -jar MediathekView.jar
 ```
 Es wird ein anderes LookAndFeel verwendet. Dazu darf aber in den Programmeinstellungen der MediathekView keines ausgewählt sein, diese Angabe wird sonst überschrieben.
+
 ```
-java -Djava.awt.headless=true -jar MediathekView.jar -auto
-```
-Wird das Programm ohne GUI auf einem Rechner mit grafischer Oberfläche gestartet (-auto), kann man damit den Splashscreen unterdrücken
-```
-java -Djava.net.preferIPv4Stack=true -Xms128M -Xmx1G -jar MediathekView.jar
-java -Djava.net.preferIPv6Addresses=true -jar MediathekView.jar
+jre/bin/java -Djava.net.preferIPv4Stack=true -Xms128M -Xmx1G -jar MediathekView.jar
+jre/bin/java -Djava.net.preferIPv6Addresses=true -jar MediathekView.jar
 ```
 Die Parameter "-Xms128M -Xmx1G" helfen bei geringem Arbeitsspeicher. Der Parameter "-Djava.net.preferIPv4Stack=true", "-Djava.net.preferIPv6Addresses=true" ermöglicht eine Verbindung zum Internet, wenn der verwendete Netzwerk-Stack von Java nicht automatisch richtig erkannt wird, wodurch die Filmliste nicht geladen werden könnte.
 
@@ -409,37 +196,44 @@ Es wird die ganze Filmliste angezeigt, falls der Zeitraum auf "alles" gestellt w
 
 <font class="bluefont">Einträge in blauer Schrift</font> sind – relativ zur letzten geladenen Liste – neu in der Filmliste.
 
-Die oben <font class="orangefont">orange markierte Sendung</font> ist der gerade ausgewählte Eintrag.
+Die oben <font class="bluemarked">blau markierte Sendung</font> ist der gerade ausgewählte Eintrag.
 
-In der Filmliste können Filme zum Ansehen (grüner Play-Button) und zum Aufnehmen (roter Record-Button) gestartet sowie Abos über das Kontextmenü angelegt werden.
+In der Filmliste können Filme zum Ansehen (Play-Button) und zum Aufnehmen (Record-Button) gestartet sowie Abos über das Kontextmenü angelegt werden.
 ![MediathekView Buttons](/images/anleitung/MV_Play_Record-Button.png)
 
-**Filmliste laden**: Über den blauen Globus-Button in der Toolbar kann die Filmliste aktualisiert werden (dies geschieht beim Programmstart automatisch).
+**Filmliste laden**: Über den Wolken-Button in der Toolbar kann die Filmliste aktualisiert werden (dies geschieht beim Programmstart automatisch).
 
 **Filminformation anzeigen**: Über den i-Button in der Toolbar kann sämtliche Filminformation zur ausgewählten Sendung übersichtlich in einem eigenen Fenster dargestellt werden.
 
 **Sendungen suchen**:
-Im linken Bereich des Reiters "Filme" werden Filtermöglichkeiten (= Erweiterte Suche) angezeigt, mit dem die Filmliste eingeschränkt werden kann. Durch Klick auf den Button oben rechts im Reiter "Filme" kann die "Erweiterte Suche" aus- und wieder eigeblendet werden:
+Die normale Suchleiste sucht standardmäßig nur nach Thema und Titel. Die langsamere zusätzliche Suche nach Beschreibungen lässt sich durch Klick auf den Button mit dem Buch Icon rechts der Suche aktivieren und wieder deaktivieren.
+
+In einem sepperaten Fenser werden Filtermöglichkeiten (= Erweiterte Suche) angezeigt mit denen die Filmliste eingeschränkt werden kann. Dieses Fenster lässt sich mit Klick auf den Button mit Trichter Icon links der Suche öffnen:
 ![MediathekView Erweiterte Suche](/images/anleitung/MV_Suchfeld_Erweitert_Tatort.png)
+Seit Version 13.3 von MediathekView kann der Filterbereich nur noch als eigenes Fenserdargestellt werden.
 
-Die Filter "Sender", "Thema" sowie "Titel" beziehen sich auf die gleichnamigen Spalten der Tabelle (Filmliste). Seit Version 5 von MediathekView kann der Filterbereich nur noch vertikal positioniert dargestellt werden (also nicht wie unten dargestellt):
-![MediathekView Erweiterte Suche - Sender](/images/anleitung/MV_ErweiterteSuche_Sender_Thema.png)
 
-Mit dem Filter _"Zeitraum"_ kann gleich zu Beginn eine verkürzte Liste erstellt werden (z.B. 2 Tage statt 30 Tage), was die Suche beschleunigt. Auf diese Liste können dann die weiteren Filter angewandt werden. Will man alle Sendungen der Filmliste anzeigen lassen, setzt man den Zeitraum auf "alles".
-
-Die Filter _Sender_ sowie Thema benutzt man, wenn man den Sender (z.B. ARD) und die Sendereihe bzw. das Thema (z.B. "Tatort") kennt, nicht jedoch den Titel der Sendung (z.B. der Polizistinnenmörder). So kann auch verhindert werden, dass der "Tatort" des SRF oder ORF angezeigt wird.
-
-Den Filter _Titel_ kann man benutzen, wenn man nur noch den Titel der Sendung oder einen Teil davon kennt. Der Suchbegriff "der Polizist", "Polizist" oder "Mörder" wird die Sendung "der Polizistinnenmörder" listen, nicht jedoch der Suchbegriff "die Polizistin".
-
-_Mindestlänge [min]_: Ein über den Schieberegler eingestellter Wert von 60 min würde bedeuten, dass alle Sendungen, die weniger lang als 60 Minuten dauern, aus der Filmliste ausgeblendet werden.
-
-Beim Feld _Thema oder Titel_ muss der Suchbegriff im "Thema" ODER "Titel" enthalten sein. Als Suchbegriff wählt man also entweder "Tatort" oder dann z.B. "Polizistin", um die Sendung "der Polizistinnenmörder" zu listen.
-
-Im Filter _Irgendwo_ werden die Beschreibung und die Stichwörter geprüft. Der Suchbegriff "Hörfassung" listet dann alle Sendungen, die im Beschreibungstext das Wort "Hörfassung" enthalten, womit man den "Tatort" in der Hörfassung kriegt.
+Beim Suchfeld Thema oder Titel muss der Suchbegriff im Thema oder Titel enthalten sein. Als Suchbegriff wählt man also entweder "Tatort" oder dann z.B. "Polizistin", um die Sendung "der Polizistinnenmörder" zu listen. 
+Bei aktivieren der zusätzlichen Beschreibungssuche muss der Suchbegriff in Thema oder Titel oder der Beschreibung enthalten sein. Der Suchbegriff "Hörfassung" listet dann alle Sendungen, die im Beschreibungstext das Wort "Hörfassung" enthalten, womit man den "Tatort" in der Hörfassung kriegt.
 
 Oder-Suche: Mehrere Filterwörter werden durch "," getrennt, z.B.: "der Mörder,Verbrecher", dann wird nach Sendungen gesucht, die im entsprechenden Feld "der Mörder" ODER "Verbrecher" enthalten.
 
 Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden. In den Programmeinstellungen (Menü: "Datei -> Einstellungen" bzw. unter OS X MediathekView -> Einstellungen…) kann unter "Einstellungen -> Allgemein" die Livesuche deaktiviert werden. Der Suchfilter wird dann nicht mehr sofort nach jeder Eingabe eines Zeichens ausgewertet, sondern erst durch Drücken der Enter-Taste.
+
+Mit dem Mülleimer Icon Button lassen sich alle Filter zurücksetzen.
+
+Die Checkbox Filter im ersten Abschnitt grenzen die Filme auf bestimmte Kategorien ein. Z.B. nur HD-Filme, nur Filme mit Untertitel usw.
+
+Die Checkbox Filter im zweiten Abschnitt blenden bestimmte Filme aus. Z.B. gesehene Filme, Hörfassungen usw.
+
+Die Filter "Sender" und "Thema" beziehen sich auf die gleichnamigen Spalten der Tabelle (Filmliste). 
+
+Mit dem Filter "Zeitraum" kann gleich zu Beginn eine verkürzte Liste erstellt werden (z.B. 2 Tage statt 30 Tage), was die Suche beschleunigt. Auf diese Liste können dann die weiteren Filter angewandt werden. Will man alle Sendungen der Filmliste anzeigen lassen, setzt man den Zeitraum auf "unendlich". **Hinweis**: "unendlich" ist der niedrigste Wert.
+
+Die Filter Sender sowie Thema benutzt man, wenn man den Sender (z.B. ARD) und die Sendereihe bzw. das Thema (z.B. "Tatort") kennt, nicht jedoch den Titel der Sendung (z.B. der Polizistinnenmörder). So kann auch verhindert werden, dass der "Tatort" des SRF oder ORF angezeigt wird.
+
+Mindest- und Maximallänge [min]: Ein über einen doppelseitigen Schieberegler eingestellter Wert von 60 min bis 80 min würde bedeuten, dass alle Sendungen, die weniger lang als 60 Minuten dauern aber auch nicht länger aks 80 Minuten, aus der Filmliste ausgeblendet werden.
+
 
 _Blacklist öffnen_: Damit können Sendungen mit Datum in der Zukunft und Trailer ausgeblendet werden:
 ![MediathekView Blacklist Fenster](/images/anleitung/MV_Einstellungen_Blacklist.jpg)
@@ -462,7 +256,7 @@ In diesem Tab werden alle Filme, die zum Download anstehen, aufgelistet. Es werd
 2. Downloads, die automatisch durch ein Abo angelegt wurden.
 
 Der Unterschied ist in der Tabelle in der Spalte "Abo" zu sehen: Bei Abos steht hier der Aboname. Mit dem Filter kann man sich nur die jeweilige Art anzeigen lassen.
-![MediathekView Download-Fenster](/images/anleitung/MV_DL-Fenster.jpg)
+![MediathekView Download-Fenster](/images/anleitung/MV_DL-Fenster.png)
 
 Die Downloads können über das Menü "Downloads", das Kontextmenü der Maus oder die Toolbar gesteuert werden. Sie lassen sich alle oder auch einzeln starten, vorziehen (d.h. nach oben verschieben), zurückstellen und auch wieder stoppen. Ein Rechtsklick auf einen Download ermöglicht es, den Zielordner zu öffnen, d.h. die Datei im Download-Verzeichnis anzeigen zu lassen.
 
@@ -478,17 +272,19 @@ Die Farben haben diese Bedeutung:
 
 ![MediathekView Download Buttons](/images/anleitung/MV_DL-Buttons.png)
 
-_Zwei blaue Pfeile_ (der 1. Button von links in der Toolbar): sucht nach neuen Downloads für die Abos.
+_i-Icon_: Zeigt die Filminformationen des ausgewählten Films an.
 
-_Blauer Pfeil_: startet alle Downloads.
+_Zwei Pfeile_: sucht nach neuen Downloads für die Abos.
 
-_Grüner Pfeil_: spielt die gespeicherte, heruntergeladene Sendung ab
+_Pfeile nach unten_: startet alle Downloads.
 
-_Roter Pfeil_: stellt den Download der markierten Tabellenzeile zurück, d.h., er wird nicht mehr angezeigt und bei "alle Downloads starten" nicht mitgestartet. Wird nach neuen Downloads gesucht (erster Button), wird er wieder angezeigt.
+_Pfeil / Play-Button_: spielt die gespeicherte, heruntergeladene Sendung ab
 
-_Rotes Kreuz_: löscht einen Download, er wird als erledigt markiert.
+_Uhr_: stellt den Download der markierten Tabellenzeile zurück, d.h., er wird nicht mehr angezeigt und bei "alle Downloads starten" nicht mitgestartet. Wird nach neuen Downloads gesucht (erster Button), wird er wieder angezeigt.
 
-_Pinsel_: "bereinigt" die Tabelle, es werden alle abgeschlossenen Downloads entfernt.
+_Mülleimer_: löscht einen Download, er wird als erledigt markiert.
+
+_Radiergummi_: "bereinigt" die Tabelle, es werden alle abgeschlossenen Downloads entfernt.
 
 Bis auf wenige Ausnahmen (ältere Sendungen) liegen sämtliche heruntergeladenen Videos im MP4-Format vor. Wurde ein Film mit dem Status erfolgreich aufgezeichnet, wird er nach einem Neustart von MediathekView nicht mehr als Download angezeigt. Seine URL wird in die History-Liste, bei Abos zusätzlich in die Liste der Erledigten Abos eingetragen. Diese zwei Listen können in den Programmeinstellungen geladen und eingesehen werden. Eine URL kann dort auch wieder aus der Liste gelöscht werden und der Film wird dann erneut bei den Downloads angezeigt.
 
@@ -502,13 +298,11 @@ Abos können auf 2. Varianten angelegt werden:
 1. im Tab "Filme" per Rechtsklick (Kontextmenü) auf einen Eintrag in der Filmliste oder
 2. über das Menü "Abos", wobei man sich im Tab "Abos" befinden muss und sämtlichen Inhalt (Abokriterien) selbst festlegen muss.
 
-Bei Variante 1 stehen im Kontextmenü stehen drei Optionen offen:
+Bei Variante 1 stehen im Kontextmenü stehen zwei Optionen offen:
 
 a. Abo mit Sender und Thema anlegen
 
 b. Abo mit Sender und Thema und Titel anlegen
-
-c. Abo aus Filter anlegen
 
 Die Abofelder beziehen sich auf die Spalten der Filmliste bzw. auf die aktuelle Filterauswahl:
 
@@ -523,10 +317,10 @@ Im Abofenster wird folglich das Feld"Titel" editiert: Wenn man bei nummerierten 
 
 ### Abos anpassen oder ausschalten sowie Herunterladen von abonnierten Sendungen
 
-Nachdem ein Abo angelegt wurde, ist im Tab "Abos" ein Eintrag für das eben erstellte Abo ersichtlich. Von hier aus lässt sich ein Abo auch nachträglich editieren (z.B. anderer Zielordner, Suchkriterien anpassen), und zwar per Doppelklick auf den Eintrag in der Aboliste oder per Rechtsklick. (Ein anderer Zielordner wird aber nur benutzt, wenn im zugehörigen Set unter "Speicherziel" die Option "Unterordner mit Thema anlegen" (Checkbox) nicht deaktiviert wurde!)
+Nachdem ein Abo angelegt wurde, ist im Fenster "Abos verwalten" (Zu öffnen über das Menü -> Abos -> Abos verwalten) ein Eintrag für das eben erstellte Abo ersichtlich. Von hier aus lässt sich ein Abo auch nachträglich editieren (z.B. anderer Zielordner, Suchkriterien anpassen), und zwar per Doppelklick auf den Eintrag in der Aboliste oder per Rechtsklick. (Ein anderer Zielordner wird aber nur benutzt, wenn im zugehörigen Set unter "Speicherziel" die Option "Unterordner mit Thema anlegen" (Checkbox) nicht deaktiviert wurde!)
 
 Nach dem Einrichten eines Abos werden alle neuen Sendungen, die von den Suchkriterien eines Abos erfasst werden, in die Download-Liste (Tab "Downloads") eingetragen. Von dort können die Downloads gestartet werden; es erfolgt also kein automatischer Download. In den Programmeinstellungen (Menü: "Datei -> Einstellungen" bzw. unter OS X MediathekView -> Einstellungen…) kann jedoch unter "Einstellungen -> Erweitert" festgelegt werden, dass beim Neuladen der Filmliste der Download der Abos automatisch gestartet wird.
-![MediathekView Abo Fenster](/images/anleitung/MV_Abo-Fenster.jpg)
+![MediathekView Abo Fenster](/images/anleitung/MV_Abo-Fenster.png)
 
 Abos können "ein-" und "ausgeschaltet" werden (erster und zweiter Button in der Toolbar) und auch gelöscht werden. "Ausgeschaltete Abos" werden beim Suchen nach anstehenden Downloads nicht berücksichtigt.
 
@@ -568,7 +362,7 @@ Die Suche nach bestimmten Sendungen ist zwar kein Glücksspiel, aber keineswegs 
 
 ### Programmset
 
-![MV Sets](/images/anleitung/Einstellungen-Videoplayer-Sets_1.jpg)
+![MV Sets](/images/anleitung/Einstellungen-Videoplayer-Sets_1.png)
 
 Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Hier werden die Programme zum Abspielen und Aufzeichnen der Filme eingerichtet.
 
@@ -603,13 +397,13 @@ Export: Markierte Programmsets (auch mehrere) können damit in eine Datei export
 
 ### Programmset anlegen
 
-![MV Sets](/images/anleitung/Einstellungen-Videoplayer-Sets_1.jpg)
+![MV Sets](/images/anleitung/Einstellungen-Videoplayer-Sets_1.png)
 
 Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Ein neues Programmset kann mit "+" oder indem man ein bestehendes dupliziert, angelegt werden.
 
-![MV Set anlegen](/images/anleitung/Einstellungen-Videoplayer-Sets-Details_1.jpg)
+Im Tab "Aussehen" kann das Aussehen des Buttons verändert werden.
 
-Im Tab "Details" können für das markierte Programmset Einstellungen vorgenommen werden. "Zielpfad" und "Zieldateiname" sind nur für Aufnahmen wichtig. Der Zieldateiname kann auch auf eine bestimmte Zeichenlänge beschränkt werden.
+Im Tab "Speicherziel" lassen sich der Zielpfad und der Zieldateiname ändern. "Zielpfad" und "Zieldateiname" sind nur für Aufnahmen wichtig. Der Zieldateiname kann auch auf eine bestimmte Zeichenlänge beschränkt werden.
 
 Für den Zieldateinamen sind diese Parameter möglich:
 
@@ -669,9 +463,11 @@ Suffix: mp4,mp3,m4v,flv
 
 Es werden so alle Filme deren URL mit "http" beginnt und mit "mp4", "mp3", "m4v" oder "flv" enden, direkt als Datei geladen und laufen nicht als Stream durch ein Programm. Das Präfix "http" ist dabei wichtig, da andere Protokolle nicht direkt geladen werden können.
 
+Der Tab "Download" bietet erweiterte Einsellungen für den Download wie z.B. die standard Qualität.
+
 ### Programme einrichten
 
-![MV Set Programme](/images/anleitung/Einstellungen-Videoplayer-Sets-Programme_1.jpg)
+![MV Set Programme](/images/anleitung/Einstellungen-Videoplayer-Sets-Programme_1.png)
 
 Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Einem Programmset kann man mit "+" oder indem man ein bestehendes Programm dupliziert, ein Programm hinzufügen.
 
@@ -702,17 +498,13 @@ Mit der Checkbox "fehlgeschlagene Downloads wieder Starten" kann ein Download im
 
 ### Beispiel "Abspielen"
 
-![MV Sets](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_6_1.jpg)
+![MV Sets](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_6_1.png)
 
-Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Mit "Plus" ein neues Programmset anlegen und mit der Maus markieren. Mit dem Button "Abspielen" als das Programm zum "Abspielen" markieren.
+Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Mit "Plus" ein neues Programmset anlegen und mit der Maus markieren. Mit dem Button "Abspielen" als das Programm zum "Abspielen" markieren und den Namen ändern.
 
-![MV Set Details](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_7_1.jpg)
+![MV Set Programme](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_7_1.png)
 
-Im Tab "Details" den Namen ändern.
-
-![MV Set Programme](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_8_1.jpg)
-
-Mit "Plus" ein neues Programm anlegen und die mit einem roten Punkt markierten Felder ändern.
+Im Tab "Hilfsprogramme" mit "Plus" ein neues Programm anlegen und die mit einem roten Punkt markierten Felder ändern.
 
 Programm: `/usr/bin/vlc`
 
@@ -720,21 +512,21 @@ Schalter: `%f`
 
 ### Beispiel "speichern"
 
-![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_1_1.jpg)
+![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_1_1.png)
 
-Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Mit "Plus" ein neues Programmset anlegen und mit der Maus markieren. Die Checkbox "Speichern" muss selektiert sein, damit das Programmset zum Speichern verwendet wird.
+Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Mit "Plus" ein neues Programmset anlegen und mit der Maus markieren. Die Checkbox "Speichern" muss selektiert sein, damit das Programmset zum Speichern verwendet wird. Den Namen ändern. 
 
-![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_2_1.jpg)
+![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_2_1.png)
 
-Im Tab "Details" den Namen ändern, im Feld: "Zielpfad" einen passenden Pfad eintragen (unter Windows: wenn er Leerzeichen enthält, in Anführungszeichen setzen) und einen Zieldateinamen angeben zB. `%t-%T-%N.mp4` (Thema-Titel-Originaldateiname.mp4). Bei Präfix: "http" und bei Suffix: "mp4,mp3,m4v,flv" eintragen.
+Im Tab "Speicherziel" im Feld: "Zielpfad" einen passenden Pfad eintragen (unter Windows: wenn er Leerzeichen enthält, in Anführungszeichen setzen) und einen Zieldateinamen angeben zB. `%t-%T-%N.mp4` (Thema-Titel-Originaldateiname.mp4). Bei Präfix: "http" und bei Suffix: "mp4,mp3,m4v,flv" eintragen.
 
-![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_3_1.jpg)
+![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_3_1.png)
 
-![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_4_1.jpg)
+![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_4_1.png)
 
-![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_5_1.jpg)
+![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_5_1.png)
 
-Mit "+" drei Programme anlegen und die rot markierten Felder eintragen:
+Mit "+" drei Programme anlegen und die folgenden Felder eintragen:
 
 **Programm 1**
 
@@ -772,7 +564,7 @@ Schalter: `%f :sout=#standard{access=file,mux=asf,dst="**"} -I "dummy" --play-an
 
 ### Programmset importieren
 
-![MV Programmset importieren](/images/anleitung/Einstellungen-Videoplayer-Import-Vorlagen_1.jpg)
+![MV Programmset importieren](/images/anleitung/Einstellungen-Videoplayer-Import-Vorlagen_1.png)
 
 Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen.
 
@@ -789,16 +581,28 @@ OS X: Menü "MediathekView -> Einstellungen…" oder durch Drücken von "cmd+," 
 Im Folgenden wird nur eine Auswahl von Einstellungen beschrieben. Man beachte, dass zu vielen Einstellungen über den Hilfe-Button (HILFE oder Rettungsring-Symbol) direkt an der entsprechenden Stelle Erklärungen abgegeben werden.
 
 ### Allgemein
-![MediathekView Einstellungen - Allgemein](/images/anleitung/MV_Einstellungen_Allgemein.jpg)
+![MediathekView Einstellungen - Allgemein](/images/anleitung/MV_Einstellungen_Allgemein.png)
 
-**Echtzeitsuche im Filter**: Diese Option ermöglicht es, dass bei der Eingabe eines Zeichens in ein Filterfeld, die Suche sofort gestartet wird und nicht erst nach einem "Return". Wird die Filmliste zeitlich eingeschränkt (z.B. nur 10 Tage) reagiert die Suche flotter.
+**Tab-Verhalten**: Beim Tab verhalten kann z.B. eingestellt werden, ob die Tabs oben oder Links angezeigt werden und ob Icons angezeigt werden sollen
 
-**nur die Filme der letzten Tage laden: xx** Reduziert den Umfang der Filmliste auf die Zeitspanne von xx Tagen (z.B. 2 Tage), was auch Rechnern mit geringem Arbeitsspeicher ein flüssiges Arbeiten erlaubt. Natürlich können dann mit dieser Einstellung auch nur Sendungen der letzten xx Tage gefunden werden.
+**Download**: Bei Download kann der für den Download zu verwendende User-Agent eingestellt werden. Für ORF downloads sollte am besten ein anderer als "MediathekView" verwendet werden.
 
-**Programmupdate:** Damit kann das Programm überprüfen, ob es eine neue Version gibt. Dabei wird die Datei http://res.mediathekview.de/prog-info.xml heruntergeladen und die darin enthaltene Versionsnummer mit der des Programms verglichen. Unterscheiden sich diese Nummern, wird das mit der URL zum Download der neuen Version angezeigt. Es werden dabei keine Daten (Seriennummer oder ähnliches) übertragen. Das Programm wird auch nicht automatisch aktualisiert. Ist diese Funktion eingeschaltet, wird die Überprüfung einmal täglich beim ersten Start durchgeführt.
+**HTTP-Proxy**: Hier können Parameter zur Verwendung eines HTTP-Proxys angegeben werden. Nach dem setzen der Parameter muss MediathekView neu gestartet werden damit sie aktiv werden.
+
+**Datenbank**: Bei dieser Option kann die bereinigung der Datenbank während der Laufzeit aktiviert werden. Nach dem setzen der Option muss MediathekView neu gestartet werden damit die Änderung aktiv wird.
+
+**Speicherung der Filmliste**: Hier kann aktiviert werden ob die Filmliste in einem Speicherplatzsparenden oder in einem les- und editierbarem Format gespeichert werden soll.
+
+**Programm ins Tray minimieren**: Wird diese Option aktivieren wird MediathekView nicht in die Fensterleiste minimiert sondern in ein Tray Icon.
+
+**Senderlogos von Wikipedia verwenden**: Ist diese Option aktiv werden die Senderlogos von Wikipedia geladen.
+
+### Benachrichtigungen
+
+Hier lassen sich Benachrichtigungen aktivieren
 
 ### Erweitert
-![MediathekView Einstellungen - Erweitert](/images/anleitung/MV_Einstellungen_Erweitert.jpg)
+![MediathekView Einstellungen - Erweitert](/images/anleitung/MV_Einstellungen_Erweitert.png)
 
 **User-Agent**: Diese Zeichenkette wird beim Download der Filme mitübertragen. Jeder Webbrowser schickt seinen Browsernamen mit, wenn er Webseiten lädt. Dieser Name kann hier verändert werden. Bestimmte Webseiten liefern keine Informationen, wenn der Name fehlt. In der "Auto-Einstellung" wird der Programmname und die Programmversion verwendet, es kann aber auch ein eigener Name angegeben werden oder leer bleiben.
 
@@ -806,29 +610,22 @@ Im Folgenden wird nur eine Auswahl von Einstellungen beschrieben. Man beachte, d
 Wenn das Programm versucht, eine URL mit dem Webbrowser zu öffnen und die Standardanwendung nicht startet, kann man damit ein Programm (z.B. Firefox, InternetExplorer, Safari) auswählen, mit dem URLs geöffnet werden sollen.
 
 ### Filmliste laden
-![MediathekView Einstellungen - Filmliste](/images/anleitung/MV_Einstellungen_Filmliste.jpg)
+![MediathekView Einstellungen - Filmliste](/images/anleitung/MV_Einstellungen_Filmliste.png)
 
 **Filmliste nur manuell laden:** Die Filmliste wird nicht mehr automatisch beim Programmstart (default) geladen, sondern wird nur noch manuell über den Button "Neue Filmliste laden" geladen. Dabei wird ein Dialog angezeigt, welcher es ermöglicht, aus einer Auswahl eine URL (oder Datei) zum Laden der Filmliste anzugeben. Auf diese Art können auch vom Benutzer archivierte (alte) Filmlisten geladen werden.
 
 ### Datei- und Pfadname
-![MediathekView Einstellungen - Ersetzungstabelle](/images/anleitung/MV_Einstellungen_Ersetzungstabelle.jpg)
+![MediathekView Einstellungen - Ersetzungstabelle](/images/anleitung/MV_Einstellungen_Ersetzungstabelle.png)
 
 **Eigene Einstellungen**: Die Ersetzungstabelle erlaubt es, benutzerdefiniert spezifische Zeichen zu ersetzen, z.B. Leerschläge durch Unterstriche (" " -> "\_") oder typographische durch gerade Anführungszeichen („ -> "). Viele potenziell unerwünschte Zeichen können jedoch auch automatisch durch die Option "nur ASCII-Zeichen verwenden" ersetzt, z.B. Umlaute ("ö" -> "oe").
 Achtung: Unter OS X und Linux muss die Ersetzungstabelle eingeschaltet sein (d.h. es dürfen keine Leerzeichen erlaubt werden), damit das Hilfsprogramm FFmpeg (Avconv) keine fehlerhaften Downloads bei SRF- und gewissen WDR-Rockpalast-Sendungen ausgibt.
 
 ### Download
-![MediathekView Einstellungen - Download](/images/anleitung/MV_Einstellungen_Download.jpg)
-
-**Benachrichtigung anzeigen:** Damit erfolgt eine Meldung, dass ein Download erfolgreich oder fehlerhaft abgeschlossen wurde.
+![MediathekView Einstellungen - Download](/images/anleitung/MV_Einstellungen_Download.png)
 
 **Downloads gleichzeitig laden:** Damit kann festgelegt werden, wie viele Downloads gleichzeitig laufen können. Als festgelegte Obergrenze werden maximal zwei Downloads pro Server gestartet. Wird die maximale Anzahl auf einen Wert größer zwei gesetzt, werden die Downloads so gestartet, dass nie mehr als 2 Downloads pro Server laufen.
 
 **Downloadgeschwindigkeit begrenzen:** Diese Option ist unter Umständen hilfreich, wenn eine schnelle Verbindung (möglicherweise durch den Provider oder Website-Server (z.B. ARTE)) übermässig gedrosselt wird. Eine selbst auferlegte Begrenzung z.B. auf 500 kByte/s würde also potenziell verhindern, dass von anderswo stärker gedrosselt wird (z.B. auf unter 100 kByte/s). Der eingestellte Wert gilt pro Download, ist als keine Summenwert für alle Downloads zusammen. Der Default-Wert von MeditathekView für diese Einstellung ist "aus".
-
-### Set bearbeiten
-![MediathekView Einstellungen - Set bearbeiten](/images/anleitung/MV_Zielpfad-aendern.png)
-
-**Zielpfad:** Hier kann das Standard-Download-Verzeichnis geändert werden.
 
 ## Hilfe
 ![MediathekView Hilfe - Logfile erstellen](/images/anleitung/MV_Logfile-erstellen.png)

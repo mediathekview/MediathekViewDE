@@ -1,6 +1,6 @@
 +++
 description = ""
-date = "2016-12-06T12:45:09+01:00"
+date = "2019-09-29T11:45:09+01:00"
 title = "Download"
 [menu]
     [menu.main]
@@ -16,9 +16,14 @@ title = "Download"
 <div class="panel panel-default">
   <div class="panel-heading"><b>Aktuell stabile Version</b></div>
   <div class="panel-body">
-    <p>Die aktuell stabile Version für alle gängigen Betriebsysteme in gepackter Form.</p>
+    <p>Die aktuell stabile Version für alle gängigen Betriebsysteme in gepackter Form inklusive benötigter Java Version.</p>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win.exe"><button type="button" class="btn btn-primary btn-sm">Windows Installer (Exe)</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win.zip"><button type="button" class="btn btn-primary btn-sm">Windows (zip)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.deb"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Debian Deb)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.rpm"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Red Hat RPM)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.sh"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Sh)</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.tar.gz"><button type="button" class="btn btn-primary btn-sm">Linux (tar.gz)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.AppImage"><button type="button" class="btn btn-primary btn-sm">Linux Standalone (AppImage)</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac.dmg"><button type="button" class="btn btn-primary btn-sm">OS X (dmg)</button></a>
   </div>
 </div>
