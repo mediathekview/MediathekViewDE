@@ -2,12 +2,12 @@
 type = "news"
 title = "MediathekView 13.5.0 released"
 author = "Nicklas Wiegandt"
-date = "2019-09-26"
+date = "2019-09-30"
 keywords = ["mediathekview", "release", "13.5.0", "13.5"] # HTML Schlüsselwörter
 tags = ["Allgemein"]
 +++
 
-**[MediathekView 13.5.0](https://mediathekview.de/download/)** ist da und bringt neben neuer Pakete und Installer noch weitere [Neuerungen](https://mediathekview.de/changelog/13-5-0/) mit sich.
+**[MediathekView 13.5.0](/download/)** ist da und bringt neben neuer Pakete und Installer noch weitere [Neuerungen](/changelog/13-5-0/) mit sich.
 ![Der neue Windows Installer](/images/news/mediathekview-13_5-win-installer.png)
 <em>Der neue Installer für Windows.</em>
 
@@ -26,8 +26,8 @@ Folgende Pakete gibt es nun:
 
 Bei der Installation werden im Applikationsmenü Einträge für MediathekView angelegt und auch ein Deinstaller hinterlegt. Der Standard Installationspfad unter Linux ist `/opt/mediathekview`.
 
-Des Weiteren haben wir unseren Code und die Startzeit von MediathekView (weiter) optimiert und einige Bugs behoben. Detailliertere Informationen hierzu finden sich im [Changelog](https://mediathekview.de/changelog/13-5-0/).
+Des Weiteren haben wir unseren Code und die Startzeit von MediathekView (weiter) optimiert und einige Bugs behoben. Detailliertere Informationen hierzu finden sich im [Changelog](/changelog/13-5-0/).
 
-Wie bestimmt aufgefallen ist, wurde die Version 13.4.0 übersprungen. Dies hat den Hintergrund, dass die Vorabversion der Installer als 13.4.0 verteilt wurden. Um Verwirrungen zu vermeiden und damit alle Tester eine Update Benachrichtigung erhalten, überspringen wir diese nun und sind somit direkt bei 13.5.0.
+Wie bestimmt aufgefallen ist, wurde die Version 13.4.0 übersprungen. Dies hat den Hintergrund, dass die Vorabversionen der Installer als 13.4.0 verteilt wurden. Um Verwirrungen zu vermeiden und damit alle Tester eine Update Benachrichtigung erhalten, überspringen wir diese nun und sind somit direkt bei 13.5.0.
 
-Zum Erstellen der neuen Pakete (bis auf Dmg) verwenden wir [install4J](https://www.ej-technologies.com/products/install4j/overview.html). Dies wird uns dankenswerterweise von [ej-technologies](https://www.ej-technologies.com/) zur Verfügung gestellt. Ein weiteres großes Dankeschön an die Community für das Testen der Installer!
+Zum Erstellen der neuen Pakete (bis auf Dmg) verwenden wir [install4J](https://www.ej-technologies.com/products/install4j/overview.html). Dies wird uns dankenswerterweise von [ej-technologies](https://www.ej-technologies.com/) zur Verfügung gestellt. Ein weiteres, großes Dankeschön an die Community für das Testen der Installer!
