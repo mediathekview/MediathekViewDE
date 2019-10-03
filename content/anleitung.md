@@ -473,6 +473,7 @@ Zeit in der Form: `SSMMss` z.B. `152059` (15:20:59)
 
 Damit kann man einen Namen z.B. so aufbauen:
 `%H--%t-%T.mp4` -> _20131206--Doku-Titel_der_Doku.mp4_
+
 `%H--%t-%T.%S` -> _20131206--Doku-Titel_der_Doku.xxx_ (hier wird die Originaldateiendung
 verwendet)
 
