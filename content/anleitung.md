@@ -455,13 +455,21 @@ Zeit in der Form: `SSMMss` z.B. `152059` (15:20:59)
 
 `%t` Thema des Films
 
+
 `%N` Originaldateiname des Films (der kann sehr kryptisch und lang sein)
 
 `%S` Suffix des Originaldateinamens des Films (z.B. "mp4")
 
+
 `%i` Filmnummer (die ändert sich beim Neuladen der Filmliste!)
 
 `%q` Qualität des Films ("HD", "H", "L")
+
+
+`%Z` Hashwert der URL, z.B.: 1433245578 (vgl. https://de.wikipedia.org/wiki/Hashfunktion)
+
+`%z` Hashwert der URL + Suffix, entspricht also: %Z.%S, z.B.: 1433245578.mp4
+
 
 Damit kann man einen Namen z.B. so aufbauen:
 `%H--%t-%T.mp4` -> _20131206--Doku-Titel_der_Doku.mp4_
