@@ -138,6 +138,23 @@ rm -R ~/.mediathek3
 ## Starten
 Für Windows (MediathekView.exe), Linux (MediathekView) sind eigene Startdateien enthalten, mit welchen MediathekView direkt gestartet werden kann. Für OS X 10.7.3 und neuer besteht eine eigenständige Applikation (MediathekView.app); für OS X 10.6 liegt die Startdatei "MediathekView.command" vor.
 
+Es ist möglich, den Startprogrammen weitere Optionen für die Java VM mitzugeben. Dies geschieht über einen Eintrag in der Datei 
+`MediathekView.vmoptions` im Programmordner von MediathekView. Für den ipv4 Starter gibt es eine eigene Datei `MediathekView_ipv4.vmoptions`, sowie eine eigene Datei `MediathekView_Portable.vmoptions` für den portable Starter.
+
+Mit .vmoptions lässt sich z.B. die Anzeigegröße (inkl. Schriftgröße) hochsetzen (z.B. für UHD Monitore oder als Sehhilfe)
+```
+# Enter one VM parameter per line
+# For example, to adjust the maximum memory usage to 512 MB, uncomment the following line:
+# -Xmx512m
+# To include another file, uncomment the following line:
+# -include-options [path to other .vmoption file]
+#
+# examples:
+# scale graphical user interface by a factor of 25%
+-Dsun.java2d.uiScale=1.25
+```
+(Achtung: Wurde Mediathekview vom Installer in das Programme-Verzeichnis eingespielt, sind meist Administrator-Berechtigungen erforderlich, um die .vmoptions Datei zu ändern)
+
 Ansonsten kann man die Programmdatei auch so starten:
 
 - Windows: Doppelklick auf "MediathekView_ipv4.exe" oder "MediathekView_Portable.exe"
@@ -438,16 +455,25 @@ Zeit in der Form: `SSMMss` z.B. `152059` (15:20:59)
 
 `%t` Thema des Films
 
+
 `%N` Originaldateiname des Films (der kann sehr kryptisch und lang sein)
 
 `%S` Suffix des Originaldateinamens des Films (z.B. "mp4")
+
 
 `%i` Filmnummer (die ändert sich beim Neuladen der Filmliste!)
 
 `%q` Qualität des Films ("HD", "H", "L")
 
+
+`%Z` Hashwert der URL, z.B.: 1433245578 (vgl. https://de.wikipedia.org/wiki/Hashfunktion)
+
+`%z` Hashwert der URL + Suffix, entspricht also: %Z.%S, z.B.: 1433245578.mp4
+
+
 Damit kann man einen Namen z.B. so aufbauen:
 `%H--%t-%T.mp4` -> _20131206--Doku-Titel_der_Doku.mp4_
+
 `%H--%t-%T.%S` -> _20131206--Doku-Titel_der_Doku.xxx_ (hier wird die Originaldateiendung
 verwendet)
 
