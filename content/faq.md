@@ -75,9 +75,11 @@ rm ~/Library/Caches/MediathekView/filme.json
 
 Vermutlich wurde die AdoptOpenJDK JRE und nicht die JDK verwendet. Um das Problem zu lösen muss die JRE deinstalliert und die JDK installiert werden oder auf 13.5 updaten und das dort mitgelieferte Java verwenden.
 
-# Die Schriftgröße in MediathekView ist unlesbar klein
+# Die Schriftgröße in MediathekView ist zu klein
 
-Für Menschen mit Sehbehinderung besteht genauso wie für Nutzer von hochauflösenden HiDPI Monitoren (UHD, 4k) die Möglichkeit, eine ![Skalierung einzustellen](/content/anleitung/#starten), welche sich auf die gesamte grafische Benutzeroberfläche auswirkt. Schaltflächen und Schriften werden dadurch größer dargestellt. Achtung: Unter Linux ist in vielen Fällen nur eine ganzzahlige Skalierung auf 200%, 300% etc. wirksam.
+Dieses Problem betrifft zum einen Menschen mit Sehbehinderung. Andererseits sind auch Nutzer von hochauflösenden HiDPI Monitoren (UHD, 4k) betroffen. Für beide besteht ab Version 13.3 und höher die Möglichkeit, eine ![Skalierung der Anzeige einzustellen](/content/anleitung/#starten). Diese wirkt sich auf die gesamte grafische Benutzeroberfläche aus. D.h. alle Schaltflächen und Texte werden dadurch größer dargestellt. **Achtung**: Unter Linux ist in vielen Fällen nur eine ganzzahlige Skalierung wirksam, also auf z.B. 200%, 300% etc.. Das Setzen von Zwischenwerten wie z.B. 150% hat hier *keinen* Effekt.
+
+Diese Methode zur Skalierung setzt Java 9 oder höher voraus.
 
 # Das Laden der Filmliste hat nicht geklappt
 
