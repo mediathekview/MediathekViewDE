@@ -141,7 +141,10 @@ Für Windows (MediathekView.exe), Linux (MediathekView) sind eigene Startdateien
 Es ist möglich, den Startprogrammen weitere Optionen für die Java VM mitzugeben. Dies geschieht über einen Eintrag in der Datei 
 `MediathekView.vmoptions` im Programmordner von MediathekView. Für den ipv4 Starter gibt es eine eigene Datei `MediathekView_ipv4.vmoptions`, sowie eine eigene Datei `MediathekView_Portable.vmoptions` für den portable Starter.
 
-Mit .vmoptions lässt sich z.B. die Anzeigegröße (inkl. Schriftgröße) hochsetzen (z.B. für UHD Monitore oder als Sehhilfe)
+Mit .vmoptions lässt sich z.B.
+- der von MV maximal verwendete Arbeitsspeicher festlegen
+- die Anzeigegröße (inkl. Schriftgröße und Schaltflächen) hochsetzen (z.B. für UHD Monitore mit 4K Auflösung oder als Sehhilfe). 
+- Sonderfall Linux: die Anzeigegröße kann bei vielen Linux Installationen nur um ganzzahlige Faktore skaliert werden. Ein Faktor von z.B. 1.5 hat hier *keinen* Effekt auf die Darstellung! Faktor 2.5 und 2.0 führen beide zu 2-facher Saklierung, etc.. Weiterführende Informationen zur Anzeigeskalierung unter Linux findet man ggfs. [hier](https://wiki.archlinux.org/index.php/HiDPI)
 ```
 # Enter one VM parameter per line
 # For example, to adjust the maximum memory usage to 512 MB, uncomment the following line:
@@ -152,6 +155,9 @@ Mit .vmoptions lässt sich z.B. die Anzeigegröße (inkl. Schriftgröße) hochse
 # examples:
 # scale graphical user interface by a factor of 25%
 -Dsun.java2d.uiScale=1.25
+# scale graphical user interface by a factor of 100% (Linux often only allows integral scaling) 
+-Dsun.java2d.uiScale=2.0
+
 ```
 (Achtung: Wurde Mediathekview vom Installer in das Programme-Verzeichnis eingespielt, sind meist Administrator-Berechtigungen erforderlich, um die .vmoptions Datei zu ändern)
 
