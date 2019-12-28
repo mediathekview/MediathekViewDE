@@ -75,6 +75,10 @@ rm ~/Library/Caches/MediathekView/filme.json
 
 Vermutlich wurde die AdoptOpenJDK JRE und nicht die JDK verwendet. Um das Problem zu lösen muss die JRE deinstalliert und die JDK installiert werden oder auf 13.5 updaten und das dort mitgelieferte Java verwenden.
 
+# Die Schriftgröße in MediathekView ist unlesbar klein
+
+Für Menschen mit Sehbehinderung besteht genauso wie für Nutzer von hochauflösenden HiDPI Monitoren (UHD, 4k) die Möglichkeit, eine ![Skalierung einzustellen](/content/anleitung/#starten), welche sich auf die gesamte grafische Benutzeroberfläche auswirkt. Schaltflächen und Schriften werden dadurch größer dargestellt. Achtung: Unter Linux ist in vielen Fällen nur eine ganzzahlige Skalierung auf 200%, 300% etc. wirksam.
+
 # Das Laden der Filmliste hat nicht geklappt
 
 Eventuell wird der verwendete Network-Stack (IPv4 vs. IPv6) von Java nicht richtig erkannt, wodurch keine Verbindung zum Internet möglich ist. In diesem Fall können Windows-User versuchen, mit einem Doppelklick auf die Datei "MediathekView-ipv4.exe" das Programm zu starten. Diese alternative Startdatei befindet sich im gleichen Ordner wie "MediathekView.exe" und kann bei Bedarf auch umbenannt werden.
