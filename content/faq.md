@@ -12,7 +12,7 @@ toc = true
 
 # Wenn nichts geht
 
-Wenn das Herunterladen oder das Abspielen nicht funktioniert, besteht die einfachste Möglichkeit darin, es mit komplett neuen Einstellungen nochmals zu versuchen und dann wenn's klappt, diese – falls notwendig – Stück für Stück anzupassen:
+Wenn das Herunterladen oder das Abspielen nicht funktioniert oder wenn das Programm bereits beim Start wiederholt abstürzt, besteht die einfachste Möglichkeit darin, es mit komplett neuen Einstellungen nochmals zu versuchen und dann wenn's klappt, diese – falls notwendig – Stück für Stück anzupassen:
 
 ![Einstellungen zurücksetzen](/images/faq/MV_Einstellungen_zuruecksetzen.png)
 
@@ -26,12 +26,28 @@ Wenn das Herunterladen oder das Abspielen nicht funktioniert, besteht die einfac
 
 ## Alle Einstellungen zurücksetzen
 
+a) Sofern die grafische Benutzeroberfläche von MediathekView noch bedienbar ist:
+
 1. Menü "Hilfe -> Hilfe und Fragen zum Programm -> Alle Einstellungen zurücksetzen!"
-2. Dadurch wird der Ordner mit allen Einstellungen (".mediathek3" im Benutzerverzeichnis) umbenannt und das Programm beendet. Dieser Ordner ist unter OS X im Finder unsichtbar.
-3. Dann das Programm erneut starten. Es sollte der Einrichtungsdialog erscheinen. Hier mit den Standardeinstellungen beginnen. Anschliessend sollte automatisch die Filmliste geladen werden.
+2. Dadurch wird der Ordner mit allen Einstellungen (".mediathek3" im Benutzerverzeichnis) umbenannt und das Programm beendet. 
+
+b) Falls MediathekView dagegen bereits beim Start abstürzt:
+
+1. Unter OS X den Finder öffnen, bzw. unter Windows den Windows Explorer, bzw. unter Linux den jeweils bevorzugten Datei-Explorer.
+2. Im Finder bzw. Explorer in das Benutzerverzeichnis navigieren und den Ordner ".mediathek3" im Benutzerverzeichnis per Hand umbenennen. 
+
+Hinweis: Der Ordner ".mediathek3" ist unter OS X im Finder sowie unter verschiedenen Datei-Explorern in Linux standardmäßig versteckt, kann aber sichtbar gemacht werden. (Suche "versteckte Ordner anzeigen mit OS X / Linux / Windows")
+
+
+In beiden Fällen fährt man nun wie folgt fort:
+
+3. Das Programm erneut starten. Es sollte der Einrichtungsdialog erscheinen. Hier mit den Standardeinstellungen beginnen. Anschließend sollte automatisch die Filmliste geladen werden.
 4. Wenn es so weit geklappt hat, können nun alle Filme abgespielt und aufgezeichnet werden.
 5. Bei Bedarf können nun gewisse Einstellungen via "Datei -> Einstellungen" (OS X: "MediathekView -> Einstellungen…") geändert werden, z.B. in welchem Verzeichnis die Sendungen gespeichert werden sollen.
-6. Optional: Erfahrene User können aus dem umbenannten Einstellungsordner (z.B. ".mediathek3--2015.02.11__21.12.42") einige mit viel Zeitaufwand vorgenommene Einstellungen retten.
+6. Optional: Erfahrene User können aus dem zuvor umbenannten Einstellungsordner (z.B. ".mediathek3--2020.11.01__21.12.42") einige mit viel Zeitaufwand vorgenommene Einstellungen retten.
+
+
+
 
 # Wo werden meine Sendungen gespeichert und wie ich kann das Download-Verzeichnis ändern?
 
