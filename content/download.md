@@ -1,6 +1,6 @@
 +++
 description = ""
-date = "2019-09-29T11:45:09+01:00"
+date = "2020-02-18T13:50:00+01:00"
 title = "Download"
 [menu]
     [menu.main]
@@ -16,7 +16,9 @@ title = "Download"
 <div class="panel panel-default">
   <div class="panel-heading"><b>Aktuell stabile Version</b></div>
   <div class="panel-body">
-    <p>Die aktuell stabile Version für alle gängigen Betriebsysteme in gepackter Form inklusive benötigter Java Version.</p>
+    <p>Die aktuell stabile Version für alle gängigen Betriebsysteme (64 Bit) in gepackter Form inklusive benötigter Java Version.</p>
+      <br/>
+      <p><b>Hinweis:</b> Mediathekview ist nur mit 64 Bit Betriebssystemen kompatibel.</p>
       <br/>
       <p><b>Windows:</b></p>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win.exe"><button type="button" class="btn btn-primary btn-sm">Windows Installer (Exe)</button></a>
