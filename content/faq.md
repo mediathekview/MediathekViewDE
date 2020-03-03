@@ -93,7 +93,7 @@ Vermutlich wurde die AdoptOpenJDK JRE und nicht die JDK verwendet. Um das Proble
 
 # Die Schriftgröße in MediathekView ist zu klein
 
-Dieses Problem betrifft zum einen Menschen mit Sehbehinderung. Andererseits sind auch Nutzer von hochauflösenden HiDPI Monitoren (UHD, 4k) betroffen. Für beide besteht ab Version 13.3 und höher die Möglichkeit, eine [Skalierung der Anzeige einzustellen](/content/anleitung/#starten). Diese wirkt sich auf die gesamte grafische Benutzeroberfläche aus. D.h. alle Schaltflächen und Texte werden dadurch größer dargestellt. **Achtung**: Unter Linux ist in vielen Fällen nur eine ganzzahlige Skalierung wirksam, also auf z.B. 200%, 300% etc.. Das Setzen von Zwischenwerten wie z.B. 150% hat hier *keinen* Effekt.
+Dieses Problem betrifft zum einen Menschen mit Sehbehinderung. Andererseits sind auch Nutzer von hochauflösenden HiDPI Monitoren (UHD, 4k) betroffen. Für beide besteht ab Version 13.3 und höher die Möglichkeit, eine [Skalierung der Anzeige einzustellen](/anleitung/#starten). Diese wirkt sich auf die gesamte grafische Benutzeroberfläche aus. D.h. alle Schaltflächen und Texte werden dadurch größer dargestellt. **Achtung**: Unter Linux ist in vielen Fällen nur eine ganzzahlige Skalierung wirksam, also auf z.B. 200%, 300% etc.. Das Setzen von Zwischenwerten wie z.B. 150% hat hier *keinen* Effekt.
 
 Diese Methode zur Skalierung setzt Java 9 oder höher voraus.
 
