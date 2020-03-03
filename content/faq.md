@@ -29,12 +29,12 @@ Wenn das Herunterladen oder das Abspielen nicht funktioniert oder wenn das Progr
 a) Sofern die grafische Benutzeroberfläche von MediathekView noch bedienbar ist:
 
 1. Menü "Hilfe -> Hilfe und Fragen zum Programm -> Alle Einstellungen zurücksetzen!"
-2. Dadurch wird der Ordner mit allen Einstellungen (".mediathek3" im Benutzerverzeichnis) umbenannt und das Programm beendet. 
+2. Dadurch wird der Ordner mit allen Einstellungen (".mediathek3" im Benutzerverzeichnis) umbenannt und das Programm beendet.
 
 b) Falls MediathekView dagegen bereits beim Start abstürzt:
 
 1. Unter OS X den Finder öffnen, bzw. unter Windows den Windows Explorer, bzw. unter Linux den jeweils bevorzugten Datei-Explorer.
-2. Im Finder bzw. Explorer in das Benutzerverzeichnis navigieren und den Ordner ".mediathek3" im Benutzerverzeichnis per Hand umbenennen. 
+2. Im Finder bzw. Explorer in das Benutzerverzeichnis navigieren und den Ordner ".mediathek3" im Benutzerverzeichnis per Hand umbenennen.
 
 Hinweis: Der Ordner ".mediathek3" ist unter OS X im Finder sowie unter verschiedenen Datei-Explorern in Linux standardmäßig versteckt, kann aber sichtbar gemacht werden. (Suche "versteckte Ordner anzeigen mit OS X / Linux / Windows")
 
@@ -93,7 +93,7 @@ Vermutlich wurde die AdoptOpenJDK JRE und nicht die JDK verwendet. Um das Proble
 
 # Die Schriftgröße in MediathekView ist zu klein
 
-Dieses Problem betrifft zum einen Menschen mit Sehbehinderung. Andererseits sind auch Nutzer von hochauflösenden HiDPI Monitoren (UHD, 4k) betroffen. Für beide besteht ab Version 13.3 und höher die Möglichkeit, eine ![Skalierung der Anzeige einzustellen](/content/anleitung/#starten). Diese wirkt sich auf die gesamte grafische Benutzeroberfläche aus. D.h. alle Schaltflächen und Texte werden dadurch größer dargestellt. **Achtung**: Unter Linux ist in vielen Fällen nur eine ganzzahlige Skalierung wirksam, also auf z.B. 200%, 300% etc.. Das Setzen von Zwischenwerten wie z.B. 150% hat hier *keinen* Effekt.
+Dieses Problem betrifft zum einen Menschen mit Sehbehinderung. Andererseits sind auch Nutzer von hochauflösenden HiDPI Monitoren (UHD, 4k) betroffen. Für beide besteht ab Version 13.3 und höher die Möglichkeit, eine [Skalierung der Anzeige einzustellen](/content/anleitung/#starten). Diese wirkt sich auf die gesamte grafische Benutzeroberfläche aus. D.h. alle Schaltflächen und Texte werden dadurch größer dargestellt. **Achtung**: Unter Linux ist in vielen Fällen nur eine ganzzahlige Skalierung wirksam, also auf z.B. 200%, 300% etc.. Das Setzen von Zwischenwerten wie z.B. 150% hat hier *keinen* Effekt.
 
 Diese Methode zur Skalierung setzt Java 9 oder höher voraus.
 
@@ -215,7 +215,7 @@ trickle -d 400 /usr/bin/flvstreamer
 
 Eine Möglichkeit ist die Änderung der Grundeinstellung des Sets "Speichern" auf "Filme in HD laden". Diese Einstellung gilt natürlich dann auch für alle manuell gestartete Downloads. Zu dieser Einstellung kommt man via "Datei -> Einstellungen" (OS X: "MediathekView -> Einstellungen…"):
 
-![MV-Einstellungen HD](/images/faq/MV_Einstellungen_HD.jpg)
+![MV-Einstellungen HD](/images/faq/MV_Einstellungen_HD.png)
 
 Will man flexibler sein, d.h. für einige Abos die HD-Auflösung wählen, für andere die "hohe Auflösung", dann dupliziert man das Standardset "Speichern", ändert den Namen auf "Speichern HD" und wählt dort "Filme in HD laden". Bei den Abos kann dann angegeben werden, welches Set verwendet werden soll.
 
