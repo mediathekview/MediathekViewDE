@@ -111,7 +111,7 @@ Für Mac-OS-X-10.6-Benutzer sowie für fortgeschrittene Benutzer, die MediathekV
 4. die ZIP-Datei kann nach dem Entpacken gelöscht werden
 
 ### Windows
-MediathekView wird optimaler weise durch den Installer (Exe) installiert. Dabei werden direkt passende Einträge im Startmenü angelegt. 
+MediathekView wird optimaler weise durch den Installer (Exe) installiert. Dabei werden direkt passende Einträge im Startmenü angelegt.
 
 ![Der Windows Installer](/images/news/mediathekview-13_5-win-installer.png)
 <em>Der Installer für Windows.</em>
@@ -119,16 +119,16 @@ MediathekView wird optimaler weise durch den Installer (Exe) installiert. Dabei 
 Wird das Zip Archiv verwendet um MediathekView zum Beispiel portable nutzen zu können muss das Zip Archiv lediglich in einen Ordner der Wahl entpackt werden. Exe Datein zum starten von MediathekView finden sich direkt im Programmordner.
 
 ### Update
-**Windows**: Das Update von MediathekView geschieht dadurch, dass der neuste Installer ausgeführt wird. Dieser erkennt eine, bereits durch einen Installer erzeugte, MediathekView installation und updated diese. 
+**Windows**: Das Update von MediathekView geschieht dadurch, dass der neuste Installer ausgeführt wird. Dieser erkennt eine, bereits durch einen Installer erzeugte, MediathekView installation und updated diese.
 
-Wurde das Zip Archiv verwendet kann man nun einen die alte Installation löschen und anschließend einen der Installer verwenden oder an den selben ordner das neu heruntergeladene Zip Archiv entpacken. 
+Wurde das Zip Archiv verwendet kann man nun einen die alte Installation löschen und anschließend einen der Installer verwenden oder an den selben ordner das neu heruntergeladene Zip Archiv entpacken.
 
 Die Einstellungen der vorhergehenden Programmversion werden von der neuen Version verwendet; es gibt also keinen neuen Einrichtungsdialog.
 
 **Mac**: Das Update erfolgt dadurch, dass man die neue Version von MediathekView in den Programmordner zieht, wodurch die alte ersetzt wird.
 
 ### Deinstallation
-Wurde das Programm über die Installer installiert, kann es auch darüber wieder deinstalliert werden. 
+Wurde das Programm über die Installer installiert, kann es auch darüber wieder deinstalliert werden.
 
 Das Programm selbst legt nur den Ordner ".mediathek3\. im Home-Verzeichnis an und speichert darin alle Einstellungen. (Standardmäßig sind unter Linux und Max Ordner mit führendem Punkt unsichtbar, das kann aber in den Einstellungen des Dateimanagers geändert werden.) Es werden keine weiteren Änderungen am System vorgenommen. Wird dieser Einstellungsordner (und bei manueller Installation der Programmordner) gelöscht, ist das Programm wieder komplett entfernt.
 Der unter Mac und Linux unsichtbare Ordner ".mediathek3" kann auch durch Eingabe (Kopieren) des folgenden Befehls im Terminal (Programme/Dienstprogramme/Terminal) gelöscht werden:
@@ -138,12 +138,12 @@ rm -R ~/.mediathek3
 ## Starten
 Für Windows (MediathekView.exe), Linux (MediathekView) sind eigene Startdateien enthalten, mit welchen MediathekView direkt gestartet werden kann. Für OS X 10.7.3 und neuer besteht eine eigenständige Applikation (MediathekView.app); für OS X 10.6 liegt die Startdatei "MediathekView.command" vor.
 
-Es ist möglich, den Startprogrammen weitere Optionen für die Java VM mitzugeben. Dies geschieht über einen Eintrag in der Datei 
+Es ist möglich, den Startprogrammen weitere Optionen für die Java VM mitzugeben. Dies geschieht über einen Eintrag in der Datei
 `MediathekView.vmoptions` im Programmordner von MediathekView. Für den ipv4 Starter gibt es eine eigene Datei `MediathekView_ipv4.vmoptions`, sowie eine eigene Datei `MediathekView_Portable.vmoptions` für den portable Starter.
 
 Mit .vmoptions lässt sich z.B.
 - der von MV maximal verwendete Arbeitsspeicher festlegen
-- die Anzeigegröße (inkl. Schriftgröße und Schaltflächen) hochsetzen (z.B. für UHD Monitore mit 4K Auflösung oder als Sehhilfe). 
+- die Anzeigegröße (inkl. Schriftgröße und Schaltflächen) hochsetzen (z.B. für UHD Monitore mit 4K Auflösung oder als Sehhilfe).
 - Sonderfall Linux: die Anzeigegröße kann bei vielen Linux Installationen nur um ganzzahlige Faktore skaliert werden. Ein Faktor von z.B. 1.5 hat hier *keinen* Effekt auf die Darstellung! Faktor 2.5 und 2.0 führen beide zu 2-facher Saklierung, etc.. Weiterführende Informationen zur Anzeigeskalierung unter Linux findet man ggfs. [hier](https://wiki.archlinux.org/index.php/HiDPI)
 ```
 # Enter one VM parameter per line
@@ -155,7 +155,7 @@ Mit .vmoptions lässt sich z.B.
 # examples:
 # scale graphical user interface by a factor of 25%
 -Dsun.java2d.uiScale=1.25
-# scale graphical user interface by a factor of 100% (Linux often only allows integral scaling) 
+# scale graphical user interface by a factor of 100% (Linux often only allows integral scaling)
 -Dsun.java2d.uiScale=2.0
 
 ```
@@ -174,7 +174,7 @@ Startet das Programm nicht, gibt es Hilfe in der [FAQ](/FAQ).
 ### Starten im portablen Modus (MediathekView Portable)
 Für den portablen Einsatz z.B. auf einem USB-Stick stehen im Ordner "Portable" entsprechende Startdateien zur Verfügung (z.B. "MediathekView_Portable.exe" für Windows). Diese Startdateien dürfen nicht aus dem Ordner verschoben werden. Beim portablen Start wird der Ordner "Einstellungen" im MediathekView-Programmordner angelegt. Da hinein können, falls gewünscht, die bisherigen Einstellungen, also der Ordner ".mediathek3" aus dem Benutzerverzeichnis kopiert werden.
 
-Unter OS X ist ein portabler Start nicht möglich. 
+Unter OS X ist ein portabler Start nicht möglich.
 
 Interessierte können den Code für die Startdateien für direkt den Startdateien selbst entnehmen. Die portable Startdatei für Windows enthält im Kern folgende Zeilen Code:
 ```
@@ -251,7 +251,7 @@ In einem separaten Fenser werden Filtermöglichkeiten (= Erweiterte Suche) angez
 Seit Version 13.3 von MediathekView kann der Filterbereich nur noch als eigenes Fenster dargestellt werden.
 
 
-Beim Suchfeld Thema oder Titel muss der Suchbegriff im Thema oder Titel enthalten sein. Als Suchbegriff wählt man also entweder "Tatort" oder dann z.B. "Polizistin", um die Sendung "der Polizistinnenmörder" zu listen. 
+Beim Suchfeld Thema oder Titel muss der Suchbegriff im Thema oder Titel enthalten sein. Als Suchbegriff wählt man also entweder "Tatort" oder dann z.B. "Polizistin", um die Sendung "der Polizistinnenmörder" zu listen.
 Bei aktivieren der zusätzlichen Beschreibungssuche muss der Suchbegriff in Thema oder Titel oder der Beschreibung enthalten sein. Der Suchbegriff "Hörfassung" listet dann alle Sendungen, die im Beschreibungstext das Wort "Hörfassung" enthalten, womit man den "Tatort" in der Hörfassung kriegt.
 
 Oder-Suche: Mehrere Filterwörter werden durch "," getrennt, z.B.: "der Mörder,Verbrecher", dann wird nach Sendungen gesucht, die im entsprechenden Feld "der Mörder" ODER "Verbrecher" enthalten.
@@ -264,7 +264,7 @@ Die Checkbox Filter im ersten Abschnitt grenzen die Filme auf bestimmte Kategori
 
 Die Checkbox Filter im zweiten Abschnitt blenden bestimmte Filme aus. Z.B. gesehene Filme, Hörfassungen usw.
 
-Die Filter "Sender" und "Thema" beziehen sich auf die gleichnamigen Spalten der Tabelle (Filmliste). 
+Die Filter "Sender" und "Thema" beziehen sich auf die gleichnamigen Spalten der Tabelle (Filmliste).
 
 Mit dem Filter "Zeitraum" kann gleich zu Beginn eine verkürzte Liste erstellt werden (z.B. 2 Tage statt 30 Tage), was die Suche beschleunigt. Auf diese Liste können dann die weiteren Filter angewandt werden. Will man alle Sendungen der Filmliste anzeigen lassen, setzt man den Zeitraum auf "unendlich". **Hinweis**: "unendlich" ist der niedrigste Wert.
 
@@ -584,7 +584,11 @@ Mit der Checkbox "fehlgeschlagene Downloads wieder Starten" kann ein Download im
 
 Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Mit "Plus" ein neues Programmset anlegen und mit der Maus markieren. Mit dem Button "Abspielen" als das Programm zum "Abspielen" markieren und den Namen ändern.
 
-![MV Set Programme](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_7_1.png)
+<!--
+
+//![MV Set Programme](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_7_1.png.png)
+
+-->
 
 Im Tab "Hilfsprogramme" mit "Plus" ein neues Programm anlegen und die mit einem roten Punkt markierten Felder ändern.
 
@@ -596,7 +600,7 @@ Schalter: `%f`
 
 ![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_1_1.png)
 
-Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Mit "Plus" ein neues Programmset anlegen und mit der Maus markieren. Die Checkbox "Speichern" muss selektiert sein, damit das Programmset zum Speichern verwendet wird. Den Namen ändern. 
+Dieser Dialog ist über das Menü "Datei->Einstellungen" (OS X: "MediathekView->Einstellungen…") zu erreichen. Mit "Plus" ein neues Programmset anlegen und mit der Maus markieren. Die Checkbox "Speichern" muss selektiert sein, damit das Programmset zum Speichern verwendet wird. Den Namen ändern.
 
 ![MV Set Beispiel speichern](/images/anleitung/Einstellungen-Videoplayer-Sets_Beispiel_2_1.png)
 
