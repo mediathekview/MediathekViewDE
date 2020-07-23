@@ -2,7 +2,7 @@
 type = "news"
 title = "MediathekView 13.6.0 released"
 author = "Nicklas Wiegandt"
-date = "2020-07-22"
+date = "2020-07-23"
 keywords = ["mediathekview", "release", "13.6.0", "13.6"] # HTML Schlüsselwörter
 tags = ["Allgemein"]
 +++
@@ -51,3 +51,20 @@ Das Windwos 32bit Paket wurde in einer Windows 7 32bit VM so wie von dem User [m
 Das Paket für den Raspberry Pi wurde auf einem neuen Raspberry Pi 4B mit 8 GB RAM und Raspbian 32bit Kernel 4.19.118-v7l+ getestet.
 
 Trotz der Tests kann es natürlich zu unerwarteten Fehlern kommen. Bitte wendet euch dann an das [Forum](https://forum.mediathekview.de) und gebt mit an welches Paket auf was für einem System ihr welches Problem habt.
+
+## Film merkliste
+
+![Hauptfenster, einen Film merken](/images/news/mediathekview-13_6-merkliste-film-merken.png)
+<em>Einen Film merken</em>
+
+Filme können sich nun in einer Merkliste gemerkt werden, Notizen zu den gemerkten Filmen erfasst werden und Filme als gesehen markiert werden.
+
+![Merkliste verwalten](/images/news/mediathekview-13_6-merkliste-verwalten.png)
+<em>Die Merkliste verwalten</em>
+
+Vielen Dank an [KWich](https://github.com/KWich) für dieses Feaute.
+
+
+---
+
+Weitere Änderungen im [Changelog](https://mediathekview.de/changelog/13-6-0/).
