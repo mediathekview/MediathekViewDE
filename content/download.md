@@ -1,6 +1,6 @@
 +++
 description = ""
-date = "2020-02-18T13:50:00+01:00"
+date = "2020-02-23T20:21:00+02:00"
 title = "Download"
 [menu]
     [menu.main]
@@ -35,6 +35,23 @@ title = "Download"
       <br/>
       <p><b>Mac:</b></p>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac.dmg"><button type="button" class="btn btn-primary btn-sm">OS X (dmg)</button></a>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><b>Experimentelle Pakete für die aktuelle stabile Version</b></div>
+  <div class="panel-body">
+    <p>Experimentelle Pakete für die aktuelle stabile Version inklusive benötigter Java Version.</p>
+      <br/>
+      <br/>
+      <p><b>Windows **32bit**:</b></p>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win32.exe"><button type="button" class="btn btn-primary btn-sm">Windows 32bit Installer (Exe)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win32.zip"><button type="button" class="btn btn-primary btn-sm">Windows 32bit (zip)</button></a>
+      <br/>
+      <br/>
+      <p><b>ARM hf / Raspberry Pi:</b></p>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-armhf.deb"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Debian Deb)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-armhf.sh"><button type="button" class="btn btn-primary btn-sm">Unix Installer (Sh)</button></a>
   </div>
 </div>
 
