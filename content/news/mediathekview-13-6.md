@@ -54,12 +54,12 @@ Trotz der Tests kann es natürlich zu unerwarteten Fehlern kommen. Bitte wendet 
 
 ## Film merkliste
 
-![Hauptfenster, einen Film merken](/images/news/mediathekview-13_6-merkliste-film-merken.png)
+![Hauptfenster, einen Film merken](/images/news/mediathekview-13_6-linux-merkliste-film-merken.png)
 <em>Einen Film merken</em>
 
 Filme können sich nun in einer Merkliste gemerkt werden, Notizen zu den gemerkten Filmen erfasst werden und Filme als gesehen markiert werden.
 
-![Merkliste verwalten](/images/news/mediathekview-13_6-merkliste-verwalten.png)
+![Merkliste verwalten](/images/news/mediathekview-13_6-linux-merkliste-verwalten.png)
 <em>Die Merkliste verwalten</em>
 
 Vielen Dank an [KWich](https://github.com/KWich) für dieses Feaute.
