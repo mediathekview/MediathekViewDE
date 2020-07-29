@@ -3,8 +3,19 @@ language: bash
 services:
 - docker
 
-script:
-- docker run --rm -i \
-    -v $(pwd):/src \
-    klakegg/hugo:latest version && hugo check && hugo -v
+stages:
+  - Test
+  - Build
+jobs:
+  include:
+    - stage: Test
+      script:
+        - docker run --rm -i \
+            -v $(pwd):/src \
+            klakegg/hugo:latest check
+    - stage: Build
+      script:
+        - docker run --rm -i \
+            -v $(pwd):/src \
+            klakegg/hugo:latest -v
 
