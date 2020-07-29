@@ -4,11 +4,11 @@ services:
 - docker
 
 stages:
-  - Test
+  - Check
   - Build
 jobs:
   include:
-    - stage: Test
+    - stage: Check
       script:
         - docker run --rm -i -v $(pwd):/src klakegg/hugo:latest check
     - stage: Build
