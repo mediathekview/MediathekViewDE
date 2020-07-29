@@ -119,9 +119,20 @@ MediathekView wird optimaler weise durch den Installer (Exe) installiert. Dabei 
 Wird das Zip Archiv verwendet um MediathekView zum Beispiel portable nutzen zu können muss das Zip Archiv lediglich in einen Ordner der Wahl entpackt werden. Exe Datein zum starten von MediathekView finden sich direkt im Programmordner.
 
 ### Update
-**Windows**: Das Update von MediathekView geschieht dadurch, dass der neuste Installer ausgeführt wird. Dieser erkennt eine, bereits durch einen Installer erzeugte, MediathekView installation und updated diese.
 
-Wurde das Zip Archiv verwendet kann man nun einen die alte Installation löschen und anschließend einen der Installer verwenden oder an den selben ordner das neu heruntergeladene Zip Archiv entpacken.
+#### Auto-Update
+![Der Auto-Updater](/images/news/mediathekview-13_6-linux-updater.png)
+<em>Der Auto-Updater</em>
+Ab Version 13.6 bringt MediathekView einen Auto-Updater mit der bestandteil aller Pakete außer dem für Mac ist. Der Auto-Updater überprüft bei jedem MediathekView Start über einen der Starter ob eine neue Version vorhanden ist. Wenn eine neue Version gefunden wurde wird ein automatischer Download angebot. Anschließend kann die neue Version installiert werden.
+
+#### Update installieren
+Je nach verwendeten Paket kann ein Update direkt installiert oder die neuen Dateien entpackt werden.
+
+**Installer (Exe / Deb / Rpm / Sh)**
+Bei einem der Installer muss zum Update lediglich der neuere Installer ausgeführt werden. Dieser kann eine vorhandene Version direkt, passend, ersetzen.
+
+**Archiv (Zip, tar.gz)**
+Das Archiv an einen beliebigen Ort entpacken. Um eine alte Version zu ersetzten alle alten Programmdatein löschen und das Inhalt des Archivs an die entsprechende Stelle entpacken. Der Ordner `.mediathek3` sollte hierbei **nicht** entfernt werden. Dieser enthält die Einstellungsdateien.
 
 Die Einstellungen der vorhergehenden Programmversion werden von der neuen Version verwendet; es gibt also keinen neuen Einrichtungsdialog.
 
