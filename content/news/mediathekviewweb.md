@@ -5,7 +5,7 @@ author = "Nicklas2751"
 date = "2017-02-11"
 keywords = ["mediathekviewweb", "web"] # HTML Schlüsselwörter
 tags = ["Allgemein"]
-
++++
 
 ![Screenshot von MediathekViewWeb](/images/news/mediathekviewweb.png)
 
