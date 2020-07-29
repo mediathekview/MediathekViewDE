@@ -44,7 +44,7 @@ title = "Download"
     <p>Experimentelle Pakete für die aktuelle stabile Version inklusive benötigter Java Version.</p>
       <br/>
       <br/>
-      <p><b>Windows **32bit**:</b></p>
+      <p><b>Windows 32bit:</b></p>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win32.exe"><button type="button" class="btn btn-primary btn-sm">Windows 32bit Installer (Exe)</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win32.zip"><button type="button" class="btn btn-primary btn-sm">Windows 32bit (zip)</button></a>
       <br/>
