@@ -17,3 +17,5 @@
   {{ $glisse := resources.Get "css/galerie/glisse.css" | resources.Minify| resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $glisse.Permalink }}" integrity="{{ $glisse.Data.Integrity }}">
 {{ end }}
+
+<script src="https://kit.fontawesome.com/13ec214698.js" crossorigin="anonymous"></script>
