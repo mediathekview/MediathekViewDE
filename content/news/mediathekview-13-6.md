@@ -2,7 +2,7 @@
 type = "news"
 title = "MediathekView 13.6.0 released"
 author = "Nicklas Wiegandt"
-date = "2020-07-23"
+date = "2020-08-09"
 keywords = ["mediathekview", "release", "13.6.0", "13.6"] # HTML Schlüsselwörter
 tags = ["Allgemein"]
 +++
