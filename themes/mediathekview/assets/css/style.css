@@ -223,6 +223,10 @@ address > .adresse {
   color: blue;
 }
 
+.lightbluefont {
+  color: #99ccff;
+}
+
 .bluemarked {
   background-color: blue;
   color: white;

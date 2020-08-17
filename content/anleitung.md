@@ -119,9 +119,20 @@ MediathekView wird optimaler weise durch den Installer (Exe) installiert. Dabei 
 Wird das Zip Archiv verwendet um MediathekView zum Beispiel portable nutzen zu können muss das Zip Archiv lediglich in einen Ordner der Wahl entpackt werden. Exe Datein zum starten von MediathekView finden sich direkt im Programmordner.
 
 ### Update
-**Windows**: Das Update von MediathekView geschieht dadurch, dass der neuste Installer ausgeführt wird. Dieser erkennt eine, bereits durch einen Installer erzeugte, MediathekView installation und updated diese.
 
-Wurde das Zip Archiv verwendet kann man nun einen die alte Installation löschen und anschließend einen der Installer verwenden oder an den selben ordner das neu heruntergeladene Zip Archiv entpacken.
+#### Auto-Update
+![Der Auto-Updater](/images/news/mediathekview-13_6-linux-updater.png)
+<em>Der Auto-Updater</em>
+Ab Version 13.6 bringt MediathekView einen Auto-Updater mit der bestandteil aller Pakete außer dem für Mac ist. Der Auto-Updater überprüft bei jedem MediathekView Start über einen der Starter ob eine neue Version vorhanden ist. Wenn eine neue Version gefunden wurde wird ein automatischer Download angebot. Anschließend kann die neue Version installiert werden.
+
+#### Update installieren
+Je nach verwendeten Paket kann ein Update direkt installiert oder die neuen Dateien entpackt werden.
+
+**Installer (Exe / Deb / Rpm / Sh)**
+Bei einem der Installer muss zum Update lediglich der neuere Installer ausgeführt werden. Dieser kann eine vorhandene Version direkt, passend, ersetzen.
+
+**Archiv (Zip, tar.gz)**
+Das Archiv an einen beliebigen Ort entpacken. Um eine alte Version zu ersetzten alle alten Programmdatein löschen und das Inhalt des Archivs an die entsprechende Stelle entpacken. Der Ordner `.mediathek3` sollte hierbei **nicht** entfernt werden. Dieser enthält die Einstellungsdateien.
 
 Die Einstellungen der vorhergehenden Programmversion werden von der neuen Version verwendet; es gibt also keinen neuen Einrichtungsdialog.
 
@@ -210,8 +221,9 @@ jre/bin/java -Djava.net.preferIPv6Addresses=true -jar MediathekView.jar
 Die Parameter "-Xms128M -Xmx1G" helfen bei geringem Arbeitsspeicher. Der Parameter "-Djava.net.preferIPv4Stack=true", "-Djava.net.preferIPv6Addresses=true" ermöglicht eine Verbindung zum Internet, wenn der verwendete Netzwerk-Stack von Java nicht automatisch richtig erkannt wird, wodurch die Filmliste nicht geladen werden könnte.
 
 ## Filme
-![MedaithekView Filmliste Übersicht](/images/anleitung/MV_Film-Fenster.png)
-Es wird die ganze Filmliste angezeigt, falls der Zeitraum auf "alles" gestellt wurde (im Bsp. oben ist der Standardwert "15 Tage" gewählt):
+![MediathekView Filmliste Übersicht](/images/anleitung/MV_Film-Fenster.png)
+
+Es wird die ganze Filmliste angezeigt, falls der Zeitraum auf "alles" gestellt wurde (im Beispiel oben ist der Standardwert "15 Tage" gewählt):
 
 <font class="yellowfont">Gelb markierte Einträge</font> sind geogeblockte Sendungen und können nur aus dem angegebenen Land (im Bsp. "DE") heruntergeladen oder abgespielt werden.
 
@@ -219,9 +231,23 @@ Es wird die ganze Filmliste angezeigt, falls der Zeitraum auf "alles" gestellt w
 
 <font class="bluefont">Einträge in blauer Schrift</font> sind – relativ zur letzten geladenen Liste – neu in der Filmliste.
 
+<font class="lightbluefont">Einträge in hellblauer Schrift</font> sind Sendungen die gemerkt wurden (siehe Merkliste). (Hinweis: Die Farbe ist nur sichtbar, wenn der Film nicht abgespielt wurde oder anderweitig farbig markiert wurde.)
+
+Tip: Die Farben können in den Einstellungen an persöhnliche Vorlieben angepasst werden.
+
 Die oben <font class="bluemarked">blau markierte Sendung</font> ist der gerade ausgewählte Eintrag.
 
-In der Filmliste können Filme zum Ansehen (Play-Button) und zum Aufnehmen (Record-Button) gestartet sowie Abos über das Kontextmenü angelegt werden.
+### Filmlisten Buttons und Kontextmenü
+
+![MediathekView Filmliste Buttons](/images/anleitung/MV_Film-Fenster-Buttons.png)
+
+In der Filmliste können Filme zum Ansehen (Play-Button) und zum Aufnehmen (Record-Button) gestartet, Filme für späteres Sehen oder Aufnehmen der Merkliste hinzugefügt (Bookmark-Button) sowie Abos über das Kontextmenü angelegt werden. Filme die bereits in die Merkliste eingetragen wurden werden mit einem ausgefüllten Symbol in der Filmliste gekennzeichnet (zusätzlich zur Farbmarkierung).
+
+Tip: Mehrere markierte Filme können mit dem Button in der Symbolleiste in die Merkliste übernommen werden.
+
+
+### Symbolleiste
+
 ![MediathekView Buttons](/images/anleitung/MV_Play_Record-Button.png)
 
 **Filmliste laden**: Über den Wolken-Button in der Toolbar kann die Filmliste aktualisiert werden (dies geschieht beim Programmstart automatisch).
@@ -231,9 +257,9 @@ In der Filmliste können Filme zum Ansehen (Play-Button) und zum Aufnehmen (Reco
 **Sendungen suchen**:
 Die normale Suchleiste sucht standardmäßig nur nach Thema und Titel. Die langsamere zusätzliche Suche nach Beschreibungen lässt sich durch Klick auf den Button mit dem Buch Icon rechts der Suche aktivieren und wieder deaktivieren.
 
-In einem sepperaten Fenser werden Filtermöglichkeiten (= Erweiterte Suche) angezeigt mit denen die Filmliste eingeschränkt werden kann. Dieses Fenster lässt sich mit Klick auf den Button mit Trichter Icon links der Suche öffnen:
+In einem separaten Fenser werden Filtermöglichkeiten (= Erweiterte Suche) angezeigt mit denen die Filmliste eingeschränkt werden kann. Dieses Fenster lässt sich mit Klick auf den Button mit Trichter Icon links der Suche öffnen:
 ![MediathekView Erweiterte Suche](/images/anleitung/MV_Suchfeld_Erweitert_Tatort.png)
-Seit Version 13.3 von MediathekView kann der Filterbereich nur noch als eigenes Fenserdargestellt werden.
+Seit Version 13.3 von MediathekView kann der Filterbereich nur noch als eigenes Fenster dargestellt werden.
 
 
 Beim Suchfeld Thema oder Titel muss der Suchbegriff im Thema oder Titel enthalten sein. Als Suchbegriff wählt man also entweder "Tatort" oder dann z.B. "Polizistin", um die Sendung "der Polizistinnenmörder" zu listen.
@@ -323,9 +349,8 @@ Abos können auf 2. Varianten angelegt werden:
 
 Bei Variante 1 stehen im Kontextmenü stehen zwei Optionen offen:
 
-a. Abo mit Sender und Thema anlegen
-
-b. Abo mit Sender und Thema und Titel anlegen
+ a. Abo mit Sender und Thema anlegen
+ b. Abo mit Sender und Thema und Titel anlegen
 
 Die Abofelder beziehen sich auf die Spalten der Filmliste bzw. auf die aktuelle Filterauswahl:
 
@@ -380,6 +405,42 @@ Vorgehensweise:
 
 Fazit:
 Die Suche nach bestimmten Sendungen ist zwar kein Glücksspiel, aber keineswegs fehlerfrei. Manchmal werden in den Sendern Gruppen neu zusammengestellt, was heute im Thema "Sonntagsfilm" war, kann eine Woche später im Thema "Herzkino" sein. Bei ARTE z.B. kann man direkt erkennen, wann ein Sachbearbeiter in Urlaub war: Da laufen dann 2 Serienteile ohne Nummer, und beim 3. Teil ist dann die Nummer plötzlich wieder da. Auch Tippfehler, auf die ein Abo nicht reagieren kann, sind in den Sendern schon vorgekommen. Wenn man eine Sendung in der Filmliste vermisst, empfiehlt es sich, direkt in der Sendermediathek nachzusehen, ob es diese Sendung dort gibt, und dann exakt nach dem dort verwendeten Titel in der Filmliste zu suchen. Das hat schon öfter zum Erfolg geführt.
+
+## Merkliste
+Das Fenster "Merkliste verwalten" zeigt alle Filme, die für ein späteres Sehen oder Aufnehmen in der Filmliste markiert wurden:
+
+![MediathekView Merklisten Fenster](/images/anleitung/MV_Merkliste.png)
+
+Es kann entweder über den Button "Merkliste verwalten" im Filmlisten Fenster oder über Menü -> Ansicht -> Merkliste öffnen angezeigt werden. Von hier aus können die ausgewählten Filme abgespielt, heruntergeladen, oder mit Anmerkungen versehen werden.
+
+Die Bedienung erfolgt über die Symbolleiste, das Kontextmenü, welches mit rechten Maustaste geöffnet wird, und/oder den Knöpfen per Film in der Tabelle. Welche Funktionen zur Verfügung stehen hängt davon ab ob ein oder mehrere Filme ausgewählt wurden:
+
+- **Film abspielen** (einzeln): Knopf in der Filmliste oder Kontextmenü
+- **Film dem Download hinzufügen** (einzeln): Knopf in der Filmliste oder Kontextmenü
+- **Film(e) als gesehen/ungesehen markieren**: Knopf in der Filmliste oder Kontextmenü (Bei mehreren ausgewählten Filmen, müssen alle als gesehen markiert sein, damit sie als ungesehen markiert werden)
+- **Film(e) aus der Merkliste löschen**: Knopf Symbolleiste oder Kontextmenü
+- **Anmerkungen bearbeiten** (einzeln): Knopf Symbolleiste, Doppelklick oder Kontextmenü
+- **Film Webseite öffnen** (einzeln): Kontextmenü, falls eine Webseite zum Film hinterlegt ist
+- Spaltentext **xxx kopieren** (einzeln): Kontextmenü, abhängig davon in welcher Spalte das Kontextmenü geöffnet wurde.
+
+Weitere Funktionsknöpfe in der Symbolleiste:
+
+- **Sichern der Merkliste**: Dieser Knopf ist aktiv wenn die Merkliste ungesicherte Änderugen beinhaltet, damit diese sofort gesichert werden können. Im Allgemeinen wird die Merkliste entweder beim Beenden von Mediathekview oder 30s nach der letzten Änderung gesichert.
+- **Erweiterte Filminformationen anzeigen**: Unter der Tabelle werden details zum gewählten Film angezeigt, erfolgt nur wenn ein einzelner Film ausgewählt wurde.
+- **Ansichtsfilter**: Erlaubt die angezeigten Filme nach alle/ungesehen/gesehen zu filtern. Falls ein Filter aktiv ist wird dieses in der Statusleiste unten angezeigt.
+
+Das Aussehen der Filmtabelle, welche Spalten angezeigt werden, sowie die Reihenfolge und Breite kann beliebig eingestellt werden (Zum Anzeigen der Spaltenauswahl mit der Maus das kleine "**+**" Zeichen rechts in den Tabellen überschriften anklicken).
+
+Gesehene Filme und Lifestreams werden mit den Farben markiert, die in den Einstellungen (Filmfenster: Datei .> Einstellungen) vergeben wurden. Lifestreams können in der MErkliste nicht als gesehn markieren (macht irgendwie keinen Sinn).
+
+### Anmerkungen und Verfügbarkeitsdatum
+Durch einen Doppelklick auf einen Filmeintrag in der Merkliste oder den entsprechend Knopf in der Symbolleiste öffnet sich ein Dialog der es ermöglicht dem Film Anmerkungen hinzuzufügen:
+
+![MediathekView Merklisten Anmerkung](/images/anleitung/MV_Merkliste_Anmerkung.png)
+
+Neben Notizen kann auch ein "Verfügbar bis" Datum entweder über den Datumsdialog eingegeben werden, oder mit Hilfe des Suchbuttons, von der Film Webseite extrahiert werden (klappt nicht bei allen Sendern!).
+
+Falls ein Film nur noch drei Tage oder weniger verfügbar ist, wird das Verfügbarkeitsdatum in der Merkliste farbig hervorgehoben.
 
 ## Eigene Aufnahme- und Abspielsets einrichten (für fortgeschrittene Benutzer)
 

@@ -86,8 +86,8 @@ Xaver ist der Vater von MediathekView, ihm haben wir dieses Projekt zu verdanken
 
 ## Social Media
 {{< socialmedias >}}
-    {{< socialmedia profilname="mediathekview@social.elaon.de" link="https://social.elaon.de/people/505f8420aa4301349ecb25f17997be37" verantwortlich="Alexander Finkhäuser & Nicklas Wiegandt" icon="icon-diaspora-asterisk" >}}
-    {{< socialmedia profilname="mediathekview" link="https://fb.me/mediathekview" verantwortlich="Nicklas Wiegandt" icon="icon-facebook" >}}
+    {{< socialmedia profilname="Mediathek_View" link="https://twitter.com/Mediathek_View" verantwortlich="Nicklas Wiegandt" icon="fab fa-twitter" >}}
+    {{< socialmedia profilname="mediathekview" link="https://fb.me/mediathekview" verantwortlich="Nicklas Wiegandt" icon="fab fa-facebook" >}}
     {{< socialmedia profilname="@mediathekview@chirpi.de" link="https://chirpi.de/@mediathekview" verantwortlich="Alexander Finkhäuser" icon="icon-chirpi" >}}
 {{< /socialmedias >}}
 
