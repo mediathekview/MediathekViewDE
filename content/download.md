@@ -30,7 +30,7 @@ title = "Download"
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.rpm"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Red Hat RPM)</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.sh"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Sh)</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.tar.gz"><button type="button" class="btn btn-primary btn-sm">Linux (tar.gz)</button></a>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.AppImage"><button type="button" class="btn btn-primary btn-sm">Linux Standalone (AppImage)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-x86_64.AppImage"><button type="button" class="btn btn-primary btn-sm">Linux Standalone (AppImage)</button></a>
       <br/>
       <br/>
       <p><b>Mac:</b></p>
