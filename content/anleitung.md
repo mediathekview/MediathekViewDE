@@ -18,7 +18,7 @@ Das Programm MediathekView (abgekürzt: MV) ist eine Art Suchmaschine für Filme
 ## Installation
 
 ### Systemvoraussetzungen
-Unterstützt wird Windows (7, 8, 10), Linux sowie Mac OS X (ab Version 10.10). MediathekView benötigt mindestens Java 11 welches aber für Mac, Windows und Linux bereits Teil der Pakete ist (Mac ab Version 4, Windows und Linux ab 13.5).
+Unterstützt wird Windows (7, 8, 10), Linux sowie Mac OS X (ab Version 10.10). MediathekView benötigt mindestens Java 14 welches aber für Mac, Windows und Linux bereits Teil der Pakete ist (Mac ab Version 4, Windows und Linux ab 13.5).
 
 
 ### Hilfsprogramme zum Abspielen und Aufzeichnen von Sendungen
@@ -189,33 +189,33 @@ Unter OS X ist ein portabler Start nicht möglich.
 
 Interessierte können den Code für die Startdateien für direkt den Startdateien selbst entnehmen. Die portable Startdatei für Windows enthält im Kern folgende Zeilen Code:
 ```
-jre/bin/java -Xmx1g -jar MediathekView.jar Einstellungen/.mediathek3
+jre/bin/java -Xmx2g -jar MediathekView.jar Einstellungen/.mediathek3
 ```
 
 ### Starten mit zusätzlichen Parametern
 ```
-jre/bin/java -Xmx1g -jar MediathekView.jar MediathekView [-hm] [<Pfad zum Verzeichnis>]
-jre\bin\java -Xmx1g -jar MediathekView.jar -m c:\temp
+jre/bin/java -Xmx2g -jar MediathekView.jar MediathekView [-hm] [<Pfad zum Verzeichnis>]
+jre\bin\java -Xmx2g -jar MediathekView.jar -m c:\temp
 ```
 Nach dem obigen Schema kann das Programm auch mit zusätzlichen Parametern gestartet werden.
 ```
-jre/bin/java -Xmx1g -jar MediathekView.jar Einstellungen/.mediathek3
+jre/bin/java -Xmx2g -jar MediathekView.jar Einstellungen/.mediathek3
 ```
 Das Programm verwendet – durch einen relativen Pfad – das Verzeichnis "Einstellungen" im MediathekView-Verzeichnis auf dem USB-Stick (der Ordner "Einstellungen" muss zuerst erstellt werden). Hinweis: Die Programmeinstellungen (Filmliste, Einstellungen, gesehene Filme) werden standardmässig im Home-Verzeichnis (Benutzer-Verzeichnis) in einem Ordner ".mediathek3" gespeichert.
 
 ```
-jre/bin/java -Xmx1g -jar MediathekView.jar -m
+jre/bin/java -Xmx2g -jar MediathekView.jar -m
 ```
 Das Programm startet mit einem maximierten Fenster.
 
 ### Parameter, die die Einstellungen der JavaVM ändern
 ```
-jre/bin/java -Xmx1g -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -jar MediathekView.jar
+jre/bin/java -Xmx2g -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -jar MediathekView.jar
 ```
 Es wird ein anderes LookAndFeel verwendet. Dazu darf aber in den Programmeinstellungen der MediathekView keines ausgewählt sein, diese Angabe wird sonst überschrieben.
 
 ```
-jre/bin/java -Djava.net.preferIPv4Stack=true -Xms128M -Xmx1G -jar MediathekView.jar
+jre/bin/java -Djava.net.preferIPv4Stack=true -Xmx2G -jar MediathekView.jar
 jre/bin/java -Djava.net.preferIPv6Addresses=true -jar MediathekView.jar
 ```
 Die Parameter "-Xms128M -Xmx1G" helfen bei geringem Arbeitsspeicher. Der Parameter "-Djava.net.preferIPv4Stack=true", "-Djava.net.preferIPv6Addresses=true" ermöglicht eine Verbindung zum Internet, wenn der verwendete Netzwerk-Stack von Java nicht automatisch richtig erkannt wird, wodurch die Filmliste nicht geladen werden könnte.
