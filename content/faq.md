@@ -73,11 +73,15 @@ Standardmässig wird der Ordner MediathekView im User-Verzeichnis (Home-Verzeich
 
 MediathekView meldet sich beim start, dass die aktuelle Java Version zu alt ist.
 
+**Version 13.6**
+Ab Version 13.6 wird mindestens Java 14 benötigt. MediathekView liefert die JRE in Version 14 mit.
+
+**13.5 und neuer**
+Ab Version 13.5. (und der zwischen Version 13.4) liefert MediathekView die passende Java version direkt mit. Sollte dieser Fehler trotzdem auftreten wurde versucht die Jar Datei mit einer falschen Java Version auszuführen. Um den Fehler zu beheben muss also nur einer der Starter verwendet werden oder in der Konsole auf die mitgelieferte Java version verwiesen werden: `jre/bin/java -Xmx2g --enable-preview -jar MediathekView.jar`
+
 **Version 13.3**
 Ab Version 13.3 wird mindestens Java 11 benötigt. Dies wird nicht mehr von Oracle für Standard Desktopbenutzer zur Verfügung gestellt. Die von uns empfohlene alternative ist AdoptOpenJDK.
 
-**13.5 und neuer**
-Ab Version 13.5. (und der zwischen Version 13.4) liefert MediathekView die passende Java version direkt mit. Sollte dieser Fehler trotzdem auftreten wurde versucht die Jar Datei mit einer falschen Java Version auszuführen. Um den Fehler zu beheben muss also nur einer der Starter verwendet werden oder in der Konsole auf die mitgelieferte Java version verwiesen werden: `jre/bin/java -Xmx1g -jar MediathekView.jar`
 
 # Filmliste wird nicht vollständig geladen
 
@@ -102,8 +106,8 @@ Diese Methode zur Skalierung setzt Java 9 oder höher voraus.
 Eventuell wird der verwendete Network-Stack (IPv4 vs. IPv6) von Java nicht richtig erkannt, wodurch keine Verbindung zum Internet möglich ist. In diesem Fall können Windows-User versuchen, mit einem Doppelklick auf die Datei "MediathekView-ipv4.exe" das Programm zu starten. Diese alternative Startdatei befindet sich im gleichen Ordner wie "MediathekView.exe" und kann bei Bedarf auch umbenannt werden.
 Für OS X und Linux kann man das Programm mit folgendem Aufruf starten und bestimmte Einstellungen der Java VM erzwingen:
 ```
-jre/bin/java -Xmx1g -Djava.net.preferIPv4Stack=true -jar MediathekView.jar
-jre/bin/java -Xmx1g -Djava.net.preferIPv6Addresses=true -jar MediathekView.jar
+jre/bin/java -Xmx2g --enable-preview -Djava.net.preferIPv4Stack=true -jar MediathekView.jar
+jre/bin/java -Xmx2g --enable-preview -Djava.net.preferIPv6Addresses=true -jar MediathekView.jar
 ```
 
 Es kann auch versucht werden, über den Button "neue Filmliste laden" im Programmfenster bzw. über ein Umschalten auf "nur manuelles Laden" der Filmliste via Einstellungen zum Ziel zu kommen (evtl. hilft es auch, davor die Filmliste manuell gemäss dem Kapitel zuvor zu löschen):
@@ -148,7 +152,7 @@ Dies weist auf [fehlerhafte Sets](#wenn-nichts-geht) oder eine Security-Suite hi
 Wenn Sendungen deren Download URL mit HTTPS beginnt nicht heruntergeladen werden können kann das am SSL liegen.
 
 ## Problem erkennen
-Zuerst ist hier zu Prüfen ob tatsächlich das HTTPS das Problem ist hierzu kann man MediathekView in der Konsole mit `jre/bin/java -Xmx1g -jar MediathekView.jar` starten. Wenn in der Konsole der folgende Fehler auftritt liegt es am SSL:
+Zuerst ist hier zu Prüfen ob tatsächlich das HTTPS das Problem ist hierzu kann man MediathekView in der Konsole mit `jre/bin/java -Xmx2g --enable-preview -jar MediathekView.jar` starten. Wenn in der Konsole der folgende Fehler auftritt liegt es am SSL:
 ```
 javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException:
 PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderExce
