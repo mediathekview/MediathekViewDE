@@ -175,10 +175,10 @@ Mit .vmoptions lässt sich z.B.
 Ansonsten kann man die Programmdatei auch so starten:
 
 - Windows: Doppelklick auf "MediathekView_ipv4.exe" oder "MediathekView_Portable.exe"
-- Windows Konsole: `jre\bin\java -Xmx1g -jar MediathekView.jar`
+- Windows Konsole: `jre\bin\java -Xmx2g --enable-preview -jar MediathekView.jar`
 - Linux: Doppelklick auf MediathekView_ipv4 oder MediathekView_Portable
 - Linux Konsole runner: `./MediathekView_ipv4` oder `./MediathekView_Portable`
-- Linux Konsole Java: `jre/bin/java -Xmx1g -jar MediathekView.jar`
+- Linux Konsole Java: `jre/bin/java -Xmx2g --enable-preview -jar MediathekView.jar`
 
 Startet das Programm nicht, gibt es Hilfe in der [FAQ](/FAQ).
 
@@ -189,34 +189,34 @@ Unter OS X ist ein portabler Start nicht möglich.
 
 Interessierte können den Code für die Startdateien für direkt den Startdateien selbst entnehmen. Die portable Startdatei für Windows enthält im Kern folgende Zeilen Code:
 ```
-jre/bin/java -Xmx2g -jar MediathekView.jar Einstellungen/.mediathek3
+jre/bin/java -Xmx2g --enable-preview -jar MediathekView.jar Einstellungen/.mediathek3
 ```
 
 ### Starten mit zusätzlichen Parametern
 ```
-jre/bin/java -Xmx2g -jar MediathekView.jar MediathekView [-hm] [<Pfad zum Verzeichnis>]
-jre\bin\java -Xmx2g -jar MediathekView.jar -m c:\temp
+jre/bin/java -Xmx2g --enable-preview -jar MediathekView.jar MediathekView [-hm] [<Pfad zum Verzeichnis>]
+jre\bin\java -Xmx2g --enable-preview -jar MediathekView.jar -m c:\temp
 ```
 Nach dem obigen Schema kann das Programm auch mit zusätzlichen Parametern gestartet werden.
 ```
-jre/bin/java -Xmx2g -jar MediathekView.jar Einstellungen/.mediathek3
+jre/bin/java -Xmx2g --enable-preview -jar MediathekView.jar Einstellungen/.mediathek3
 ```
 Das Programm verwendet – durch einen relativen Pfad – das Verzeichnis "Einstellungen" im MediathekView-Verzeichnis auf dem USB-Stick (der Ordner "Einstellungen" muss zuerst erstellt werden). Hinweis: Die Programmeinstellungen (Filmliste, Einstellungen, gesehene Filme) werden standardmässig im Home-Verzeichnis (Benutzer-Verzeichnis) in einem Ordner ".mediathek3" gespeichert.
 
 ```
-jre/bin/java -Xmx2g -jar MediathekView.jar -m
+jre/bin/java -Xmx2g --enable-preview -jar MediathekView.jar -m
 ```
 Das Programm startet mit einem maximierten Fenster.
 
 ### Parameter, die die Einstellungen der JavaVM ändern
 ```
-jre/bin/java -Xmx2g -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -jar MediathekView.jar
+jre/bin/java -Xmx2g --enable-preview -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -jar MediathekView.jar
 ```
 Es wird ein anderes LookAndFeel verwendet. Dazu darf aber in den Programmeinstellungen der MediathekView keines ausgewählt sein, diese Angabe wird sonst überschrieben.
 
 ```
-jre/bin/java -Djava.net.preferIPv4Stack=true -Xmx2G -jar MediathekView.jar
-jre/bin/java -Djava.net.preferIPv6Addresses=true -jar MediathekView.jar
+jre/bin/java -Djava.net.preferIPv4Stack=true -Xmx2G --enable-preview -jar MediathekView.jar
+jre/bin/java -Djava.net.preferIPv6Addresses=true --enable-preview -jar MediathekView.jar
 ```
 Die Parameter "-Xms128M -Xmx1G" helfen bei geringem Arbeitsspeicher. Der Parameter "-Djava.net.preferIPv4Stack=true", "-Djava.net.preferIPv6Addresses=true" ermöglicht eine Verbindung zum Internet, wenn der verwendete Netzwerk-Stack von Java nicht automatisch richtig erkannt wird, wodurch die Filmliste nicht geladen werden könnte.
 
