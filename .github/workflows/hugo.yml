@@ -1,0 +1,23 @@
+name: Build hugo
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+        
+      - name: Check
+        run: hugo check
+        
+      - name: Build
+        run: hugo
