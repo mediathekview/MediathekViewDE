@@ -13,10 +13,24 @@ title = "Download"
 ## MediathekView
 
 
+<div class="panel panel-info">
+  <div class="panel-heading"><b>Download Probleme der neuen Version 13.7.0 und Alternativen</b></div>
+  <div class="panel-body">
+    <p>
+    Aufgrund des Auto-Updater sind unsere Server stark beansprucht. Wir haben die aktuelle Version <b>13.7.0</b> auch als Torrents veröffentlicht.<br/>
+    Der Auto-Updater kann nicht mit Torrents umgehen, wer also Downloadprobleme hat sollte die aktuelle Version downloaden und manuell updaten.<br/>
+    Die Torrents findet Ihr im Forum:<br/><b><a href="https://forum.mediathekview.de/topic/3877/download-probleme-der-neuen-version-13-7-0-und-alternativen" target="_blank">Download Probleme der neuen Version 13.7.0 und Alternativen</a></b>
+    <br/><br/>
+    Ihr könnt uns unterstützen in dem Ihr den Torrent Client nach dem Download noch offen haltet und die Dateien mit verteilt.
+    </p>
+  </div>
+</div>
+
 <div class="panel panel-default">
   <div class="panel-heading"><b>Aktuell stabile Version</b></div>
   <div class="panel-body">
     <p>Die aktuell stabile Version für alle gängigen Betriebsysteme (64 Bit) in gepackter Form inklusive benötigter Java Version.</p>
+
       <br/>
       <p><b>Hinweis:</b> Mediathekview ist nur mit 64 Bit Betriebssystemen kompatibel.</p>
       <br/>
