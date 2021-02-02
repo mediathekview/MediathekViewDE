@@ -11,7 +11,8 @@ description = ""
     {{< profile name="Peter W. (pidoubleyou)" title="Entwickler" description="Peter ist hauptberuflich Softwarearchitekt und Fan von OpenSource-Software. Er unterstützt bei der Entwicklung der Java-Komponenten." github="pidoubleyou" forum="pidoubleyou" pic="/images/team/pidoubleyou.png" >}}
     {{< profile name="Patrick Hein (bagbag)" title="Entwickler | Administrator" description="Zuerst unabhängig, trat er dem Team Anfang 2017 zusammen mit MediathekViewWeb bei. Neben der Entwicklung von MVW kümmert er sich außerdem um eine zweite und unabhängige Serverinfrastruktur für MVW und stellt Ressourcen für Crawler und Verteiler bereit." github="bagbag" forum="bagbag" >}}
     {{< profile name="Sascha Wiegandt (TheSasch)" title="Entwickler" description="Sascha ist seit über 20 Jahren Softwareentwickler und unterstützt das Team seit 09/2017 bei der Entwicklung der Java-Komponenten." github="thesasch" forum="thesasch" pic="https://avatars3.githubusercontent.com/u/30903584?s=460&v=4" >}}
-    {{< profile name="codingpf" title="Entwickler" description="Nachfolgeentwickler des Kodi Add-Ons." github="codingpf" forum="codingpf"  >}}
+    {{< profile name="codingpf" title="Entwickler" description="Nachfolgeentwickler des Kodi Add-Ons." github="codingpf" forum="codingpf" pic="https://forum.mediathekview.de/assets/uploads/profile/4140-profileavatar.png" >}}
+    {{< profile name="cemrich" title="Entwicklerin" description="Entwicklerin der Zapp Android-App." github="cemrich" forum="cemrich" pic="https://forum.mediathekview.de/assets/uploads/profile/871-profileavatar.png" >}}
     {{< profile name="Leo Moll (tuxpoldo)" title="Entwickler" description="Erfinder und ehemaliger Entwickler des Kodi Add-Ons." github="tuxpoldo" forum="tuxpoldo" website="http://www.yeasoft.com/" pic="https://avatars3.githubusercontent.com/u/1818987?s=460&v=4" >}}
 {{< /profiles >}}
 
