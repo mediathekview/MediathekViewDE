@@ -19,7 +19,7 @@ enableRobotsTXT = true
 
 [params]
     topline = "Die offizelle MediathekView Homepage"
-    footline = "Homepage Version: 1.13.12"
+    footline = "Homepage Version: 1.14.0"
 
     copyright = "(c) 2016-2021 Copyright by MediathekView Team"
     title = "MediathekView" # Site title
@@ -101,14 +101,20 @@ enableRobotsTXT = true
     url = "/impressum/"
 
     [[menu.footer]]
+    name = "Datenschutz"
+    pre = "<i>-</i>"
+    weight = 2
+    url = "/Datenschutz/"
+
+    [[menu.footer]]
     name = "Über uns"
     pre = "-"
-    weight = 2
+    weight = 3
     url = "/ueberuns/"
 
     [[menu.footer]]
     name = "Lizenz"
-    weight = 3
+    weight = 4
     url = "/lizenz/"
 
 [blackfriday]
