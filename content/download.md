@@ -13,7 +13,7 @@ title = "Download"
 ## MediathekView
 
 
-<div class="panel panel-info">
+<!-- <div class="panel panel-info">
   <div class="panel-heading"><b>Download Probleme der neuen Version 13.7.0 und Alternativen</b></div>
   <div class="panel-body">
     <p>
@@ -24,7 +24,7 @@ title = "Download"
     Ihr könnt uns unterstützen in dem Ihr den Torrent Client nach dem Download noch offen haltet und die Dateien mit verteilt.
     </p>
   </div>
-</div>
+</div> -->
 
 <div class="panel panel-default">
   <div class="panel-heading"><b>Aktuell stabile Version</b></div>
