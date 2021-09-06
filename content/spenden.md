@@ -69,11 +69,11 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 
 <address>
   <strong>Bitcoin-Adresse</strong><br />
-  <p class="adresse"><a href="bitcoin:12KJoMwPiv682e7KrdLoNXt9B1hzcCUTaM?message=MediathekView%20Spenden%20Adresse">12KJoMwPiv682e7KrdLoNXt9B1hzcCUTaM</a></p>
+  <p class="adresse"><a href="bitcoin:1ENKhPYsrywU3MDDXGqdFgXVteX83CS8TS?message=MediathekView%20Spende">1ENKhPYsrywU3MDDXGqdFgXVteX83CS8TS</a></p>
 </address>
 <div class="row">
 <div class="col-xs-12 col-sm-3">
-  <img src="../images/qrcode-bitcoin.png" style="width: 100%; max-width: 180px;" alt="QR-Code Bitcoin Adresse">
+  <img src="../images/qrcode-bitcoin-2.png" style="width: 100%; max-width: 180px;" alt="QR-Code Bitcoin Adresse">
 </div>
 <div class="col-sm-9">
   <p>
