@@ -180,7 +180,7 @@ Ansonsten kann man die Programmdatei auch so starten:
 - Linux Konsole runner: `./MediathekView_ipv4` oder `./MediathekView_Portable`
 - Linux Konsole Java: `jre/bin/java -Xmx2g --enable-preview -jar MediathekView.jar`
 
-Startet das Programm nicht, gibt es Hilfe in der [FAQ](/FAQ).
+Startet das Programm nicht, gibt es Hilfe in der [FAQ](/faq).
 
 ### Starten im portablen Modus (MediathekView Portable)
 Für den portablen Einsatz z.B. auf einem USB-Stick stehen im Ordner "Portable" entsprechende Startdateien zur Verfügung (z.B. "MediathekView_Portable.exe" für Windows). Diese Startdateien dürfen nicht aus dem Ordner verschoben werden. Beim portablen Start wird der Ordner "Einstellungen" im MediathekView-Programmordner angelegt. Da hinein können, falls gewünscht, die bisherigen Einstellungen, also der Ordner ".mediathek3" aus dem Benutzerverzeichnis kopiert werden.
