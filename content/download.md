@@ -48,7 +48,7 @@ title = "Download"
       <br/>
       <br/>
       <p><b>Mac:</b></p>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac.dmg"><button type="button" class="btn btn-primary btn-sm">OS X x86 (dmg)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac.dmg"><button type="button" class="btn btn-primary btn-sm">OS X (dmg)</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac-as.dmg"><button type="button" class="btn btn-primary btn-sm">OS X Apple Sillicon (dmg)</button></a>
   </div>
 </div>
