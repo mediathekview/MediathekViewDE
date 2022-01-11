@@ -41,11 +41,19 @@ title = "Download"
       <br/>
       <p><b>Linux:</b></p>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.deb"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Debian Deb)</button></a>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.rpm"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Red Hat RPM)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.rpm"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Red Hat RPM)*</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.sh"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Sh)</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux.tar.gz"><button type="button" class="btn btn-primary btn-sm">Linux (tar.gz)</button></a>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-x86_64.AppImage"><button type="button" class="btn btn-primary btn-sm">Linux Standalone (AppImage)</button></a>
       <br/>
+      <br/>
+      <div class="alert alert-info" role="alert">
+          * Für RPM-basierte Linux Pakete steht auch ein
+          <strong><a href="https://download.mediathekview.de/stabil/MediathekView-rpm-signature-2021.pub">GPG Key</a></strong> zur Verfügung,
+          mit dem das RPM-Paket anhand seiner Signatur verifiziert werden kann.
+          Dieser kann mit diesem Kommando importiert werden:<br/>
+          <mark>sudo rpm --import https://download.mediathekview.de/stabil/MediathekView-rpm-signature-2021.pub</mark>
+      </div>
       <br/>
       <p><b>Mac:</b></p>
     <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac.dmg"><button type="button" class="btn btn-primary btn-sm">OS X (dmg)</button></a>
