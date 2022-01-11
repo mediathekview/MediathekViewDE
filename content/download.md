@@ -49,7 +49,7 @@ title = "Download"
       <br/>
       <div class="alert alert-info" role="alert">
           * Für RPM-basierte Linux Pakete steht auch ein
-          <a href="https://download.mediathekview.de/stabil/MediathekView-rpm-signature-2021.pub">GPG Key</a> zur Verfügung,
+          <strong><a href="https://download.mediathekview.de/stabil/MediathekView-rpm-signature-2021.pub">GPG Key</a></strong> zur Verfügung,
           mit dem das RPM-Paket anhand seiner Signatur verifiziert werden kann.
           Dieser kann mit diesem Kommando importiert werden:<br/>
           <mark>sudo rpm --import https://download.mediathekview.de/stabil/MediathekView-rpm-signature-2021.pub</mark>
