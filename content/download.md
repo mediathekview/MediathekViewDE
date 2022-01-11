@@ -27,9 +27,9 @@ title = "Download"
 </div> -->
 
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Aktuell stabile Version</b></div>
+  <div class="panel-heading"><b>Aktuelle stabile Version</b></div>
   <div class="panel-body">
-    <p>Die aktuell stabile Version für alle gängigen Betriebsysteme (64 Bit) in gepackter Form inklusive benötigter Java Version.</p>
+    <p>Die aktuelle stabile Version für alle gängigen Betriebssysteme (64-Bit) in gepackter Form inklusive benötigter Java Version.</p>
 
       <br/>
       <p><b>Hinweis:</b> Mediathekview ist nur mit 64 Bit Betriebssystemen kompatibel.</p>
@@ -62,9 +62,9 @@ title = "Download"
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Experimentelle Pakete für die aktuelle stabile Version</b></div>
+  <div class="panel-heading"><b>Experimentelle Pakete für weitere Systeme</b></div>
   <div class="panel-body">
-    <p>Experimentelle Pakete für die aktuelle stabile Version inklusive benötigter Java Version.</p>
+    <p>Experimentelle Pakete der aktuellen stabile Version inklusive benötigter Java Version.</p>
       <br/>
       <br/>
       <p><b>Windows 32bit:</b></p>
@@ -81,16 +81,16 @@ title = "Download"
 <div class="panel panel-default">
   <div class="panel-heading"><b>Nightly Versionen</b></div>
   <div class="panel-body">
-    <p>Nightlyversionen sind Snapshots vom aktuellen Entwicklungsstand und können Bugs enthalten. Auf einem Produktivsystem solltet ihr die stabile Version nutzen.</p>
+    <p>Nightlyversionen sind Snapshots vom aktuellen Entwicklungsstand und können Bugs enthalten. Auf einem Produktivsystem solltet ihr stattdessen die stabile Version nutzen.</p>
     <a href="https://download.mediathekview.de/unstabil/" target="_blank"><button type="button" class="btn btn-primary btn-sm">Nightlys</button></a>
   </div>
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Sourcecode</b></div>
+  <div class="panel-heading"><b>Source Code</b></div>
   <div class="panel-body">
     <p>Der Quellcode wird auf Github verwaltet.</p>
-    <a href="https://github.com/mediathekview/MediathekView" target="_blank"><button type="button" class="btn btn-primary btn-sm">Sourcecode (Github)</button></a>
+    <a href="https://github.com/mediathekview/MediathekView" target="_blank"><button type="button" class="btn btn-primary btn-sm">Github Repository</button></a>
   </div>
 </div>
 
@@ -105,14 +105,28 @@ title = "Download"
 
 ## MediathekView für Kodi (Früher XBMC)
 
-MediathekView für Kodi ist ein Addon welches ihr direkt im offizielen Addon-Repository von Kodi herrunter laden könnt.
-
+MediathekView für Kodi ist ein Addon welches ihr leider nicht direkt im offizielen Addon-Repository von Kodi herrunter laden könnt.
+Fügt je nach Kodi Version das passende Repository von uns hinzu.
 
 
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Link zum Addon auf der kodi.tv Seite</b></div>
+  <div class="panel-heading"><b>Repositorys</b></div>
   <div class="panel-body">
-    <a href="https://kodi.tv/addon/plugins-video-add-ons/mediathekview" target="_blank"><button type="button" class="btn btn-primary btn-sm">kodi.tv Addon-Seite</button></a>
+      <p>Das <b>Leia Repository</b> enthält Versionen für Kodi 17 (Krypton) & Kodi 18 (Leia).</p>
+
+      <p>Das <b>Matrix Repository</b> enthält Versionen für Kodi 19 (Matrix).</p>
+
+      <p><u>Die Installation der Repositories in Kodi ist recht einfach:</u></p>
+
+      <p>Zu aller erst benötigt man die entsprechende ZIP-Datei des Repositories (Links weiter unten).</p>
+
+      <p>Danach überträgt man – falls nötig – die ZIP-Datei auf das Kodi Abspielgerät. Dies kann über das Netzwerk oder klassisch per USB-Stick erfolgen.</p>
+
+      <p>Im Bereich "Addons" wählt man den Menüpunkt "Aus ZIP-Datei installieren" aus. Aus dem darauf erscheinenden Dateibrowser kann man dann die ZIP-Datei des Repositories auswählen.</p>
+
+      <p>Nach der Installation kann die neueste Version des Plugins aus dem Repository installiert werden. Selbstverständlich kommen auch Updates aus dem Repository mit der jeweils neuesten Version.</p>
+      <a href="https://kodirepo.mediathekview.de/repo-leia/repository.mediathekviewleia/repository.mediathekviewleia-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Leia Repository</button></a>
+      <a href="https://kodirepo.mediathekview.de/repo-matrix/repository.mediathekviewmatrix/repository.mediathekviewmatrix-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Matrix Repository</button></a>
   </div>
 </div>
 
@@ -121,29 +135,29 @@ MediathekView für Kodi ist ein Addon welches ihr direkt im offizielen Addon-Rep
   <div class="panel-body">
     <p>Da nicht jede Test-Version des Plugins in das offizielle Kodi Addon Repository überführt wird, stehen diese beiden Repositories all jenen zur Verfügung die Interesse an den neusten Entwicklungen des Plugins haben.</p>
 
-    <p>Das <b>Beta-Repository</b> enthält Test-Versionen die bereits von mehreren Personen des MediathekView Teams getestet wurden und mögliche Kandidaten für eine Einreichung ins offizielle Kodi Addon Repository sind. Die Benutzung der dort angebotentn Versionen ist in der Regel problemlos.</p>
+    <p>Das <b>Beta-Repository</b> enthält Test-Versionen für Kodi 19 (Matrix).</p>
 
-    <p>Das <b>Alfa-Repository</b> enthält sehr neue Test-Versionen die möglicherweise problematisch sein könnten. Dieses Repository sollte nur von Experten genutzt werden, da die dort angebotene Software schwere Fehler enthalten kann.</p>
+    <p>Das <b>Alfa-Repository</b> enthält Test-Versionen für Kodi 17 (Krypton) & Kodi 18 (Leia).</p>
 
     <p><u>Die Installation der Repositories in Kodi ist recht einfach:</u></p>
 
-    <p>Zu allererst benötigt man die entsprechende ZIP-Datei des Repositories (Links weiter unten).</p>
+    <p>Zu aller erst benötigt man die entsprechende ZIP-Datei des Repositories (Links weiter unten).</p>
 
     <p>Danach überträgt man – falls nötig – die ZIP-Datei auf das Kodi Abspielgerät. Dies kann über das Netzwerk oder klassisch per USB-Stick erfolgen.</p>
 
     <p>Im Bereich "Addons" wählt man den Menüpunkt "Aus ZIP-Datei installieren" aus. Aus dem darauf erscheinenden Dateibrowser kann man dann die ZIP-Datei des Repositories auswählen.</p>
 
-    <p>Nach der Installation kann die neuste Version des Plugins aus dem Repository installiert werden. Selbstverständlich kommen auch Updates aus dem Repository mit der jeweils neusten Version.</p>
-    <a href="https://kodirepo.mediathekview.de/repo-beta/repository.mediathekviewbeta/repository.mediathekviewbeta-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Beta Repository</button></a>
-    <a href="https://kodirepo.mediathekview.de/repo-alfa/repository.mediathekviewalfa/repository.mediathekviewalfa-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Alfa Repository</button></a>
+    <p>Nach der Installation kann die neueste Version des Plugins aus dem Repository installiert werden. Selbstverständlich kommen auch Updates aus dem Repository mit der jeweils neuesten Version.</p>
+    <a href="https://kodirepo.mediathekview.de/repo-beta/repository.mediathekviewbeta/repository.mediathekviewbeta-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Beta Repository Kodi 19 (Matrix)</button></a>
+    <a href="https://kodirepo.mediathekview.de/repo-alfa/repository.mediathekviewalfa/repository.mediathekviewalfa-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Alfa Repository Kodi 17(Krypton) & Kodi 18 (Leia)</button></a>
   </div>
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Sourcecode</b></div>
+  <div class="panel-heading"><b>Source Code</b></div>
   <div class="panel-body">
     <p>Der Quellcode wird auf Github verwaltet.</p>
-    <a href="https://github.com/mediathekview/plugin.video.mediathekview" target="_blank"><button type="button" class="btn btn-primary btn-sm">Sourcecode (Github)</button></a>
+    <a href="https://github.com/mediathekview/plugin.video.mediathekview" target="_blank"><button type="button" class="btn btn-primary btn-sm">Source Code (Github)</button></a>
   </div>
 </div>
 
@@ -164,16 +178,16 @@ MLib ist die Bibliothek für MServer.
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Sourcecode</b></div>
+  <div class="panel-heading"><b>Source Code</b></div>
   <div class="panel-body">
     <p>Der Quellcode wird auf Github verwaltet.</p>
-    <a href="https://github.com/mediathekview/MLib" target="_blank"><button type="button" class="btn btn-primary btn-sm">Sourcecode (Github)</button></a>
+    <a href="https://github.com/mediathekview/MLib" target="_blank"><button type="button" class="btn btn-primary btn-sm">Source Code (Github)</button></a>
   </div>
 </div>
 
 ## MServer
 
-MServer erzeugt die Filmliste, indem er die Mediatheken der Öffentlich-Rechtlichen durchsucht (crawlt) und diese dann über die Verteilerserver bereit stellt.
+MServer erzeugt die Filmliste, indem er die Mediatheken der Öffentlich-Rechtlichen Sender durchsucht (crawlt) und die Liste dann über die Verteilerserver bereit stellt.
 
 <div class="panel panel-default">
   <div class="panel-heading"><b>Aktuelle Version</b></div>
@@ -184,7 +198,7 @@ MServer erzeugt die Filmliste, indem er die Mediatheken der Öffentlich-Rechtlic
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Sourcecode</b></div>
+  <div class="panel-heading"><b>Source Code</b></div>
   <div class="panel-body">
     <p>Der Quellcode wird auf Github verwaltet.</p>
     <a href="https://github.com/mediathekview/MServer" target="_blank"><button type="button" class="btn btn-primary btn-sm">Sourcecode (Github)</button></a>
