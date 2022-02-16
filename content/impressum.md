@@ -10,7 +10,7 @@ toc = true
 <address>
   <strong>Alexander Finkhäuser</strong><br>
   Mediathekview<br>
-  Prälat-Marschall-Straße 41<br>
+  Prälat-Marschall-Straße 37<br>
   42781 Haan
 </address>
 
