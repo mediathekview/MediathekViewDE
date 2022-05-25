@@ -110,11 +110,9 @@ Fügt je nach Kodi Version das passende Repository von uns hinzu.
 
 
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Repositorys</b></div>
+  <div class="panel-heading"><b>Stable Repository</b></div>
   <div class="panel-body">
-      <p>Das <b>Leia Repository</b> enthält Versionen für Kodi 17 (Krypton) & Kodi 18 (Leia).</p>
-
-      <p>Das <b>Matrix Repository</b> enthält Versionen für Kodi 19 (Matrix).</p>
+      <p>Das <b>Repository</b> enthält Versionen für Kodi 17 (Krypton), Kodi 18 (Leia) & Kodi 19 (Matrix).</p>
 
       <p><u>Die Installation der Repositories in Kodi ist recht einfach:</u></p>
 
@@ -125,19 +123,15 @@ Fügt je nach Kodi Version das passende Repository von uns hinzu.
       <p>Im Bereich "Addons" wählt man den Menüpunkt "Aus ZIP-Datei installieren" aus. Aus dem darauf erscheinenden Dateibrowser kann man dann die ZIP-Datei des Repositories auswählen.</p>
 
       <p>Nach der Installation kann die neueste Version des Plugins aus dem Repository installiert werden. Selbstverständlich kommen auch Updates aus dem Repository mit der jeweils neuesten Version.</p>
-      <a href="https://kodirepo.mediathekview.de/repo-leia/repository.mediathekviewleia/repository.mediathekviewleia-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Leia Repository</button></a>
-      <a href="https://kodirepo.mediathekview.de/repo-matrix/repository.mediathekviewmatrix/repository.mediathekviewmatrix-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Matrix Repository</button></a>
+      <a href="https://kodirepo.mediathekview.de/repo-mv/repository.mediathekview/repository.mediathekview-1.0.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Repository</button></a>
   </div>
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Alpha und Beta Repositorys</b></div>
+  <div class="panel-heading"><b>Preview Repository</b></div>
   <div class="panel-body">
-    <p>Da nicht jede Test-Version des Plugins in das offizielle Kodi Addon Repository überführt wird, stehen diese beiden Repositories all jenen zur Verfügung die Interesse an den neusten Entwicklungen des Plugins haben.</p>
 
-    <p>Das <b>Beta-Repository</b> enthält Test-Versionen für Kodi 19 (Matrix).</p>
-
-    <p>Das <b>Alfa-Repository</b> enthält Test-Versionen für Kodi 17 (Krypton) & Kodi 18 (Leia).</p>
+    <p>Das <b>Repository</b> enthält Test-Versionen.</p>
 
     <p><u>Die Installation der Repositories in Kodi ist recht einfach:</u></p>
 
@@ -148,8 +142,7 @@ Fügt je nach Kodi Version das passende Repository von uns hinzu.
     <p>Im Bereich "Addons" wählt man den Menüpunkt "Aus ZIP-Datei installieren" aus. Aus dem darauf erscheinenden Dateibrowser kann man dann die ZIP-Datei des Repositories auswählen.</p>
 
     <p>Nach der Installation kann die neueste Version des Plugins aus dem Repository installiert werden. Selbstverständlich kommen auch Updates aus dem Repository mit der jeweils neuesten Version.</p>
-    <a href="https://kodirepo.mediathekview.de/repo-beta/repository.mediathekviewbeta/repository.mediathekviewbeta-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Beta Repository Kodi 19 (Matrix)</button></a>
-    <a href="https://kodirepo.mediathekview.de/repo-alfa/repository.mediathekviewalfa/repository.mediathekviewalfa-1.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Alfa Repository Kodi 17(Krypton) & Kodi 18 (Leia)</button></a>
+    <a href="https://kodirepo.mediathekview.de/repo-mvp/repository.mediathekviewpreview/repository.mediathekviewpreview-1.0.0.zip" target="_blank"><button type="button" class="btn btn-primary btn-sm">Preview Repository</button></a>
   </div>
 </div>
 
@@ -158,6 +151,7 @@ Fügt je nach Kodi Version das passende Repository von uns hinzu.
   <div class="panel-body">
     <p>Der Quellcode wird auf Github verwaltet.</p>
     <a href="https://github.com/mediathekview/plugin.video.mediathekview" target="_blank"><button type="button" class="btn btn-primary btn-sm">Source Code (Github)</button></a>
+    <a href="https://github.com/mediathekview/kodi-repos" target="_blank"><button type="button" class="btn btn-primary btn-sm">Repo Source Code (Github)</button></a>
   </div>
 </div>
 
