@@ -53,7 +53,7 @@ Xaver ist der Vater von MediathekView, ihm haben wir dieses Projekt zu verdanken
 <table class="table">
 <tr>
 <td>Empfänger</td>
-<td><b>Mediathekview</b></td>
+<td><b>Hirmer Th.</b></td>
 <tr>
 <tr>
 <td>IBAN</td>
