@@ -63,22 +63,4 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 
 <a href="https://www.bountysource.com/teams/mediathekview" target="_blank"><i class="icon-iconink5"></i></a>
 
-<br />
 
-### Bitcoin
-
-<address>
-  <strong>Bitcoin-Adresse</strong><br />
-  <p class="adresse"><a href="bitcoin:1ENKhPYsrywU3MDDXGqdFgXVteX83CS8TS?message=MediathekView%20Spende">1ENKhPYsrywU3MDDXGqdFgXVteX83CS8TS</a></p>
-</address>
-<div class="row">
-<div class="col-xs-12 col-sm-3">
-  <img src="../images/qrcode-bitcoin-2.png" style="width: 100%; max-width: 180px;" alt="QR-Code Bitcoin Adresse">
-</div>
-<div class="col-sm-9">
-  <p>
-    <a href="https://de.wikipedia.org/wiki/Bitcoin"><b>Bitcoin</b></a> (englisch sinngemäß für „digitale Münze“) ist ein weltweit verwendbares dezentrales Zahlungssystem und der Name einer digitalen Geld­einheit. Überweisungen werden von einem Zusammenschluss von Rechnern über das Internet mithilfe einer speziellen Peer-to-Peer-Anwendung abgewickelt, sodass anders als im herkömmlichen Bankverkehr keine zentrale Abwicklungsstelle benötigt wird. Eigentumsnachweise an Bitcoin können in einer persönlichen digitalen Brieftasche gespeichert werden. Der Umrechnungskurs von Bitcoin in andere Zahlungsmittel (Fiatgeld) bestimmt sich durch Angebot und Nachfrage. <br />
-    <p class="quellenangabe">(Quelle: Wikipedia)</p>
-  </p>
-</div>
-</div>
