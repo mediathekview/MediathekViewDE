@@ -1,0 +1,66 @@
+image: klakegg/hugo:0.54.0-ext-alpine
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  PROD_ZIEL: /var/www/mediathekview.de/web
+  DEV_ZIEL: /var/www/webdev.mediathekview.de/web
+
+stages:
+  - testbuild
+  - deploy_dev
+  - deploy
+
+before_script:
+  - hugo env
+  
+
+deploy2prod:
+  stage: deploy
+  environment: production
+  script:
+#    - /var/www/mediathekview.de/private/deploy.sh
+    - echo Führe hugo aus.
+    - hugo -v
+    - "echo Vorherige Dateien:"
+    - ls -la $PROD_ZIEL
+    - echo Lösche alte Dateien am '${PROD_ZIEL}' ...
+    - rm -r ${PROD_ZIEL}* || echo "Keine Dateien vorhanden"
+    - echo Deploye Webseite nach '${PROD_ZIEL}' ...
+    - cp -r public/* $PROD_ZIEL
+    - echo "Passe Rechte auf (www-data) an..."
+    - "chown -R 33: $PROD_ZIEL"
+    - "echo Endstand am Ziel:"
+    - ls -la $PROD_ZIEL
+  only:
+    - master
+  tags:
+    - mvweb1
+
+deploy2dev:
+  stage: deploy_dev
+  environment: development
+  script:
+#    - /var/www/webdev.mediathekview.de/private/deploy.sh
+    - echo Führe hugo aus.
+    - hugo -v --baseURL "https://webdev.mediathekview.de" --buildFuture
+    - "echo Vorherige Dateien:"
+    - ls -la $DEV_ZIEL
+    - echo Lösche alte Dateien am '${DEV_ZIEL}' ...
+    - rm -r ${DEV_ZIEL}* || echo "Keine Dateien vorhanden"
+    - echo Deploye Webseite nach '${DEV_ZIEL}' ...
+    - cp -r public/* $DEV_ZIEL
+    - echo "Passe Rechte auf (www-data) an..."
+    - "chown -R 33: $DEV_ZIEL"
+    - "echo Endstand am Ziel:"
+    - ls -la $DEV_ZIEL
+  only:
+    - develop
+  tags:
+    - mvweb1
+
+test:
+  stage: testbuild
+  script:
+    - hugo -v
+  tags:
+    - mvweb1
