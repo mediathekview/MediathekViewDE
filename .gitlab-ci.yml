@@ -8,14 +8,21 @@ variables:
   DEV_ZIEL: /var/www/webdev.mediathekview.de/web/
 
 stages:
+  - .prenotify
   - testbuild
   - deploy_dev
   - deploy
+  - .postnotify
 
 before_script:
   - /bin/sh /shell.sh
   - hugo env
   
+notify-github-pending:
+  stage: .prenotify
+  when: always
+  script:
+    - .ci/notify_github.sh pending
 
 deploy2prod:
   stage: deploy
@@ -67,3 +74,16 @@ test:
     - hugo -v
   tags:
     - mvweb1
+
+
+notify-github-success:
+  stage: .postnotify
+  when: on_success
+  script:
+    - .ci/notify_github.sh success
+
+notify-github-failure:
+  stage: .postnotify
+  when: on_success
+  script:
+   - .ci/notify_github.sh failure
