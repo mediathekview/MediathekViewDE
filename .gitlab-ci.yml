@@ -1,4 +1,6 @@
-image: klakegg/hugo:0.54.0-ext-alpine
+image:
+  name: klakegg/hugo:0.54.0-ext-alpine
+  entrypoint: ["/bin/sh"]
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -11,6 +13,7 @@ stages:
   - deploy
 
 before_script:
+  - /bin/sh /shell.sh
   - hugo env
   
 
