@@ -84,6 +84,6 @@ notify-github-success:
 
 notify-github-failure:
   stage: .postnotify
-  when: on_success
+  when: on_failure
   script:
     - .ci/notify_github.sh failure
