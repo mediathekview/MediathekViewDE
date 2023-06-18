@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Installiere curl
+apk add --update --no-cache curl
+
 GITHUB_ORG="mediathekview"
 GITHUB_REPO="MediathekViewDE"
 GITHUB_SHA="${CI_COMMIT_SHA}"
