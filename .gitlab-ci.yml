@@ -4,8 +4,8 @@ image:
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-  PROD_ZIEL: /var/www/mediathekview.de/web
-  DEV_ZIEL: /var/www/webdev.mediathekview.de/web
+  PROD_ZIEL: /var/www/mediathekview.de/web/
+  DEV_ZIEL: /var/www/webdev.mediathekview.de/web/
 
 stages:
   - testbuild
