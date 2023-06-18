@@ -1,6 +1,6 @@
 image:
   name: klakegg/hugo:0.54.0-ext-alpine
-  entrypoint: ["/bin/sh"]
+  entrypoint: [""]
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
