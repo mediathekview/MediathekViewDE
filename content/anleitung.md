@@ -96,19 +96,7 @@ Mit einem Klick der rechten Maus auf den neuen Menüpunkt und dann _zur Arbeitsf
 Zum Eintragen ins Startmenü, die Anwendung _Hauptmenü_ starten. Dann "neuer Eintrag" auswählen. Als "Befehl" die Datei "MediathekView" im Programmordner auswählen. Mit einem Klick aufs Icon kann auch das ausgewählt werden (im _Programmordner -> Infos_ liegen Icons).
 
 ### Mac
-Für OS X 10.7.3 (und neuer) gibt es eine separate Applikation "MediathekView.app":
-
-1. die heruntergeladene [DMG-Datei](/download), z.B. "MediathekView-latest.dmg" doppelklicken
-2.  Das Programm per Drag-and-drop ins Programme-Verzeichnis (empfohlen) verschieben
-3. (optionaler Schritt: Verknüpfung im Dock ablegen) die Applikation "MediathekView.app" ins Dock ziehen. Von dort aus kann MediathekView dann jeweils gestartet werden.
-4. die heruntergeladene DMG-Datei kann nach dem Entpacken gelöscht werden
-
-Für Mac-OS-X-10.6-Benutzer sowie für fortgeschrittene Benutzer, die MediathekView auf einem portablen Datenträger (z.B. USB-Stick) verwenden oder mit weiteren Funktionen ausstatten und alle zusätzlichen Hilfsprogramme zum Abspielen, Aufzeichnen, Transcodieren etc. im gleichen Verzeichnis haben wollen:
-
-1. die ZIP-Datei (ohne die Angabe "OSX" im Dateinamen, für Mac-OS-X-10.6-Benutzer zwingend "MediathekView_3.3.0.zip") [herunterladen](https://sourceforge.net/projects/zdfmediathk/files/Mediathek/) und doppelklicken
-2. den entpackten Ordner per Drag-and-drop ins Programme-Verzeichnis (empfohlen) oder bei fehlenden Rechten ins Home-Verzeichnis (Haus-Symbol) verschieben
-3. (optionaler Schritt: Verknüpfung im Dock ablegen) den eben verschobenen MediathekView-Ordner öffnen, die Datei "MediathekView.command" ansteuern und ins Dock ziehen. Von dort aus kann MediathekView dann jeweils gestartet werden.
-4. die ZIP-Datei kann nach dem Entpacken gelöscht werden
+Für macOS 10.13 (und neuer) gibt es im Download-Bereich eine separate Applikation "MediathekView.app" als DMG-Download, welche digital signiert ist und somit keine Probleme mit Gatekeeper erzeugt. Es sind separate Versionen für Macs mit Intel als auch Apple Silicon verfügbar. Eine Nutzung der Intel-Version auf Apple Silicon Macs wird nicht angeraten.
 
 ### Windows
 MediathekView wird optimaler weise durch den Installer (Exe) installiert. Dabei werden direkt passende Einträge im Startmenü angelegt.
@@ -183,10 +171,17 @@ Ansonsten kann man die Programmdatei auch so starten:
 Startet das Programm nicht, gibt es Hilfe in der [FAQ](/faq).
 
 ### Starten im portablen Modus (MediathekView Portable)
+#### Windows
 Für den portablen Einsatz z.B. auf einem USB-Stick stehen im Ordner "Portable" entsprechende Startdateien zur Verfügung (z.B. "MediathekView_Portable.exe" für Windows). Diese Startdateien dürfen nicht aus dem Ordner verschoben werden. Beim portablen Start wird der Ordner "Einstellungen" im MediathekView-Programmordner angelegt. Da hinein können, falls gewünscht, die bisherigen Einstellungen, also der Ordner ".mediathek3" aus dem Benutzerverzeichnis kopiert werden.
 
-Unter OS X ist ein portabler Start nicht möglich.
+#### Linux
+`MediathekView_portable` erzeugt wie die Windows-Version automatisch einen Ordner "Einstellungen" im **Programmordner**. Dieser liegt bei den mit dem Installer installierten Varianten unter `/opt/mediathekview` und ist in der Regel nicht beschreibbar durch normale Nutzer. Eine Nutzung des Befehls wird in diesem Falle nicht angeraten, da es fehl schlägt.
+Um die Einstellungen an einem Ort seiner Wahl nutzen zu können ist `MediathekView <pfad_zu_den_settings>` zu verwenden.
 
+#### macOS
+Unter macOS ist ein portabler Start nicht möglich.
+
+#### Fortgeschrittene
 Interessierte können den Code für die Startdateien für direkt den Startdateien selbst entnehmen. Die portable Startdatei für Windows enthält im Kern folgende Zeilen Code:
 ```
 jre/bin/java -Xmx2g --enable-preview -jar MediathekView.jar Einstellungen/.mediathek3
