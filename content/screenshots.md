@@ -9,11 +9,24 @@ galerie = true
 
   <div class="row">
     <div class="col-sm-12">
-      <img src="../images/screenshots/screenshot1.png" 
-      alt="Filme Übersicht - Standard Button Design" 
-      title="Filme Übersicht - Standard Button Design" 
+      <img src="/images/screenshots/filme_uebersicht-standardansicht.png" 
+      alt="Filme Übersicht - Standard Ansicht" 
+      title="Filme Übersicht - Standard Ansicht" 
       rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot1.png" 
+      data-glisse-big="/images/screenshots/filme_uebersicht-standardansicht.png" 
+      class="pics img-responsive">
+    </div>
+  </div>
+
+  <h3>Filme Übersicht - Dark Mode</h3>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="/images/screenshots/filme_uebersicht-standardansicht-darkmode.png" 
+      alt="Filme Übersicht - Dark Mode" 
+      title="Filme Übersicht - Dark Mode" 
+      rel="group1" 
+      data-glisse-big="/images/screenshots/filme_uebersicht-standardansicht-darkmode.png" 
       class="pics img-responsive">
     </div>
   </div>
@@ -22,27 +35,11 @@ galerie = true
   
   <div class="row">
   <div class="col-sm-12">
-      <img src="../images/screenshots/screenshot4_filter.png" 
+      <img src="/images/screenshots/filme_uebersicht-filter.png" 
       alt="Filme Übersicht - Filter Ansicht Allgemein" 
       title="Filme Übersicht - Filter Ansicht Allgemein" 
       rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot4_filter.png" 
-      class="pics img-responsive">
-    </div>
-    <div class="col-sm-6">
-      <img src="../images/screenshots/screenshot5_filter_klein.jpg" 
-      alt="Filme Übersicht - Filter Ansicht Filmlänge" 
-      title="Filme Übersicht - Filter Ansicht Filmlänge" 
-      rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot5_filter.png" 
-      class="pics img-responsive">
-    </div>
-    <div class="col-sm-6">
-      <img src="../images/screenshots/screenshot6_filter_klein.jpg" 
-      alt="Filme Übersicht - Filter Ansicht Zeitraum" 
-      title="Filme Übersicht - Filter Ansicht Zeitraum" 
-      rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot6_filter.png" 
+      data-glisse-big="/images/screenshots/filme_uebersicht-filter.png" 
       class="pics img-responsive">
     </div>
   </div>
@@ -51,19 +48,19 @@ galerie = true
   
   <div class="row">
     <div class="col-sm-6">
-      <img src="../images/screenshots/screenshot9_filminfo_klein.jpg" 
+      <img src="/images/screenshots/filme_uebersicht-filminfo.jpg" 
       alt="Filme Übersicht - Filminformationspanel" 
       title="Filme Übersicht - Filminformationspanel" 
       rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot9_filminfo.png" 
+      data-glisse-big="/images/screenshots/filme_uebersicht-filminfo.png" 
       class="pics img-responsive">
     </div>
     <div class="col-sm-6">
-      <img src="../images/screenshots/screenshot10_filmmenue_klein.jpg" 
+      <img src="/images/screenshots/filme_uebersicht-rechtsklickmenue.jpg" 
       alt="Filme Übersicht - Contextmenü" 
       title="Filme Übersicht - Contextmenü" 
       rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot10_filmmenue.png" 
+      data-glisse-big="/images/screenshots/filme_uebersicht-rechtsklickmenue.png" 
       class="pics img-responsive">
     </div>
   </div>
@@ -71,20 +68,28 @@ galerie = true
   <h3>Download</h3>
   
   <div class="row">
-    <div class="col-sm-6">
-      <img src="../images/screenshots/screenshot7_download_klein.jpg" 
+    <div class="col-sm-12">
+      <img src="/images/screenshots/filme_uebersicht-downloadmenue.png" 
       alt="Filme Übersicht - Downloadeinstellungen" 
       title="Filme Übersicht - Downloadeinstellungen" 
       rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot7_download.png" 
+      data-glisse-big="/images/screenshots/filme_uebersicht-downloadmenue.png" 
       class="pics img-responsive">
     </div>
     <div class="col-sm-6">
-      <img src="../images/screenshots/screenshot8_downloadmenue_klein.jpg" 
+      <img src="/images/screenshots/download_uebersicht.png" 
       alt="Download Übersicht" 
       title="Download Übersicht" 
       rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot8_downloadmenue.png" 
+      data-glisse-big="/images/screenshots/download_uebersicht.png" 
+      class="pics img-responsive">
+    </div>
+    <div class="col-sm-6">
+      <img src="/images/screenshots/download_uebersicht-rechtsklick.png" 
+      alt="Download Übersicht Contextmenü" 
+      title="Download Übersicht Contextmenü" 
+      rel="group1" 
+      data-glisse-big="/images/screenshots/download_uebersicht-rechtsklick.png" 
       class="pics img-responsive">
     </div>
   </div>
@@ -93,19 +98,32 @@ galerie = true
   
   <div class="row">
     <div class="col-sm-6">
-      <img src="../images/screenshots/screenshot11_aboanlegen_klein.jpg" 
+      <img src="/images/screenshots/filme_uebersicht-aboanlegen.png" 
       alt="Filme Übersicht - Abo anlegen" 
       title="Filme Übersicht - Abo anlegen" 
       rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot11_aboanlegen.png" 
+      data-glisse-big="/images/screenshots/filme_uebersicht-aboanlegen.png" 
       class="pics img-responsive">
     </div>
     <div class="col-sm-6">
-      <img src="../images/screenshots/screenshot12_abos_klein.jpg" 
+      <img src="/images/screenshots/filme_uebersicht-aboverwaltung.png" 
       alt="Abos Übersicht - Abo bearbeiten" 
       title="Abos Übersicht - Abo bearbeiten" 
       rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot12_abos.png" 
+      data-glisse-big="/images/screenshots/filme_uebersicht-aboverwaltung.png" 
+      class="pics img-responsive">
+    </div>
+  </div>
+
+  <h3>Merkliste</h3>
+  
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="/images/screenshots/filme_uebersicht-merklisteverwalten.png" 
+      alt="Filme Übersicht - Abo anlegen" 
+      title="Filme Übersicht - Abo anlegen" 
+      rel="group1" 
+      data-glisse-big="/images/screenshots/filme_uebersicht-merklisteverwalten.png" 
       class="pics img-responsive">
     </div>
   </div>
@@ -114,11 +132,11 @@ galerie = true
   
   <div class="row">
     <div class="col-sm-12">
-      <img src="../images/screenshots/screenshot13_einstellungen.png" 
+      <img src="/images/screenshots/filme_uebersicht-einstellungen.png" 
       alt="Einstellungsfenster" 
       title="Einstellungsfenster" 
       rel="group1" 
-      data-glisse-big="../images/screenshots/screenshot13_einstellungen.png" 
+      data-glisse-big="/images/screenshots/filme_uebersicht-einstellungen.png" 
       class="pics img-responsive">
     </div>
   </div>
