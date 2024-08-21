@@ -48,7 +48,7 @@ galerie = true
   
   <div class="row">
     <div class="col-sm-6">
-      <img src="/images/screenshots/filme_uebersicht-filminfo.jpg" 
+      <img src="/images/screenshots/filme_uebersicht-filminfo.png" 
       alt="Filme Übersicht - Filminformationspanel" 
       title="Filme Übersicht - Filminformationspanel" 
       rel="group1" 
@@ -56,7 +56,7 @@ galerie = true
       class="pics img-responsive">
     </div>
     <div class="col-sm-6">
-      <img src="/images/screenshots/filme_uebersicht-rechtsklickmenue.jpg" 
+      <img src="/images/screenshots/filme_uebersicht-rechtsklickmenue.png" 
       alt="Filme Übersicht - Contextmenü" 
       title="Filme Übersicht - Contextmenü" 
       rel="group1" 
