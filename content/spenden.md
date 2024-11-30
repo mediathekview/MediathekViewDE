@@ -49,3 +49,13 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 <a href="https://www.bountysource.com/teams/mediathekview" target="_blank"><i class="icon-iconink5"></i></a>
 
 
+<br />
+
+### Bitcoin
+
+<address>
+  <strong>Bitcoin-Adresse</strong><br />
+  <p class="adresse"><a href="bitcoin:1ENKhPYsrywU3MDDXGqdFgXVteX83CS8TS?message=MediathekView%20Spende">1ENKhPYsrywU3MDDXGqdFgXVteX83CS8TS</a></p>
+</address>
+
+
