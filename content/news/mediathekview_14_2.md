@@ -25,8 +25,10 @@ Der Dark-Mode wurde in mehreren Bereichen verbessert:
 - ✔ Darstellungsfehler beim Wechsel zwischen Light- und Dark-Mode unter macOS wurden behoben.  
 
 ![Dark Mode](/images/news/mediathekview-14_2-darkmode.jpg)
+<small>Dark Mode unter Mac</small>
 
 ![Light Mode](/images/news/mediathekview-14_2-lightmode.jpg)
+<small>Light Mode unter Mac</small>
 
 
 ## **📺 Mehr Sender in MediathekView**
@@ -38,4 +40,8 @@ Mit diesem Update wurden die Sender **ONE, ARD-alpha und tagesschau24** hinzugef
 - ✔ **Untertitel einfacher verwalten**: Untertiteldateien können nun direkt mit der korrekten Sprachzuordnung einem Video hinzugefügt werden.
 - ✔ **Neue Funktionen für die Duplikaterkennung**: Duplikate lassen sich nun per Filter ausblenden oder über eine neue Übersicht pro Sender anzeigen.
 
+![Light Mode Windows 11](/images/news/mediathekview-14_2-lightmode-win11.jpg)
+<small>Light Mode unter Windows 11</small>
 
+![Light Mode Linux (kubuntu)](/images/news/mediathekview-14_2-lightmode-lin.png)
+<small>Light Mode unter Linux (kubuntu)</small>
