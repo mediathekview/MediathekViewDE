@@ -54,29 +54,25 @@ title = "Download"
           Dieser kann mit diesem Kommando importiert werden:<br/>
           <mark>sudo rpm --import https://download.mediathekview.de/stabil/MediathekView-rpm-signature-2021.pub</mark>
       </div>
+      <p><b>Linux (aarch64):</b></p>
+      <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-aarch64.deb"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Debian Deb)</button></a>
+      <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-aarch64.sh"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Sh)</button></a>
+      <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-aarch64.tar.gz"><button type="button" class="btn btn-primary btn-sm">Linux (tar.gz)</button></a>
       <br/>
-      <p><b>Mac:</b></p>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac.dmg"><button type="button" class="btn btn-primary btn-sm">OS X (dmg)</button></a>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac-as.dmg"><button type="button" class="btn btn-primary btn-sm">OS X Apple Sillicon (dmg)</button></a>
+      <br/>
+      <p><b>macOS:</b></p>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac.dmg"><button type="button" class="btn btn-primary btn-sm">macOS Intel (dmg)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-mac-as.dmg"><button type="button" class="btn btn-primary btn-sm">macOS Apple Sillicon (dmg)</button></a>
   </div>
 </div>
 
-<div class="panel panel-default">
+<!-- <div class="panel panel-default">
   <div class="panel-heading"><b>Experimentelle Pakete für weitere Systeme</b></div>
   <div class="panel-body">
     <p>Experimentelle Pakete der aktuellen stabile Version inklusive benötigter Java Version.</p>
-      <br/>
-      <br/>
-      <p><b>Windows 32bit:</b></p>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win32.exe"><button type="button" class="btn btn-primary btn-sm">Windows 32bit Installer (Exe)</button></a>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win32.zip"><button type="button" class="btn btn-primary btn-sm">Windows 32bit (zip)</button></a>
-      <br/>
-      <br/>
-      <p><b>ARM hf / Raspberry Pi:</b></p>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-armhf.deb"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Debian Deb)</button></a>
-    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-armhf.sh"><button type="button" class="btn btn-primary btn-sm">Unix Installer (Sh)</button></a>
+      
   </div>
-</div>
+</div> -->
 
 <div class="panel panel-default">
   <div class="panel-heading"><b>Nightly Versionen</b></div>
@@ -95,11 +91,22 @@ title = "Download"
 </div>
 
 <div class="panel panel-default">
-  <div class="panel-heading"><b>Ältere Versionen</b></div>
+  <div class="panel-heading"><b>Ältere Versionen / Archiv</b></div>
   <div class="panel-body">
     <p>Hier findet ihr alte Version von MediathekView.</p>
     <p><b>mac-as</b> steht für Mac Apple Sillicon</p>
     <a href="https://download.mediathekview.de/stabil/" target="_blank"><button type="button" class="btn btn-primary btn-sm">Ältere Versionen</button></a>
+    <br/>
+    <br/>
+    <p>Versionen die nicht mehr weiter entwickelt werden:</p>
+    <p><b>Windows 32bit (Letzte Version 13.9.1):</b></p>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win32.exe"><button type="button" class="btn btn-primary btn-sm">Windows 32bit Installer (Exe)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-win32.zip"><button type="button" class="btn btn-primary btn-sm">Windows 32bit (zip)</button></a>
+    <br/>
+    <br/>
+    <p><b>ARM hf / Raspberry Pi (Letzte Version 13.9.1):</b></p>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-armhf.deb"><button type="button" class="btn btn-primary btn-sm">Linux Installer (Debian Deb)</button></a>
+    <a href="https://download.mediathekview.de/stabil/MediathekView-latest-linux-armhf.sh"><button type="button" class="btn btn-primary btn-sm">Unix Installer (Sh)</button></a>
   </div>
 </div>
 
