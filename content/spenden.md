@@ -15,6 +15,14 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 
 ### Überweisung
 
+<div class="alert alert-info" role="alert">
+    <h4>Hinweis: Empfängerkontrolle</h4>
+    <p>Im Rahmen der SEPA-Zahlungen wurde eine "Empfängerkontrolle" eingeführt.
+    Das Konto läuft natürlich nicht auf dem Namen <strong>Mediathekview</strong>.
+    Bei einer Warnung, bitte ignorieren oder manuell bestätigen.<br>
+    Die Spende kommt trotzdem an.
+</div>
+
 <table class="table">
     <tr>
         <td>Empfänger</td>
