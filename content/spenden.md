@@ -15,6 +15,14 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 
 ### Überweisung
 
+<div class="alert alert-info" role="alert">
+    <h4>Hinweis: Empfängerkontrolle</h4>
+    <p>Im Rahmen der SEPA-Zahlungen wurde eine "Empfängerkontrolle" eingeführt.
+    Das Konto läuft natürlich nicht auf dem Namen <strong>Mediathekview</strong>.
+    Bei einer Warnung, bitte ignorieren oder manuell bestätigen.<br>
+    Die Spende kommt trotzdem an.
+</div>
+
 <table class="table">
     <tr>
         <td>Empfänger</td>
@@ -57,5 +65,12 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
   <strong>Bitcoin-Adresse</strong><br />
   <p class="adresse"><a href="bitcoin:1ENKhPYsrywU3MDDXGqdFgXVteX83CS8TS?message=MediathekView%20Spende">1ENKhPYsrywU3MDDXGqdFgXVteX83CS8TS</a></p>
 </address>
+
+
+### Unterstütze uns bei Ko-fi
+
+<a href="https://ko-fi.com/F1F01BQ3ZX" target="_blank">
+  <img height="36" style="border:0px;height:36px;" src="../images/support_me_on_kofi_dark.png" border="0" alt="Kauf uns einen Kaffe auf ko-fi.com" />
+</a>
 
 
