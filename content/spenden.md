@@ -67,3 +67,10 @@ Um die Serverkosten decken zu können, würden wir uns über Spenden sehr freuen
 </address>
 
 
+### Unterstütze uns bei Ko-fi
+
+<a href="https://ko-fi.com/F1F01BQ3ZX" target="_blank">
+  <img height="36" style="border:0px;height:36px;" src="../images/support_me_on_kofi_dark.png" border="0" alt="Kauf uns einen Kaffe auf ko-fi.com" />
+</a>
+
+
