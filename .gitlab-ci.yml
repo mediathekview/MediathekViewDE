@@ -34,9 +34,9 @@ deploy2prod:
     - "echo Vorherige Dateien:"
     - ls -la $PROD_ZIEL
     - echo Lösche alte Dateien am '${PROD_ZIEL}' ...
-    - rm -r ${PROD_ZIEL}* || echo "Keine Dateien vorhanden"
+    - rm -r ${PROD_ZIEL}. || echo "Keine Dateien vorhanden"
     - echo Deploye Webseite nach '${PROD_ZIEL}' ...
-    - cp -r public/* $PROD_ZIEL
+    - cp -r public/. $PROD_ZIEL
     - echo "Passe Rechte auf (www-data) an..."
     - "chown -R 33: $PROD_ZIEL"
     - "echo Endstand am Ziel:"
@@ -56,9 +56,9 @@ deploy2dev:
     - "echo Vorherige Dateien:"
     - ls -la $DEV_ZIEL
     - echo Lösche alte Dateien am '${DEV_ZIEL}' ...
-    - rm -r ${DEV_ZIEL}* || echo "Keine Dateien vorhanden"
+    - rm -r ${DEV_ZIEL}. || echo "Keine Dateien vorhanden"
     - echo Deploye Webseite nach '${DEV_ZIEL}' ...
-    - cp -r public/* $DEV_ZIEL
+    - cp -r public/. $DEV_ZIEL
     - echo "Passe Rechte auf (www-data) an..."
     - "chown -R 33: $DEV_ZIEL"
     - "echo Endstand am Ziel:"
